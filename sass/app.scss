@@ -1,0 +1,21 @@
+/* By: Nicole Dominguez */
+
+// Variables
+$offWhite: #e3e3e3;
+$offBlack: #1a1a1a;
+$purple: #2f2b3f;
+$teal: #79b7b0;
+
+$gutter: 25px;
+
+$sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+$serif: 'Bitter', Copse, Cambria, Georgia, serif;
+
+// Vendor
+@import "compass";
+@import "compass/reset";
+@import "susy";
+
+// My stuff
+@import "site";
+@import "modular";

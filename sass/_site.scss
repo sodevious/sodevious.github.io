@@ -1,0 +1,14 @@
+// site
+// all the shit
+
+// Basics
+body {
+	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	background: $purple;
+	color: $offWhite;
+}
+
+section, nav {
+	@include container;
+}
