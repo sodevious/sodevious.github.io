@@ -1,4 +1,9 @@
 /* By: Nicole Dominguez */
+/* line 3, ../sass/app.scss */
+* {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* line 17, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,16 +69,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 5, ../sass/_site.scss */
+/* line 7, ../sass/_site.scss */
 body {
   font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
-  background: #2f2b3f;
-  color: #e3e3e3;
+  background: #f7f6e4;
+  color: #1a1a1a;
 }
 
-/* line 12, ../sass/_site.scss */
-section, nav {
+/* line 14, ../sass/_site.scss */
+.container {
   *zoom: 1;
   max-width: 59em;
   _width: 59em;
@@ -83,8 +88,91 @@ section, nav {
   margin-right: auto;
 }
 /* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-section:after, nav:after {
+.container:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 16, ../sass/_site.scss */
+header {
+  background: #2f2b3f;
+  border-bottom: 4px solid #715b71;
+  padding: 20px 0 15px 0;
+}
+/* line 20, ../sass/_site.scss */
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Effra", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  line-height: 0.80em;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px #0d0c12;
+  color: #e3e3e3;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+/* line 32, ../sass/_site.scss */
+header span {
+  color: #868f95;
+  font-family: "Adelle", Georgia, serif;
+  font-size: 0.4em;
+  display: block;
+  text-transform: lowercase;
+  margin-top: 8px;
+  line-height: 1em;
+}
+/* line 41, ../sass/_site.scss */
+header nav {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+/* line 43, ../sass/_site.scss */
+header nav ul {
+  float: right;
+  margin: 0px;
+}
+/* line 47, ../sass/_site.scss */
+header nav li {
+  display: block;
+  margin-left: 25px;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  line-height: 2.3em;
+  font-family: "Adelle", Georgia, serif;
+  color: #433546;
+}
+/* line 56, ../sass/_site.scss */
+header nav a {
+  text-decoration: none;
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  color: #fee4df;
+}
+/* line 62, ../sass/_site.scss */
+header nav a:hover {
+  color: #fcc2b8;
+}
+/* line 65, ../sass/_site.scss */
+header .avatar {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  text-align: center;
+  height: 80px;
+}
+/* line 69, ../sass/_site.scss */
+header .avatar img {
+  position: relative;
+  top: -12.5px;
+  width: 40%;
 }

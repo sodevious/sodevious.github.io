@@ -1,15 +1,24 @@
 /* By: Nicole Dominguez */
 
+* { background-color: rgba(0,0,0,0.1);}
+
 // Variables
 $offWhite: #e3e3e3;
 $offBlack: #1a1a1a;
 $purple: #2f2b3f;
 $teal: #79b7b0;
+$vanilla: #f7f6e4;
+$plum: #635063;
+$haze: #C1D2CF;
+$pink: #FA9887;
 
 $gutter: 25px;
 
 $sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
 $serif: 'Bitter', Copse, Cambria, Georgia, serif;
+
+$serif-font: "Adelle", Georgia, serif;
+$sans-font: "Effra", "Helvetica Neue", sans-serif;
 
 // Vendor
 @import "compass";
