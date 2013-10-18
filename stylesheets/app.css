@@ -1,9 +1,4 @@
 /* By: Nicole Dominguez */
-/* line 3, ../sass/app.scss */
-* {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 /* line 17, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 7, ../sass/_site.scss */
+/* line 2, ../sass/_site.scss */
 body {
   font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -77,7 +72,7 @@ body {
   color: #1a1a1a;
 }
 
-/* line 14, ../sass/_site.scss */
+/* line 11, ../sass/_site.scss */
 .container {
   *zoom: 1;
   max-width: 59em;
@@ -94,13 +89,13 @@ body {
   clear: both;
 }
 
-/* line 16, ../sass/_site.scss */
+/* line 15, ../sass/_site.scss */
 header {
   background: #2f2b3f;
   border-bottom: 4px solid #715b71;
   padding: 20px 0 15px 0;
 }
-/* line 20, ../sass/_site.scss */
+/* line 19, ../sass/_site.scss */
 header h1 {
   margin: 0;
   padding: 0;
@@ -109,24 +104,25 @@ header h1 {
   line-height: 0.80em;
   font-size: 2.5em;
   text-transform: uppercase;
-  text-shadow: 0px 2px 0px #0d0c12;
-  color: #e3e3e3;
+  text-shadow: 0px 2px 0px #181621;
+  color: #bfbec2;
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 32, ../sass/_site.scss */
+/* line 31, ../sass/_site.scss */
 header span {
-  color: #868f95;
+  color: #998099;
   font-family: "Adelle", Georgia, serif;
   font-size: 0.4em;
   display: block;
+  text-shadow: 0px 1px 0px #181621;
   text-transform: lowercase;
   margin-top: 8px;
   line-height: 1em;
 }
-/* line 41, ../sass/_site.scss */
+/* line 42, ../sass/_site.scss */
 header nav {
   width: 32.20339%;
   float: right;
@@ -134,12 +130,12 @@ header nav {
   *margin-left: -1em;
   display: inline;
 }
-/* line 43, ../sass/_site.scss */
+/* line 44, ../sass/_site.scss */
 header nav ul {
   float: right;
   margin: 0px;
 }
-/* line 47, ../sass/_site.scss */
+/* line 48, ../sass/_site.scss */
 header nav li {
   display: block;
   margin-left: 25px;
@@ -147,21 +143,21 @@ header nav li {
   text-transform: uppercase;
   line-height: 2.3em;
   font-family: "Adelle", Georgia, serif;
-  color: #433546;
+  color: #7f677f;
 }
-/* line 56, ../sass/_site.scss */
+/* line 57, ../sass/_site.scss */
 header nav a {
   text-decoration: none;
   margin-left: 5px;
   text-transform: capitalize;
   font-size: 1.3em;
-  color: #fee4df;
+  color: #f7f6e4;
 }
-/* line 62, ../sass/_site.scss */
+/* line 63, ../sass/_site.scss */
 header nav a:hover {
-  color: #fcc2b8;
+  color: #ebe9bd;
 }
-/* line 65, ../sass/_site.scss */
+/* line 66, ../sass/_site.scss */
 header .avatar {
   width: 32.20339%;
   float: left;
@@ -170,9 +166,38 @@ header .avatar {
   text-align: center;
   height: 80px;
 }
-/* line 69, ../sass/_site.scss */
+/* line 70, ../sass/_site.scss */
 header .avatar img {
   position: relative;
   top: -12.5px;
-  width: 40%;
+  width: 39%;
+}
+
+/* line 79, ../sass/_site.scss */
+section {
+  padding: 25px 0;
+}
+
+/* line 85, ../sass/_site.scss */
+section[role="intro"] {
+  padding: 37.5px 0;
+  border-bottom: 1px solid #d2ccc3;
+}
+/* line 89, ../sass/_site.scss */
+section[role="intro"] h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  text-align: center;
+  font-family: "Adelle", Georgia, serif;
+  color: #453a45;
+  margin: 25px 0;
+}
+/* line 97, ../sass/_site.scss */
+section[role="intro"] h2 em {
+  color: #575752;
+}
+
+/* line 4, ../sass/_modular.scss */
+i, cite, em, var, address, dfn {
+  font-style: italic;
 }
