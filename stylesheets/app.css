@@ -89,13 +89,72 @@ body {
   clear: both;
 }
 
-/* line 15, ../sass/_site.scss */
+/* line 14, ../sass/_site.scss */
+.colors div {
+  display: block;
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  height: 100px;
+  margin-right: 10px;
+}
+/* line 22, ../sass/_site.scss */
+.colors .one {
+  background: #2f2b3f;
+}
+/* line 26, ../sass/_site.scss */
+.colors .two {
+  background: #715b71;
+}
+/* line 29, ../sass/_site.scss */
+.colors .three {
+  background: #bfbec2;
+}
+/* line 32, ../sass/_site.scss */
+.colors .four {
+  background: #998099;
+}
+/* line 35, ../sass/_site.scss */
+.colors .five {
+  background: #7f677f;
+}
+/* line 38, ../sass/_site.scss */
+.colors .six {
+  background: #ebe9bd;
+}
+/* line 41, ../sass/_site.scss */
+.colors .seven {
+  background: #d2ccc3;
+}
+/* line 43, ../sass/_site.scss */
+.colors .eight {
+  background: #453a45;
+}
+/* line 45, ../sass/_site.scss */
+.colors .nine {
+  background: #575752;
+}
+/* line 49, ../sass/_site.scss */
+.colors .ten {
+  background: #79b7b0;
+}
+/* line 51, ../sass/_site.scss */
+.colors .eleven {
+  background: #c1d2cf;
+}
+/* line 53, ../sass/_site.scss */
+.colors .twelve {
+  background: #fa9887;
+}
+
+/* line 60, ../sass/_site.scss */
 header {
   background: #2f2b3f;
   border-bottom: 4px solid #715b71;
   padding: 20px 0 15px 0;
 }
-/* line 19, ../sass/_site.scss */
+/* line 64, ../sass/_site.scss */
 header h1 {
   margin: 0;
   padding: 0;
@@ -111,7 +170,7 @@ header h1 {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 31, ../sass/_site.scss */
+/* line 76, ../sass/_site.scss */
 header span {
   color: #998099;
   font-family: "Adelle", Georgia, serif;
@@ -122,7 +181,7 @@ header span {
   margin-top: 8px;
   line-height: 1em;
 }
-/* line 42, ../sass/_site.scss */
+/* line 87, ../sass/_site.scss */
 header nav {
   width: 32.20339%;
   float: right;
@@ -130,12 +189,12 @@ header nav {
   *margin-left: -1em;
   display: inline;
 }
-/* line 44, ../sass/_site.scss */
+/* line 89, ../sass/_site.scss */
 header nav ul {
   float: right;
   margin: 0px;
 }
-/* line 48, ../sass/_site.scss */
+/* line 90, ../sass/_site.scss */
 header nav li {
   display: block;
   margin-left: 25px;
@@ -145,7 +204,7 @@ header nav li {
   font-family: "Adelle", Georgia, serif;
   color: #7f677f;
 }
-/* line 57, ../sass/_site.scss */
+/* line 99, ../sass/_site.scss */
 header nav a {
   text-decoration: none;
   margin-left: 5px;
@@ -153,11 +212,11 @@ header nav a {
   font-size: 1.3em;
   color: #f7f6e4;
 }
-/* line 63, ../sass/_site.scss */
+/* line 105, ../sass/_site.scss */
 header nav a:hover {
   color: #ebe9bd;
 }
-/* line 66, ../sass/_site.scss */
+/* line 108, ../sass/_site.scss */
 header .avatar {
   width: 32.20339%;
   float: left;
@@ -166,24 +225,20 @@ header .avatar {
   text-align: center;
   height: 80px;
 }
-/* line 70, ../sass/_site.scss */
+/* line 112, ../sass/_site.scss */
 header .avatar img {
   position: relative;
   top: -12.5px;
   width: 39%;
 }
 
-/* line 79, ../sass/_site.scss */
+/* line 120, ../sass/_site.scss */
 section {
-  padding: 25px 0;
-}
-
-/* line 85, ../sass/_site.scss */
-section[role="intro"] {
-  padding: 37.5px 0;
+  padding: 50px 0;
   border-bottom: 1px solid #d2ccc3;
 }
-/* line 89, ../sass/_site.scss */
+
+/* line 129, ../sass/_site.scss */
 section[role="intro"] h2 {
   font-size: 2em;
   line-height: 1.25em;
@@ -192,9 +247,136 @@ section[role="intro"] h2 {
   color: #453a45;
   margin: 25px 0;
 }
-/* line 97, ../sass/_site.scss */
+/* line 136, ../sass/_site.scss */
 section[role="intro"] h2 em {
   color: #575752;
+}
+
+/* line 142, ../sass/_site.scss */
+section[role="hire-me"] {
+  font-family: "Adelle", Georgia, serif;
+}
+/* line 144, ../sass/_site.scss */
+section[role="hire-me"] ul {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  padding: 0px;
+}
+/* line 147, ../sass/_site.scss */
+section[role="hire-me"] ul li {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  margin-bottom: 32.5px;
+  font-size: 1.8em;
+  line-height: 1em;
+}
+/* line 152, ../sass/_site.scss */
+section[role="hire-me"] ul li:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 154, ../sass/_site.scss */
+section[role="hire-me"] ul a {
+  color: #635063;
+  font-family: "Effra", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+/* line 158, ../sass/_site.scss */
+section[role="hire-me"] ul a:hover {
+  color: #453a45;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+/* line 163, ../sass/_site.scss */
+section[role="hire-me"] ul i {
+  margin-right: 2px;
+  font-size: 18px;
+  color: #493d51;
+}
+/* line 170, ../sass/_site.scss */
+section[role="hire-me"] ul span {
+  display: block;
+  overflow: hidden;
+  font-size: 0.50em;
+  font-family: "Adelle", Georgia, serif;
+  width: 90%;
+  color: #58a59c;
+  text-shadow: 0px -1px 0px white;
+}
+/* line 178, ../sass/_site.scss */
+section[role="hire-me"] ul span:hover {
+  color: #453a45;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+/* line 186, ../sass/_site.scss */
+section[role="hire-me"] aside {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+/* line 191, ../sass/_site.scss */
+section[role="hire-me"] aside p {
+  font-size: 14px;
+  line-height: 20px;
+}
+/* line 196, ../sass/_site.scss */
+section[role="hire-me"] aside span {
+  font-size: 21px;
+  display: block;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.3em;
+}
+/* line 205, ../sass/_site.scss */
+section[role="hire-me"] aside a {
+  background: #79b7b0;
+  display: block;
+  text-align: center;
+  padding: 8.33333px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2f2b3f;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0px -1px 0px #9ac9c4;
+  box-shadow: 0px 3px 0px #47837d;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 3px solid transparent;
+}
+/* line 223, ../sass/_site.scss */
+section[role="hire-me"] aside a:hover {
+  text-shadow: 0px -1px 0px #685f8b;
+  background: #585076;
+  box-shadow: 0px 3px 0px #46405d;
+  top: 2px;
+  position: relative;
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 /* line 4, ../sass/_modular.scss */
