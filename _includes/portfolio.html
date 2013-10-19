@@ -1,0 +1,23 @@
+<section role="portfolio">
+    <div class="container">
+        <h2>Selected Works</h2>
+
+        {% for post in site.categories['portfolio'] %}
+            <div class="portfolio-item">
+                <h3>
+                    {{post.title}}
+                    <span class="post-links">
+                        {% if post.github %}<a href="{{post.github}}"><i class="icon-code"></i></a>{% endif %}
+                        {% if post.site_url %}<a href="{{post.site_url}}"><i class="icon-globe"></i></a>{% endif %}
+                    </span> 
+                    <span class="post-type">{{post.type}}</span>
+                </h3>
+
+                <img src="{{post.featured_img}}" />
+
+            </div>
+        {% endfor %}
+
+        <a href="#">More of my work &raquo;</a>
+    </div>
+</section>

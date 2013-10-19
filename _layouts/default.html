@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="/stylesheets/app.css">
-        <link rel="stylesheet" href="/stylesheets/font-awesome.css">
+        <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
         <link rel="stylesheet" href="/stylesheets/font-awesome-social.css">
 
         <script type="text/javascript" src="//use.typekit.net/pft1bmg.js"></script>
@@ -15,49 +15,14 @@
     </head>
     <body>
 	    {% include header.html %}
-	    {% include intro.html %}
-	    {% include hire-me.html %}
+        {% include intro.html %}
+        {% include hire-me.html %}
+	    {% include portfolio.html %}
 
-<div class="colors">
-    <div class="one">$purple</div>
-    <div class="two">$purple</div>
-    <div class="three">$purple</div>
-    <div class="four">$purple</div>
-    <div class="five">$purple</div>
-    <div class="six">$purple</div>
-    <div class="seven">$purple</div>
-    <div class="eight">$purple</div>
-    <div class="nine">$purple</div>
-    <div class="ten">$purple</div>
-    <div class="eleven">$purple</div>
-    <div class="twelve">$purple</div>
-</div>
-
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+        <!-- 
+            {{ content }}
+            {% include styles.html %}
+        -->
 
     </body>
 </html>

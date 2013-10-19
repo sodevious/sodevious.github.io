@@ -1,4 +1,4 @@
 name: Nicole Dominguez
 markdown: redcarpet
 pygments: true
-permalink: /:year/:title
+permalink: /:title

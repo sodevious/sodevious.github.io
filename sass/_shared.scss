@@ -1,0 +1,9 @@
+i, cite, em, var, address, dfn { font-style: italic; }
+p { color: $offBlack; }
+
+.container { @include container; }
+
+section {
+  padding: $gutter*3 0;
+  border-bottom: 1px solid mix($plum, $vanilla, 25%);
+}

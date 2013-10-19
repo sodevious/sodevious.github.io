@@ -1,0 +1,20 @@
+.colors {
+  div {
+    height: 100px;
+    display: block;
+    margin-right: 10px;
+    @include span-columns(1, 12);
+  }
+  .one { background: $purple; }  
+  .two { background: lighten($plum, 5%); }  
+  .three { background: mix($offWhite, $purple, 80%); }  
+  .four { background: lighten($plum, 20%); }  
+  .five { background: lighten($plum, 10%); }  
+  .six { background: darken($vanilla, 10%); }  
+  .seven { background: mix($plum, $vanilla, 25%); }  
+  .eight { background: mix($offBlack, $plum, 40%); }
+  .nine { background: $slate; }
+  .ten { background: $teal; }  
+  .eleven { background: $haze; }
+  .twelve { background: $pink; }
+}

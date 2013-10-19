@@ -1,24 +1,14 @@
-/* By: Nicole Dominguez */
+/* By: Nicole Dominguez, @sodevious */
 
-// * { background-color: rgba(0,0,0,0.1);}
+* { background-color: rgba(0,0,0,0.1);}
+
+// layout (col, margin, padding, height, width)
+// font/text
+// decoration
+
 
 // Variables
-$offWhite: #e3e3e3;
-$offBlack: #1a1a1a;
-$purple: #2f2b3f;
-$teal: #79b7b0;
-$vanilla: #f7f6e4;
-$plum: #635063;
-$haze: #C1D2CF;
-$pink: #FA9887;
-
-$gutter: 25px;
-
-$sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
-$serif: 'Bitter', Copse, Cambria, Georgia, serif;
-
-$serif-font: "Adelle", Georgia, serif;
-$sans-font: "Effra", "Helvetica Neue", sans-serif;
+@import "variables";
 
 // Vendor
 @import "compass";
@@ -26,5 +16,6 @@ $sans-font: "Effra", "Helvetica Neue", sans-serif;
 @import "susy";
 
 // My stuff
+@import "shared";
 @import "site";
-@import "modular";
+@import "styles"; // remove for prod

@@ -1,12 +1,8 @@
 ---
 layout: post
-title:  "Portfolio"
+title:  "Welcome to Jekyll!"
 date:   2013-10-17 16:33:26
-categories: portfolio
-
-
-type: Responsive Front-End Templates
-site_url: http://eventmobi.com
+categories: jekyll update
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
