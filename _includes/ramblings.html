@@ -1,0 +1,35 @@
+<section role="portfolio">
+
+    <div class="container">
+    <h2>Ramblings</h2>
+        {% for post in site.categories['thoughts'] limit: 1 %}
+<article>
+                <h3>
+                    <a href="{{post.url}}">{{post.title}}</a>
+                  
+                </h3>
+
+                {{ post.content }}
+
+
+</article>
+
+        {% endfor %}
+
+<aside>
+
+read more about
+----
+
+see all the archives
+----
+
+read my personal blog
+---
+
+
+got something to say? tweet at me
+</aside>
+    </div>
+
+</section>

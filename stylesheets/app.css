@@ -98,6 +98,7 @@ a:hover {
   margin-right: auto;
   overflow: hidden;
   *zoom: 1;
+  overflow: visible;
 }
 /* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
@@ -108,7 +109,7 @@ a:hover {
 
 /* line 9, ../sass/_shared.scss */
 section {
-  padding: 75px 0;
+  padding: 70px 0;
   border-bottom: 1px solid #d2ccc3;
 }
 /* line 12, ../sass/_shared.scss */
@@ -241,7 +242,7 @@ section[role="hire-me"] ul li {
   margin-right: 1.69492%;
   display: inline;
   margin-bottom: 32.5px;
-  font-size: 1.6em;
+  font-size: 1.5em;
   line-height: 1em;
 }
 /* line 92, ../sass/_site.scss */
@@ -445,18 +446,23 @@ section[role="portfolio"] .post-type {
   word-spacing: 1px;
   color: #84847d;
 }
-/* line 232, ../sass/_site.scss */
+/* line 233, ../sass/_site.scss */
 section[role="portfolio"] > a {
-  color: red;
-  text-align: center;
-  margin-top: 37.5px;
   display: block;
+  margin-top: 37.5px;
+  font-family: "Effra", "Helvetica Neue", sans-serif;
+  font-size: 1.15em;
+  font-style: italic;
+  text-align: center;
+  color: #968a90;
 }
 /* line 241, ../sass/_site.scss */
-section[role="portfolio"] .container {
-  overflow: hidden;
-  *zoom: 1;
-  overflow: visible;
+section[role="portfolio"] > a:hover {
+  color: #635063;
+}
+/* line 242, ../sass/_site.scss */
+section[role="portfolio"] > a i {
+  margin-left: 5px;
 }
 
 /* line 2, ../sass/_styles.scss */

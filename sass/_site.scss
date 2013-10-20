@@ -87,7 +87,7 @@ section[role="hire-me"] {
     li {
       @include span-columns(6);
       margin-bottom: $gutter*1.3;
-      font-size: 1.6em;
+      font-size: 1.5em;
       line-height: 1em;
       &:nth-child(2n) { margin-right: 0; }
       &:nth-child(n+5) { margin-bottom: 0; }
@@ -229,15 +229,18 @@ section[role="portfolio"] {
     word-spacing: 1px;
     color: lighten($slate, 15%);
   }
+
 & > a {
-    color: red;
-    text-align: center;
-    margin-top: $gutter*1.5;
-    display: block;
+display: block;
+margin-top: $gutter*1.5;
+font-family: $sans-font;
+font-size: 1.15em;
+font-style: italic;
+text-align: center;
+color: mix($plum, $vanilla, 65%);
+&:hover { color: $plum; }
+i { margin-left: 5px; }
+}
 
-
-  }
-
-  .container { @include clearfix; overflow: visible; }
 }
 

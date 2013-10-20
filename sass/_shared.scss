@@ -4,10 +4,10 @@ p { color: $offBlack; }
 a { text-decoration: none; }
 a:hover { @include transition(all .15s ease-in); }
 
-.container { @include container; @include clearfix; }
+.container { @include container; @include clearfix; overflow: visible; }
 
 section {
-	padding: $gutter*3 0;
+	padding: $gutter*2.8 0;
 	border-bottom: 1px solid mix($plum, $vanilla, 25%);
 	h2 { font-family: $sans-font; }
 }
