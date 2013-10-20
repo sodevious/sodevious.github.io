@@ -1,9 +1,13 @@
 i, cite, em, var, address, dfn { font-style: italic; }
 p { color: $offBlack; }
 
-.container { @include container; }
+a { text-decoration: none; }
+a:hover { @include transition(all .15s ease-in); }
+
+.container { @include container; @include clearfix; }
 
 section {
-  padding: $gutter*3 0;
-  border-bottom: 1px solid mix($plum, $vanilla, 25%);
+	padding: $gutter*3 0;
+	border-bottom: 1px solid mix($plum, $vanilla, 25%);
+	h2 { font-family: $sans-font; }
 }

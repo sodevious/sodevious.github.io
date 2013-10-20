@@ -4,10 +4,12 @@ title:  "Wick Video"
 date:   2013-10-17 16:33:26
 categories: portfolio
 
-type: Responsive Front End Development
+type: Front End Development
 site_url: http://wickvideo.com
 featured_img: images/portfolio/wick-video-preview.jpg
-github: http://wickvideo.com
+github: https://github.com/sodevious/dev.wickvideo.com
 ---
 
 I hand coded this website from an Illustrator file given to me by the client. Per request to be able to easily make updates, we chose Statmatic (a flat file CMS) to power the site. I was responsible for the front-end development, responsive design, and performance.
+
+note about responsiveness

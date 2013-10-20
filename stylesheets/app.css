@@ -1,9 +1,4 @@
 /* By: Nicole Dominguez, @sodevious */
-/* line 3, ../sass/app.scss */
-* {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 /* line 17, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -80,6 +75,19 @@ p {
 }
 
 /* line 4, ../sass/_shared.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 5, ../sass/_shared.scss */
+a:hover {
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+/* line 7, ../sass/_shared.scss */
 .container {
   *zoom: 1;
   max-width: 59em;
@@ -88,6 +96,8 @@ p {
   padding-right: 1em;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+  *zoom: 1;
 }
 /* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
@@ -96,16 +106,20 @@ p {
   clear: both;
 }
 
-/* line 6, ../sass/_shared.scss */
+/* line 9, ../sass/_shared.scss */
 section {
   padding: 75px 0;
   border-bottom: 1px solid #d2ccc3;
+}
+/* line 12, ../sass/_shared.scss */
+section h2 {
+  font-family: "Effra", "Helvetica Neue", sans-serif;
 }
 
 /* line 2, ../sass/_site.scss */
 body {
   -webkit-text-size-adjust: 100%;
-  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #f7f6e4;
   color: #5d5d58;
 }
@@ -227,7 +241,7 @@ section[role="hire-me"] ul li {
   margin-right: 1.69492%;
   display: inline;
   margin-bottom: 32.5px;
-  font-size: 1.8em;
+  font-size: 1.6em;
   line-height: 1em;
 }
 /* line 92, ../sass/_site.scss */
@@ -263,7 +277,7 @@ section[role="hire-me"] ul span {
   width: 90%;
   display: block;
   overflow: hidden;
-  font-size: 0.50em;
+  font-size: 0.55em;
   font-family: "Adelle", Georgia, serif;
   text-shadow: 0px -1px 0px white;
   color: #58a59c;
@@ -334,49 +348,59 @@ section[role="hire-me"] aside a:hover {
   box-shadow: 0px 3px 0px #46405d;
   text-shadow: 0px -1px 0px #685f8b;
   background: #585076;
-  -webkit-transition: all 0.15s ease-in;
-  -moz-transition: all 0.15s ease-in;
-  -o-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
 }
 
-/* line 174, ../sass/_site.scss */
+/* line 172, ../sass/_site.scss */
 section[role="portfolio"] h2 {
-  margin-bottom: 50px;
+  margin-bottom: 62.5px;
   text-transform: uppercase;
-  font-family: "Effra", "Helvetica Neue", sans-serif;
   text-align: center;
   font-size: 2.1em;
 }
-/* line 181, ../sass/_site.scss */
+/* line 178, ../sass/_site.scss */
 section[role="portfolio"] .portfolio-item {
-  width: 48%;
+  width: 47.5%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 3%;
   display: inline;
 }
-/* line 189, ../sass/_site.scss */
+/* line 183, ../sass/_site.scss */
 section[role="portfolio"] .portfolio-item:nth-child(2n) {
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
-/* line 191, ../sass/_site.scss */
+/* line 185, ../sass/_site.scss */
 section[role="portfolio"] .portfolio-item h3 {
-  font-family: "Effra", "Helvetica Neue", sans-serif;
-  color: #635063;
   line-height: 1em;
   font-size: 1.3em;
+  font-family: "Effra", "Helvetica Neue", sans-serif;
+  color: #635063;
 }
-/* line 198, ../sass/_site.scss */
+/* line 190, ../sass/_site.scss */
 section[role="portfolio"] .portfolio-item h3 i {
+  top: 6px;
+  position: relative;
   font-size: 1.4em;
 }
-/* line 201, ../sass/_site.scss */
+/* line 195, ../sass/_site.scss */
 section[role="portfolio"] .portfolio-item h3 a {
+  color: #635063;
+}
+/* line 197, ../sass/_site.scss */
+section[role="portfolio"] .portfolio-item h3 a:hover {
+  color: #473947;
+}
+/* line 199, ../sass/_site.scss */
+section[role="portfolio"] .portfolio-item h3 a > i {
   margin-left: 6.25px;
   text-decoration: none;
+  color: #92c0ba;
+}
+/* line 203, ../sass/_site.scss */
+section[role="portfolio"] .portfolio-item h3 a > i:hover {
+  color: #58a59c;
 }
 /* line 205, ../sass/_site.scss */
 section[role="portfolio"] .portfolio-item h3 .post-links {
@@ -384,23 +408,49 @@ section[role="portfolio"] .portfolio-item h3 .post-links {
   display: inline-block;
 }
 /* line 210, ../sass/_site.scss */
-section[role="portfolio"] .portfolio-item .post-type {
-  margin: 0px;
+section[role="portfolio"] .portfolio-item img {
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.45) 0 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0 1px 2px;
+}
+/* line 214, ../sass/_site.scss */
+section[role="portfolio"] .portfolio-item img:hover {
+  position: relative;
+  top: 1px;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+/* line 221, ../sass/_site.scss */
+section[role="portfolio"] .portfolio-item i {
+  font-size: 16px;
+}
+/* line 223, ../sass/_site.scss */
+section[role="portfolio"] .post-type {
+  margin: 0 0 5px 0;
+  display: block;
   text-transform: uppercase;
   font-family: "Adelle", Georgia, serif;
   font-size: 0.6em;
+  word-spacing: 1px;
   color: #84847d;
-  word-spacing: 2px;
+}
+/* line 232, ../sass/_site.scss */
+section[role="portfolio"] > a {
+  color: red;
+  text-align: center;
+  margin-top: 37.5px;
   display: block;
-  margin-bottom: 5px;
-}
-/* line 222, ../sass/_site.scss */
-section[role="portfolio"] .portfolio-item img {
-  width: 100%;
-}
-/* line 224, ../sass/_site.scss */
-section[role="portfolio"] .portfolio-item i {
-  font-size: 16px;
 }
 
 /* line 2, ../sass/_styles.scss */
