@@ -1,14 +1,14 @@
 // Basics
 body {
 	-webkit-text-size-adjust: 100%;
-  font: 15px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px/21px $sans-font, "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: $vanilla;
 	color: $slate;
 }
 
 // Header
 header {
-  padding: 20px 0 15px 0;
+  padding: $gutter 0 $gutter/2+5 0;
   background: $purple;
   border-bottom: 4px solid lighten($plum, 5%);
   h1 {
@@ -70,9 +70,9 @@ section[role="intro"] {
   h2 {
     margin: $gutter/2 0;
     line-height: 1.25em;
-    text-align: center;
     font-size: 2em;
     font-family: $serif-font;
+    text-transform: none;
     color: mix($offBlack, $plum, 40%);
     em { color: $slate; }
   }
@@ -169,17 +169,8 @@ section[role="hire-me"] {
 }
 
 section[role="portfolio"] {
-  h2 {
-    margin-bottom: $gutter*2.5;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.1em;
-  }
   .portfolio-item {
-    width: 47.5%;
-    float: left;
-    margin-right: 3%;
-    display: inline;
+    @include mini-half-col;
     &:nth-child(2n) { @include omega; }
 
     h3 {
@@ -192,10 +183,8 @@ section[role="portfolio"] {
           position: relative;
           font-size: 1.4em;
         }
-      a {
-        color: $plum;
-        &:hover { color: darken($plum, 10%); }
-      }
+      a { color: $plum; }
+      a:hover { color: darken($plum, 10%); }
       a > i {
         margin-left: $gutter/4;
         text-decoration: none;
@@ -229,18 +218,125 @@ section[role="portfolio"] {
     word-spacing: 1px;
     color: lighten($slate, 15%);
   }
-
-& > a {
-display: block;
-margin-top: $gutter*1.5;
-font-family: $sans-font;
-font-size: 1.15em;
-font-style: italic;
-text-align: center;
-color: mix($plum, $vanilla, 65%);
-&:hover { color: $plum; }
-i { margin-left: 5px; }
+  & > a {
+    display: block;
+    margin-top: $gutter*1.5;
+    font-family: $sans-font;
+    font-size: 1.15em;
+    font-style: italic;
+    text-align: center;
+    color: mix($plum, $vanilla, 65%);
+    &:hover { color: $plum; }
+    i { margin-left: 5px; }
+  }
 }
 
+
+section[role="blog"] {
+  article, aside {
+    @include span-columns(10,12);
+    @include pre(1);
+  }
+  h3 {
+    margin-bottom: $gutter/2.5;
+    font-family: $sans-font;
+    font-weight: 700;
+    font-size: 1.6em;
+    word-spacing: 1px;
+    a { color: lighten($plum, 5%); }
+  }
+  p {
+    font-family: $serif-font;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: $slate;
+    a {
+      border-bottom: 1px dotted rgba(0,0,0,0.2);
+      &:hover { border: 0px; }
+    }
+  }
+  a {
+    color: darken($teal, 20%);
+    &:hover { color: darken($teal, 10%); }
+  }
+  .meta {
+    margin: $gutter/3 0 $gutter 0;
+    font-family: $sans-font;
+    font-size: 0.9em;
+    color: $plum;
+    a {
+      font-size: 1.2em;
+      font-weight: 100;
+      margin: 0;
+      padding-right: 5px;
+      color: lighten($plum, 20%);
+      line-height: 1px;
+      vertical-align: baseline;
+    }
+    i {
+      margin-left: 5px;
+      font-size: 0.8em;
+    }
+  }
+  aside {
+    a {
+      padding: 6px;
+      @include border-radius(3px);
+      font-size: 0.85em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.8);
+      color: lighten($plum, 15%);
+    }
+    li {
+      text-align: center;
+      @include span-columns(4,12);
+      &:last-child { @include omega; }
+    }
+  }
 }
 
+
+section[role="projects"] {
+  .side-project {
+    @include mini-half-col;
+    &:last-child { @include omega; }
+    h3 {
+      font-size: 1.3em;
+      margin-bottom: $gutter/3;
+      a {
+        font-size: 0.8em;
+        margin-left: $gutter/5;
+        color: mix($haze, $teal, 35%);
+        &:hover { color: darken($teal, 10%); }
+      }
+    }
+    p {
+      font-size: 1.05em;
+      font-family: $serif-font;
+      color: $slate;
+      line-height: 1.5em;
+    }
+  }
+}
+
+footer {
+  padding: $gutter/2 0 $gutter/2 0;
+  background: $purple;
+  font-family: $serif-font;
+  border-top: 4px solid lighten($plum, 5%);
+p {
+      color: lighten($plum, 10%);
+  font-size: 0.8em;
+
+        @include span-columns(6);
+    &:last-child { @include omega; text-align: right; }
+
+}
+
+a {
+  color: mix($plum, $haze);
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-left: $gutter/3;
+}
+}

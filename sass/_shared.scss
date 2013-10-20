@@ -9,5 +9,19 @@ a:hover { @include transition(all .15s ease-in); }
 section {
 	padding: $gutter*2.8 0;
 	border-bottom: 1px solid mix($plum, $vanilla, 25%);
-	h2 { font-family: $sans-font; }
+	h2 {
+		margin-bottom: $gutter*2.5;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2em;
+		font-family: $sans-font;
+	}
+}
+
+@mixin mini-half-col() {
+    width: 47.5%;
+    float: left;
+    margin-right: 3%;
+    display: inline;
+	
 }
