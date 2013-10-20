@@ -322,9 +322,10 @@ section[role="hire-me"] aside span {
 }
 /* line 145, ../sass/_site.scss */
 section[role="hire-me"] aside a {
+  border: 3px solid transparent;
   display: block;
   padding: 8.33333px;
-  font-size: 20px;
+  font-size: 1.2em;
   font-family: "Effra", "Helvetica Neue", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -334,7 +335,6 @@ section[role="hire-me"] aside a {
   box-shadow: 0px 3px 0px #58a59c;
   background: #79b7b0;
   color: #2f2b3f;
-  border: 3px solid transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -451,6 +451,12 @@ section[role="portfolio"] > a {
   text-align: center;
   margin-top: 37.5px;
   display: block;
+}
+/* line 241, ../sass/_site.scss */
+section[role="portfolio"] .container {
+  overflow: hidden;
+  *zoom: 1;
+  overflow: visible;
 }
 
 /* line 2, ../sass/_styles.scss */
