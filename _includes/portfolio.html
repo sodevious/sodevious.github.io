@@ -1,6 +1,5 @@
 <section role="portfolio">
-        <h2>Selected Works</h2>
-
+    <h2>Selected Works</h2>
     <div class="container">
         {% for post in site.categories['portfolio'] limit:2 %}
             <div class="portfolio-item">
@@ -12,12 +11,9 @@
                     </span> 
                     <span class="post-type">{{post.type}}</span>
                 </h3>
-
                 <a href="{{post.url}}"><img src="{{post.featured_img}}" /></a>
-
             </div>
         {% endfor %}
     </div>
-
-        <a href="#">More of my work <i class="icon-long-arrow-right"></i></a>
+    <a href="#">More of my work <i class="icon-long-arrow-right"></i></a>
 </section>

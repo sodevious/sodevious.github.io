@@ -6,7 +6,6 @@ body {
 	color: $slate;
 }
 
-// Header
 header {
   padding: $gutter 0 $gutter/2+5 0;
   background: $purple;
@@ -87,7 +86,7 @@ section[role="hire-me"] {
     li {
       @include span-columns(6);
       margin-bottom: $gutter*1.3;
-      font-size: 1.5em;
+      font-size: 1.6em;
       line-height: 1em;
       &:nth-child(2n) { margin-right: 0; }
       &:nth-child(n+5) { margin-bottom: 0; }
@@ -172,7 +171,7 @@ section[role="portfolio"] {
   .portfolio-item {
     @include mini-half-col;
     &:nth-child(2n) { @include omega; }
-
+    i { font-size: 16px; }
     h3 {
       line-height: 1em;
       font-size: 1.3em;
@@ -203,11 +202,10 @@ section[role="portfolio"] {
       &:hover {
         position: relative;
         top: 1px;
-        @include transition(all .4s ease-in);
+        @include transition(all .3s ease-in);
         @include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
       }
     }
-    i { font-size: 16px; }
   }
   .post-type {
     margin: 0 0 5px 0;
@@ -230,7 +228,6 @@ section[role="portfolio"] {
     i { margin-left: 5px; }
   }
 }
-
 
 section[role="blog"] {
   article, aside {
@@ -295,7 +292,6 @@ section[role="blog"] {
   }
 }
 
-
 section[role="projects"] {
   .side-project {
     @include mini-half-col;
@@ -321,22 +317,20 @@ section[role="projects"] {
 
 footer {
   padding: $gutter/2 0 $gutter/2 0;
-  background: $purple;
   font-family: $serif-font;
   border-top: 4px solid lighten($plum, 5%);
-p {
-      color: lighten($plum, 10%);
-  font-size: 0.8em;
-
-        @include span-columns(6);
+  background: $purple;
+  p {
+    font-size: 0.8em;
+    color: lighten($plum, 10%);
+    @include span-columns(6);
     &:last-child { @include omega; text-align: right; }
-
-}
-
-a {
-  color: mix($plum, $haze);
-  text-transform: uppercase;
-  font-size: 0.9em;
-  margin-left: $gutter/3;
-}
+  }
+  a {
+    margin-left: $gutter/3;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: mix($plum, $haze);
+    &:hover { color: mix($plum, $haze, 20%); }
+  }
 }
