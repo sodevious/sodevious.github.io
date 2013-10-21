@@ -247,7 +247,9 @@ section[role="blog"] {
     font-family: $serif-font;
     font-size: 1.1em;
     line-height: 1.6em;
+    margin: $gutter/2 0;
     color: $slate;
+    &:last-child { margin: 0; }
     img {
       width: 100%;
       margin: $gutter/1.1 0 $gutter/1.9 0;
@@ -282,14 +284,21 @@ section[role="blog"] {
       font-size: 0.8em;
     }
   }
+  .single {
+    margin-bottom: $gutter;
+    h3 {
+      font-size: 1.8em;
+      line-height: 1em;
+    }
+  }
   aside {
     a {
       padding: 6px;
-      @include border-radius(3px);
       font-size: 0.85em;
       text-transform: uppercase;
       background: rgba(255,255,255,0.8);
       color: lighten($plum, 15%);
+      @include border-radius(3px);
     }
     li {
       text-align: center;

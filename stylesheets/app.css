@@ -488,9 +488,14 @@ section[role="blog"] p {
   font-family: "Adelle", Georgia, serif;
   font-size: 1.1em;
   line-height: 1.6em;
+  margin: 12.5px 0;
   color: #5d5d58;
 }
-/* line 251, ../sass/_site.scss */
+/* line 252, ../sass/_site.scss */
+section[role="blog"] p:last-child {
+  margin: 0;
+}
+/* line 253, ../sass/_site.scss */
 section[role="blog"] p img {
   width: 100%;
   margin: 22.72727px 0 13.15789px 0;
@@ -503,30 +508,30 @@ section[role="blog"] p img {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 257, ../sass/_site.scss */
+/* line 259, ../sass/_site.scss */
 section[role="blog"] p a {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
 }
-/* line 259, ../sass/_site.scss */
+/* line 261, ../sass/_site.scss */
 section[role="blog"] p a:hover {
   border: 0px;
 }
-/* line 262, ../sass/_site.scss */
+/* line 264, ../sass/_site.scss */
 section[role="blog"] a {
   color: #47837d;
 }
-/* line 264, ../sass/_site.scss */
+/* line 266, ../sass/_site.scss */
 section[role="blog"] a:hover {
   color: #58a59c;
 }
-/* line 266, ../sass/_site.scss */
+/* line 268, ../sass/_site.scss */
 section[role="blog"] .meta {
   margin: 8.33333px 0 25px 0;
   font-family: "Effra", "Helvetica Neue", sans-serif;
   font-size: 0.9em;
   color: #635063;
 }
-/* line 271, ../sass/_site.scss */
+/* line 273, ../sass/_site.scss */
 section[role="blog"] .meta a {
   font-size: 1.2em;
   font-weight: 100;
@@ -536,25 +541,34 @@ section[role="blog"] .meta a {
   line-height: 1px;
   vertical-align: baseline;
 }
-/* line 280, ../sass/_site.scss */
+/* line 282, ../sass/_site.scss */
 section[role="blog"] .meta i {
   margin-left: 5px;
   font-size: 0.8em;
 }
-/* line 286, ../sass/_site.scss */
+/* line 287, ../sass/_site.scss */
+section[role="blog"] .single {
+  margin-bottom: 25px;
+}
+/* line 289, ../sass/_site.scss */
+section[role="blog"] .single h3 {
+  font-size: 1.8em;
+  line-height: 1em;
+}
+/* line 295, ../sass/_site.scss */
 section[role="blog"] aside a {
   padding: 6px;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.8);
+  color: #8d728d;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  font-size: 0.85em;
-  text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.8);
-  color: #8d728d;
 }
-/* line 294, ../sass/_site.scss */
+/* line 303, ../sass/_site.scss */
 section[role="blog"] aside li {
   text-align: center;
   width: 32.20339%;
@@ -562,7 +576,7 @@ section[role="blog"] aside li {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 297, ../sass/_site.scss */
+/* line 306, ../sass/_site.scss */
 section[role="blog"] aside li:last-child {
   float: right;
   margin-right: 0;
@@ -570,36 +584,36 @@ section[role="blog"] aside li:last-child {
   display: inline;
 }
 
-/* line 303, ../sass/_site.scss */
+/* line 312, ../sass/_site.scss */
 section[role="projects"] .side-project {
   width: 47.5%;
   float: left;
   margin-right: 3%;
   display: inline;
 }
-/* line 305, ../sass/_site.scss */
+/* line 314, ../sass/_site.scss */
 section[role="projects"] .side-project:last-child {
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
-/* line 306, ../sass/_site.scss */
+/* line 315, ../sass/_site.scss */
 section[role="projects"] .side-project h3 {
   font-size: 1.3em;
   margin-bottom: 8.33333px;
 }
-/* line 309, ../sass/_site.scss */
+/* line 318, ../sass/_site.scss */
 section[role="projects"] .side-project h3 a {
   font-size: 0.8em;
   margin-left: 5px;
   color: #92c0ba;
 }
-/* line 313, ../sass/_site.scss */
+/* line 322, ../sass/_site.scss */
 section[role="projects"] .side-project h3 a:hover {
   color: #58a59c;
 }
-/* line 316, ../sass/_site.scss */
+/* line 325, ../sass/_site.scss */
 section[role="projects"] .side-project p {
   font-size: 1.05em;
   font-family: "Adelle", Georgia, serif;
@@ -607,14 +621,14 @@ section[role="projects"] .side-project p {
   line-height: 1.5em;
 }
 
-/* line 325, ../sass/_site.scss */
+/* line 334, ../sass/_site.scss */
 footer {
   padding: 12.5px 0 12.5px 0;
   font-family: "Adelle", Georgia, serif;
   border-top: 4px solid #715b71;
   background: #2f2b3f;
 }
-/* line 330, ../sass/_site.scss */
+/* line 339, ../sass/_site.scss */
 footer p {
   font-size: 0.8em;
   color: #7f677f;
@@ -623,7 +637,7 @@ footer p {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 334, ../sass/_site.scss */
+/* line 343, ../sass/_site.scss */
 footer p:last-child {
   float: right;
   margin-right: 0;
@@ -631,14 +645,14 @@ footer p:last-child {
   display: inline;
   text-align: right;
 }
-/* line 336, ../sass/_site.scss */
+/* line 345, ../sass/_site.scss */
 footer a {
   margin-left: 8.33333px;
   text-transform: uppercase;
   font-size: 0.9em;
   color: #929199;
 }
-/* line 341, ../sass/_site.scss */
+/* line 350, ../sass/_site.scss */
 footer a:hover {
   color: #aeb8b9;
 }
