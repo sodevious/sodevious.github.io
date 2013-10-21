@@ -64,22 +64,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 1, ../sass/_shared.scss */
+/* line 2, ../sass/_shared.scss */
 i, cite, em, var, address, dfn {
   font-style: italic;
 }
 
-/* line 2, ../sass/_shared.scss */
+/* line 3, ../sass/_shared.scss */
+strong, b {
+  font-weight: 700;
+}
+
+/* line 4, ../sass/_shared.scss */
 p {
   color: #222222;
 }
 
-/* line 4, ../sass/_shared.scss */
+/* line 7, ../sass/_shared.scss */
 a {
   text-decoration: none;
 }
 
-/* line 5, ../sass/_shared.scss */
+/* line 8, ../sass/_shared.scss */
 a:hover {
   -webkit-transition: all 0.15s ease-in;
   -moz-transition: all 0.15s ease-in;
@@ -87,7 +92,7 @@ a:hover {
   transition: all 0.15s ease-in;
 }
 
-/* line 7, ../sass/_shared.scss */
+/* line 11, ../sass/_shared.scss */
 .container {
   *zoom: 1;
   max-width: 59em;
@@ -107,18 +112,43 @@ a:hover {
   clear: both;
 }
 
-/* line 9, ../sass/_shared.scss */
+/* line 20, ../sass/_shared.scss */
 section {
   padding: 70px 0;
   border-bottom: 1px solid #d2ccc3;
 }
-/* line 12, ../sass/_shared.scss */
+/* line 23, ../sass/_shared.scss */
 section h2 {
   margin-bottom: 62.5px;
   text-transform: uppercase;
   text-align: center;
   font-size: 2em;
   font-family: "Effra", "Helvetica Neue", sans-serif;
+}
+
+/* line 32, ../sass/_shared.scss */
+hr {
+  background: #c7d6d4;
+  width: 100%;
+  height: 1px;
+  border: 1px;
+  margin: 32.5px 0;
+}
+
+/* line 40, ../sass/_shared.scss */
+blockquote {
+  margin: 25px 0;
+  width: 95%;
+  margin-left: 2.5%;
+  padding: 12.5px;
+  font-size: 1em;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* line 2, ../sass/_site.scss */
@@ -488,7 +518,7 @@ section[role="blog"] p {
   font-family: "Adelle", Georgia, serif;
   font-size: 1.1em;
   line-height: 1.6em;
-  margin: 12.5px 0;
+  margin: 16.66667px 0;
   color: #5d5d58;
 }
 /* line 252, ../sass/_site.scss */
@@ -498,7 +528,7 @@ section[role="blog"] p:last-child {
 /* line 253, ../sass/_site.scss */
 section[role="blog"] p img {
   width: 100%;
-  margin: 22.72727px 0 13.15789px 0;
+  margin: 12.5px 0 8.33333px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
@@ -584,36 +614,36 @@ section[role="blog"] aside li:last-child {
   display: inline;
 }
 
-/* line 312, ../sass/_site.scss */
+/* line 313, ../sass/_site.scss */
 section[role="projects"] .side-project {
   width: 47.5%;
   float: left;
   margin-right: 3%;
   display: inline;
 }
-/* line 314, ../sass/_site.scss */
+/* line 315, ../sass/_site.scss */
 section[role="projects"] .side-project:last-child {
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
-/* line 315, ../sass/_site.scss */
+/* line 316, ../sass/_site.scss */
 section[role="projects"] .side-project h3 {
   font-size: 1.3em;
   margin-bottom: 8.33333px;
 }
-/* line 318, ../sass/_site.scss */
+/* line 319, ../sass/_site.scss */
 section[role="projects"] .side-project h3 a {
   font-size: 0.8em;
   margin-left: 5px;
   color: #92c0ba;
 }
-/* line 322, ../sass/_site.scss */
+/* line 323, ../sass/_site.scss */
 section[role="projects"] .side-project h3 a:hover {
   color: #58a59c;
 }
-/* line 325, ../sass/_site.scss */
+/* line 326, ../sass/_site.scss */
 section[role="projects"] .side-project p {
   font-size: 1.05em;
   font-family: "Adelle", Georgia, serif;
@@ -621,14 +651,14 @@ section[role="projects"] .side-project p {
   line-height: 1.5em;
 }
 
-/* line 334, ../sass/_site.scss */
+/* line 335, ../sass/_site.scss */
 footer {
   padding: 12.5px 0 12.5px 0;
   font-family: "Adelle", Georgia, serif;
   border-top: 4px solid #715b71;
   background: #2f2b3f;
 }
-/* line 339, ../sass/_site.scss */
+/* line 340, ../sass/_site.scss */
 footer p {
   font-size: 0.8em;
   color: #7f677f;
@@ -637,7 +667,7 @@ footer p {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 343, ../sass/_site.scss */
+/* line 344, ../sass/_site.scss */
 footer p:last-child {
   float: right;
   margin-right: 0;
@@ -645,14 +675,14 @@ footer p:last-child {
   display: inline;
   text-align: right;
 }
-/* line 345, ../sass/_site.scss */
+/* line 346, ../sass/_site.scss */
 footer a {
   margin-left: 8.33333px;
   text-transform: uppercase;
   font-size: 0.9em;
   color: #929199;
 }
-/* line 350, ../sass/_site.scss */
+/* line 351, ../sass/_site.scss */
 footer a:hover {
   color: #aeb8b9;
 }

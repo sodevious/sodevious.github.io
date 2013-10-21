@@ -59,6 +59,6 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 0.13.alpha.7)
   compass-rails (>= 1.0.3)
-  jekyll (~> 1.2.1)
+  jekyll
   sass (~> 3.3.0.rc.1)
-  susy
+  susy (~> 1.0.9)

@@ -247,12 +247,12 @@ section[role="blog"] {
     font-family: $serif-font;
     font-size: 1.1em;
     line-height: 1.6em;
-    margin: $gutter/2 0;
+    margin: $gutter/1.5 0;
     color: $slate;
     &:last-child { margin: 0; }
     img {
       width: 100%;
-      margin: $gutter/1.1 0 $gutter/1.9 0;
+      margin: $gutter/2 0 $gutter/3 0;
       @include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
       @include border-radius(5px);
     }
@@ -306,6 +306,7 @@ section[role="blog"] {
       &:last-child { @include omega; }
     }
   }
+
 }
 
 section[role="projects"] {

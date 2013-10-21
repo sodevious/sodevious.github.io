@@ -1,11 +1,22 @@
+// Typography
 i, cite, em, var, address, dfn { font-style: italic; }
+strong, b { font-weight: 700; }
 p { color: $offBlack; }
 
+// Links
 a { text-decoration: none; }
 a:hover { @include transition(all .15s ease-in); }
 
+// Layouts
 .container { @include container; @include clearfix; overflow: visible; }
+@mixin mini-half-col() {
+  width: 47.5%;
+  float: left;
+  margin-right: 3%;
+  display: inline;
+}
 
+// Modular Stylres
 section {
 	padding: $gutter*2.8 0;
 	border-bottom: 1px solid mix($plum, $vanilla, 25%);
@@ -18,9 +29,21 @@ section {
 	}
 }
 
-@mixin mini-half-col() {
-  width: 47.5%;
-  float: left;
-  margin-right: 3%;
-  display: inline;
+hr {
+  background: lighten($haze, 2%);
+  width: 100%;
+  height: 1px;
+  border: 1px;
+  margin: $gutter*1.3 0;
+}
+
+blockquote {
+	margin: $gutter 0;
+	width: 95%;
+	margin-left: 2.5%;
+	padding: $gutter/2;
+	font-size: 1em;
+	font-style: italic;
+	background: rgba(255,255,255,0.7);
+	@include border-radius(5px);
 }
