@@ -231,10 +231,12 @@ section[role="portfolio"] {
 }
 
 section[role="blog"] {
+
   article, aside {
     @include span-columns(10,12);
     @include pre(1);
   }
+
   h3 {
     margin-bottom: $gutter/2.5;
     font-family: $sans-font;
@@ -289,6 +291,14 @@ section[role="blog"] {
     h3 {
       font-size: 1.8em;
       line-height: 1em;
+    }
+    ul {
+      margin-left: $gutter;
+      li {
+        margin: $gutter/3 0;
+        list-style-type: disc;
+        font-size: 0.9em;
+      }
     }
   }
   aside {

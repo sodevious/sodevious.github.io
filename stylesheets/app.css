@@ -493,7 +493,7 @@ section[role="portfolio"] > a i {
   margin-left: 5px;
 }
 
-/* line 234, ../sass/_site.scss */
+/* line 235, ../sass/_site.scss */
 section[role="blog"] article, section[role="blog"] aside {
   width: 83.05085%;
   float: left;
@@ -501,7 +501,7 @@ section[role="blog"] article, section[role="blog"] aside {
   display: inline;
   margin-left: 8.47458%;
 }
-/* line 238, ../sass/_site.scss */
+/* line 240, ../sass/_site.scss */
 section[role="blog"] h3 {
   margin-bottom: 10px;
   font-family: "Effra", "Helvetica Neue", sans-serif;
@@ -509,11 +509,11 @@ section[role="blog"] h3 {
   font-size: 1.6em;
   word-spacing: 1px;
 }
-/* line 244, ../sass/_site.scss */
+/* line 246, ../sass/_site.scss */
 section[role="blog"] h3 a {
   color: #715b71;
 }
-/* line 246, ../sass/_site.scss */
+/* line 248, ../sass/_site.scss */
 section[role="blog"] p {
   font-family: "Adelle", Georgia, serif;
   font-size: 1.1em;
@@ -521,11 +521,11 @@ section[role="blog"] p {
   margin: 16.66667px 0;
   color: #5d5d58;
 }
-/* line 252, ../sass/_site.scss */
+/* line 254, ../sass/_site.scss */
 section[role="blog"] p:last-child {
   margin: 0;
 }
-/* line 253, ../sass/_site.scss */
+/* line 255, ../sass/_site.scss */
 section[role="blog"] p img {
   width: 100%;
   margin: 12.5px 0 8.33333px 0;
@@ -538,30 +538,30 @@ section[role="blog"] p img {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 259, ../sass/_site.scss */
+/* line 261, ../sass/_site.scss */
 section[role="blog"] p a {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
 }
-/* line 261, ../sass/_site.scss */
+/* line 263, ../sass/_site.scss */
 section[role="blog"] p a:hover {
   border: 0px;
 }
-/* line 264, ../sass/_site.scss */
+/* line 266, ../sass/_site.scss */
 section[role="blog"] a {
   color: #47837d;
 }
-/* line 266, ../sass/_site.scss */
+/* line 268, ../sass/_site.scss */
 section[role="blog"] a:hover {
   color: #58a59c;
 }
-/* line 268, ../sass/_site.scss */
+/* line 270, ../sass/_site.scss */
 section[role="blog"] .meta {
   margin: 8.33333px 0 25px 0;
   font-family: "Effra", "Helvetica Neue", sans-serif;
   font-size: 0.9em;
   color: #635063;
 }
-/* line 273, ../sass/_site.scss */
+/* line 275, ../sass/_site.scss */
 section[role="blog"] .meta a {
   font-size: 1.2em;
   font-weight: 100;
@@ -571,21 +571,31 @@ section[role="blog"] .meta a {
   line-height: 1px;
   vertical-align: baseline;
 }
-/* line 282, ../sass/_site.scss */
+/* line 284, ../sass/_site.scss */
 section[role="blog"] .meta i {
   margin-left: 5px;
   font-size: 0.8em;
 }
-/* line 287, ../sass/_site.scss */
+/* line 289, ../sass/_site.scss */
 section[role="blog"] .single {
   margin-bottom: 25px;
 }
-/* line 289, ../sass/_site.scss */
+/* line 291, ../sass/_site.scss */
 section[role="blog"] .single h3 {
   font-size: 1.8em;
   line-height: 1em;
 }
 /* line 295, ../sass/_site.scss */
+section[role="blog"] .single ul {
+  margin-left: 25px;
+}
+/* line 297, ../sass/_site.scss */
+section[role="blog"] .single ul li {
+  margin: 8.33333px 0;
+  list-style-type: disc;
+  font-size: 0.9em;
+}
+/* line 305, ../sass/_site.scss */
 section[role="blog"] aside a {
   padding: 6px;
   font-size: 0.85em;
@@ -598,7 +608,7 @@ section[role="blog"] aside a {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 303, ../sass/_site.scss */
+/* line 313, ../sass/_site.scss */
 section[role="blog"] aside li {
   text-align: center;
   width: 32.20339%;
@@ -606,7 +616,7 @@ section[role="blog"] aside li {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 306, ../sass/_site.scss */
+/* line 316, ../sass/_site.scss */
 section[role="blog"] aside li:last-child {
   float: right;
   margin-right: 0;
@@ -614,36 +624,36 @@ section[role="blog"] aside li:last-child {
   display: inline;
 }
 
-/* line 313, ../sass/_site.scss */
+/* line 323, ../sass/_site.scss */
 section[role="projects"] .side-project {
   width: 47.5%;
   float: left;
   margin-right: 3%;
   display: inline;
 }
-/* line 315, ../sass/_site.scss */
+/* line 325, ../sass/_site.scss */
 section[role="projects"] .side-project:last-child {
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
-/* line 316, ../sass/_site.scss */
+/* line 326, ../sass/_site.scss */
 section[role="projects"] .side-project h3 {
   font-size: 1.3em;
   margin-bottom: 8.33333px;
 }
-/* line 319, ../sass/_site.scss */
+/* line 329, ../sass/_site.scss */
 section[role="projects"] .side-project h3 a {
   font-size: 0.8em;
   margin-left: 5px;
   color: #92c0ba;
 }
-/* line 323, ../sass/_site.scss */
+/* line 333, ../sass/_site.scss */
 section[role="projects"] .side-project h3 a:hover {
   color: #58a59c;
 }
-/* line 326, ../sass/_site.scss */
+/* line 336, ../sass/_site.scss */
 section[role="projects"] .side-project p {
   font-size: 1.05em;
   font-family: "Adelle", Georgia, serif;
@@ -651,14 +661,14 @@ section[role="projects"] .side-project p {
   line-height: 1.5em;
 }
 
-/* line 335, ../sass/_site.scss */
+/* line 345, ../sass/_site.scss */
 footer {
   padding: 12.5px 0 12.5px 0;
   font-family: "Adelle", Georgia, serif;
   border-top: 4px solid #715b71;
   background: #2f2b3f;
 }
-/* line 340, ../sass/_site.scss */
+/* line 350, ../sass/_site.scss */
 footer p {
   font-size: 0.8em;
   color: #7f677f;
@@ -667,7 +677,7 @@ footer p {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 344, ../sass/_site.scss */
+/* line 354, ../sass/_site.scss */
 footer p:last-child {
   float: right;
   margin-right: 0;
@@ -675,14 +685,14 @@ footer p:last-child {
   display: inline;
   text-align: right;
 }
-/* line 346, ../sass/_site.scss */
+/* line 356, ../sass/_site.scss */
 footer a {
   margin-left: 8.33333px;
   text-transform: uppercase;
   font-size: 0.9em;
   color: #929199;
 }
-/* line 351, ../sass/_site.scss */
+/* line 361, ../sass/_site.scss */
 footer a:hover {
   color: #aeb8b9;
 }
