@@ -2,3 +2,5 @@ name: Nicole Dominguez
 markdown: redcarpet
 pygments: true
 permalink: /:categories/:title
+timezone: America/New_York
+exclude: ['Rakefile', 'config.rb', 'README.md','gems']
