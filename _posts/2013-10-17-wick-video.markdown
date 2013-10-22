@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: portfolio
 title:  "Wick Video"
 date:   2013-10-17 16:33:26
 categories: portfolio
 
 type: Front End Development
 site_url: http://wickvideo.com
-featured_img: images/portfolio/wick-video-preview.jpg
+featured_img: /images/portfolio/wick-video-preview.jpg
 github: https://github.com/sodevious/dev.wickvideo.com
 ---
 

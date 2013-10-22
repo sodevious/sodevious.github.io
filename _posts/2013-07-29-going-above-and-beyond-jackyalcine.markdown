@@ -3,6 +3,7 @@ layout: post
 title:  "A Response to: Going Above and Beyond by @jackyalcine"
 date:   2013-07-29 19:11:02
 categories: thoughts
+tag: the interwebz
 ---
 
 [Jacky](http://jalcine.me/) is a friend of mine, and fellow young person here in NYC. I think we're similar in a lot of ways, and if you look at our skillset, it seems that one of us picks up exactly where the other left off.

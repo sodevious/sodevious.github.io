@@ -3,6 +3,7 @@ layout: post
 title: "On Design & Execution"
 date:   2013-09-03
 categories: thoughts
+tag: design
 ---
 
 Recently, I have realized that my responsibilities as a designer are to deliver the best product possible, while making decisions that are driven by data and feedback, rather than opinions. Who are you really if you accept "feedback" as an order? At that point are you still a "designer"?

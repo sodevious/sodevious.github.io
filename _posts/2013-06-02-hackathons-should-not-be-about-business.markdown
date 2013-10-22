@@ -3,6 +3,7 @@ layout: post
 title:  "Hackathons Should Not Be About Business"
 date:   2013-06-02 19:11:02
 categories: thoughts
+tag: hackathons
 ---
 
 I’m a bit of a hackathon enthusiast. (sometimes it’s my answer to ‘what do you like to do for fun’! ) Over the past nine or so months that I’ve been hacking, I feel like there’s a shift in what it means to have a hackathon. I’m currently participating in AngelHack 2013, and there are more business people here than designers! I think those tickets sold out first.

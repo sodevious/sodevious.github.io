@@ -3,6 +3,7 @@ layout: post
 title:  "How This Blog Works: Jekyll + GitHub Pages + Custom Domain"
 date:   2013-07-19 19:11:02
 categories: thoughts
+tag: development
 ---
 
 I recently moved from a Tumblr blog + custom domain to using GitHub Pages to host and serve my Jekyll powered blog with a custom domain. It's pretty cool actually, cause all the code is open source and works great with a regular GitHub workflow. Did I mention it's free and deserves some nerd cred?

@@ -3,6 +3,7 @@ layout: post
 title:  "Why I Care About What I Do"
 date:   2013-05-21 19:11:02
 categories: thoughts
+tag: design
 ---
 
 I’m sitting in some god forsaken little town in Massachusetts staring outside a window looking onto the foliage and forest beyond the glass. My eyes are drooping, as I’m running on low sleep. Javascript problems had been defeated and squashed the night before.

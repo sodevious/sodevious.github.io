@@ -1,0 +1,21 @@
+---
+layout: page
+title: Archives
+---
+
+<section role="blog">
+    <div class="container">
+        <h2>Archives</h2>
+
+        {% for post in site.categories['thoughts'] %}
+        <article class="single">
+            <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
+            <div class="meta">
+                Published on {{ post.date | date: "%B %e, %Y"  }} and it's probably about {{ post.tags }}.
+            </div>
+        </article>
+        {% endfor %}
+
+        <a class="back" href="/"><span>&#8592;</span>&nbsp;Back to all the things!</a>
+    </div>
+</section>

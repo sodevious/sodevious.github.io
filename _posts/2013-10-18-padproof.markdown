@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio
 title:  "Padproof"
 date:   2013-10-18 16:33:26
 categories: portfolio

@@ -7,21 +7,22 @@ title: Thoughts
     <div class="container">
         <h2>Thoughts</h2>
 
-        {% for post in site.categories['thoughts'] limit:5 %}
+        {% for post in site.categories['thoughts'] limit:6 %}
         <article class="single">
-            <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+            <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
             {{ post.content }}
             <div class="meta">
                 Nicole published this on {{ post.date | date: "%B %e, %Y"  }} and it's probably about {{ post.tags }}.
             </div>
         </article>
-        {% endfor %}
+        {% endfor %} 
+
 
         <aside>
             <ul>
-                <li><a href="thoughts">See the archive <i class="icon-long-arrow-right"></i></a></li>
+                <li><a href="/archives">See the rest</a></li>
                 <li><a href="http://sodevious.me">Peek at my personal blog</a></li>
-                <li><a href="http://twitter.com/sodevious">Interact with me on Twitter</a></li>
+                <li><a href="http://twitter.com/sodevious">let's tweet</a></li>
             </ul>
         </aside>
     </div>

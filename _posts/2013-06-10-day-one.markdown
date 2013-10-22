@@ -3,6 +3,7 @@ layout: post
 title:  "Day One"
 date:   2013-06-10 19:11:02
 categories: thoughts
+tag: design
 ---
 
 This is day one of my freelance journey. I left my job this past Friday, and I’ve never been filled with so much passion and energy before.

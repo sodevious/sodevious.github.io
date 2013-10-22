@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>	
+{% include header.html %}
+<section role="portfolio">
+	<div class="container">
+		
+
+
+  <div class="portfolio-item">
+                <h3>
+                    <a href="{{page.url}}">{{page.title}}</a>
+                    <span class="page-links">
+                        {% if page.github %}<a href="{{page.github}}"><i class="icon-code"></i></a>{% endif %}
+                        {% if page.site_url %}<a href="{{page.site_url}}"><i class="icon-globe"></i></a>{% endif %}
+                    </span> 
+                    <span class="page-type">{{page.type}}</span>
+                </h3>
+
+
+                {{content}}
+            </div>
+
+
+			<div class="portfolio-images">
+				<img src="{{page.featured_img}}" />
+			</div>
+
+
+	<a class="back" href="/archives/"><span>&#8592;</span>&nbsp;Back to all the things!</a>
+	</div>
+</section>
+{% include footer.html %}
+</body>
+</html>

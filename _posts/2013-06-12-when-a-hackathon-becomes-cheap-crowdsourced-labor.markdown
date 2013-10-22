@@ -3,6 +3,7 @@ layout: post
 title:  "When A Hackathon Becomes Cheap, Crowdsourced Labor"
 date:   2013-06-12 19:11:02
 categories: thoughts
+tag: hackathons
 ---
 
 About nine months ago, I attended my first hackathon and it was amazing. I met awesome designers and developers, and got to be [part of a little movement to use tech for good](http://hacknjill.com/blog/hacksgiving-rules-and-judging-criteria/) in the wake of hurricane Sandy. Sponsor prizes seemed to actually mean something, and it [wasn’t a competition](http://sodevious.me/post/51986098138/hackathons-should-not-be-about-business). I wish that hackathons still had the same kind of spirit.

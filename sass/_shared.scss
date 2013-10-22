@@ -3,6 +3,16 @@ i, cite, em, var, address, dfn { font-style: italic; }
 strong, b { font-weight: 700; }
 p { color: $offBlack; }
 
+pre code {
+	width: 95%;
+	display: block;
+	padding: $gutter/2;
+	margin: $gutter 0;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	white-space: pre;
+	background: rgba(255,255,255,0.7);
+}
+
 // Links
 a { text-decoration: none; }
 a:hover { @include transition(all .15s ease-in); }
@@ -47,3 +57,5 @@ blockquote {
 	background: rgba(255,255,255,0.7);
 	@include border-radius(5px);
 }
+
+.back { clear: both; display: block; }

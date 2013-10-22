@@ -3,6 +3,7 @@ layout: post
 title:  "If you have a startup idea..."
 date:   2013-06-04 19:11:02
 categories: thoughts
+tag: startups
 ---
 
 Don’t think that you have to try to get VC / Angel funding just because you’re trying to get a startup off the ground. The point of a startup is that it’s a business right? So why not build a business that makes it’s own money rather than borrowing someone else’s?
