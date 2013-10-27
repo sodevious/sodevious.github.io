@@ -16,7 +16,7 @@ header {
     margin: 0;
     padding: 0;
     font-family: $sans-font;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 2.5em;
     line-height: 0.80em;
     text-transform: uppercase;
@@ -32,6 +32,7 @@ header {
     margin-top: 8px;
     font-family: $serif-font;
     font-size: 0.4em;
+    font-weight: 100;
     line-height: 1em;
     text-transform: lowercase;
     text-shadow: 0px 1px 0px darken($purple, 10%);
@@ -172,81 +173,7 @@ section[role="hire-me"] {
   }
 }
 
-section[role="portfolio"] {
-  .portfolio-item {
-    @include mini-half-col;
-    &:nth-child(2n) { @include omega; }
-
-    i { font-size: 16px; }
-
-    img { 
-      width: 100%;
-      @include border-radius(5px);
-      @include box-shadow(rgba(0,0,0,0.45) 0 1px 2px);
-      &:hover {
-        position: relative;
-        top: 1px;
-        @include transition(all .3s ease-in);
-        @include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
-      }
-    }
-
-    h3 {
-      font-size: 1.3em;
-      font-family: $sans-font;
-      line-height: 1em;
-      color: $plum;
-      .post-links { float: right; display: inline-block; }
-
-      i {
-        position: relative;
-        top: 6px;
-        font-size: 1.4em;
-      }
-
-      a { 
-        color: $plum; 
-        &:hover { color: darken($plum, 10%); }
-      }
-
-      a > i {
-        margin-left: $gutter/4;
-        text-decoration: none;
-        color: mix($haze, $teal, 35%);
-        &:hover { color: darken($teal, 10%); }
-      }
-    }
-  }
-
-  .portfolio-images {
-    @include mini-half-col;
-     @include omega;
-  }
-
-
-  .post-type {
-    margin: 0 0 5px 0;
-    display: block;
-    font-family: $serif-font;
-    font-size: 0.6em;
-    text-transform: uppercase;
-    word-spacing: 1px;
-    color: lighten($slate, 15%);
-  }
-
-  & > a {
-    display: block;
-    margin-top: $gutter*1.5;
-    font-family: $sans-font;
-    font-size: 1.15em;
-    font-style: italic;
-    text-align: center;
-    color: mix($plum, $vanilla, 65%);
-    &:hover { color: $plum; }
-
-    i { margin-left: 5px; }
-  }
-}
+@import "portfolio";
 
 section[role="blog"] {
   article, aside {
@@ -278,10 +205,8 @@ section[role="blog"] {
     }
 
     img {
-      width: 100%;
       margin: $gutter/2 0 $gutter/3 0;
-      @include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
-      @include border-radius(5px);
+      @include styled-image;
     }
   }
 

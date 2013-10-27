@@ -1,0 +1,88 @@
+section[role="portfolio"] {  
+  .portfolio-item {
+    @include mini-half-col;
+    margin-bottom: $gutter*1.5;
+    &:nth-child(2n) { @include omega; }
+
+    i { font-size: 16px; }
+    img { 
+      @include styled-image;
+      &:hover {
+        top: 1px;
+        position: relative;
+        @include transition(all .3s ease-in);
+        @include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
+      }
+    }
+    h3 {
+      font-size: 1.3em;
+      font-family: $sans-font;
+      line-height: 1em;
+      color: $plum;
+      .post-links { float: right; display: inline-block; }
+      i {
+        position: relative;
+        top: 6px;
+        font-size: 1.4em;
+      }
+      a { 
+        color: $plum; 
+        &:hover { color: darken($plum, 10%); }
+      }
+      a > i { //icons
+        margin-left: $gutter/4;
+        text-decoration: none;
+        color: mix($haze, $teal, 35%);
+        &:hover { color: darken($teal, 10%); }
+      }
+    }
+  }
+
+  .post-type {
+    margin: 0 0 5px 0;
+    display: block;
+    font-family: $serif-font;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    color: lighten($slate, 15%);
+  }
+}
+
+section[role="portfolio"].individual {
+  h2 { margin-bottom: $gutter*2; }
+  .portfolio-item {
+    @include span-columns(12);
+    margin-bottom: $gutter;
+  }
+  .portfolio-content {
+    font-family: $serif-font;
+    font-size: 1.09em;
+    line-height: 1.45em;
+    @include span-columns(9, 16);
+    p { color: mix($slate, $offBlack); }
+  }
+  .page-meta {
+    @include span-columns(6 omega, 16);
+    display: block;
+    width: 41%;
+    margin-bottom: $gutter/4;  
+    padding-left: 1.5%;
+    border-left: 1px dotted $plum;
+    color: mix($slate, $offBlack);
+    a { color: mix($plum, $purple); }
+    label {
+      text-transform: uppercase;
+      margin-right: $gutter/5;
+      font-size: 0.9em;
+      color: lighten($slate, 10%);
+    }
+  }
+  .portfolio-images img { 
+    @include styled-image; 
+    @include span-columns(6, 12); 
+    &:nth-child(2n) { @include omega; }
+  }
+  img.desktop_image { @include span-columns(70.5, 100); } 
+  img.mobile_image { @include span-columns(26.5, 100); }
+}

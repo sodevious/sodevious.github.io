@@ -6,7 +6,7 @@ categories: portfolio
 
 type: Responsive Web Design
 site_url: http://wickvideo.com
-featured_img: images/portfolio/wick-video-preview.jpg
+featured_img: /assets/images/portfolio/wick-video-preview.jpg
 github: http://wickvideo.com
 ---
 

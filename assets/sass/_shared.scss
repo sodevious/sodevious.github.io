@@ -58,4 +58,25 @@ blockquote {
 	@include border-radius(5px);
 }
 
-.back { clear: both; display: block; }
+a.nav { //make mixin
+    display: block;
+    margin-top: $gutter;
+    font-family: $sans-font;
+    font-size: 1.15em;
+    font-style: italic;
+    text-align: center;
+    color: mix($plum, $vanilla, 65%);
+    &:hover { color: $plum; }
+
+    i { margin-left: 5px; }
+  }
+
+
+.clearfix { @include clearfix; }
+
+
+@mixin styled-image() {
+	@include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
+	@include border-radius(5px);
+	width: 100%;
+}
