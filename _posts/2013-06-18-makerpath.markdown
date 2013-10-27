@@ -1,13 +1,29 @@
 ---
-layout: post
+layout: portfolio
 title:  "Makerpath"
-date:   2013-06-18 16:33:26
+date:   2013-08-02
 categories: portfolio
 
-type: Responsive Web Design
-site_url: http://wickvideo.com
-featured_img: /assets/images/portfolio/wick-video-preview.jpg
-github: http://wickvideo.com
+role: Branding & Identity
+site_url: http://makerpath.com
+pretty_url: makerpath.com
+made: TechCrunch 2013 Hackathon
+featured_img: /assets/images/portfolio/makerpath-preview.jpg
+
+images:
+ - url: /assets/images/portfolio/makerpath-fb1.png
+   meta: Facebook Cover 
+   class: half
+ - url: /assets/images/portfolio/makerpath-fb3.png
+   meta: Facebook Cover 
+   class: half
+ - url: /assets/images/portfolio/makerpath-fb2.png
+   meta: Facebook Cover 
+   class: three
+ - url: /assets/images/portfolio/makerpath-illustration.png
+   meta: Illustration
+   class: one
 ---
 
-I hand coded this website from an Illustrator file given to me by the client. Per request to be able to easily make updates, we chose Statmatic (a flat file CMS) to power the site. I was responsible for the front-end development, responsive design, and performance.
+I did the branding and visual design for our project at the 2013 TechCrunch Hackathon - put together within the span of **24 hours**. Makerpath is building a platform that hooks developers up with the right people and resources to code better and faster.
+

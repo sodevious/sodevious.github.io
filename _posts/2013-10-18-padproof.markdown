@@ -1,12 +1,30 @@
 ---
 layout: portfolio
 title:  "Padproof"
-date:   2013-10-18 16:33:26
+date:   2013-08-14
 categories: portfolio
 
-type: Responsive Web Design
+role: Responsive Web Design
 site_url: http://sodevious.github.io/padproof/
+pretty_url: sodevious.github.io/padproof
 featured_img: /assets/images/portfolio/padproof-preview.jpg
+
+github: http://github.com/sodevious/padproof
+pretty_github: sodevious/padproof.com
+stack: Sass, jQuery
+images: 
+ - url: /assets/images/portfolio/padproof-desktop.png
+   meta: Desktop Size
+   class: eight 
+ - url: /assets/images/portfolio/padproof-mobile.png
+   meta: Mobile Size
+   class: two
+ - url: /assets/images/portfolio/padproof-ad.jpg
+   meta: Ad Design
+   class: three 
+ - url: /assets/images/portfolio/padproof-emails.png
+   meta: HTML Email
+   class: one
 ---
 
-I hand coded this website from an Illustrator file given to me by the client. Per request to be able to easily make updates, we chose Statmatic (a flat file CMS) to power the site. I was responsible for the front-end development, responsive design, and performance.
+At Padproof, we got together and designed this landing page hackathon-style. We were toying with the idea of just offering one package to the public, while we work on v2. We also created HTML emails to use for promotions.

@@ -1,13 +1,27 @@
 ---
-layout: post
+layout: portfolio
 title:  "Catchbox"
 date:   2013-05-18 16:33:26
 categories: portfolio
 
-type: Responsive Web Design
-site_url: http://wickvideo.com
-featured_img: /assets/images/portfolio/padproof-preview.jpg
-github: http://wickvideo.com
+role: Design, Front-End development
+stack: Less, jQuery
+made: AngelHack 2013
+
+featured_img: /assets/images/portfolio/catchbox-preview.png
+github: https://github.com/trycatchblock/angelH4ck
+pretty_github: trycatchblock/angelH4ck
+
+images: 
+ - url: /assets/images/portfolio/catchbox-home.png
+   meta: Home Page
+   class: three 
+ - url: /assets/images/portfolio/catchbox-account.png
+   meta: Account Page
+   class: one
 ---
 
-I hand coded this website from an Illustrator file given to me by the client. Per request to be able to easily make updates, we chose Statmatic (a flat file CMS) to power the site. I was responsible for the front-end development, responsive design, and performance.
+I did the branding, web design and UI for our project at the 2013 AngelHack Hackathon - put together within the span of 24 hours. 
+
+Catchbox intercepts your packages, and delivers them to you when and wherever you are.
+

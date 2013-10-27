@@ -18,7 +18,12 @@ a { text-decoration: none; }
 a:hover { @include transition(all .15s ease-in); }
 
 // Layouts
-.container { @include container; @include clearfix; overflow: visible; }
+.container { 
+	@include container; 
+	@include clearfix; 
+	overflow: visible;
+	@include at-breakpoint($computer) { @include container; }
+}
 @mixin mini-half-col() {
   width: 47.5%;
   float: left;

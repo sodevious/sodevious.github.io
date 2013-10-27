@@ -1,10 +1,10 @@
 ---
 layout: portfolio
 title:  "Wick Video"
-date:   2013-10-17 16:33:26
+date:   2013-08-02
 categories: portfolio
 
-type: Front End Development
+role: Front End Development
 site_url: http://wickvideo.com
 pretty_url: wickvideo.com
 featured_img: /assets/images/portfolio/wick-video-preview.jpg
