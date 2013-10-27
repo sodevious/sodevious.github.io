@@ -33,7 +33,8 @@ a:hover { @include transition(all .15s ease-in); }
 
 // Modular Stylres
 section {
-	padding: $gutter*2.8 0;
+	padding: $gutter*2 0;
+	@include at-breakpoint($narrow-tablet) { padding: $gutter*2.8 0; }
 	border-bottom: 1px solid mix($plum, $vanilla, 25%);
 	h2 {
 		margin-bottom: $gutter*2.5;
