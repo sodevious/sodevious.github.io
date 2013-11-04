@@ -61,6 +61,7 @@ header {
 nav[role="navigation"] {
     @include span-columns(12);
     @include at-breakpoint($mobile) {
+      margin-top: 0px;
     @include span-columns(4 omega, 12); 
       ul { 
         float: right; text-align: right;
