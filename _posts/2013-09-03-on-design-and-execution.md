@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On Design & Execution"
+title: "On Design and Execution"
 date:   2013-09-03
 categories: thoughts
 tag: design
