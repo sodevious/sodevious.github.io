@@ -1,4 +1,6 @@
 name: Nicole Dominguez
+description: Nicole Dominguez's Portfolio & Playground
+url: http://nicoledominguez.com
 markdown: redcarpet
 pygments: true
 permalink: /:categories/:title
