@@ -1,4 +1,4 @@
-section[role="portfolio"] {  
+section[role="portfolio"], section[role="projects"] {  
   .portfolio-item {
     @include span-columns(12);
     @include at-breakpoint($narrow-tablet) {  @include mini-half-col; } 
@@ -50,7 +50,7 @@ section[role="portfolio"] {
   }
 }
 
-section[role="portfolio"].individual {
+section[role="portfolio"].individual, section[role="projects"].individual {
   h2 { margin-bottom: $gutter*2; }
   .portfolio-item {
     @include span-columns(12);
@@ -99,9 +99,6 @@ section[role="portfolio"].individual {
 
   img.two { @include at-breakpoint($narrow-tablet) { @include span-columns(2.5, 12); } } // 20.3%
   img.eight { @include at-breakpoint($narrow-tablet) { @include span-columns(9.1, 12); } } // 76.9%
-
-
-
 
   a.nav { margin-top: $gutter*2; }
 }

@@ -28,7 +28,6 @@ Add more content
 - Reachably
 
 **Projects**
-- 2BU20
 - Padproof
 - Followspot
 - StormSurge

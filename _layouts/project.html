@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>	
+{% include header.html %}
+<section role="projects" class="individual">
+	<div class="container">
+		
+    <h2>{{page.title}}</h2>
+
+    <div class="portfolio-item">         
+        <div class="portfolio-content">
+            {{content}}
+        </div>
+
+        <ul class="page-meta">
+            <li><label>Role: </label> {{page.role}}</li>
+            <li><label>Date: </label>{{page.date | date: "%B %Y" }}</li>
+            {% if page.stack %}<li><label>Stack: </label> {{page.stack}}</li>{% endif %}
+            {% if page.features %}<li><label>Features: </label> {{page.features}}</li>{% endif %}
+            {% if page.made %}<li><label>Created at: </label> {{page.made}}</li>{% endif %}
+            {% if page.site_url %}<li><label>Website: </label><a href="{{page.site_url}}">{{page.pretty_url}}</a>{% endif %}
+            {% if page.github %}<li><label>Source: </label><a href="{{page.github}}">{{page.pretty_github}}</a></li>{% endif %}
+        </ul>
+
+    </div>
+
+	<div class="portfolio-images">
+        {% if page.desktop_img %}<img src="{{ page.desktop_img }}" class="threeQuarters" />{% endif %}
+        {% if page.mobile_img %}<img src="{{ page.mobile_img }}" class="quarter" />{% endif %}
+ 
+        {% for image in page.images %}
+            <img src="{{ image.url }}" alt="{{ image.meta }}" title="{{ image.meta }}" class="{{ image.class }}" />
+        {% endfor %}
+	</div>
+
+    </div>
+	<a class="nav" href="/projects/"><span>&#8592;</span>&nbsp;See the rest of my projects</a>
+</section>
+{% include footer.html %}
+</body>
+</html>

@@ -1,8 +1,8 @@
 ---
-layout: portfolio
+layout: project
 title:  "Catchbox"
 date:   2013-05-18 16:33:26
-categories: portfolio
+categories: projects
 
 role: Design, Front-End development
 stack: Less, jQuery

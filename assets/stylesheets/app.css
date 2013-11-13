@@ -527,7 +527,7 @@ section[role="hire-me"] .avatar img, section[role="hire-me"] .tagline, section[r
 }
 
 /* line 2, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item {
+section[role="portfolio"] .portfolio-item, section[role="projects"] .portfolio-item {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
@@ -536,7 +536,7 @@ section[role="portfolio"] .portfolio-item {
 }
 @media (min-width: 40em) {
   /* line 2, ../sass/_portfolio.scss */
-  section[role="portfolio"] .portfolio-item {
+  section[role="portfolio"] .portfolio-item, section[role="projects"] .portfolio-item {
     width: 47.5%;
     float: left;
     margin-right: 3%;
@@ -544,18 +544,18 @@ section[role="portfolio"] .portfolio-item {
   }
 }
 /* line 6, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item:nth-child(2n) {
+section[role="portfolio"] .portfolio-item:nth-child(2n), section[role="projects"] .portfolio-item:nth-child(2n) {
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
 /* line 8, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item i {
+section[role="portfolio"] .portfolio-item i, section[role="projects"] .portfolio-item i {
   font-size: 16px;
 }
 /* line 9, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item img {
+section[role="portfolio"] .portfolio-item img, section[role="projects"] .portfolio-item img {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
@@ -567,7 +567,7 @@ section[role="portfolio"] .portfolio-item img {
   width: 100%;
 }
 /* line 11, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item img:hover {
+section[role="portfolio"] .portfolio-item img:hover, section[role="projects"] .portfolio-item img:hover {
   top: 1px;
   position: relative;
   -webkit-transition: all 0.3s ease-in;
@@ -579,43 +579,43 @@ section[role="portfolio"] .portfolio-item img:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 /* line 18, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item h3 {
+section[role="portfolio"] .portfolio-item h3, section[role="projects"] .portfolio-item h3 {
   font-size: 1.3em;
   font-family: "Effra", "Helvetica Neue", sans-serif;
   line-height: 1em;
   color: #635063;
 }
 /* line 23, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item h3 .post-links {
+section[role="portfolio"] .portfolio-item h3 .post-links, section[role="projects"] .portfolio-item h3 .post-links {
   float: right;
   display: inline-block;
 }
 /* line 24, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item h3 i {
+section[role="portfolio"] .portfolio-item h3 i, section[role="projects"] .portfolio-item h3 i {
   position: relative;
   top: 6px;
   font-size: 1.4em;
 }
 /* line 29, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item h3 a {
+section[role="portfolio"] .portfolio-item h3 a, section[role="projects"] .portfolio-item h3 a {
   color: #635063;
 }
 /* line 31, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item h3 a:hover {
+section[role="portfolio"] .portfolio-item h3 a:hover, section[role="projects"] .portfolio-item h3 a:hover {
   color: #473947;
 }
 /* line 33, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item h3 a > i {
+section[role="portfolio"] .portfolio-item h3 a > i, section[role="projects"] .portfolio-item h3 a > i {
   margin-left: 6.25px;
   text-decoration: none;
   color: #92c0ba;
 }
 /* line 37, ../sass/_portfolio.scss */
-section[role="portfolio"] .portfolio-item h3 a > i:hover {
+section[role="portfolio"] .portfolio-item h3 a > i:hover, section[role="projects"] .portfolio-item h3 a > i:hover {
   color: #58a59c;
 }
 /* line 42, ../sass/_portfolio.scss */
-section[role="portfolio"] .post-type {
+section[role="portfolio"] .post-type, section[role="projects"] .post-type {
   margin: 0 0 5px 0;
   display: block;
   font-family: "Adelle", Georgia, serif;
@@ -626,11 +626,11 @@ section[role="portfolio"] .post-type {
 }
 
 /* line 54, ../sass/_portfolio.scss */
-section[role="portfolio"].individual h2 {
+section[role="portfolio"].individual h2, section[role="projects"].individual h2 {
   margin-bottom: 50px;
 }
 /* line 55, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .portfolio-item {
+section[role="portfolio"].individual .portfolio-item, section[role="projects"].individual .portfolio-item {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
@@ -638,7 +638,7 @@ section[role="portfolio"].individual .portfolio-item {
   margin-bottom: 25px;
 }
 /* line 59, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .portfolio-content {
+section[role="portfolio"].individual .portfolio-content, section[role="projects"].individual .portfolio-content {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
@@ -650,7 +650,7 @@ section[role="portfolio"].individual .portfolio-content {
 }
 @media (min-width: 40em) {
   /* line 59, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual .portfolio-content {
+  section[role="portfolio"].individual .portfolio-content, section[role="projects"].individual .portfolio-content {
     width: 55.6962%;
     float: left;
     margin-right: 1.26582%;
@@ -658,11 +658,11 @@ section[role="portfolio"].individual .portfolio-content {
   }
 }
 /* line 66, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .portfolio-content p {
+section[role="portfolio"].individual .portfolio-content p, section[role="projects"].individual .portfolio-content p {
   color: #4e4e4b;
 }
 /* line 68, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .page-meta {
+section[role="portfolio"].individual .page-meta, section[role="projects"].individual .page-meta {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
@@ -673,7 +673,7 @@ section[role="portfolio"].individual .page-meta {
 }
 @media (min-width: 40em) {
   /* line 68, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual .page-meta {
+  section[role="portfolio"].individual .page-meta, section[role="projects"].individual .page-meta {
     width: 36.70886%;
     float: right;
     margin-right: 0;
@@ -682,22 +682,22 @@ section[role="portfolio"].individual .page-meta {
   }
 }
 /* line 74, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .page-meta a {
+section[role="portfolio"].individual .page-meta a, section[role="projects"].individual .page-meta a {
   color: #547177;
 }
 /* line 76, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .page-meta a:hover {
+section[role="portfolio"].individual .page-meta a:hover, section[role="projects"].individual .page-meta a:hover {
   color: #2f2b3f;
 }
 /* line 78, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .page-meta label {
+section[role="portfolio"].individual .page-meta label, section[role="projects"].individual .page-meta label {
   text-transform: uppercase;
   margin-right: 5px;
   font-size: 0.9em;
   color: #83837d;
 }
 /* line 85, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .portfolio-images img {
+section[role="portfolio"].individual .portfolio-images img, section[role="projects"].individual .portfolio-images img {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
@@ -715,21 +715,21 @@ section[role="portfolio"].individual .portfolio-images img {
 }
 @media (min-width: 40em) {
   /* line 85, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual .portfolio-images img {
+  section[role="portfolio"].individual .portfolio-images img, section[role="projects"].individual .portfolio-images img {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
 /* line 90, ../sass/_portfolio.scss */
-section[role="portfolio"].individual .portfolio-images img:nth-child(2n) {
+section[role="portfolio"].individual .portfolio-images img:nth-child(2n), section[role="projects"].individual .portfolio-images img:nth-child(2n) {
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
 /* line 92, ../sass/_portfolio.scss */
-section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"].individual img.quarter, section[role="portfolio"].individual img.half, section[role="portfolio"].individual img.one, section[role="portfolio"].individual img.three, section[role="portfolio"].individual img.two, section[role="portfolio"].individual img.eight {
+section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"].individual img.quarter, section[role="portfolio"].individual img.half, section[role="portfolio"].individual img.one, section[role="portfolio"].individual img.three, section[role="portfolio"].individual img.two, section[role="portfolio"].individual img.eight, section[role="projects"].individual img.threeQuarters, section[role="projects"].individual img.quarter, section[role="projects"].individual img.half, section[role="projects"].individual img.one, section[role="projects"].individual img.three, section[role="projects"].individual img.two, section[role="projects"].individual img.eight {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
@@ -737,7 +737,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
 }
 @media (min-width: 40em) {
   /* line 93, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual img.threeQuarters {
+  section[role="portfolio"].individual img.threeQuarters, section[role="projects"].individual img.threeQuarters {
     width: 70.54108%;
     float: left;
     margin-right: 0.2004%;
@@ -745,7 +745,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
 }
 @media (min-width: 40em) {
   /* line 94, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual img.quarter {
+  section[role="portfolio"].individual img.quarter, section[role="projects"].individual img.quarter {
     width: 26.45291%;
     float: left;
     margin-right: 0.2004%;
@@ -753,7 +753,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
 }
 @media (min-width: 40em) {
   /* line 96, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual img.half {
+  section[role="portfolio"].individual img.half, section[role="projects"].individual img.half {
     width: 48.35443%;
     float: left;
     margin-right: 1.26582%;
@@ -761,7 +761,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
 }
 @media (min-width: 40em) {
   /* line 97, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual img.one {
+  section[role="portfolio"].individual img.one, section[role="projects"].individual img.one {
     width: 30.37975%;
     float: left;
     margin-right: 1.26582%;
@@ -769,7 +769,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
 }
 @media (min-width: 40em) {
   /* line 98, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual img.three {
+  section[role="portfolio"].individual img.three, section[role="projects"].individual img.three {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
@@ -777,7 +777,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
 }
 @media (min-width: 40em) {
   /* line 100, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual img.two {
+  section[role="portfolio"].individual img.two, section[role="projects"].individual img.two {
     width: 20.33898%;
     float: left;
     margin-right: 1.69492%;
@@ -785,14 +785,14 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
 }
 @media (min-width: 40em) {
   /* line 101, ../sass/_portfolio.scss */
-  section[role="portfolio"].individual img.eight {
+  section[role="portfolio"].individual img.eight, section[role="projects"].individual img.eight {
     width: 76.94915%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 106, ../sass/_portfolio.scss */
-section[role="portfolio"].individual a.nav {
+/* line 103, ../sass/_portfolio.scss */
+section[role="portfolio"].individual a.nav, section[role="projects"].individual a.nav {
   margin-top: 50px;
 }
 

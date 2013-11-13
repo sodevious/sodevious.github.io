@@ -1,8 +1,8 @@
 ---
-layout: portfolio
+layout: project
 title:  "Makerpath"
 date:   2013-08-02
-categories: portfolio
+categories: projects
 
 role: Branding & Identity
 site_url: http://makerpath.com
