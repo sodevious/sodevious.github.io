@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title:  "Wick Video"
-date:   2013-08-02
+date:   2013-10-17
 categories: portfolio
 
 role: Front End Development

@@ -728,7 +728,17 @@ section[role="portfolio"].individual .portfolio-images img:nth-child(2n), sectio
   *margin-left: -1em;
   display: inline;
 }
-/* line 92, ../sass/_portfolio.scss */
+@media (min-width: 40em) {
+  /* line 91, ../sass/_portfolio.scss */
+  section[role="portfolio"].individual .portfolio-images img.center, section[role="projects"].individual .portfolio-images img.center {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 11.36364%;
+    float: none;
+  }
+}
+/* line 99, ../sass/_portfolio.scss */
 section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"].individual img.quarter, section[role="portfolio"].individual img.half, section[role="portfolio"].individual img.one, section[role="portfolio"].individual img.three, section[role="portfolio"].individual img.two, section[role="portfolio"].individual img.eight, section[role="projects"].individual img.threeQuarters, section[role="projects"].individual img.quarter, section[role="projects"].individual img.half, section[role="projects"].individual img.one, section[role="projects"].individual img.three, section[role="projects"].individual img.two, section[role="projects"].individual img.eight {
   width: 100%;
   float: left;
@@ -736,7 +746,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
   display: inline;
 }
 @media (min-width: 40em) {
-  /* line 93, ../sass/_portfolio.scss */
+  /* line 100, ../sass/_portfolio.scss */
   section[role="portfolio"].individual img.threeQuarters, section[role="projects"].individual img.threeQuarters {
     width: 70.54108%;
     float: left;
@@ -744,7 +754,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
   }
 }
 @media (min-width: 40em) {
-  /* line 94, ../sass/_portfolio.scss */
+  /* line 101, ../sass/_portfolio.scss */
   section[role="portfolio"].individual img.quarter, section[role="projects"].individual img.quarter {
     width: 26.45291%;
     float: left;
@@ -752,7 +762,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
   }
 }
 @media (min-width: 40em) {
-  /* line 96, ../sass/_portfolio.scss */
+  /* line 103, ../sass/_portfolio.scss */
   section[role="portfolio"].individual img.half, section[role="projects"].individual img.half {
     width: 48.35443%;
     float: left;
@@ -760,7 +770,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
   }
 }
 @media (min-width: 40em) {
-  /* line 97, ../sass/_portfolio.scss */
+  /* line 104, ../sass/_portfolio.scss */
   section[role="portfolio"].individual img.one, section[role="projects"].individual img.one {
     width: 30.37975%;
     float: left;
@@ -768,7 +778,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
   }
 }
 @media (min-width: 40em) {
-  /* line 98, ../sass/_portfolio.scss */
+  /* line 105, ../sass/_portfolio.scss */
   section[role="portfolio"].individual img.three, section[role="projects"].individual img.three {
     width: 66.10169%;
     float: left;
@@ -776,7 +786,7 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
   }
 }
 @media (min-width: 40em) {
-  /* line 100, ../sass/_portfolio.scss */
+  /* line 107, ../sass/_portfolio.scss */
   section[role="portfolio"].individual img.two, section[role="projects"].individual img.two {
     width: 20.33898%;
     float: left;
@@ -784,14 +794,14 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
   }
 }
 @media (min-width: 40em) {
-  /* line 101, ../sass/_portfolio.scss */
+  /* line 108, ../sass/_portfolio.scss */
   section[role="portfolio"].individual img.eight, section[role="projects"].individual img.eight {
     width: 76.94915%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 103, ../sass/_portfolio.scss */
+/* line 110, ../sass/_portfolio.scss */
 section[role="portfolio"].individual a.nav, section[role="projects"].individual a.nav {
   margin-top: 50px;
 }

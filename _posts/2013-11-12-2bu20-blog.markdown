@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "2 Billion Under 20 Blog"
-date:   2013-10-18 16:33:26
+date:   2013-11-12 16:33:26
 categories: projects
 
 role: Co-Editor, Blog Management
