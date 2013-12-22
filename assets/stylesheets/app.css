@@ -421,13 +421,13 @@ section[role="hire-me"] .social-links li:nth-child(n+5) {
   margin-bottom: 0;
 }
 /* line 125, ../sass/_site.scss */
-section[role="hire-me"] .social-links a {
+section[role="hire-me"] .social-links a.btn {
   font-family: "Effra", "Helvetica Neue", sans-serif;
   text-decoration: none;
   color: #635063;
 }
 /* line 129, ../sass/_site.scss */
-section[role="hire-me"] .social-links a:hover {
+section[role="hire-me"] .social-links a.btn:hover {
   color: #4f444f;
   -webkit-transition: all 0.25s ease-in;
   -moz-transition: all 0.25s ease-in;
