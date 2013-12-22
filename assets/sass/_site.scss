@@ -122,7 +122,7 @@ section[role="hire-me"] {
       &:nth-child(2n) { margin-right: 0; }
       &:nth-child(n+5) { margin-bottom: 0; }
     }
-    a.btn {
+    a {
       font-family: $sans-font;
       text-decoration: none;
       color: $plum;
@@ -166,7 +166,7 @@ section[role="hire-me"] {
       font-size: 1.25em;
       color: mix($offBlack, $slate);
     }
-    a {
+    a.btn {
       display: block;
       padding: $gutter/3;
       font-size: 1.2em;  //em
