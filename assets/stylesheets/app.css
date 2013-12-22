@@ -421,13 +421,13 @@ section[role="hire-me"] .social-links li:nth-child(n+5) {
   margin-bottom: 0;
 }
 /* line 125, ../sass/_site.scss */
-section[role="hire-me"] .social-links a.btn {
+section[role="hire-me"] .social-links a {
   font-family: "Effra", "Helvetica Neue", sans-serif;
   text-decoration: none;
   color: #635063;
 }
 /* line 129, ../sass/_site.scss */
-section[role="hire-me"] .social-links a.btn:hover {
+section[role="hire-me"] .social-links a:hover {
   color: #4f444f;
   -webkit-transition: all 0.25s ease-in;
   -moz-transition: all 0.25s ease-in;
@@ -487,7 +487,7 @@ section[role="hire-me"] .looking-for .highlight {
   color: #4e4e4b;
 }
 /* line 169, ../sass/_site.scss */
-section[role="hire-me"] .looking-for a {
+section[role="hire-me"] .looking-for a.btn {
   display: block;
   padding: 8.33333px;
   font-size: 1.2em;
@@ -508,7 +508,7 @@ section[role="hire-me"] .looking-for a {
   border-radius: 5px;
 }
 /* line 184, ../sass/_site.scss */
-section[role="hire-me"] .looking-for a:hover {
+section[role="hire-me"] .looking-for a.btn:hover {
   position: relative;
   top: 2px;
   text-shadow: 0px -1px 0px #685f8b;
