@@ -158,13 +158,22 @@ section[role="hire-me"] {
     p {
       margin-bottom: $gutter/2;
       font-size: 1.2em;
-      line-height: 1.4em;
+      line-height: 1.2em;
       text-align: center;
       color: $slate;
     }
     .highlight {
-      font-size: 1.25em;
+      font-size: 1.5em;
+      margin-bottom: 20px;
       color: mix($offBlack, $slate);
+    }
+    small {
+      font-size: 0.8em;
+      line-height: auto;
+    }
+    a {
+      color: $plum;
+      font-weight: 500;
     }
     a.btn {
       display: block;
