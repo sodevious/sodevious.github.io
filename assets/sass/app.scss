@@ -1,12 +1,5 @@
 /* By: Nicole Dominguez, @sodevious */
 
-//* { background-color: rgba(0,0,0,0.1);}
-
-// layout (col, margin, padding, height, width)
-// font/text
-// decoration
-
-
 // Variables
 @import "variables";
 
@@ -14,24 +7,6 @@
 @import "compass";
 @import "compass/reset";
 @import "susy";
-
-//this is the default number of columns
-$total-columns: 12; 
- 
-//width of each column
-$column-width   : 4em; 
- 
-//space between columns
-$gutter-width   : 1em; 
- 
-//space on the right and left of the grid
-$grid-padding   : $gutter-width;
- 
-//alternative layout breakpoints
-$mobile: 23em;
-$narrow-tablet: 40em;
-$wide-tablet: 46em;
-$computer: 55em 12;
 
 // My stuff
 @import "shared";

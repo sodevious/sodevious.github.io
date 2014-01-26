@@ -45,7 +45,6 @@ header {
     @include span-columns(4,12);
     height: 80px;
     text-align: center;
-
     img {
       width: 7.5em;
       position: relative;
@@ -53,24 +52,27 @@ header {
     }
   }
   // Responsive
-  .avatar, nav .span { display: none; 
-    @include at-breakpoint($wide-tablet)  { display: inline-block; } 
+  .avatar, 
+  nav .span { 
+    display: none; 
+    @include at-breakpoint($narrow-tablet)  { display: inline-block; } 
   }
 }
 
 nav[role="navigation"] {
-    @include span-columns(12);
-    @include at-breakpoint($mobile) {
-      margin-top: 0px;
-    @include span-columns(4 omega, 12); 
-      ul { 
-        float: right; text-align: right;
-        li { margin-left: $gutter; line-height: 2.3em; } 
-        a { margin-left: 5px; } 
-      }
-    }
-
   margin-top: $gutter/2;
+
+  @include span-columns(12);
+  @include at-breakpoint($mobile) {
+    margin-top: 0px;
+  @include span-columns(4 omega, 12); 
+    ul { 
+      float: right; text-align: right;
+      li { margin-left: $gutter; line-height: 2.3em; } 
+      a { margin-left: 5px; } 
+    }
+  }
+
   ul { margin: 0; }
   li {
     display: block;
@@ -89,19 +91,20 @@ nav[role="navigation"] {
     &:hover { color: darken($vanilla, 10%); }
   }
   span { display: none; }
-  @include at-breakpoint($wide-tablet) { span { display: inline; } }
+  @include at-breakpoint($computer) { span { display: inline; } }
 }
 
 section[role="intro"] {
   h2 {
-    margin: $gutter/2 0;
-    font-size: 2em;
+    margin: 0;
+    font-size: 1.15em;
     font-family: $serif-font;
     line-height: 1.25em;
     text-transform: none;
     color: mix($offBlack, $plum, 40%);
-
     em { color: $slate; }
+    @include at-breakpoint($narrow-tablet) { margin: $gutter/2 0;  font-size: 1.5em; }
+    @include at-breakpoint($computer) { font-size: 2em; }
   }
 }
 
@@ -169,6 +172,8 @@ section[role="hire-me"] {
     }
     small {
       font-size: 0.8em;
+      margin-top: $gutter/2;
+      display: inline-block;
       line-height: auto;
     }
     a {
