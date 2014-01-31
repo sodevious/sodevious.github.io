@@ -43,4 +43,4 @@ So, upon being surrounded by programmers and needing to remember the following:
 * anything we write can be better
 * don't overcomplicate things
 
-I turned the [Zen of Python](http://www.python.org/dev/peps/pep-0020/) into a wallpaper. Sounds so 2008. **So, here you are internet: _[download a very large .png](/assets/public/zen-py.png)_**
+I turned the [Zen of Python](http://www.python.org/dev/peps/pep-0020/) into a wallpaper. Sounds so 2008. It's been beautiful on my rMBP so far. **So, here you are internet: _[download a very large .png](/assets/public/zen-py.png)_**
