@@ -107,5 +107,8 @@ section[role="portfolio"].individual, section[role="projects"].individual {
   img.two { @include at-breakpoint($narrow-tablet) { @include span-columns(2.5, 12); } } // 20.3%
   img.eight { @include at-breakpoint($narrow-tablet) { @include span-columns(9.1, 12); } } // 76.9%
 
+  img.no-shadow { @include box-shadow(none);
+ }
+
   a.nav { margin-top: $gutter*2; }
 }

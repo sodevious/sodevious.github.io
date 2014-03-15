@@ -830,6 +830,12 @@ section[role="portfolio"].individual img.threeQuarters, section[role="portfolio"
   }
 }
 /* line 110, ../sass/_portfolio.scss */
+section[role="portfolio"].individual img.no-shadow, section[role="projects"].individual img.no-shadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 113, ../sass/_portfolio.scss */
 section[role="portfolio"].individual a.nav, section[role="projects"].individual a.nav {
   margin-top: 50px;
 }
