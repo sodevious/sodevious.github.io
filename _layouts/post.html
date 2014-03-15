@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
 {% include head.html %}
-<body>	
 {% include header.html %}
+
 <section role="blog">
 	<div class="container">
 		<article class="single">
 			<h3><a href="{{page.url}}">{{page.title}}</a></h3>
 			{{ content }}
 			<div class="meta">
-				Nicole published this on {{ post.date | date: "%B %e, %Y"  }} and it's probably about {{ page.tag }}.
+				Nicole published this on {{ page.date | date: "%B %e, %Y"  }} and it's probably about {{ page.tag }}.
 			</div>
 		</article>
 		<a class="back" href="/archives/"><span>&#8592;</span>&nbsp;Back to all the things!</a>
 	</div>
 </section>
+
 {% include footer.html %}
-</body>
-</html>
