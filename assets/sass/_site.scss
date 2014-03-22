@@ -1,7 +1,9 @@
 // Basics
 body {
 	-webkit-text-size-adjust: 100%;
-  font: 15px/21px $sans-font;
+  font-size: 15px;
+  font-family: $sans-font;
+  line-height: 21px;
 	background: $vanilla;
 	color: $slate;
 }
