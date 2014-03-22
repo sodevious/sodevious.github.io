@@ -104,10 +104,6 @@ section[role="intro"] {
     font-family: $serif-font;
     line-height: 1.25em;
     text-transform: none;
-
-
-@include adelle;
-
     color: mix($offBlack, $plum, 40%);
     em { color: $slate; }
     @include at-breakpoint($narrow-tablet) { margin: $gutter/2 0;  font-size: 1.5em; }

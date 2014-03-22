@@ -3,12 +3,6 @@
 // Variables
 @import "variables";
 
-@mixin adelle {
-	font-family: "adelle", serif;
-	font-style: normal;
-	font-weight: 400;
-}
-
 // Vendor
 @import "compass";
 @import "compass/reset";
