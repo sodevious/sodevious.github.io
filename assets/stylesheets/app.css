@@ -743,6 +743,9 @@ section[role="blog"] article, section[role="blog"] aside {
     margin-left: 11.36364%;
   }
 }
+section[role="blog"] article {
+  margin-bottom: 35px;
+}
 section[role="blog"] h3 {
   margin-bottom: 10px;
   font-family: "effra", "Proxima Nova", "Helvetica Neue", sans-serif;

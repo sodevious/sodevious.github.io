@@ -222,7 +222,9 @@ section[role="blog"] {
     @include span-columns(12);
     @include at-breakpoint($narrow-tablet) { @include span-columns(10,12); @include pre(1); } 
   }
-  
+  article {
+    margin-bottom: 35px;
+  }
   h3 {
     margin-bottom: $gutter/2.5;
     font-family: $sans-font;
