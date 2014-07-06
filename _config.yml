@@ -5,5 +5,14 @@ markdown: redcarpet
 pygments: true
 permalink: /:categories/:title
 timezone: America/New_York
-exclude: ['Rakefile', 'config.rb', 'README.md','gems']
+exclude: ['config.rb', 'README.md','gems','Gemfile','Guardfile']
 include: ['.htaccess', '.htpasswd']
+
+rdiscount:
+    extensions: [smart]
+
+sass:
+    sass_dir: _site/assets/sass
+    css_dir: _site/assets/stylesheets
+    output_style: compact
+    line_comments: false

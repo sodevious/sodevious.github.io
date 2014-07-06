@@ -12,7 +12,7 @@ body {
 header {
   padding: $gutter 0 $gutter/2+5 0;
   border-bottom: 4px solid lighten($plum, 5%);
-  background: $vanilla;
+  background: pink;
 
   h1 {
     //@include span-columns(12);

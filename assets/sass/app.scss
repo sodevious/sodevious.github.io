@@ -1,14 +1,17 @@
 /* By: Nicole Dominguez, @sodevious */
 
-// Variables
-@import "normalize.css";
-@import "bourbon/bourbon"; // or "bourbon" when in Rails
-@import "neat/neat"; // or "neat" when in Rails
-
 @import "variables";
 
+// Variables
+// ---------
+@import "bourbon/bourbon";
+@import "neat/neat";
 
-// My stuff
+// Styles for the site
+// -------------------
 @import "shared";
 @import "site";
-// @import "styles"; // remove for prod
+
+* {
+  background: red;
+}
