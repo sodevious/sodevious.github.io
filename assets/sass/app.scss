@@ -1,17 +1,14 @@
 /* By: Nicole Dominguez, @sodevious */
 
-@import "variables";
 
-// Variables
-// ---------
-@import "bourbon/bourbon";
-@import "neat/neat";
 
 // Styles for the site
 // -------------------
+@import "variables";
+
+@import "bourbon";
+@import "neat";
+
 @import "shared";
 @import "site";
 
-* {
-  background: red;
-}

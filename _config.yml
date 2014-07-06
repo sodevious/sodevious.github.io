@@ -16,3 +16,15 @@ sass:
     css_dir: _site/assets/stylesheets
     output_style: compact
     line_comments: false
+
+# Plugin: jekyll-assets
+assets:
+  sources:
+    - assets/sass
+    - assets/stylesheets
+    - assets/images
+
+  css_compressor: sass
+  cachebust: hard
+  cache: false
+  gzip: [ text/css, application/javascript ]
