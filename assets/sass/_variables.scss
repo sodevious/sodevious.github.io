@@ -15,18 +15,6 @@ $gutter: 25px;
 
 $serif-font: "adelle", Georgia, serif;
 $sans-font: "effra", "Proxima Nova", "Helvetica Neue", sans-serif;
-
-//this is the default number of columns
-$total-columns: 12; 
- 
-//width of each column
-$column-width   : 4em; 
- 
-//space between columns
-$gutter-width   : 1em; 
- 
-//space on the right and left of the grid
-$grid-padding   : $gutter-width;
  
 //alternative layout breakpoints
 $mobile: 23em;

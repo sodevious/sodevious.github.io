@@ -15,14 +15,19 @@ pre code {
 
 // Links
 a { text-decoration: none; }
-a:hover { @include transition(all .15s ease-in); }
+//a:hover { @include transition(all .15s ease-in); }
 
 // Layouts
 .container { 
-	@include container; 
-	@include clearfix; 
-	overflow: visible;
-	@include at-breakpoint($computer) { @include container; }
+	//@include container; 
+	//@include clearfix; 
+  overflow: visible;
+  //@include at-breakpoint($computer) { @include container; }
+  @include outer-container;
+  @include media($mobile) {
+    // As defined in _grid-settings.scss
+    @include span-columns(2);
+  }
 }
 @mixin mini-half-col() {
   width: 47.5%;
@@ -34,7 +39,7 @@ a:hover { @include transition(all .15s ease-in); }
 // Modular Stylres
 section {
 	padding: $gutter*2 0;
-	@include at-breakpoint($narrow-tablet) { padding: $gutter*2.8 0; }
+	//@include at-breakpoint($narrow-tablet) { padding: $gutter*2.8 0; }
 	border-bottom: 1px solid mix($plum, $vanilla, 25%);
 	h2 {
 		margin-bottom: $gutter*2.5;
@@ -61,7 +66,7 @@ blockquote {
 	font-size: 1em;
 	font-style: italic;
 	background: rgba(255,255,255,0.7);
-	@include border-radius(5px);
+	//@include border-radius(5px);
 }
 
 a.nav { //make mixin
@@ -78,11 +83,11 @@ a.nav { //make mixin
   }
 
 
-.clearfix { @include clearfix; }
+//.clearfix { @include clearfix; }
 
 
 @mixin styled-image() {
-	@include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
-	@include border-radius(5px);
+	//@include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
+	//@include border-radius(5px);
 	width: 100%;
 }

@@ -3,7 +3,7 @@
     height: 100px;
     display: block;
     margin-right: 10px;
-    @include span-columns(1, 12);
+    //@include span-columns(1, 12);
   }
   .one { background: $purple; }  
   .two { background: lighten($plum, 5%); }  

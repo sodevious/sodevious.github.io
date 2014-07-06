@@ -1,14 +1,14 @@
 /* By: Nicole Dominguez, @sodevious */
 
 // Variables
+@import "normalize.css";
+@import "bourbon/bourbon"; // or "bourbon" when in Rails
+@import "neat/neat"; // or "neat" when in Rails
+
 @import "variables";
 
-// Vendor
-@import "compass";
-@import "compass/reset";
-@import "susy";
 
 // My stuff
 @import "shared";
 @import "site";
-@import "styles"; // remove for prod
+// @import "styles"; // remove for prod
