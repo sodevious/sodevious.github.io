@@ -1,82 +1,83 @@
-// Basics
 body {
   -webkit-text-size-adjust: 100%;
-  font-size: 14px;
   font-family: $sans-font;
-  line-height: 21px;
   font-weight: 400;
+  line-height: 1.25em;
   color: $slate;
 }
 
-
 header {
-  padding: $gutter 0 $gutter/2+5 0;
+  padding: $site-gutter 0;
   border-bottom: 4px solid lighten($plum, 5%);
-  background: red;
+  background: $purple;
 
   h1 {
-    //@include span-columns(12);
-    //@include at-breakpoint($mobile) { @include span-columns(7, 12); font-size: 2.5em; }
-    //@include at-breakpoint($narrow-tablet) { @include span-columns(6, 12); }
-
-    padding: 0;
+    padding: 0px;
+    margin-top: 0px;
     font-family: $sans-font;
     font-weight: 400;
-    font-size: 2em;
-    line-height: 0.80em;
+    font-size: $xxl-font-size;
+    line-height: 0.9em;
     text-transform: uppercase;
     text-shadow: 0px 2px 0px darken($purple, 10%);
-    a { 
+    @include span-columns(3);
+    a {
       color: mix($offWhite, $purple, 80%);
-      &:hover { color: mix($offWhite, $purple, 60%); }
+      &:hover {
+        color: mix($offWhite, $purple, 60%);
+      }
     }
   }
 
   .tagline {
     display: block;
+    margin-top: $gutter/4;
+    font-size: $sm-font-size;
     font-family: $serif-font;
-    font-size: 0.4em;
     font-weight: 100;
-    margin-top: $gutter/3;
-    line-height: 1em;
     text-transform: lowercase;
     text-shadow: 0px 1px 0px darken($purple, 10%);
     color: lighten($plum, 20%);
   }
 
-  // Responsive
-  nav .span { 
-    display: none; 
-    //@include at-breakpoint($narrow-tablet)  { display: inline-block; }
+  .avatar {
+    text-align: center;
+    @include span-columns(4);
+    @include shift(1);
   }
 }
 
-nav[role="navigation"] {
-  margin-top: $gutter/2;
+nav {
+  margin-top: 0px;
+  @include span-columns(4);
 
-  //@include span-columns(12);
-
-
-  ul { margin: 0; }
+  ul {
+    margin: 0;
+    padding: 0px;
+  }
   li {
-    display: block;
-    font-size:  0.85em;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    display: inline-block;
+    padding-left: $site-gutter;
     font-family: $serif-font;
-    line-height: 1.5em;
-    text-align: left;
+    font-size: $md-font-size;
+    text-align: right;
     text-transform: uppercase;
     color: lighten($plum, 10%);
   }
   a {
-    font-size: 1.3em;
     text-decoration: none;
-    text-transform: capitalize;
     color: $vanilla;
-    &:hover { color: darken($vanilla, 10%); }
+    &:hover {
+      color: darken($vanilla, 10%);
+    }
   }
-  span { display: none; }
-  //@include at-breakpoint($computer) { span { display: inline; } }
 }
+
+
+
 
 section[role="intro"] {
   h2 {
@@ -329,6 +330,11 @@ section[role="projects"] {
     }
   }
 }
+
+.styleguide {
+
+}
+
 
 footer {
   padding: $gutter/2 0 $gutter/2 0;

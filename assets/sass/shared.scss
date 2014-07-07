@@ -19,16 +19,10 @@ a { text-decoration: none; }
 
 // Layouts
 .container { 
-	//@include container; 
-	//@include clearfix; 
   overflow: visible;
-  //@include at-breakpoint($computer) { @include container; }
   @include outer-container;
-  @include media($mobile) {
-    // As defined in _grid-settings.scss
-    @include span-columns(2);
-  }
 }
+
 @mixin mini-half-col() {
   width: 47.5%;
   float: left;

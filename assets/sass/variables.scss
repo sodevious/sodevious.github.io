@@ -5,7 +5,7 @@ $offWhite: #e6e6e6;
 $offBlack: #333333;
 
 $vanilla:  #f7f6e4;
-$purple:   red;
+$purple:   #2f2b3f;
 $teal:     #79b7b0;
 $plum:     #635063;
 $haze:     #C1D2CF;
@@ -29,10 +29,17 @@ $sans-font: "effra", "Proxima Nova", "Helvetica Neue", sans-serif;
 
 // Alternative breakpoints
 // ------------------------
-$mobile: 23em;
-$wide-mobile: 34em;
-$narrow-tablet: 40em;
-$wide-tablet: 46em;
-$computer: 55em 12;
+//$mobile: 23em;
+//$wide-mobile: 34em;
+//$narrow-tablet: 40em;
+//$wide-tablet: 46em;
+//$computer: 55em 12;
 
-$gutter: 2em;
+//$gutter: 2em;
+$site-gutter: 20px;
+
+$sm-font-size:  12px;
+$md-font-size:  14px;
+$lg-font-size:  18px;
+$xl-font-size:  22px;
+$xxl-font-size: 28px;

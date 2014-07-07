@@ -5,7 +5,7 @@ markdown: redcarpet
 pygments: true
 permalink: /:categories/:title
 timezone: America/New_York
-exclude: ['config.rb', 'README.md','gems','Gemfile','Guardfile']
+exclude: ['config.rb', 'README.md','gems','Gemfile','Guardfile', '.DS_Store']
 include: ['.htaccess', '.htpasswd']
 
 rdiscount:
