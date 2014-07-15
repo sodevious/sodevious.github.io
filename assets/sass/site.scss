@@ -1,9 +1,5 @@
-body {
-  -webkit-text-size-adjust: 100%;
-  font-family: $sans-font;
-  font-weight: 400;
-  line-height: 1.25em;
-  color: $slate;
+* {
+ //background: rgba(255,0,255,0.1);
 }
 
 header {
@@ -14,9 +10,10 @@ header {
   h1 {
     padding: 0px;
     margin-top: 0px;
+    margin-bottom: 0px;
     font-family: $sans-font;
     font-weight: 400;
-    font-size: $xxl-font-size;
+    font-size: $xxl-font-size + 2;
     line-height: 0.9em;
     text-transform: uppercase;
     text-shadow: 0px 2px 0px darken($purple, 10%);
@@ -31,10 +28,10 @@ header {
 
   .tagline {
     display: block;
-    margin-top: $gutter/4;
     font-size: $sm-font-size;
     font-family: $serif-font;
     font-weight: 100;
+    line-height: 20px;
     text-transform: lowercase;
     text-shadow: 0px 1px 0px darken($purple, 10%);
     color: lighten($plum, 20%);
@@ -44,6 +41,11 @@ header {
     text-align: center;
     @include span-columns(4);
     @include shift(1);
+    img {
+      width: 75px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
   }
 }
 
@@ -52,7 +54,7 @@ nav {
   @include span-columns(4);
 
   ul {
-    margin: 0;
+    margin-top: 25px;
     padding: 0px;
   }
   li {
@@ -68,22 +70,23 @@ nav {
     color: lighten($plum, 10%);
   }
   a {
-    text-decoration: none;
+    opacity: 0.8;
     color: $vanilla;
+    text-decoration: none;
     &:hover {
+      opacity: 1;
       color: darken($vanilla, 10%);
     }
   }
 }
 
-
-
-
-section[role="intro"] {
+.intro {
+  text-align: center;
   h2 {
     margin: 0;
-    font-size: 1.15em;
+    font-size: $xxl-font-size;
     font-family: $serif-font;
+    font-weight: 300;
     line-height: 1.25em;
     text-transform: none;
     color: mix($offBlack, $plum, 40%);
@@ -91,12 +94,16 @@ section[role="intro"] {
     //@include at-breakpoint($narrow-tablet) { margin: $gutter/2 0;  font-size: 1.5em; }
     //@include at-breakpoint($computer) { font-size: 2em; }
   }
+  h3 {
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
 }
 
-section[role="hire-me"] {
+.social-links {
   font-family: $serif-font;
 
-  .social-links {
+  .link-buckets {
     //@include span-columns(12);
     //@include at-breakpoint($narrow-tablet) { @include span-columns(7, 12); }
     margin-bottom: $gutter;
@@ -106,6 +113,9 @@ section[role="hire-me"] {
       //@include span-columns(6);
       margin-bottom: $gutter*1.1;
       font-size: 1.6em;
+      list-style-type: none;
+        @include span-columns(3);
+
       line-height: 1em;
       &:nth-child(2n) { margin-right: 0; }
       &:nth-child(n+5) { margin-bottom: 0; }
@@ -120,9 +130,11 @@ section[role="hire-me"] {
       }
     }
     i {
-      margin-right: 2px;
-      font-size: 18px;
+      margin-right: 3px;
+      font-size: $md-font-size;
       color: lighten($plum, 10%);
+      position: relative;
+      top: -2px;
     }
     span {
       width: 90%;

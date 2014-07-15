@@ -1,3 +1,14 @@
+// Modifications to reset styles &
+// shared styles throughout the site
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-family: $sans-font;
+  font-weight: 400;
+  line-height: 1.25em;
+  color: $slate;
+}
+
 // Typography
 i, cite, em, var, address, dfn { font-style: italic; }
 strong, b { font-weight: 700; }
@@ -15,19 +26,12 @@ pre code {
 
 // Links
 a { text-decoration: none; }
-//a:hover { @include transition(all .15s ease-in); }
+a:hover { @include transition(all .15s ease-in); }
 
 // Layouts
 .container { 
   overflow: visible;
   @include outer-container;
-}
-
-@mixin mini-half-col() {
-  width: 47.5%;
-  float: left;
-  margin-right: 3%;
-  display: inline;
 }
 
 // Modular Stylres
