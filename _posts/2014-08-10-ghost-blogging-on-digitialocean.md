@@ -21,3 +21,6 @@ Here are some things I learned:
 * Ghost themes run on handlebars, .hbs files. *(I've never used it before now)*
 
 And now, I guess the next thing to do is install Ghost locally and figure out how to theme with it.
+
+<blockquote class="twitter-tweet" lang="en"><p>digital ocean + ghost = newfound career in being a server admin</p>&mdash; Nicole Dominguez (@sodevious) <a href="https://twitter.com/sodevious/statuses/498310071945003008">August 10, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
