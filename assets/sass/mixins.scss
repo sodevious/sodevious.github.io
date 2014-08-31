@@ -4,3 +4,14 @@
   margin-right: 3%;
   display: inline;
 }
+
+@mixin responsive-header-content($size) {
+  .header-title {
+    position: relative;
+    bottom: -$size + 150px;
+  }
+  .header-links {
+    position: relative;
+    bottom: -$size + 65px;
+  }
+}

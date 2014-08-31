@@ -1,57 +1,66 @@
-* {
- //background: rgba(255,0,255,0.1);
-}
-
 header {
-  padding: $site-gutter 0;
-  border-bottom: 4px solid lighten($plum, 5%);
   background: $purple;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('/img/nd-bg3.jpg');
+  border-bottom: 4px solid darken($plum, 10%);
+  height: $header-height-default;
+  padding: 0px $site-gutter / 2;
+  @include responsive-header-content($header-height-default);
 
-  h1 {
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: $sans-font;
-    font-weight: 400;
-    font-size: $xxl-font-size + 2;
-    line-height: 0.9em;
-    text-transform: uppercase;
-    text-shadow: 0px 2px 0px darken($purple, 10%);
-    @include span-columns(3);
-    a {
-      color: mix($offWhite, $purple, 80%);
-      &:hover {
-        color: mix($offWhite, $purple, 60%);
-      }
-    }
+  .navigation {
+    background-image: url('/img/nd-float4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100px center;
+    height: 100%;
+    position: relative;
+    bottom: 0px;
+    @include outer-container;
   }
 
-  .tagline {
-    display: block;
-    font-size: $sm-font-size;
-    font-family: $serif-font;
-    font-weight: 100;
-    line-height: 20px;
-    text-transform: lowercase;
-    text-shadow: 0px 1px 0px darken($purple, 10%);
-    color: lighten($plum, 20%);
+  @media screen and (min-width: 961px) and (max-width: 1200px) {
+    height: $header-height-desktop;
+    @include responsive-header-content($header-height-desktop);
   }
 
-  .avatar {
-    text-align: center;
-    @include span-columns(4);
-    @include shift(1);
-    img {
-      width: 75px;
-      border-radius: 50%;
-      vertical-align: middle;
-    }
+  @media screen and (min-width: 601px) and (max-width: 960px) {
+    height: $header-height-tablet;
+    @include responsive-header-content($header-height-tablet);
+  }
+  @media screen and (max-width: 600px) {
+    height: $header-height-mobile;
+    @include responsive-header-content($header-height-mobile);
   }
 }
 
-nav {
+.header-title {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: $sans-font;
+  font-weight: 800;
+  font-size: $xxl-font-size + 2;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px darken($purple, 10%);
+  @include span-columns(3);
+  a {
+    color: mix($offWhite, $purple, 80%);
+    &:hover {
+      color: mix($offWhite, $purple, 60%);
+    }
+  }
+  img {
+    width: 70%;
+  }
+}
+
+.header-links {
   margin-top: 0px;
   @include span-columns(4);
+  @include shift(5);
 
   ul {
     margin-top: 25px;
@@ -81,44 +90,81 @@ nav {
 }
 
 .intro {
-  text-align: center;
   h2 {
     margin: 0;
+    padding-bottom: 30px;
     font-size: $xxl-font-size;
     font-family: $serif-font;
     font-weight: 300;
-    line-height: 1.25em;
     text-transform: none;
+    line-height: 1.25em;
     color: mix($offBlack, $plum, 40%);
-    em { color: $slate; }
-    //@include at-breakpoint($narrow-tablet) { margin: $gutter/2 0;  font-size: 1.5em; }
-    //@include at-breakpoint($computer) { font-size: 2em; }
   }
+
   h3 {
-    margin-bottom: 0px;
+    margin: 0px;
+    padding-bottom: 6px;
     font-weight: 500;
+    font-family: $serif-font;
+    color: $slate-light;
+    font-size: $sm-font-size;
+    text-transform: uppercase;
   }
+
+  a {
+    border-bottom: 1px solid $plum-light;
+    font-weight: 500;
+    color: $purple;
+  }
+  p {
+    text-align: left;
+    font-size: $lg-font-size;
+    line-height: $xl-font-size + 3;
+    font-weight: 300;
+    color: $violet;
+    margin: 0px;
+  }
+  .biography {
+    @include span-columns(7);
+    font-size: $lg-font-size;
+    line-height: $xl-font-size + 3;
+    font-weight: 300;
+    color: $plum;
+
+  }
+
+  .social-links {
+    @include span-columns(5);
+    p {
+      color: $slate;
+      i {
+        font-size: $sm-font-size;
+        padding-right: 4px;
+        color: $purple-light;
+      }
+    }
+  }
+
 }
 
+
+
 .social-links {
-  font-family: $serif-font;
+
 
   .link-buckets {
-    //@include span-columns(12);
-    //@include at-breakpoint($narrow-tablet) { @include span-columns(7, 12); }
     margin-bottom: $gutter;
     padding: 0px;
 
     li {
-      //@include span-columns(6);
+      @include span-columns(6);
       margin-bottom: $gutter*1.1;
       font-size: 1.6em;
+      text-align: left;
       list-style-type: none;
-        @include span-columns(3);
-
       line-height: 1em;
       &:nth-child(2n) { margin-right: 0; }
-      &:nth-child(n+5) { margin-bottom: 0; }
+      //&:nth-child(n+5) { margin-bottom: 0; }
     }
     a {
       font-family: $sans-font;
@@ -137,8 +183,8 @@ nav {
       top: -2px;
     }
     span {
-      width: 90%;
-      display: block;
+      //width: 90%;
+      //display: block;
       overflow: hidden;
       font-size: 0.55em;
       font-family: $serif-font;

@@ -1,18 +1,28 @@
 
 // Custom colors
 // ----------------
-$offWhite: #e6e6e6;
-$offBlack: #333333;
+$offWhite:      #e6e6e6;
+$offBlack:      #333333;
 
-$vanilla:  #f7f6e4;
-$purple:   #2f2b3f;
-$teal:     #79b7b0;
-$plum:     #635063;
-$haze:     #C1D2CF;
-$pink:     #FA9887;
+$vanilla:       #f7f6e4;
+$purple:        #2f2b3f;
+$teal:          #79b7b0;
+$plum:          #635063;
+$haze:          #C1D2CF;
+$pink:          #FA9887;
 
-$lightPlum: mix($plum, $vanilla, 25%);
-$slate: mix($vanilla, $offBlack, 28%);
+$violet:        mix($plum, $purple);
+$slate:         mix($vanilla, $offBlack, 20%);
+
+$plum-light:    lighten($plum, 20%);
+$plum-light:    lighten($plum, 20%);
+$purple-light:  lighten($purple, 20%);
+$slate-light:   lighten($slate, 20%);
+
+$header-height-default: 480px;
+$header-height-desktop: 400px;
+$header-height-tablet: 300px;
+$header-height-mobile: 180px;
 
 
 // Neat & Bourbon overrides
@@ -21,10 +31,11 @@ $slate: mix($vanilla, $offBlack, 28%);
 $visual-grid-index: front;
 
 
+
 // Typography
 // ------------------------
 $serif-font: "adelle", Georgia, serif;
-$sans-font: "effra", "Proxima Nova", "Helvetica Neue", sans-serif;
+$sans-font: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
 
 
 // Alternative breakpoints

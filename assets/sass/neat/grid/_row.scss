@@ -1,0 +1,25 @@
+@mixin row($display: default, $direction: $default-layout-direction) {
+  @if $direction != $default-layout-direction {
+    @include -neat-warn("The $direction argument will be deprecated in future versions in favor of the direction(){...} mixin.");
+  }
+
+  $layout-direction: $direction !global;
+
+  @if $display != default {
+    @include -neat-warn("The $display argument will be deprecated in future versions in favor of the display(){...} mixin.");
+  }
+
+  @if $display == table {
+    display: table;
+    @include fill-parent;
+    table-layout: fixed;
+    $container-display-table: true !global;
+  }
+
+  @else {
+    @include clearfix;
+    display: block;
+    $container-display-table: false !global;
+  }
+}
+
