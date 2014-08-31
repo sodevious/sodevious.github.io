@@ -1,94 +1,7 @@
-header {
-  background: $purple;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-image: url('/img/nd-bg3.jpg');
-  border-bottom: 4px solid darken($plum, 10%);
-  height: $header-height-default;
-  padding: 0px $site-gutter / 2;
-  @include responsive-header-content($header-height-default);
 
-  .navigation {
-    background-image: url('/img/nd-float4.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100px center;
-    height: 100%;
-    position: relative;
-    bottom: 0px;
-    @include outer-container;
-  }
 
-  @media screen and (min-width: 961px) and (max-width: 1200px) {
-    height: $header-height-desktop;
-    @include responsive-header-content($header-height-desktop);
-  }
-
-  @media screen and (min-width: 601px) and (max-width: 960px) {
-    height: $header-height-tablet;
-    @include responsive-header-content($header-height-tablet);
-  }
-  @media screen and (max-width: 600px) {
-    height: $header-height-mobile;
-    @include responsive-header-content($header-height-mobile);
-  }
-}
-
-.header-title {
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: $sans-font;
-  font-weight: 800;
-  font-size: $xxl-font-size + 2;
-  line-height: 0.9em;
-  text-transform: uppercase;
-  text-shadow: 0px 2px 0px darken($purple, 10%);
-  @include span-columns(3);
-  a {
-    color: mix($offWhite, $purple, 80%);
-    &:hover {
-      color: mix($offWhite, $purple, 60%);
-    }
-  }
-  img {
-    width: 70%;
-  }
-}
-
-.header-links {
-  margin-top: 0px;
-  @include span-columns(4);
-  @include shift(5);
-
-  ul {
-    margin-top: 25px;
-    padding: 0px;
-  }
-  li {
-    padding: 0px;
-    margin: 0px;
-    float: right;
-    display: inline-block;
-    padding-left: $site-gutter;
-    font-family: $serif-font;
-    font-size: $md-font-size;
-    text-align: right;
-    text-transform: uppercase;
-    color: lighten($plum, 10%);
-  }
-  a {
-    opacity: 0.8;
-    color: $vanilla;
-    text-decoration: none;
-    &:hover {
-      opacity: 1;
-      color: darken($vanilla, 10%);
-    }
-  }
-}
-
+// INTRODUCTION
+// ----------------------------------------
 .intro {
   h2 {
     margin: 0;
@@ -132,7 +45,6 @@ header {
     color: $plum;
 
   }
-
   .social-links {
     @include span-columns(5);
     p {
@@ -144,120 +56,16 @@ header {
       }
     }
   }
-
 }
 
 
 
-.social-links {
 
 
-  .link-buckets {
-    margin-bottom: $gutter;
-    padding: 0px;
-
-    li {
-      @include span-columns(6);
-      margin-bottom: $gutter*1.1;
-      font-size: 1.6em;
-      text-align: left;
-      list-style-type: none;
-      line-height: 1em;
-      &:nth-child(2n) { margin-right: 0; }
-      //&:nth-child(n+5) { margin-bottom: 0; }
-    }
-    a {
-      font-family: $sans-font;
-      text-decoration: none;
-      color: $plum;
-      &:hover {
-        color: mix($offBlack, $plum, 40%);
-        // @include transition(all .25s ease-in);
-      }
-    }
-    i {
-      margin-right: 3px;
-      font-size: $md-font-size;
-      color: lighten($plum, 10%);
-      position: relative;
-      top: -2px;
-    }
-    span {
-      //width: 90%;
-      //display: block;
-      overflow: hidden;
-      font-size: 0.55em;
-      font-family: $serif-font;
-      text-shadow: 0px -1px 0px white;
-      color: darken($teal, 10%);
-      &:hover {
-        color: mix($offBlack, $plum, 40%);
-        // @include transition(all .25s ease-in);
-      }
-    }
-  }
-
-  .looking-for {
-    //@include span-columns(12);
-    //@include at-breakpoint($narrow-tablet)  { @include span-columns(5 omega, 12); }
-
-    p {
-      margin-bottom: $gutter/2;
-      font-size: 1.2em;
-      line-height: 1.2em;
-      text-align: center;
-      color: $slate;
-    }
-    .highlight {
-      font-size: 1.5em;
-      margin-bottom: 20px;
-      color: mix($offBlack, $slate);
-    }
-    small {
-      font-size: 0.8em;
-      margin-top: $gutter/2;
-      display: inline-block;
-      line-height: auto;
-    }
-    a {
-      color: $plum;
-      font-weight: 500;
-    }
-    a.btn {
-      display: block;
-      padding: $gutter/3;
-      font-size: 1.2em;  //em
-      font-family: $sans-font;
-      font-weight: 700;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-shadow: 0px -1px 0px lighten($teal, 10%);
-      box-shadow: 0px 3px 0px  darken($teal, 10%);
-      border: 3px solid transparent; // Safari border fix
-      background: $teal;
-      color: $purple;
-      //@include border-radius(5px);
-      &:hover {
-        position: relative;
-        top: 2px;
-        text-shadow: 0px -1px 0px lighten($purple, 25%);
-        box-shadow: 0px 3px 0px lighten($purple, 10%);
-        background: lighten($purple, 18%);
-      }
-    }
-  }
 
 
-    // Responsive
-  .avatar img, .tagline, nav .span { display: none; 
-    //@include at-breakpoint($wide-tablet)  { display: inline-block; }
-  }
-}
 
-@import "portfolio";
-
-section[role="blog"] {
+.blog {
   article, aside {
     //@include span-columns(12);
     //@include at-breakpoint($narrow-tablet) { @include span-columns(10,12); @include pre(1); }
@@ -290,7 +98,7 @@ section[role="blog"] {
 
     img {
       margin: $gutter/2 0 $gutter/3 0;
-      @include styled-image;
+      @extend %styled-image;
     }
   }
 

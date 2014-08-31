@@ -8,44 +8,53 @@ body {
   line-height: 1.25em;
   color: $slate;
 }
-
-// Typography
-i, cite, em, var, address, dfn { font-style: italic; }
-strong, b { font-weight: 700; }
-p { color: $offBlack; }
-
-pre code {
-	width: 95%;
-	display: block;
-	padding: $gutter/2;
-	margin: $gutter 0;
-	font-family: Consolas, "Liberation Mono", Courier, monospace;
-	white-space: pre;
-	background: rgba(255,255,255,0.7);
+i, cite, em, var, address, dfn {
+  font-style: italic;
 }
 
-// Links
-a { text-decoration: none; }
-a:hover { @include transition(all .15s ease-in); }
+strong, b {
+  font-weight: 700;
+}
 
-// Layouts
-.container { 
+p {
+  color: $offBlack;
+}
+
+pre code {
+  width: 95%;
+  display: block;
+  padding: $gutter/2;
+  margin: $gutter 0;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  white-space: pre;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    @include transition(all .3s ease-in);
+  }
+}
+
+.container {
   overflow: visible;
   @include outer-container;
 }
 
-// Modular Stylres
 section {
-	padding: $gutter*2 0;
-	//@include at-breakpoint($narrow-tablet) { padding: $gutter*2.8 0; }
-	border-bottom: 1px solid mix($plum, $vanilla, 25%);
-	h2 {
-		margin-bottom: $gutter*2.5;
-		text-transform: uppercase;
-		text-align: center;
-		font-size: 2em;
-		font-family: $sans-font;
-	}
+  padding: ($site-gutter * 3) 0;
+  background-color: $vanilla;
+  border-bottom: 1px solid $raspberry;
+  h2 {
+    margin: 0px;
+    color: $violet;
+    padding-bottom: $site-gutter;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 300;
+    font-family: $sans-font;
+  }
 }
 
 hr {
@@ -57,35 +66,11 @@ hr {
 }
 
 blockquote {
-	margin: $gutter 0;
-	width: 95%;
-	margin-left: 2.5%;
-	padding: $gutter/2;
-	font-size: 1em;
-	font-style: italic;
-	background: rgba(255,255,255,0.7);
-	//@include border-radius(5px);
-}
-
-a.nav { //make mixin
-    display: block;
-    margin-top: $gutter;
-    font-family: $sans-font;
-    font-size: 1.15em;
-    font-style: italic;
-    text-align: center;
-    color: mix($plum, $vanilla, 65%);
-    &:hover { color: $plum; }
-
-    i { margin-left: 5px; }
-  }
-
-
-//.clearfix { @include clearfix; }
-
-
-@mixin styled-image() {
-	//@include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
-	//@include border-radius(5px);
-	width: 100%;
+  margin: $gutter 0;
+  width: 95%;
+  margin-left: 2.5%;
+  padding: $gutter/2;
+  font-size: 1em;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.7);
 }

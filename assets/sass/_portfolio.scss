@@ -1,56 +1,72 @@
-section[role="portfolio"], section[role="projects"] {  
+.portfolio {
   .portfolio-item {
-    //@include span-columns(12);
-    //@include at-breakpoint($narrow-tablet) {  @include mini-half-col; }
-    margin-bottom: $gutter*1.5;
-    //&:nth-child(2n) { @include omega; }
+    @include span-columns(6);
+    margin-bottom: $site-gutter * 1.5;
 
-    i { font-size: 16px; }
-    img { 
-      //@include styled-image;
+    &:nth-child(2n) {
+      @include omega;
+    }
+
+    i {
+      font-size: 16px;
+    }
+
+    img {
+      @extend %styled-image;
+
       &:hover {
         top: 1px;
         position: relative;
-        //@include transition(all .3s ease-in);
-        //@include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
+        box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
       }
     }
+
     h3 {
       font-size: 1.3em;
       font-family: $sans-font;
       line-height: 1em;
       color: $plum;
-      .post-links { float: right; display: inline-block; }
+      .post-links {
+        float: right;
+        display: inline-block;
+      }
       i {
         position: relative;
         top: 6px;
         font-size: 1.4em;
       }
-      a { 
-        color: $plum; 
-        &:hover { color: darken($plum, 10%); }
+      a {
+        color: $plum;
+        &:hover {
+          color: darken($plum, 10%);
+        }
       }
-      a > i { //icons
+      a > i {
         margin-left: $gutter/4;
         text-decoration: none;
-        color: mix($haze, $teal, 35%);
-        &:hover { color: darken($teal, 10%); }
+        color: $plum-light;
+        @include transition(all .3s ease-in);
+        &:hover {
+          color: $plum;
+        }
       }
     }
   }
 
-  .post-type {
+  .post-role {
     margin: 0 0 5px 0;
     display: block;
     font-family: $serif-font;
     font-size: 0.6em;
     text-transform: uppercase;
     word-spacing: 1px;
+    font-weight: 300;
     color: lighten($slate, 15%);
   }
 }
 
-section[role="portfolio"].individual, section[role="projects"].individual {
+.portfolio.individual,
+section[role="projects"].individual {
   h2 { margin-bottom: $gutter*2; }
   .portfolio-item {
     //@include span-columns(12);

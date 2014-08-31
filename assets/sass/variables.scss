@@ -9,12 +9,13 @@ $purple:        #2f2b3f;
 $teal:          #79b7b0;
 $plum:          #635063;
 $haze:          #C1D2CF;
+
 $pink:          #FA9887;
 
 $violet:        mix($plum, $purple);
 $slate:         mix($vanilla, $offBlack, 20%);
+$raspberry:     mix($plum, $vanilla, 20%);
 
-$plum-light:    lighten($plum, 20%);
 $plum-light:    lighten($plum, 20%);
 $purple-light:  lighten($purple, 20%);
 $slate-light:   lighten($slate, 20%);
@@ -34,8 +35,8 @@ $visual-grid-index: front;
 
 // Typography
 // ------------------------
-$serif-font: "adelle", Georgia, serif;
-$sans-font: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
+$serif-font: "adelle", "Adelle", Georgia, serif;
+$sans-font: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
 
 
 // Alternative breakpoints

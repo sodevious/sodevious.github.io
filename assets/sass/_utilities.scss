@@ -8,10 +8,16 @@
 @mixin responsive-header-content($size) {
   .header-title {
     position: relative;
-    bottom: -$size + 150px;
+    bottom: -$size + 130px;
   }
   .header-links {
     position: relative;
     bottom: -$size + 65px;
   }
+}
+
+%styled-image {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  width: 100%;
 }

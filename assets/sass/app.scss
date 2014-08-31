@@ -4,11 +4,15 @@
 // Styles for the site
 // -------------------
 @import "variables";
-@import "mixins";
+@import "utilities";
 
 @import "bourbon/bourbon";
 @import "neat/neat";
 
 @import "shared";
+
+@import "header";
+@import "portfolio";
+
 @import "site";
 

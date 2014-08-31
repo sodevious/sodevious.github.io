@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* By: Nicole Dominguez, @sodevious */
+.portfolio .portfolio-item img, .blog p img {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 100%; }
+
 /* Bourbon 4.0.2
  * http://bourbon.io
  * Copyright 2011–2014 thoughtbot, inc.
@@ -92,7 +97,7 @@ html {
  */
 body {
   -webkit-text-size-adjust: 100%;
-  font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
+  font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.25em;
   color: #5a5a56; }
@@ -117,11 +122,10 @@ pre code {
 
 a {
   text-decoration: none; }
-
-a:hover {
-  -webkit-transition: all 0.15s ease-in;
-  -moz-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in; }
+  a:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
 
 .container {
   overflow: visible;
@@ -134,14 +138,17 @@ a:hover {
     clear: both; }
 
 section {
-  padding: 3.236em 0;
-  border-bottom: 1px solid #d2ccc3; }
+  padding: 60px 0;
+  background-color: #f7f6e4;
+  border-bottom: 1px solid #d9d4ca; }
   section h2 {
-    margin-bottom: 4.045em;
-    text-transform: uppercase;
+    margin: 0px;
+    color: #493d51;
+    padding-bottom: 20px;
     text-align: center;
-    font-size: 2em;
-    font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif; }
+    font-size: 1.75em;
+    font-weight: 300;
+    font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif; }
 
 hr {
   background: #c7d6d4;
@@ -159,31 +166,18 @@ blockquote {
   font-style: italic;
   background: rgba(255, 255, 255, 0.7); }
 
-a.nav {
-  display: block;
-  margin-top: 1.618em;
-  font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
-  font-size: 1.15em;
-  font-style: italic;
-  text-align: center;
-  color: #968a90; }
-  a.nav:hover {
-    color: #635063; }
-  a.nav i {
-    margin-left: 5px; }
-
 header {
-  background: #2f2b3f;
-  background-repeat: no-repeat;
+  background-color: #2f2b3f;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   background-image: url("/img/nd-bg3.jpg");
-  border-bottom: 4px solid #473947;
+  border-bottom: 4px solid #333333;
   height: 480px;
   padding: 0px 10px; }
   header .header-title {
     position: relative;
-    bottom: -330px; }
+    bottom: -350px; }
   header .header-links {
     position: relative;
     bottom: -415px; }
@@ -207,7 +201,7 @@ header {
       height: 400px; }
       header .header-title {
         position: relative;
-        bottom: -250px; }
+        bottom: -270px; }
       header .header-links {
         position: relative;
         bottom: -335px; } }
@@ -216,7 +210,7 @@ header {
       height: 300px; }
       header .header-title {
         position: relative;
-        bottom: -150px; }
+        bottom: -170px; }
       header .header-links {
         position: relative;
         bottom: -235px; } }
@@ -225,7 +219,7 @@ header {
       height: 180px; }
       header .header-title {
         position: relative;
-        bottom: -30px; }
+        bottom: -50px; }
       header .header-links {
         position: relative;
         bottom: -115px; } }
@@ -234,7 +228,7 @@ header {
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
+  font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 30px;
   line-height: 0.9em;
@@ -271,7 +265,7 @@ header {
     float: right;
     display: inline-block;
     padding-left: 20px;
-    font-family: "adelle", Georgia, serif;
+    font-family: "adelle", "Adelle", Georgia, serif;
     font-size: 14px;
     text-align: right;
     text-transform: uppercase;
@@ -284,11 +278,101 @@ header {
       opacity: 1;
       color: #ebe9bd; }
 
+.portfolio .portfolio-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-bottom: 30px; }
+  .portfolio .portfolio-item:last-child {
+    margin-right: 0; }
+  .portfolio .portfolio-item:nth-child(2n) {
+    margin-right: 0; }
+  .portfolio .portfolio-item i {
+    font-size: 16px; }
+  .portfolio .portfolio-item img:hover {
+    top: 1px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px; }
+  .portfolio .portfolio-item h3 {
+    font-size: 1.3em;
+    font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1em;
+    color: #635063; }
+    .portfolio .portfolio-item h3 .post-links {
+      float: right;
+      display: inline-block; }
+    .portfolio .portfolio-item h3 i {
+      position: relative;
+      top: 6px;
+      font-size: 1.4em; }
+    .portfolio .portfolio-item h3 a {
+      color: #635063; }
+      .portfolio .portfolio-item h3 a:hover {
+        color: #473947; }
+    .portfolio .portfolio-item h3 a > i {
+      margin-left: 0.4045em;
+      text-decoration: none;
+      color: #998099;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+      .portfolio .portfolio-item h3 a > i:hover {
+        color: #635063; }
+.portfolio .post-role {
+  margin: 0 0 5px 0;
+  display: block;
+  font-family: "adelle", "Adelle", Georgia, serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  font-weight: 300;
+  color: #81817b; }
+
+.portfolio.individual h2,
+section[role="projects"].individual h2 {
+  margin-bottom: 3.236em; }
+.portfolio.individual .portfolio-item,
+section[role="projects"].individual .portfolio-item {
+  margin-bottom: 1.618em; }
+.portfolio.individual .portfolio-content,
+section[role="projects"].individual .portfolio-content {
+  font-family: "adelle", "Adelle", Georgia, serif;
+  font-size: 1.09em;
+  line-height: 1.45em;
+  margin-bottom: 0.809em; }
+  .portfolio.individual .portfolio-content p,
+  section[role="projects"].individual .portfolio-content p {
+    color: #464644; }
+.portfolio.individual .page-meta,
+section[role="projects"].individual .page-meta {
+  display: block;
+  margin-bottom: 0.4045em;
+  color: #464644; }
+  .portfolio.individual .page-meta a,
+  section[role="projects"].individual .page-meta a {
+    color: #547177; }
+    .portfolio.individual .page-meta a:hover,
+    section[role="projects"].individual .page-meta a:hover {
+      color: #2f2b3f; }
+  .portfolio.individual .page-meta label,
+  section[role="projects"].individual .page-meta label {
+    text-transform: uppercase;
+    margin-right: 0.3236em;
+    font-size: 0.9em;
+    color: #74746f; }
+.portfolio.individual .portfolio-images img,
+section[role="projects"].individual .portfolio-images img {
+  margin-bottom: 2.1034em; }
+
+a.nav {
+  margin-top: 3.236em; }
+
 .intro h2 {
   margin: 0;
   padding-bottom: 30px;
   font-size: 28px;
-  font-family: "adelle", Georgia, serif;
+  font-family: "adelle", "Adelle", Georgia, serif;
   font-weight: 300;
   text-transform: none;
   line-height: 1.25em;
@@ -297,7 +381,7 @@ header {
   margin: 0px;
   padding-bottom: 6px;
   font-weight: 500;
-  font-family: "adelle", Georgia, serif;
+  font-family: "adelle", "Adelle", Georgia, serif;
   color: #8e8e88;
   font-size: 12px;
   text-transform: uppercase; }
@@ -337,187 +421,40 @@ header {
       padding-right: 4px;
       color: #5c547c; }
 
-.social-links .link-buckets {
-  margin-bottom: 1.618em;
-  padding: 0px; }
-  .social-links .link-buckets li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-bottom: 1.7798em;
-    font-size: 1.6em;
-    text-align: left;
-    list-style-type: none;
-    line-height: 1em; }
-    .social-links .link-buckets li:last-child {
-      margin-right: 0; }
-    .social-links .link-buckets li:nth-child(2n) {
-      margin-right: 0; }
-  .social-links .link-buckets a {
-    font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
-    text-decoration: none;
-    color: #635063; }
-    .social-links .link-buckets a:hover {
-      color: #4f444f; }
-  .social-links .link-buckets i {
-    margin-right: 3px;
-    font-size: 14px;
-    color: #7f677f;
-    position: relative;
-    top: -2px; }
-  .social-links .link-buckets span {
-    overflow: hidden;
-    font-size: 0.55em;
-    font-family: "adelle", Georgia, serif;
-    text-shadow: 0px -1px 0px white;
-    color: #58a59c; }
-    .social-links .link-buckets span:hover {
-      color: #4f444f; }
-.social-links .looking-for p {
-  margin-bottom: 0.809em;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  text-align: center;
-  color: #5a5a56; }
-.social-links .looking-for .highlight {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #464644; }
-.social-links .looking-for small {
-  font-size: 0.8em;
-  margin-top: 0.809em;
-  display: inline-block;
-  line-height: auto; }
-.social-links .looking-for a {
-  color: #635063;
-  font-weight: 500; }
-.social-links .looking-for a.btn {
-  display: block;
-  padding: 0.53933em;
-  font-size: 1.2em;
-  font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #9ac9c4;
-  box-shadow: 0px 3px 0px #58a59c;
-  border: 3px solid transparent;
-  background: #79b7b0;
-  color: #2f2b3f; }
-  .social-links .looking-for a.btn:hover {
-    position: relative;
-    top: 2px;
-    text-shadow: 0px -1px 0px #685f8b;
-    box-shadow: 0px 3px 0px #46405d;
-    background: #585076; }
-.social-links .avatar img, .social-links .tagline, .social-links nav .span {
-  display: none; }
-
-section[role="portfolio"] .portfolio-item, section[role="projects"] .portfolio-item {
-  margin-bottom: 2.427em; }
-  section[role="portfolio"] .portfolio-item i, section[role="projects"] .portfolio-item i {
-    font-size: 16px; }
-  section[role="portfolio"] .portfolio-item img:hover, section[role="projects"] .portfolio-item img:hover {
-    top: 1px;
-    position: relative; }
-  section[role="portfolio"] .portfolio-item h3, section[role="projects"] .portfolio-item h3 {
-    font-size: 1.3em;
-    font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
-    line-height: 1em;
-    color: #635063; }
-    section[role="portfolio"] .portfolio-item h3 .post-links, section[role="projects"] .portfolio-item h3 .post-links {
-      float: right;
-      display: inline-block; }
-    section[role="portfolio"] .portfolio-item h3 i, section[role="projects"] .portfolio-item h3 i {
-      position: relative;
-      top: 6px;
-      font-size: 1.4em; }
-    section[role="portfolio"] .portfolio-item h3 a, section[role="projects"] .portfolio-item h3 a {
-      color: #635063; }
-      section[role="portfolio"] .portfolio-item h3 a:hover, section[role="projects"] .portfolio-item h3 a:hover {
-        color: #473947; }
-    section[role="portfolio"] .portfolio-item h3 a > i, section[role="projects"] .portfolio-item h3 a > i {
-      margin-left: 0.4045em;
-      text-decoration: none;
-      color: #92c0ba; }
-      section[role="portfolio"] .portfolio-item h3 a > i:hover, section[role="projects"] .portfolio-item h3 a > i:hover {
-        color: #58a59c; }
-section[role="portfolio"] .post-type, section[role="projects"] .post-type {
-  margin: 0 0 5px 0;
-  display: block;
-  font-family: "adelle", Georgia, serif;
-  font-size: 0.6em;
-  text-transform: uppercase;
-  word-spacing: 1px;
-  color: #81817b; }
-
-section[role="portfolio"].individual h2, section[role="projects"].individual h2 {
-  margin-bottom: 3.236em; }
-section[role="portfolio"].individual .portfolio-item, section[role="projects"].individual .portfolio-item {
-  margin-bottom: 1.618em; }
-section[role="portfolio"].individual .portfolio-content, section[role="projects"].individual .portfolio-content {
-  font-family: "adelle", Georgia, serif;
-  font-size: 1.09em;
-  line-height: 1.45em;
-  margin-bottom: 0.809em; }
-  section[role="portfolio"].individual .portfolio-content p, section[role="projects"].individual .portfolio-content p {
-    color: #464644; }
-section[role="portfolio"].individual .page-meta, section[role="projects"].individual .page-meta {
-  display: block;
-  margin-bottom: 0.4045em;
-  color: #464644; }
-  section[role="portfolio"].individual .page-meta a, section[role="projects"].individual .page-meta a {
-    color: #547177; }
-    section[role="portfolio"].individual .page-meta a:hover, section[role="projects"].individual .page-meta a:hover {
-      color: #2f2b3f; }
-  section[role="portfolio"].individual .page-meta label, section[role="projects"].individual .page-meta label {
-    text-transform: uppercase;
-    margin-right: 0.3236em;
-    font-size: 0.9em;
-    color: #74746f; }
-section[role="portfolio"].individual .portfolio-images img, section[role="projects"].individual .portfolio-images img {
-  margin-bottom: 2.1034em; }
-
-a.nav {
-  margin-top: 3.236em; }
-
-section[role="blog"] article {
+.blog article {
   margin-bottom: 35px; }
-section[role="blog"] h3 {
+.blog h3 {
   margin-bottom: 0.6472em;
-  font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
+  font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.6em;
   word-spacing: 1px; }
-  section[role="blog"] h3 a {
+  .blog h3 a {
     color: #715b71; }
-section[role="blog"] p {
+.blog p {
   margin: 1.07867em 0;
-  font-family: "adelle", Georgia, serif;
+  font-family: "adelle", "Adelle", Georgia, serif;
   font-size: 1.1em;
   line-height: 1.6em;
   color: #5a5a56; }
-  section[role="blog"] p:last-child {
+  .blog p:last-child {
     margin: 0; }
-  section[role="blog"] p a {
+  .blog p a {
     border-bottom: 1px dotted rgba(0, 0, 0, 0.2); }
-    section[role="blog"] p a:hover {
+    .blog p a:hover {
       border: 0px; }
-  section[role="blog"] p img {
-    margin: 0.809em 0 0.53933em 0;
-    width: 100%; }
-section[role="blog"] a {
+  .blog p img {
+    margin: 0.809em 0 0.53933em 0; }
+.blog a {
   color: #47837d; }
-  section[role="blog"] a:hover {
+  .blog a:hover {
     color: #58a59c; }
-section[role="blog"] .meta {
+.blog .meta {
   margin: 0.53933em 0 1.618em 0;
-  font-family: "adelle-sans", "Proxima Nova", "Helvetica Neue", sans-serif;
+  font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.9em;
   color: #635063; }
-  section[role="blog"] .meta a {
+  .blog .meta a {
     margin: 0;
     padding-right: 5px;
     font-size: 1.2em;
@@ -525,27 +462,27 @@ section[role="blog"] .meta {
     line-height: 1px;
     vertical-align: baseline;
     color: #998099; }
-  section[role="blog"] .meta i {
+  .blog .meta i {
     margin-left: 5px;
     font-size: 0.8em; }
-section[role="blog"] .single {
+.blog .single {
   margin-bottom: 1.618em; }
-  section[role="blog"] .single h3 {
+  .blog .single h3 {
     font-size: 1.8em;
     line-height: 1em; }
-  section[role="blog"] .single ul {
+  .blog .single ul {
     margin-left: 1.618em; }
-    section[role="blog"] .single ul li {
+    .blog .single ul li {
       margin: 0.53933em 0;
       font-size: 0.9em;
       list-style-type: disc; }
-section[role="blog"] aside a {
+.blog aside a {
   padding: 6px;
   font-size: 0.85em;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.8);
   color: #8d728d; }
-section[role="blog"] aside li {
+.blog aside li {
   margin-top: 0.809em;
   text-align: center;
   word-spacing: 2px; }
@@ -563,13 +500,13 @@ section[role="projects"] .side-project {
         color: #58a59c; }
   section[role="projects"] .side-project p {
     font-size: 1.05em;
-    font-family: "adelle", Georgia, serif;
+    font-family: "adelle", "Adelle", Georgia, serif;
     line-height: 1.5em;
     color: #5a5a56; }
 
 footer {
   padding: 0.809em 0 0.809em 0;
-  font-family: "adelle", Georgia, serif;
+  font-family: "adelle", "Adelle", Georgia, serif;
   border-top: 4px solid #715b71;
   background: #2f2b3f; }
   footer p {
