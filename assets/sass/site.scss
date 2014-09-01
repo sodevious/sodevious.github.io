@@ -54,7 +54,7 @@ header {
       width: 100%;
       background-position: center center;
     }
-         .header-links {
+    .header-links {
       @include span-columns(12);
       position: relative;
       margin-left: 0px;
@@ -74,8 +74,7 @@ header {
             color: $plum;
           }
         }
-
-    }
+      }
     }
   }
 }
@@ -158,7 +157,7 @@ header {
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-image: url('../assets/images/nicole-dominguez-logo.png');
+  background-image: url('../images/nicole-dominguez-logo.png');
   overflow: visible;
   background-repeat: no-repeat;
   background-size: contain;
