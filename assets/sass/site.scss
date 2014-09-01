@@ -34,29 +34,62 @@ header {
 }
 
 .site-header {
-
   height: $header-height-mobile;
+
   @include responsive-header-content($header-height-mobile, 220px);
   .header-title {
     width: 220px;
-
   }
   .header-links {
     width: 50%;
     float: right;
     margin-left: 0px;
+  }
+  @include media(max-width $narrow-tablet + 11, 12) {
+    margin-bottom: 20px;
+    .header-title {
+      text-align: center;
+      bottom: -20px;
+      height: 140px;
+      width: 100%;
+      background-position: center center;
+    }
+         .header-links {
+      @include span-columns(12);
+      position: relative;
+      margin-left: 0px;
+      bottom: -25px;
 
+      li {
+        width: 33.33333%;
+        margin: 0px;
+        font-family: $sans-font;
+        text-align: center;
+        padding: 0px;
+        a {
+          color: $offBlack;
+          font-size: $md-font-size - 2;
+          border-bottom: 1px solid $plum;
+          &:hover {
+            color: $plum;
+          }
+        }
+
+    }
+    }
   }
 }
+
 .home-header {
-        .navigation {
+  border-bottom: 4px solid $offBlack;
+  height: $header-height-default;
+
+  .navigation {
     background-image: url('/img/nd-float4.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100px center;
   }
-  border-bottom: 4px solid $offBlack;
-  height: $header-height-default;
 
   @include responsive-header-content($header-height-default, 220px);
 
@@ -88,6 +121,28 @@ header {
       position: relative;
       height: 120px;
       top: 30px;
+    }
+    .header-links {
+      @include span-columns(12);
+      position: relative;
+      margin-left: 0px;
+      bottom: -50px;
+
+      li {
+        width: 33.33333%;
+        margin: 0px;
+        font-family: $sans-font;
+        text-align: center;
+        padding: 0px;
+        a {
+          color: $offBlack;
+          font-size: $md-font-size - 2;
+          border-bottom: 1px solid $plum;
+          &:hover {
+            color: $plum;
+          }
+        }
+      }
     }
   }
   @include media(max-width $wide-mobile, 12) {
@@ -157,35 +212,20 @@ header {
       color: darken($vanilla, 10%);
     }
   }
-  @include media(max-width $narrow-tablet + 11, 12) {
-    @include span-columns(12);
-    position: relative;
-    margin-left: 0px;
-    bottom: -50px;
 
-    li {
-      width: 33.33333%;
-      margin: 0px;
-      font-family: $sans-font;
-      text-align: center;
-      padding: 0px;
-      a {
-        color: $offBlack;
-        font-size: $md-font-size - 2;
-        border-bottom: 1px solid $plum;
-        &:hover {
-          color: $plum;
-        }
-      }
-    }
-  }
 }
+
+
+
+
+
+
+
 
 
 // INTRODUCTION
 // ----------------------------------------
 .intro {
-
   h2 {
     margin: 0;
     padding-bottom: 30px;
@@ -267,6 +307,12 @@ header {
 }
 
 
+
+
+
+
+
+
 // THOUGHTS
 // ----------------------------------------
 .blog {
@@ -275,11 +321,12 @@ header {
   article, aside {
     @include span-columns(12);
 
-      @include media(min-width $wide-tablet, 12) {
- @include span-columns(10);
-    @include shift(1);
+    @include media(min-width $wide-tablet, 12) {
+      @include span-columns(10);
+      @include shift(1);
+    }
   }
-  }
+
   article {
     margin-bottom: $site-gutter;
 

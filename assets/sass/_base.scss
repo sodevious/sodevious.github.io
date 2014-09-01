@@ -9,6 +9,7 @@ body {
   line-height: 1.25em;
   color: $slate;
 }
+
 i, cite, em, var, address, dfn {
   font-style: italic;
 }
@@ -35,16 +36,16 @@ p {
 pre {
   margin-top: 0px;
   margin-bottom: 25px;
- code {
-  width: 95%;
-  display: block;
-  padding: $site-gutter / 2;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  white-space: pre;
-   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.7);
-}
+  code {
+    width: 95%;
+    display: block;
+    padding: $site-gutter / 2;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    white-space: pre;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.7);
   }
+}
 
 a {
   text-decoration: none;
@@ -76,7 +77,6 @@ section {
   @include media(max-width $wide-mobile, 12) {
     padding: $site-gutter*2 0;
   }
-
   h2 {
     margin: 0px;
     color: $violet;
@@ -85,6 +85,7 @@ section {
     font-size: 1.75em;
     font-weight: 300;
     font-family: $sans-font;
+    line-height: 1em;
   }
   .section-link {
     display: block;

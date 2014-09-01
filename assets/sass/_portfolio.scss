@@ -1,10 +1,10 @@
 .portfolio-item {
+  @include span-columns(6);
+  margin-bottom: $site-gutter * 1.5;
+
   @include media(max-width $narrow-tablet, 12) {
     @include span-columns(12);
   }
-
-  @include span-columns(6);
-  margin-bottom: $site-gutter * 1.5;
 
   &:nth-child(2n) {
     @include omega;
@@ -13,7 +13,6 @@
   i {
     font-size: 16px;
   }
-
 
   img {
     @extend %styled-image;
@@ -31,9 +30,11 @@
   display: block;
   font-family: $serif-font;
   font-size: 0.6em;
+  font-weight: 300;
   text-transform: uppercase;
   word-spacing: 1px;
-  font-weight: 300;
+  position: relative;
+  top: -5px;
   color: lighten($slate, 15%);
 }
 
@@ -63,12 +64,10 @@
       color: darken($plum, 10%);
     }
   }
-
 }
 
 .portfolio-individual {
-  @include span-columns(10);
-  @include shift(1);
+  @include span-columns(12);
   @include clearfix;
 
   .portfolio-item {
@@ -165,5 +164,19 @@
   }
   img.no-shadow {
     box-shadow: none;
+  }
+
+  @include media(min-width $wide-desktop, 12) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  @include media(max-width $wide-tablet, 12) {
+    .portfolio-content {
+      @include span-columns(12);
+    }
+    .page-meta {
+      display: none;
+    }
   }
 }
