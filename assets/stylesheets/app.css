@@ -162,6 +162,10 @@ pre {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .container {
+      padding-right: 10px;
+      padding-left: 10px; } }
   @media screen and (min-width: 961px) and (max-width: 1000px) {
     .container {
       width: 910px; } }
