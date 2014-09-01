@@ -18,7 +18,7 @@ Possible solutions include:
 Idea came from [this](http://thanpol.as/jekyll/jekyll-and-livereload-flow/) post. Seems like an interesting solution, possibly the easiest. Except I couldn't get that to work. *Note: this command is the best thing ever invented, try it! `python -m SimpleHTTPServer 4000`*
 
 ### Use the Jekyll-assets gem
-I took a peek at the source of Tim Smith's site and saw he was using [this](http://ixti.net/jekyll-assets/) gem.
+I took a peek at the source of [Tim Smith's](http://ttimsmith.com) site and saw he was using [this](http://ixti.net/jekyll-assets/) gem.
 
 After much googling and fighting with installing the gem, **finally** I got it working. So I ended up ditching guard and guard-livereload, in favor of the [LiveReload](http://livereload.com/) Mac app. I know, I know. It does a hard reload of the page 0.5 seconds after it detects changes.
 

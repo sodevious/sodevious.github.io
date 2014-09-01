@@ -13,28 +13,40 @@ i, cite, em, var, address, dfn {
 }
 
 strong, b {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 p {
   color: $offBlack;
+  a {
+    border-bottom: 1px solid $plum-light;
+    font-weight: 500;
+    color: $purple;
+    &:hover {
+      background-color: $plum-light;
+      color: $offWhite;
+      border-bottom: 1px solid $purple;
+    }
+  }
 }
 
-pre code {
+pre {
+  margin-top: 0px;
+  margin-bottom: 25px;
+ code {
   width: 95%;
   display: block;
-  padding: $gutter/2;
-  margin: $gutter 0;
+  padding: $site-gutter / 2;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   white-space: pre;
+   border-radius: 6px;
   background: rgba(255, 255, 255, 0.7);
 }
+  }
 
 a {
   text-decoration: none;
-  &:hover {
-    @include transition(all .3s ease-in);
-  }
+  @include transition(all .3s ease);
 }
 
 .container {
@@ -54,6 +66,22 @@ section {
     font-size: 1.75em;
     font-weight: 300;
     font-family: $sans-font;
+  }
+  .section-link {
+    display: block;
+    margin-top: $gutter;
+    font-family: $sans-font;
+    font-size: 1.15em;
+    font-style: italic;
+    text-align: center;
+    color: mix($plum, $vanilla, 65%);
+    &:hover {
+      color: $plum;
+    }
+
+    i {
+      margin-left: 5px;
+    }
   }
 }
 
