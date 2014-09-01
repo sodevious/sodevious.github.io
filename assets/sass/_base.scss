@@ -33,6 +33,17 @@ p {
   }
 }
 
+a {
+  text-decoration: none;
+  @include transition(all .3s ease);
+
+  i {
+    font-size: $sm-font-size;
+    padding-right: 4px;
+    color: $purple-light;
+  }
+}
+
 pre {
   margin-top: 0px;
   margin-bottom: 25px;
@@ -47,10 +58,6 @@ pre {
   }
 }
 
-a {
-  text-decoration: none;
-  @include transition(all .3s ease);
-}
 
 .container {
   overflow: visible;
@@ -74,9 +81,6 @@ a {
 section {
   padding: ($site-gutter * 3) 0;
   border-bottom: 1px solid $raspberry;
-  @include media(max-width $wide-mobile, 12) {
-    padding: $site-gutter*2 0;
-  }
   h2 {
     margin: 0px;
     color: $violet;
@@ -87,36 +91,23 @@ section {
     font-family: $sans-font;
     line-height: 1em;
   }
-  .section-link {
-    display: block;
-    margin-top: $gutter;
-    font-family: $sans-font;
-    font-size: 1.15em;
-    font-style: italic;
-    text-align: center;
-    color: mix($plum, $vanilla, 65%);
-    &:hover {
-      color: $plum;
-    }
 
-    i {
-      margin-right: 5px;
-      margin-left: 5px;
-    }
+  @include media(max-width $wide-mobile, 12) {
+    padding: $site-gutter*2 0;
   }
 }
 
 hr {
   background: lighten($haze, 2%);
+  margin: $gutter*1.3 0;
   width: 100%;
   height: 1px;
   border: 1px;
-  margin: $gutter*1.3 0;
 }
 
 blockquote {
-  margin: $gutter 0;
   width: 95%;
+  margin: $gutter 0;
   margin-left: 2.5%;
   padding: $gutter/2;
   font-size: 1em;

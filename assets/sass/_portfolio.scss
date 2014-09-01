@@ -2,26 +2,21 @@
   @include span-columns(6);
   margin-bottom: $site-gutter * 1.5;
 
-  @include media(max-width $narrow-tablet, 12) {
-    @include span-columns(12);
-  }
-
-  &:nth-child(2n) {
-    @include omega;
-  }
-
-  i {
-    font-size: 16px;
-  }
-
   img {
     @extend %styled-image;
 
     &:hover {
       top: 1px;
       position: relative;
-      box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
     }
+  }
+
+  @include media(max-width $narrow-tablet, 12) {
+    @include span-columns(12);
+  }
+
+  &:nth-child(2n) {
+    @include omega;
   }
 }
 
@@ -40,8 +35,8 @@
 
 .portfolio-item-header {
   font-size: 1.3em;
-  margin-bottom: 0px;
   font-family: $sans-font;
+  margin-bottom: 0px;
   line-height: 1em;
   color: $plum;
 
@@ -71,8 +66,8 @@
   @include clearfix;
 
   .portfolio-item {
-    margin-bottom: $gutter;
     @include span-columns(12);
+    margin-bottom: $gutter;
   }
   .portfolio-content {
     @include span-columns(7);

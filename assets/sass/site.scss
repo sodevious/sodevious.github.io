@@ -15,7 +15,7 @@ header {
     @include outer-container;
 
     // LARGE DESKTOP
-    @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
+    @include media(min-width $wide-tablet+1 max-width $wide-desktop, 12) {
       width: $wide-tablet - 50;
     }
 
@@ -93,7 +93,7 @@ header {
   @include responsive-header-content($header-height-default, 220px);
 
   // LARGE DESKTOP
-  @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
+  @include media(min-width $wide-tablet+1 max-width $wide-desktop, 12) {
     height: $header-height-desktop;
     @include responsive-header-content($header-height-desktop, 200px);
   }
@@ -162,19 +162,9 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom left;
+  font-size: 0px;
   @include span-columns(3);
-
-  a {
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-  span {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-  }
+  @include hide-text;
 }
 
 .header-links {
@@ -235,7 +225,7 @@ header {
     line-height: 1.25em;
     color: mix($offBlack, $plum, 40%);
 
-    @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
+    @include media(min-width $wide-tablet+1 max-width $wide-desktop, 12) {
       font-size: $xl-font-size + 2;
     }
     @include media(max-width $wide-tablet, 12) {
@@ -254,7 +244,7 @@ header {
     color: $violet;
     margin: 0px;
 
-    @include media(max-width $wide-desktop - 100, 12) {
+    @include media(max-width $wide-desktop, 12) {
       font-size: 16px;
       line-height: $xl-font-size;
     }
@@ -284,11 +274,6 @@ header {
     }
     p {
       color: $slate;
-      i {
-        font-size: $sm-font-size;
-        padding-right: 4px;
-        color: $purple-light;
-      }
     }
 
     @include span-columns(5);
@@ -441,5 +426,23 @@ footer {
     &:hover {
       border-bottom: 1px solid $plum-light;
     }
+  }
+}
+
+.section-link {
+  display: block;
+  margin-top: $gutter;
+  font-family: $sans-font;
+  font-size: 1.15em;
+  font-style: italic;
+  text-align: center;
+  color: mix($plum, $vanilla, 65%);
+  &:hover {
+    color: $plum;
+  }
+
+  i {
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
