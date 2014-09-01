@@ -20,6 +20,7 @@ strong, b {
 
 p {
   color: $offBlack;
+  @extend %paragraph-text;
 
   a {
     border-bottom: 1px solid $plum-light;

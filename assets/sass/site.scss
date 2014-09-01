@@ -61,7 +61,7 @@ header {
       bottom: -25px;
 
       li {
-        width: 33.33333%;
+        width: 32.33333%;
         margin: 0px;
         font-family: $sans-font;
         text-align: center;
@@ -128,7 +128,7 @@ header {
       bottom: -50px;
 
       li {
-        width: 33.33333%;
+        width: 32.33333%;
         margin: 0px;
         font-family: $sans-font;
         text-align: center;
@@ -175,21 +175,24 @@ header {
   ul {
     margin-top: 25px;
     padding: 0px;
+    text-align: right;
+
   }
   li {
     padding: 0px;
     margin: 0px;
-    float: right;
     display: inline-block;
+    text-align: right;
     padding-left: $site-gutter;
     font-family: $serif-font;
     font-size: $md-font-size;
-    text-align: right;
     text-transform: uppercase;
     color: lighten($plum, 10%);
 
     @include media(min-width $wide-tablet+1, 12) {
       font-size: $md-font-size + 2;
+      margin-left: 10px;
+
     }
   }
   a {
@@ -203,13 +206,6 @@ header {
   }
 
 }
-
-
-
-
-
-
-
 
 
 // INTRODUCTION
@@ -291,12 +287,6 @@ header {
 }
 
 
-
-
-
-
-
-
 // THOUGHTS
 // ----------------------------------------
 .blog {
@@ -337,12 +327,10 @@ header {
       word-spacing: 1px;
     }
 
-    p {
-      @extend %paragraph-text;
-      img {
+    p img {
         margin: $gutter/2 0 $gutter/3 0;
         @extend %styled-image;
-      }
+
     }
   }
 }
@@ -388,7 +376,6 @@ header {
 }
 
 
-
 // FOOTER
 // ----------------------------------------
 footer {
@@ -427,6 +414,11 @@ footer {
       border-bottom: 1px solid $plum-light;
     }
   }
+}
+
+.featured-paragraph {
+  font-size: $lg-font-size + 3;
+  line-height: $xl-font-size + 8;
 }
 
 .section-link {

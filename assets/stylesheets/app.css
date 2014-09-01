@@ -5,7 +5,7 @@
   border-radius: 5px;
   width: 100%; }
 
-.portfolio-individual .portfolio-content p, .blog article p {
+p, .portfolio-individual .portfolio-content p {
   color: #5a5a56;
   margin-top: 0px;
   margin-bottom: 13.33333px;
@@ -13,7 +13,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 20px; }
-  .portfolio-individual .portfolio-content p:last-child, .blog article p:last-child {
+  p:last-child, .portfolio-individual .portfolio-content p:last-child {
     margin: 0; }
 
 /* Bourbon 4.0.2
@@ -498,7 +498,7 @@ header {
         .site-header .header-links:last-child {
           margin-right: 0; }
         .site-header .header-links li {
-          width: 33.33333%;
+          width: 32.33333%;
           margin: 0px;
           font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
           text-align: center;
@@ -580,7 +580,7 @@ header {
         .home-header .header-links:last-child {
           margin-right: 0; }
         .home-header .header-links li {
-          width: 33.33333%;
+          width: 32.33333%;
           margin: 0px;
           font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
           text-align: center;
@@ -631,21 +631,22 @@ header {
     margin-right: 0; }
   .header-links ul {
     margin-top: 25px;
-    padding: 0px; }
+    padding: 0px;
+    text-align: right; }
   .header-links li {
     padding: 0px;
     margin: 0px;
-    float: right;
     display: inline-block;
+    text-align: right;
     padding-left: 20px;
     font-family: "adelle", "Adelle", Georgia, serif;
     font-size: 14px;
-    text-align: right;
     text-transform: uppercase;
     color: #7f677f; }
     @media screen and (min-width: 961px) {
       .header-links li {
-        font-size: 16px; } }
+        font-size: 16px;
+        margin-left: 10px; } }
   .header-links a {
     opacity: 0.8;
     color: #f7f6e4;
@@ -839,6 +840,10 @@ footer {
     text-transform: uppercase; }
     .footer-links a:hover {
       border-bottom: 1px solid #998099; }
+
+.featured-paragraph {
+  font-size: 21px;
+  line-height: 30px; }
 
 .section-link {
   display: block;
