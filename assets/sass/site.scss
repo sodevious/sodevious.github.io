@@ -1,4 +1,151 @@
 
+// HEADER & NAVIGATION
+// ----------------------------------------
+header {
+  background-color: $purple;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/img/nd-bg3.jpg');
+  border-bottom: 4px solid $offBlack;
+  height: $header-height-default;
+
+  @include responsive-header-content($header-height-default, 220px);
+
+  // LARGE DESKTOP
+  @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
+    height: $header-height-desktop;
+    @include responsive-header-content($header-height-desktop, 200px);
+  }
+
+  // MEDIUM DESKTOP
+  @include media(min-width $tablet+1 max-width $wide-tablet, 12) {
+    height: $header-height-tablet;
+    @include responsive-header-content($header-height-tablet, 180px);
+  }
+
+  // TABLET
+  @include media(max-width $tablet, 12) {
+    height: $header-height-mobile;
+
+    .header-title {
+      position: relative;
+      top: 30px;
+      @include span-columns(6);
+
+      height: 120px;
+    }
+    .header-links {
+      position: relative;
+      bottom: -55px;
+      @include span-columns(12);
+      margin-left: 0px;
+      li {
+        width: 33.33333%;
+        margin: 0px;
+        font-family: $sans-font;
+
+        text-align: center;
+        padding: 0px;
+        a {
+          color: $offBlack;
+        }
+      }
+    }
+  }
+  @include media(max-width $wide-mobile, 12) {
+    height: 160px;
+    .header-title {
+
+      height: 100px;
+    }
+  }
+
+  .navigation {
+    background-image: url('/img/nd-float4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100px center;
+    height: 100%;
+    position: relative;
+    bottom: 0px;
+    @include outer-container;
+
+    // LARGE DESKTOP
+    @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
+      width: $wide-tablet - 50;
+    }
+
+    // MEDIUM DESKTOP
+    @include media(min-width $tablet+1 max-width $wide-tablet, 12) {
+      width: $tablet - 50;
+      //background-position: center 150px;
+
+    }
+
+    @include media(max-width $tablet, 6) {
+      padding-left: $site-gutter;
+      padding-right: $site-gutter;
+      width: 100%;
+      background-position: right center;
+    }
+  }
+}
+
+.header-title {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  @include span-columns(3);
+  background-image: url('../assets/images/nicole-dominguez-logo.png');
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+
+  span {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+  }
+}
+.header-links {
+  margin-top: 0px;
+  @include span-columns(6);
+  @include shift(3);
+
+  ul {
+    margin-top: 25px;
+    padding: 0px;
+  }
+  li {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    display: inline-block;
+    padding-left: $site-gutter;
+    font-family: $serif-font;
+    font-size: $md-font-size;
+    text-align: right;
+    text-transform: uppercase;
+    color: lighten($plum, 10%);
+      @include media(min-width $wide-tablet+1, 12) {
+    font-size: $md-font-size + 2;
+
+      }
+  }
+  a {
+    opacity: 0.8;
+    color: $vanilla;
+    text-decoration: none;
+    &:hover {
+      opacity: 1;
+      color: darken($vanilla, 10%);
+    }
+  }
+}
+
 
 // INTRODUCTION
 // ----------------------------------------
@@ -12,16 +159,16 @@
     text-transform: none;
     line-height: 1.25em;
     color: mix($offBlack, $plum, 40%);
-  }
 
-  h3 {
-    margin: 0px;
-    padding-bottom: 6px;
-    font-weight: 500;
-    font-family: $serif-font;
-    color: $slate-light;
-    font-size: $sm-font-size;
-    text-transform: uppercase;
+    @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
+      font-size: $xl-font-size + 2;
+    }
+    @include media(max-width $wide-tablet, 12) {
+      font-size: $lg-font-size + 1;
+    }
+    @include media(max-width $tablet, 12) {
+      font-size: $xl-font-size + 1;
+    }
   }
 
   p {
@@ -31,17 +178,35 @@
     font-weight: 300;
     color: $violet;
     margin: 0px;
+
+    @include media(max-width $wide-desktop - 100, 12) {
+      font-size: 16px;
+      line-height: $xl-font-size;
+    }
+
   }
   .biography {
-    @include span-columns(7);
     font-size: $lg-font-size;
     line-height: $xl-font-size + 3;
     font-weight: 300;
     color: $plum;
 
+    @include span-columns(7);
+    @include media(max-width $tablet, 12) {
+      @include span-columns(12);
+      margin-bottom: $site-gutter;
+    }
   }
   .social-links {
-    @include span-columns(5);
+    h3 {
+      margin: 0px;
+      padding-bottom: 6px;
+      font-weight: 500;
+      font-family: $serif-font;
+      color: $slate-light;
+      font-size: $sm-font-size;
+      text-transform: uppercase;
+    }
     p {
       color: $slate;
       i {
@@ -50,6 +215,18 @@
         color: $purple-light;
       }
     }
+
+    @include span-columns(5);
+    @include media(max-width $tablet, 12) {
+      @include span-columns(12);
+      h3 {
+        padding-bottom: 0px;
+        padding-top: $site-gutter / 2;
+      }
+    }
+  }
+  .section-link {
+    margin-top: $site-gutter * 2.5;
   }
 }
 
@@ -60,7 +237,11 @@
 
 
 
+// THOUGHTS
+// ----------------------------------------
 .blog {
+  border-bottom: 0px;
+
   article, aside {
     @include span-columns(10);
     @include shift(1);
@@ -75,14 +256,11 @@
       a {
         color: lighten($plum, 5%);
 
-
-
         &:hover {
           border-bottom: 1px solid $purple;
           background-color: $plum-light;
-      color: $offWhite;
-    }
-
+          color: $offWhite;
+        }
       }
     }
     h3 {
@@ -95,117 +273,59 @@
     }
 
     p {
-      color: $slate;
-      margin-top: 0px;
-      margin-bottom: $site-gutter/1.5;
-      font-family: $serif-font;
-      font-size: 1.1em;
-      font-weight: 300;
-      line-height: 1.6em;
-      &:last-child {
-        margin: 0;
-      }
-
+      @extend %paragraph-text;
       img {
         margin: $gutter/2 0 $gutter/3 0;
         @extend %styled-image;
       }
     }
   }
+}
+.post-meta {
+  margin: $gutter/3 0 $gutter 0;
+  font-family: $sans-font;
+  font-size: 0.9em;
+  color: $plum;
 
-  .meta {
-    margin: $gutter/3 0 $gutter 0;
-    font-family: $sans-font;
-    font-size: 0.9em;
-    color: $plum;
-
-    a {
-      margin: 0;
-      padding-right: 5px;
-      font-size: 1.2em;
-      font-weight: 100;
-      line-height: 1px;
-      vertical-align: baseline;
-      color: lighten($plum, 20%);
-    }
-
-    i {
-      margin-left: 5px;
-      font-size: 0.8em;
-    }
+  a {
+    margin: 0;
+    padding-right: 5px;
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1px;
+    vertical-align: baseline;
+    color: lighten($plum, 20%);
   }
-  .single {
-    margin-bottom: $gutter;
 
-    h3 {
-      font-size: 1.8em;
-      line-height: 1em;
-    }
-
-    ul {
-      margin-left: $gutter;
-
-      li {
-        margin: $gutter/3 0;
-        font-size: 0.9em;
-        list-style-type: disc;
-      }
-    }
+  i {
+    margin-left: 5px;
+    font-size: 0.8em;
   }
-  aside {
-    a {
-      padding: 6px;
-      font-size: 0.85em;
-      text-transform: uppercase;
+}
 
-      background: rgba(255,255,255,0.8);
-      color: lighten($plum, 15%);
-      //@include border-radius(3px);
-    }
+.single-link {
+  margin-bottom: $gutter;
+
+  h3 {
+    font-size: 1.8em;
+    line-height: 1em;
+  }
+
+  ul {
+    margin-left: $gutter;
 
     li {
-      //@include span-columns(12);
-      //@include at-breakpoint($narrow-tablet) { @include span-columns(4,12); margin-bottom: 0; }
-      margin-top: $gutter/2;
-      text-align: center;
-      word-spacing: 2px;
-      //&:last-child { @include omega; }
-    }
-  }
-
-}
-
-section[role="projects"] {
-  .side-project {
-    //@include span-columns(12);
-    //@include at-breakpoint($narrow-tablet) { @include mini-half-col; margin-bottom: 0; }
-    margin-bottom: $gutter;
-    // &:last-child { @include omega; }
-
-    h3 {
-      margin-bottom: $gutter/3;
-      font-size: 1.3em;
-
-      a {
-        margin-left: $gutter/5;
-        font-size: 0.8em;
-        color: mix($haze, $teal, 35%);
-        &:hover { color: darken($teal, 10%); }
-      }
-    }
-
-    p {
-      font-size: 1.05em;
-      font-family: $serif-font;
-      line-height: 1.5em;
-      color: $slate;
+      margin: $gutter/3 0;
+      font-size: 0.9em;
+      list-style-type: disc;
     }
   }
 }
 
 
 
-
+// FOOTER
+// ----------------------------------------
 footer {
   padding: $gutter/2 0 $gutter/2 0;
   font-family: $sans-font;

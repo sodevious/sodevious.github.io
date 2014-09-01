@@ -3,19 +3,20 @@ layout: page
 title: Archives
 ---
 
-<section role="blog">
+<section class="blog">
     <div class="container">
         <h2>Archives</h2>
 
         {% for post in site.categories['thoughts'] %}
-        <article class="single">
-            <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
+        <article class="single-link">
+            <h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+
             <div class="meta">
-                Published on {{ post.date | date: "%B %e, %Y"  }} and it's probably about {{ post.tags }}.
+                Published on {{ post.date | date: "%B %e, %Y" }} and it's probably about {{ post.tags }}.
             </div>
         </article>
         {% endfor %}
-
-        <a class="back" href="/"><span>&#8592;</span>&nbsp;Back to all the things!</a>
     </div>
+
+    <a class="section-link" href="/"><i class="icon-long-arrow-left"></i> Back to all the things!</a>
 </section>

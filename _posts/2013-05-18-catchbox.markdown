@@ -1,27 +1,25 @@
 ---
-layout: project
+layout: portfolio
 title:  "Catchbox"
 date:   2013-05-18 16:33:26
-categories: projects
+categories: portfolio
 
 role: Design, Front-End development
-stack: Less, jQuery
 made: AngelHack 2013
 
-featured_img: /assets/images/portfolio/catchbox-preview.png
+featured_img: catchbox-preview.png
 github: https://github.com/trycatchblock/angelH4ck
 pretty_github: trycatchblock/angelH4ck
 
 images: 
  - url: /assets/images/portfolio/catchbox-home.png
    meta: Home Page
-   class: three 
+   class: grid-center
+
  - url: /assets/images/portfolio/catchbox-account.png
    meta: Account Page
-   class: one
+   class: grid-center
 ---
 
-I did the branding, web design and UI for our project at the 2013 AngelHack Hackathon - put together within the span of 24 hours. 
-
-Catchbox intercepts your packages, and delivers them to you when and wherever you are.
+I did the branding, web design and UI for our project at the 2013 AngelHack Hackathon - put together within the span of 24 hours. Catchbox intercepts your packages, and delivers them to you when and wherever you are.
 

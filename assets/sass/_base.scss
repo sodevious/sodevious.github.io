@@ -18,6 +18,7 @@ strong, b {
 
 p {
   color: $offBlack;
+
   a {
     border-bottom: 1px solid $plum-light;
     font-weight: 500;
@@ -52,6 +53,20 @@ a {
 .container {
   overflow: visible;
   @include outer-container;
+
+  @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
+    width: $wide-tablet - 50;
+  }
+
+  @include media(min-width $tablet+1 max-width $wide-tablet, 12) {
+    width: $tablet - 50;
+  }
+
+  @include media(max-width $tablet, 6) {
+    padding-left: $site-gutter;
+    padding-right: $site-gutter;
+    width: 100%;
+  }
 }
 
 section {
@@ -80,6 +95,7 @@ section {
     }
 
     i {
+      margin-right: 5px;
       margin-left: 5px;
     }
   }

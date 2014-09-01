@@ -170,6 +170,7 @@ section {
     section .section-link:hover {
       color: #635063; }
     section .section-link i {
+      margin-right: 5px;
       margin-left: 5px; }
 
 hr {
@@ -187,6 +188,97 @@ blockquote {
   font-size: 1em;
   font-style: italic;
   background: rgba(255, 255, 255, 0.7); }
+
+.portfolio .portfolio-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-bottom: 30px; }
+  .portfolio .portfolio-item:last-child {
+    margin-right: 0; }
+  .portfolio .portfolio-item:nth-child(2n) {
+    margin-right: 0; }
+  .portfolio .portfolio-item i {
+    font-size: 16px; }
+  .portfolio .portfolio-item img:hover {
+    top: 1px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px; }
+  .portfolio .portfolio-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 0px;
+    font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1em;
+    color: #635063; }
+    .portfolio .portfolio-item h3 .post-links {
+      float: right;
+      display: inline-block; }
+    .portfolio .portfolio-item h3 i {
+      position: relative;
+      top: 6px;
+      font-size: 1.4em; }
+    .portfolio .portfolio-item h3 a {
+      color: #635063; }
+      .portfolio .portfolio-item h3 a:hover {
+        color: #473947; }
+    .portfolio .portfolio-item h3 a > i {
+      margin-left: 0.4045em;
+      text-decoration: none;
+      color: #998099;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+      .portfolio .portfolio-item h3 a > i:hover {
+        color: #635063; }
+.portfolio .post-role {
+  margin: 0 0 5px 0;
+  display: block;
+  font-family: "adelle", "Adelle", Georgia, serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  font-weight: 300;
+  color: #81817b; }
+
+.portfolio.individual h2,
+section[role="projects"].individual h2 {
+  margin-bottom: 3.236em; }
+.portfolio.individual .portfolio-item,
+section[role="projects"].individual .portfolio-item {
+  margin-bottom: 1.618em; }
+.portfolio.individual .portfolio-content,
+section[role="projects"].individual .portfolio-content {
+  font-family: "adelle", "Adelle", Georgia, serif;
+  font-size: 1.09em;
+  line-height: 1.45em;
+  margin-bottom: 0.809em; }
+  .portfolio.individual .portfolio-content p,
+  section[role="projects"].individual .portfolio-content p {
+    color: #464644; }
+.portfolio.individual .page-meta,
+section[role="projects"].individual .page-meta {
+  display: block;
+  margin-bottom: 0.4045em;
+  color: #464644; }
+  .portfolio.individual .page-meta a,
+  section[role="projects"].individual .page-meta a {
+    color: #547177; }
+    .portfolio.individual .page-meta a:hover,
+    section[role="projects"].individual .page-meta a:hover {
+      color: #2f2b3f; }
+  .portfolio.individual .page-meta label,
+  section[role="projects"].individual .page-meta label {
+    text-transform: uppercase;
+    margin-right: 0.3236em;
+    font-size: 0.9em;
+    color: #74746f; }
+.portfolio.individual .portfolio-images img,
+section[role="projects"].individual .portfolio-images img {
+  margin-bottom: 2.1034em; }
+
+a.nav {
+  margin-top: 3.236em; }
 
 header {
   background-color: #2f2b3f;
@@ -300,97 +392,6 @@ header {
       opacity: 1;
       color: #ebe9bd; }
 
-.portfolio .portfolio-item {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-bottom: 30px; }
-  .portfolio .portfolio-item:last-child {
-    margin-right: 0; }
-  .portfolio .portfolio-item:nth-child(2n) {
-    margin-right: 0; }
-  .portfolio .portfolio-item i {
-    font-size: 16px; }
-  .portfolio .portfolio-item img:hover {
-    top: 1px;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px; }
-  .portfolio .portfolio-item h3 {
-    font-size: 1.3em;
-    margin-bottom: 0px;
-    font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 1em;
-    color: #635063; }
-    .portfolio .portfolio-item h3 .post-links {
-      float: right;
-      display: inline-block; }
-    .portfolio .portfolio-item h3 i {
-      position: relative;
-      top: 6px;
-      font-size: 1.4em; }
-    .portfolio .portfolio-item h3 a {
-      color: #635063; }
-      .portfolio .portfolio-item h3 a:hover {
-        color: #473947; }
-    .portfolio .portfolio-item h3 a > i {
-      margin-left: 0.4045em;
-      text-decoration: none;
-      color: #998099;
-      -webkit-transition: all 0.3s ease-in;
-      -moz-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
-      .portfolio .portfolio-item h3 a > i:hover {
-        color: #635063; }
-.portfolio .post-role {
-  margin: 0 0 5px 0;
-  display: block;
-  font-family: "adelle", "Adelle", Georgia, serif;
-  font-size: 0.6em;
-  text-transform: uppercase;
-  word-spacing: 1px;
-  font-weight: 300;
-  color: #81817b; }
-
-.portfolio.individual h2,
-section[role="projects"].individual h2 {
-  margin-bottom: 3.236em; }
-.portfolio.individual .portfolio-item,
-section[role="projects"].individual .portfolio-item {
-  margin-bottom: 1.618em; }
-.portfolio.individual .portfolio-content,
-section[role="projects"].individual .portfolio-content {
-  font-family: "adelle", "Adelle", Georgia, serif;
-  font-size: 1.09em;
-  line-height: 1.45em;
-  margin-bottom: 0.809em; }
-  .portfolio.individual .portfolio-content p,
-  section[role="projects"].individual .portfolio-content p {
-    color: #464644; }
-.portfolio.individual .page-meta,
-section[role="projects"].individual .page-meta {
-  display: block;
-  margin-bottom: 0.4045em;
-  color: #464644; }
-  .portfolio.individual .page-meta a,
-  section[role="projects"].individual .page-meta a {
-    color: #547177; }
-    .portfolio.individual .page-meta a:hover,
-    section[role="projects"].individual .page-meta a:hover {
-      color: #2f2b3f; }
-  .portfolio.individual .page-meta label,
-  section[role="projects"].individual .page-meta label {
-    text-transform: uppercase;
-    margin-right: 0.3236em;
-    font-size: 0.9em;
-    color: #74746f; }
-.portfolio.individual .portfolio-images img,
-section[role="projects"].individual .portfolio-images img {
-  margin-bottom: 2.1034em; }
-
-a.nav {
-  margin-top: 3.236em; }
-
 .intro h2 {
   margin: 0;
   padding-bottom: 30px;
@@ -439,52 +440,67 @@ a.nav {
       font-size: 12px;
       padding-right: 4px;
       color: #5c547c; }
+.intro .section-link {
+  margin-top: 50px; }
 
-.blog article, .blog aside {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
-  .blog article:last-child, .blog aside:last-child {
-    margin-right: 0; }
-.blog article {
-  margin-bottom: 20px; }
-  .blog article .post-title {
-    font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 600;
-    margin-bottom: 0.6472em; }
-    .blog article .post-title a {
-      color: #715b71; }
-      .blog article .post-title a:hover {
-        border-bottom: 1px solid #2f2b3f;
-        background-color: #998099;
-        color: #e6e6e6; }
-  .blog article h3 {
-    margin-bottom: 0px;
-    font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 1.25em;
-    line-height: 1.25em;
-    word-spacing: 1px; }
-  .blog article p {
-    color: #5a5a56;
-    margin-top: 0px;
-    margin-bottom: 13.33333px;
-    font-family: "adelle", "Adelle", Georgia, serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.6em; }
-    .blog article p:last-child {
-      margin: 0; }
-    .blog article p img {
-      margin: 0.809em 0 0.53933em 0; }
-.blog .meta {
+.blog {
+  border-bottom: 0px; }
+  .blog article, .blog aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .blog article:last-child, .blog aside:last-child {
+      margin-right: 0; }
+  .blog article {
+    margin-bottom: 20px; }
+    .blog article .post-title {
+      font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 600;
+      margin-bottom: 0.6472em; }
+      .blog article .post-title a {
+        color: #715b71; }
+        .blog article .post-title a:hover {
+          border-bottom: 1px solid #2f2b3f;
+          background-color: #998099;
+          color: #e6e6e6; }
+    .blog article h3 {
+      margin-bottom: 0px;
+      font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 1.25em;
+      line-height: 1.25em;
+      word-spacing: 1px; }
+    .blog article p {
+      color: #5a5a56;
+      margin-top: 0px;
+      margin-bottom: 13.33333px;
+      font-family: "adelle", "Adelle", Georgia, serif;
+      font-size: 1.1em;
+      font-weight: 300;
+      line-height: 1.6em; }
+      .blog article p:last-child {
+        margin: 0; }
+      .blog article p img {
+        margin: 0.809em 0 0.53933em 0; }
+  .blog aside a {
+    padding: 6px;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.8);
+    color: #8d728d; }
+  .blog aside li {
+    margin-top: 0.809em;
+    text-align: center;
+    word-spacing: 2px; }
+
+.post-meta {
   margin: 0.53933em 0 1.618em 0;
   font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.9em;
   color: #635063; }
-  .blog .meta a {
+  .post-meta a {
     margin: 0;
     padding-right: 5px;
     font-size: 1.2em;
@@ -492,47 +508,21 @@ a.nav {
     line-height: 1px;
     vertical-align: baseline;
     color: #998099; }
-  .blog .meta i {
+  .post-meta i {
     margin-left: 5px;
     font-size: 0.8em; }
-.blog .single {
+
+.single-link {
   margin-bottom: 1.618em; }
-  .blog .single h3 {
+  .single-link h3 {
     font-size: 1.8em;
     line-height: 1em; }
-  .blog .single ul {
+  .single-link ul {
     margin-left: 1.618em; }
-    .blog .single ul li {
+    .single-link ul li {
       margin: 0.53933em 0;
       font-size: 0.9em;
       list-style-type: disc; }
-.blog aside a {
-  padding: 6px;
-  font-size: 0.85em;
-  text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.8);
-  color: #8d728d; }
-.blog aside li {
-  margin-top: 0.809em;
-  text-align: center;
-  word-spacing: 2px; }
-
-section[role="projects"] .side-project {
-  margin-bottom: 1.618em; }
-  section[role="projects"] .side-project h3 {
-    margin-bottom: 0.53933em;
-    font-size: 1.3em; }
-    section[role="projects"] .side-project h3 a {
-      margin-left: 0.3236em;
-      font-size: 0.8em;
-      color: #92c0ba; }
-      section[role="projects"] .side-project h3 a:hover {
-        color: #58a59c; }
-  section[role="projects"] .side-project p {
-    font-size: 1.05em;
-    font-family: "adelle", "Adelle", Georgia, serif;
-    line-height: 1.5em;
-    color: #5a5a56; }
 
 footer {
   padding: 0.809em 0 0.809em 0;

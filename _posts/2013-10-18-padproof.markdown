@@ -7,24 +7,23 @@ categories: portfolio
 role: Responsive Web Design
 site_url: http://sodevious.github.io/padproof/
 pretty_url: sodevious.github.io/padproof
-featured_img: /assets/images/portfolio/padproof-preview.jpg
+featured_img: padproof-preview.jpg
 
 github: http://github.com/sodevious/padproof
 pretty_github: sodevious/padproof.com
 stack: Sass, jQuery
 images: 
  - url: /assets/images/portfolio/padproof-desktop.png
-   meta: Desktop Size
-   class: eight 
- - url: /assets/images/portfolio/padproof-mobile.png
-   meta: Mobile Size
-   class: two
+   meta: Padproof.com Desktop Size
+   class: grid-center
+
  - url: /assets/images/portfolio/padproof-ad.jpg
-   meta: Ad Design
-   class: three 
+   meta: Padproof.com Ad Design
+   class: grid-center
+
  - url: /assets/images/portfolio/padproof-emails.png
-   meta: HTML Email
-   class: one
+   meta: Padproof.com HTML Email
+   class: grid-center
 ---
 
 At Padproof, we got together and designed this landing page hackathon-style. We were toying with the idea of just offering one package to the public, while we work on v2. We also created HTML emails to use for promotions.

@@ -1,14 +1,14 @@
 ---
-layout: project
+layout: portfolio
 title:  "2 Billion Under 20 Blog"
 date:   2013-11-12 16:33:26
-categories: projects
+categories: portfolio
 
 role: Co-Editor, Blog Management
 site_url: http://blog.2billionunder20.com
 pretty_url: blog.2billionunder20.com
-featured_img: /assets/images/portfolio/2bu20-preview.png
+featured_img: 2bu20-preview.png
 
 ---
 
-I'm working with Rachael Phillips, Jared Klienhart, and Stacey Ferriera to add more value to the 2 Billion Under 20 community with a blog.
+I'm working with Rachael Phillips, Jared Klienhart, and Stacey Ferriera to add more value to the 2 Billion Under 20 community by sharing the voices and stories of those in our community.

@@ -5,10 +5,11 @@
   display: inline;
 }
 
-@mixin responsive-header-content($size) {
+@mixin responsive-header-content($size, $height) {
   .header-title {
     position: relative;
-    bottom: -$size + 130px;
+    bottom: -$size + ($height + 20px);
+    height: $height;
   }
   .header-links {
     position: relative;
@@ -20,4 +21,17 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
   border-radius: 5px;
   width: 100%;
+}
+
+%paragraph-text {
+  color: $slate;
+  margin-top: 0px;
+  margin-bottom: $site-gutter/1.5;
+  font-family: $serif-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  &:last-child {
+    margin: 0;
+  }
 }

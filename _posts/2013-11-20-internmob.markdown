@@ -4,10 +4,10 @@ title: "InternMob"
 date: 2013-11-20
 categories: portfolio
 
-role: User Interface Design, Web Design & Dev
+role: UI Design, Front-end Development
 site_url: http://internmob.co
 pretty_url: internmob.co
-featured_img: /assets/images/portfolio/internmob-preview.jpg
+featured_img: internmob-preview.jpg
 
 stack: Sass, jQuery
 images: 
@@ -22,4 +22,4 @@ images:
    class: center 
 ---
 
-This is a client project for a web app that allows companies to post challenges to college students. Those with the best answers get job interviews for paid internships. I handled design direction, user experience, and designing/developing the UI.
+This is a client project for a web app that allows companies to post challenges to college students. Those with the best answers get job interviews for paid internships. I handled design direction, user interface, working with a rails developer, and front-endd development (rails templating).

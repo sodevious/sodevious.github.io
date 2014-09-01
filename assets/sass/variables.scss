@@ -22,7 +22,7 @@ $slate-light:   lighten($slate, 20%);
 
 $header-height-default: 480px;
 $header-height-desktop: 400px;
-$header-height-tablet: 300px;
+$header-height-tablet: 240px;
 $header-height-mobile: 180px;
 
 
@@ -41,11 +41,16 @@ $sans-font: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Ne
 
 // Alternative breakpoints
 // ------------------------
-//$mobile: 23em;
-//$wide-mobile: 34em;
-//$narrow-tablet: 40em;
-//$wide-tablet: 46em;
-//$computer: 55em 12;
+
+$mobile:          320px;
+$wide-mobile:     480px;
+$narrow-tablet:   640px;
+$tablet:          768px;
+$wide-tablet:     960px;
+$desktop:         1000px;
+$wide-desktop:    1200px;
+
+
 
 //$gutter: 2em;
 $site-gutter: 20px;

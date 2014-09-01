@@ -6,7 +6,7 @@
         <article>
             <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
             {{ post.content }}
-            <div class="meta">
+            <div class="post-meta">
                 <a href="{{ post.url }}"><i class="icon-anchor"></i></a> Nicole published this on {{ post.date | date: "%B %e, %Y" }} and it's probably about {{ post.tag }}.
             </div>
         </article>
