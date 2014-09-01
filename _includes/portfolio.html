@@ -6,10 +6,7 @@
             <div class="portfolio-item">
                 <h3 class="portfolio-item-header">
                     <a href="{{post.url}}">{{ post.title }}</a>
-                    <span class="post-links">
-                        {% if post.github %}<a href="{{post.github}}"><i class="icon-code"></i></a>{% endif %}
-                        {% if post.site_url %}<a href="{{post.site_url}}"><i class="icon-globe"></i></a>{% endif %}
-                    </span>
+
                     <span class="post-role">
                         {% if post.role %}
                             {{ post.role }}

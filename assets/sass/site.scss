@@ -8,6 +8,54 @@ header {
   background-position: center center;
   background-image: url('/img/nd-bg3.jpg');
   border-bottom: 4px solid $offBlack;
+  .navigation {
+    height: 100%;
+    position: relative;
+    bottom: 0px;
+    @include outer-container;
+
+    // LARGE DESKTOP
+    @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
+      width: $wide-tablet - 50;
+    }
+
+    // MEDIUM DESKTOP
+    @include media(min-width $tablet+1 max-width $wide-tablet, 12) {
+      width: $tablet - 50;
+    }
+
+    @include media(max-width $tablet, 6) {
+      background-position: right center;
+      padding-left: $site-gutter;
+      padding-right: $site-gutter;
+      width: 100%;
+    }
+  }
+}
+
+.site-header {
+
+  height: $header-height-mobile;
+  @include responsive-header-content($header-height-mobile, 220px);
+  .header-title {
+    width: 220px;
+
+  }
+  .header-links {
+    width: 50%;
+    float: right;
+    margin-left: 0px;
+
+  }
+}
+.home-header {
+        .navigation {
+    background-image: url('/img/nd-float4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100px center;
+  }
+  border-bottom: 4px solid $offBlack;
   height: $header-height-default;
 
   @include responsive-header-content($header-height-default, 220px);
@@ -24,70 +72,29 @@ header {
     @include responsive-header-content($header-height-tablet, 180px);
   }
 
+  // MEDIUM DESKTOP
+  @include media(min-width $narrow-tablet + 10 max-width $tablet, 12) {
+    height: $header-height-tablet;
+    @include responsive-header-content($header-height-tablet, 120px);
+  }
+
   // TABLET
-  @include media(max-width $tablet, 12) {
+  @include media(max-width $narrow-tablet + 11, 12) {
     height: $header-height-mobile;
+    margin-bottom: 25px;
 
     .header-title {
-      position: relative;
-      top: 30px;
       @include span-columns(6);
-
-      height: 120px;
-    }
-    .header-links {
       position: relative;
-      bottom: -55px;
-      @include span-columns(12);
-      margin-left: 0px;
-      li {
-        width: 33.33333%;
-        margin: 0px;
-        font-family: $sans-font;
-
-        text-align: center;
-        padding: 0px;
-        a {
-          color: $offBlack;
-        }
-      }
+      height: 120px;
+      top: 30px;
     }
   }
   @include media(max-width $wide-mobile, 12) {
     height: 160px;
+
     .header-title {
-
       height: 100px;
-    }
-  }
-
-  .navigation {
-    background-image: url('/img/nd-float4.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100px center;
-    height: 100%;
-    position: relative;
-    bottom: 0px;
-    @include outer-container;
-
-    // LARGE DESKTOP
-    @include media(min-width $wide-tablet+1 max-width $wide-desktop - 100, 12) {
-      width: $wide-tablet - 50;
-    }
-
-    // MEDIUM DESKTOP
-    @include media(min-width $tablet+1 max-width $wide-tablet, 12) {
-      width: $tablet - 50;
-      //background-position: center 150px;
-
-    }
-
-    @include media(max-width $tablet, 6) {
-      padding-left: $site-gutter;
-      padding-right: $site-gutter;
-      width: 100%;
-      background-position: right center;
     }
   }
 }
@@ -96,13 +103,18 @@ header {
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  @include span-columns(3);
   background-image: url('../assets/images/nicole-dominguez-logo.png');
   overflow: visible;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom left;
+  @include span-columns(3);
 
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
   span {
     text-indent: 100%;
     white-space: nowrap;
@@ -110,6 +122,7 @@ header {
     display: block;
   }
 }
+
 .header-links {
   margin-top: 0px;
   @include span-columns(6);
@@ -130,10 +143,10 @@ header {
     text-align: right;
     text-transform: uppercase;
     color: lighten($plum, 10%);
-      @include media(min-width $wide-tablet+1, 12) {
-    font-size: $md-font-size + 2;
 
-      }
+    @include media(min-width $wide-tablet+1, 12) {
+      font-size: $md-font-size + 2;
+    }
   }
   a {
     opacity: 0.8;
@@ -144,12 +157,35 @@ header {
       color: darken($vanilla, 10%);
     }
   }
+  @include media(max-width $narrow-tablet + 11, 12) {
+    @include span-columns(12);
+    position: relative;
+    margin-left: 0px;
+    bottom: -50px;
+
+    li {
+      width: 33.33333%;
+      margin: 0px;
+      font-family: $sans-font;
+      text-align: center;
+      padding: 0px;
+      a {
+        color: $offBlack;
+        font-size: $md-font-size - 2;
+        border-bottom: 1px solid $plum;
+        &:hover {
+          color: $plum;
+        }
+      }
+    }
+  }
 }
 
 
 // INTRODUCTION
 // ----------------------------------------
 .intro {
+
   h2 {
     margin: 0;
     padding-bottom: 30px;
@@ -231,20 +267,18 @@ header {
 }
 
 
-
-
-
-
-
-
 // THOUGHTS
 // ----------------------------------------
 .blog {
   border-bottom: 0px;
 
   article, aside {
-    @include span-columns(10);
+    @include span-columns(12);
+
+      @include media(min-width $wide-tablet, 12) {
+ @include span-columns(10);
     @include shift(1);
+  }
   }
   article {
     margin-bottom: $site-gutter;
