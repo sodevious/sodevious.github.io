@@ -1,9 +1,8 @@
 .sass-cache
 .DS_Store
 .idea
-
+.idea/
 _site
-
 *.gem
 *.rbc
 .bundle
