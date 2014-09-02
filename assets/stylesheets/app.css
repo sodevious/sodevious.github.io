@@ -12,7 +12,7 @@ p, .portfolio-individual .portfolio-content p {
   font-family: "adelle", "Adelle", Georgia, serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 20px; }
+  line-height: 22px; }
   p:last-child, .portfolio-individual .portfolio-content p:last-child {
     margin: 0; }
 
@@ -120,16 +120,38 @@ i, cite, em, var, address, dfn {
 strong, b {
   font-weight: 600; }
 
+h2 {
+  margin: 0px;
+  color: #493d51;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 300;
+  font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1em; }
+
+h4 {
+  margin: 0px;
+  padding-bottom: 6px;
+  font-weight: 500;
+  font-family: "adelle", "Adelle", Georgia, serif;
+  color: #8e8e88;
+  font-size: 12px;
+  text-transform: uppercase; }
+
 p {
   color: #333333; }
-  p a {
-    border-bottom: 1px solid #998099;
-    font-weight: 500;
-    color: #2f2b3f; }
-    p a:hover {
-      background-color: #998099;
-      color: #e6e6e6;
-      border-bottom: 1px solid #2f2b3f; }
+
+ul a,
+p a {
+  border-bottom: 1px solid #998099;
+  font-weight: 500;
+  color: #2f2b3f; }
+  ul a:hover,
+  p a:hover {
+    color: #e6e6e6;
+    background-color: #998099;
+    border-bottom: 1px solid #2f2b3f; }
 
 a {
   text-decoration: none;
@@ -181,15 +203,16 @@ pre {
 section {
   padding: 60px 0;
   border-bottom: 1px solid #d9d4ca; }
-  section h2 {
+  section ul {
     margin: 0px;
-    color: #493d51;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 1.75em;
-    font-weight: 300;
-    font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 1em; }
+    padding: 0px;
+    font-weight: 300; }
+    section ul li {
+      margin-bottom: 6px;
+      list-style-type: none; }
+  section h4 {
+    margin-bottom: 0px;
+    margin-top: 20px; }
   @media screen and (max-width: 480px) {
     section {
       padding: 40px 0; } }
@@ -660,12 +683,9 @@ header {
       color: #ebe9bd; }
 
 .intro h2 {
-  margin: 0;
   padding-bottom: 30px;
   font-size: 28px;
   font-family: "adelle", "Adelle", Georgia, serif;
-  font-weight: 300;
-  text-transform: none;
   line-height: 1.25em;
   color: #4f444f; }
   @media screen and (min-width: 961px) and (max-width: 1100px) {
@@ -713,14 +733,6 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%; }
-  .intro .social-links h3 {
-    margin: 0px;
-    padding-bottom: 6px;
-    font-weight: 500;
-    font-family: "adelle", "Adelle", Georgia, serif;
-    color: #8e8e88;
-    font-size: 12px;
-    text-transform: uppercase; }
   .intro .social-links p {
     color: #5a5a56; }
   .intro .social-links:last-child {
@@ -809,7 +821,8 @@ header {
       list-style-type: disc; }
 
 footer {
-  padding: 0.809em 0 0.809em 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-family: "adelle-sans", "Adelle Sans", "Effra", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
   border-top: 4px solid #998099;
@@ -833,7 +846,8 @@ footer {
   width: 31.76157%;
   margin-left: 34.11922%;
   padding: 0px;
-  text-align: right; }
+  text-align: right;
+  margin-top: 0px; }
   .footer-links:last-child {
     margin-right: 0; }
   .footer-links li {

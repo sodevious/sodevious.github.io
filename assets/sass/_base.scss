@@ -18,21 +18,44 @@ strong, b {
   font-weight: 600;
 }
 
+h2 {
+  margin: 0px;
+  color: $violet;
+  padding-bottom: $site-gutter;
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 300;
+  font-family: $sans-font;
+  line-height: 1em;
+}
+
+h4 {
+  margin: 0px;
+  padding-bottom: 6px;
+  font-weight: 500;
+  font-family: $serif-font;
+  color: $slate-light;
+  font-size: $sm-font-size;
+  text-transform: uppercase;
+}
+
 p {
   color: $offBlack;
   @extend %paragraph-text;
+}
 
-  a {
-    border-bottom: 1px solid $plum-light;
-    font-weight: 500;
-    color: $purple;
-    &:hover {
-      background-color: $plum-light;
-      color: $offWhite;
-      border-bottom: 1px solid $purple;
-    }
+ul a,
+p a {
+  border-bottom: 1px solid $plum-light;
+  font-weight: 500;
+  color: $purple;
+  &:hover {
+    color: $offWhite;
+    background-color: $plum-light;
+    border-bottom: 1px solid $purple;
   }
 }
+
 
 a {
   text-decoration: none;
@@ -87,15 +110,20 @@ pre {
 section {
   padding: ($site-gutter * 3) 0;
   border-bottom: 1px solid $raspberry;
-  h2 {
+
+  ul {
     margin: 0px;
-    color: $violet;
-    padding-bottom: $site-gutter;
-    text-align: center;
-    font-size: 1.75em;
+    padding: 0px;
     font-weight: 300;
-    font-family: $sans-font;
-    line-height: 1em;
+    li {
+      margin-bottom: 6px;
+      list-style-type: none;
+    }
+  }
+
+  h4 {
+    margin-bottom: 0px;
+    margin-top: $site-gutter;
   }
 
   @include media(max-width $wide-mobile, 12) {

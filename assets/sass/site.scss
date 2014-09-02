@@ -212,12 +212,9 @@ header {
 // ----------------------------------------
 .intro {
   h2 {
-    margin: 0;
     padding-bottom: 30px;
     font-size: $xxl-font-size;
     font-family: $serif-font;
-    font-weight: 300;
-    text-transform: none;
     line-height: 1.25em;
     color: mix($offBlack, $plum, 40%);
 
@@ -259,15 +256,6 @@ header {
     }
   }
   .social-links {
-    h3 {
-      margin: 0px;
-      padding-bottom: 6px;
-      font-weight: 500;
-      font-family: $serif-font;
-      color: $slate-light;
-      font-size: $sm-font-size;
-      text-transform: uppercase;
-    }
     p {
       color: $slate;
     }
@@ -379,7 +367,8 @@ header {
 // FOOTER
 // ----------------------------------------
 footer {
-  padding: $gutter/2 0 $gutter/2 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-family: $sans-font;
   font-weight: 300;
   border-top: 4px solid $plum-light;
@@ -400,6 +389,7 @@ footer {
   @include shift(4);
   padding: 0px;
   text-align: right;
+  margin-top: 0px;
 
   li {
     display: inline-block;
