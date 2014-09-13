@@ -733,6 +733,8 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%; }
+  .intro .social-links h4 {
+    margin-top: 0px; }
   .intro .social-links p {
     color: #5a5a56; }
   .intro .social-links:last-child {
