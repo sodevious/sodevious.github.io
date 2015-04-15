@@ -2,7 +2,7 @@ name: Nicole Dominguez
 description: Nicole Dominguez's Portfolio and Playground
 url: http://nicoledominguez.com
 markdown: redcarpet
-pygments: true
+highlighter: true
 permalink: /:categories/:title
 timezone: America/New_York
 exclude: ['config.rb', 'README.md','gems','Gemfile','Guardfile', '.DS_Store']
