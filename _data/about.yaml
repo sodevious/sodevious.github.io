@@ -1,0 +1,51 @@
+sideprojects:
+ - item: Co-organize a meetup group in New York called <a href="http://www.meetup.com/TechUnderThirty/" target="_blank">Tech Under 30</a>
+
+coolthings:
+ - item: Rode the 2014 Northeast Startup Bus
+ - item: Participated in various hackathons including&colon; AngelHack, Hack n Jill, Startup Weekend NYC, TechCrunch Distrupt
+ - item: Became an Adobe Certified Associate in Visual Communication with Adobe Photoshop CS4
+
+conferences:
+ - item: GenerateNYC 2015
+ - item: Front End Design Conference 2015
+ - item: Forge Conference 2015
+
+features:
+ - publication: ShopTalk Show
+   title: "160 with Nicole Dominguez"
+   url: http://shoptalkshow.com/episodes/160-with-nicole-dominguez/
+
+ - publication: Fearless Careers Podcast
+   title: "Coding and Cashing In on Your Hobby with Nicole Dominguez"
+   url: http://www.skilledup.com/podcast/nicole-dominguez
+
+ - publication: SkilledUp
+   title: "5 Takeaways: Nicole Dominguez on Product Design and Coding"
+   url: http://www.skilledup.com/articles/5-takeaways-nicole-dominguez-product-design-coding/
+
+ - publication: Revision Path
+   title: "Nicole Dominguez Talks Mentoring And Her Biggest Influence"
+   url: http://revisionpath.com/nicole-dominguez/
+
+ - publication: The East Wing
+   title: "&num;60 Nicole Dominguez"
+   url: http://5by5.tv/eastwing/60
+
+ - publication: How To Hold A Pencil
+   title: "Nicole Dominguez, No. #32"
+   url: http://www.howtoholdapencil.com/episodes/032/
+
+ - publication: Rackspace
+   title: Women in Tech
+   url: http://rackspacestartups.com/10447/
+
+ - publication: The New York Times
+   title: Sorry, Boys, This Is Our Domain
+   url: http://www.nytimes.com/2008/02/21/fashion/21webgirls.html
+
+mentoring:
+ - item: Co-taught the Fall 2014 Web Design cohort at the <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
+ - item: Drop in teacher at <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
+ - item: Speaker at the Parsons 2015 Careers in The Arts Fair
+ - item: Mentor at DjangoGirls NYC
