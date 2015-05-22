@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  'GCC + Python + Pip install errors got me like, "i can't even"'
-date:   2013-05-22 11:42:02
+title: 'GCC + Python + Pip install errors got me like, "i can't even"'
+date: 2013-05-22 11:42:02
 categories: thoughts
 tag: development, python, protip
 ---
