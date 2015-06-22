@@ -1,5 +1,6 @@
 .portfolio-item {
   @include span-columns(6);
+  float: none;
   margin-bottom: $site-gutter * 1.5;
 
   img {

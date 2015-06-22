@@ -1,17 +1,15 @@
-<header class="home-header">
-    <div class="navigation">
-        <a href="/">
-            <h1 class="header-title">
-                Nicole Dominguez
-            </h1>
-        </a>
+<div class="navigation">
+    <a href="/">
+        <h1 class="header-title">
+            {{ site.name }}
+        </h1>
+    </a>
 
-        <nav class="header-links" role="navigation">
-            <ul>
-                <li><a href="/about">About Me</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-                <li><a href="/thoughts">Thoughts</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <nav class="header-links" role="navigation">
+        <ul>
+            {% for item in site.data.navigation %}
+                <li><a href="/{{ item.link }}">{{ item.label }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

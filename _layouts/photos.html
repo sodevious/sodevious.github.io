@@ -1,0 +1,43 @@
+{% include head.html %}
+
+<header class="site-header">
+    {% include header.html %}
+</header>
+
+{{ content }}
+
+<footer>
+    <div class="container">
+        <p class="footer-meta">&copy; 2008-2015 Nicole Dominguez</p>
+        <ul class="footer-links">
+            <li>
+                <a href="https://github.com/sodevious/sodevious.github.io">Source</a>
+            </li>
+            <li>
+                <a href="http://nicoledominguez.me">More Work</a>
+            </li>
+            <li>
+                <a href="/feed.xml">RSS Feed</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="/assets/vendor/jquery-1.6.1.min.js"></script>
+<script src="/assets/vendor/jquery.masonry.min.js"></script>
+<script>
+    $(function () {
+        var $container = $('.container');
+
+        $container.imagesLoaded(function () {
+            $container.masonry({
+                itemSelector: '.portfolio-item'
+            });
+        });
+
+    });
+</script>
+
+{% include analytics.html %}
+</body>
+</html>

@@ -1,10 +1,13 @@
 {% include head.html %}
-{% include site-header.html %}
+
+<header class="site-header">
+    {% include header.html %}
+</header>
 
 <section class="blog">
     <div class="container">
         <article class="single">
-            <h3 class="post-title"><a href="{{page.url}}">{{page.title}}</a></h3>
+            <h3 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
             {{ content }}
             <div class="meta">
                 Nicole wrote this on {{ page.date | date: "%B %e, %Y" }} and it's probably about {{ page.tag }}.

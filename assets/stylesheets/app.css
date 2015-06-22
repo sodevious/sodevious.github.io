@@ -238,6 +238,7 @@ blockquote {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
+  float: none;
   margin-bottom: 30px; }
   .portfolio-item:last-child {
     margin-right: 0; }

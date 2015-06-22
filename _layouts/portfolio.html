@@ -1,5 +1,8 @@
 {% include head.html %}
-{% include site-header.html %}
+
+<header class="site-header">
+    {% include header.html %}
+</header>
 
 <section class="portfolio">
     <div class="container">
@@ -27,7 +30,7 @@
                     {% endif %}
                     {% if page.made %}
                         <li>
-                            <label>While</label> {{page.made}}
+                            <label>While</label> {{ page.made }}
                         </li>
                     {% endif %}
                     {% if page.features %}
@@ -37,12 +40,12 @@
                     {% endif %}
                     {% if page.site_url %}
                         <li>
-                            <label>Site</label><a href="{{page.site_url}}">{{page.pretty_url}}</a>
+                            <label>Site</label><a href="{{ page.site_url }}">{{ page.pretty_url }}</a>
                         </li>
                     {% endif %}
                     {% if page.github %}
                         <li>
-                            <label>Code</label><a href="{{page.github}}">{{page.pretty_github}}</a>
+                            <label>Code</label><a href="{{ page.github }}">{{ page.pretty_github }}</a>
                         </li>
                     {% endif %}
                 </ul>

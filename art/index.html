@@ -1,0 +1,41 @@
+---
+layout: photos
+title: Art
+
+pieces:
+
+ - slug: sketchnote_brooklynbeta.jpg
+   title: "Brooklyn Beta 2014"
+
+ - slug: photo_williamsburg_sign_dominguez.jpg
+   title: "Responsible Responsive Design"
+
+ - slug: photo_williamsburg_ferry_dominguez.jpg
+   title: "Responsible Responsive Design"
+
+ - slug: sketchnote_sara_content.jpg
+   title: "What You Don't Know Will Hurt You"
+
+ - slug: sketchnote_grigsby-responsible.jpg
+   title: "Responsible Responsive Design"
+
+ - slug: sketchnote_tutsplus-scss.jpg
+   title: "Maintanable CSS with Sass and Compass - TutsPlus"
+
+ - slug: photo_singapore_chinatown_dominguez.jpg
+   title: "Responsible Responsive Design"
+
+
+---
+
+<section class="portfolio">
+    <h2>Photography, Illustration, Sketchnotes</h2>
+
+    <div class="container">
+        {% for image in page.pieces %}
+            <div class="portfolio-item">
+                <a href="/assets/images/art/{{ image.slug }}"><img src="/assets/images/art/{{ image.slug }}" alt="{{ image.title }}" title="{{ image.title }}" /></a>
+            </div>
+        {% endfor %}
+    </div>
+</section>
