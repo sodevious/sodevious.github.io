@@ -1,4 +1,5 @@
 sideprojects:
+ - item: Co-organize <a href="http://www.meetup.com/django-nyc/" target="_blank">Django-NYC meetup</a>
  - item: Co-organize <a href="https://twitter.com/djangogirlsnyc">DjangoGirlsNYC</a> workshops + events
  - item: Co-organize <a href="http://www.meetup.com/TechUnderThirty/" target="_blank">Tech Under 30</a> meetup in NYC
 
@@ -54,3 +55,4 @@ mentoring:
  - item: Drop in teacher at <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
  - item: Speaker at the Parsons 2015 Careers in The Arts Fair
  - item: Mentor at DjangoGirls NYC
+ - item: "Judge at Black Girls Code Hackathon, #BCGProjectHumanity"
