@@ -53,8 +53,12 @@ features:
    url: http://rackspacestartups.com/10447/
 
  - publication: The New York Times
-   title: Sorry, Boys, This Is Our Domain
+   title: "Sorry, Boys, This Is Our Domain"
    url: http://www.nytimes.com/2008/02/21/fashion/21webgirls.html
+   
+ - publication: SkilledUp Blog
+   title: "5 Female Web Developers You Should Follow on Twitter"
+   url: http://www.skilledup.com/articles/5-female-web-developers-follow-twitter
 
 mentoring:
  - item: Co-taught the Fall 2014 Web Design cohort at the <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
