@@ -12,6 +12,8 @@ conferences:
  - item: "<s>GenerateNYC 2015</s>"
  - item: "<s>Front End Design Conference 2015</s>"
  - item: Forge Conference 2015
+ - item: SassConf 2015
+ - item: PyGotham 2015
 
 features:
  - publication: ShopTalk Show
@@ -21,6 +23,10 @@ features:
  - publication: The East Wing
    title: "I’m Still Not a Fan of Dim Sum - Nicole Dominguez"
    url: http://goodstuff.fm/theeastwing/16
+
+ - publication: CodeNewbie Podcast
+   title: "Ep. 48 | Freelance to Full-Time"
+   url: http://www.codenewbie.org/podcast/freelance-to-full-time
 
  - publication: Fearless Careers Podcast
    title: "Coding and Cashing In on Your Hobby with Nicole Dominguez"
