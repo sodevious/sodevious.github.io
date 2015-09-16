@@ -1,17 +1,19 @@
 sideprojects:
  - item: Co-organize <a href="http://www.meetup.com/django-nyc/" target="_blank">Django-NYC meetup</a>
  - item: Co-organize <a href="https://twitter.com/djangogirlsnyc">DjangoGirlsNYC</a> workshops + events
- - item: Co-organize <a href="http://www.meetup.com/TechUnderThirty/" target="_blank">Tech Under 30</a> meetup in NYC
 
 coolthings:
  - item: Rode the 2014 Northeast Startup Bus &mdash; Sttack App
  - item: Participated in various hackathons including&colon; AngelHack, Hack n Jill, Startup Weekend NYC, TechCrunch Distrupt
  - item: Became an Adobe Certified Associate in Visual Communication with Adobe Photoshop CS4
+ - item: Developer aboard <a href="http://starterisland.com/" target="_blank">Starter Island 2015</a>
 
 conferences:
  - item: "<s>GenerateNYC 2015</s>"
  - item: "<s>Front End Design Conference 2015</s>"
  - item: Forge Conference 2015
+ - item: SassConf 2015
+ - item: PyGotham 2015
 
 features:
  - publication: ShopTalk Show
@@ -21,6 +23,10 @@ features:
  - publication: The East Wing
    title: "I’m Still Not a Fan of Dim Sum - Nicole Dominguez"
    url: http://goodstuff.fm/theeastwing/16
+
+ - publication: CodeNewbie Podcast
+   title: "Ep. 48 | Freelance to Full-Time"
+   url: http://www.codenewbie.org/podcast/freelance-to-full-time
 
  - publication: Fearless Careers Podcast
    title: "Coding and Cashing In on Your Hobby with Nicole Dominguez"
@@ -47,12 +53,16 @@ features:
    url: http://rackspacestartups.com/10447/
 
  - publication: The New York Times
-   title: Sorry, Boys, This Is Our Domain
+   title: "Sorry, Boys, This Is Our Domain"
    url: http://www.nytimes.com/2008/02/21/fashion/21webgirls.html
+   
+ - publication: SkilledUp Blog
+   title: "5 Female Web Developers You Should Follow on Twitter"
+   url: http://www.skilledup.com/articles/5-female-web-developers-follow-twitter
 
 mentoring:
  - item: Co-taught the Fall 2014 Web Design cohort at the <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
  - item: Drop in teacher at <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
  - item: Speaker at the Parsons 2015 Careers in The Arts Fair
  - item: Mentor at DjangoGirls NYC
- - item: "Judge at Black Girls Code Hackathon, #BCGProjectHumanity"
+ - item: "Judge at Black Girls Code Hackathon, <a href='https://twitter.com/axosoft/status/625436811205189632' target='_blank'>#BCGProjectHumanity</a>"
