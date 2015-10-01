@@ -59,6 +59,10 @@ features:
  - publication: SkilledUp Blog
    title: "5 Female Web Developers You Should Follow on Twitter"
    url: http://www.skilledup.com/articles/5-female-web-developers-follow-twitter
+   
+ - publication: People of Color in Tech
+   title: "Episode 7 – Nicole Dominguez"
+   url: http://peopleofcolorintech.com/engineers/nicole-dominguez/
 
 mentoring:
  - item: Co-taught the Fall 2014 Web Design cohort at the <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
