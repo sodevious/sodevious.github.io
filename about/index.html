@@ -2,7 +2,7 @@
 layout: full
 title: About Me
 
-bio: Hola &mdash; I&apos;m Nicole and I&apos;m a senior product designer &amp; front end developer at <a href="http://sawhorsemedia.com">Sawhorse Media</a>. I&apos;m a completely self taught designer, and have been madly in love with the intersection between design markup for the past seven years. Based out of Brooklyn, NY, some of my favorite things are getting lost on my bike and discovering new foods.
+bio: Hey there &mdash; I&apos;m Nicole and I&apos;m a Senior Product Designer &amp; Front End Developer at <a href="http://sawhorsemedia.com">Sawhorse Media</a>. I&apos;m a completely self taught designer, and have been madly in love with the intersection between design markup for the past seven years. Based out of Brooklyn, NY, some of my favorite things are getting lost on my bike and discovering new foods.
 ---
 
 <section class="blog">
@@ -17,7 +17,8 @@ bio: Hola &mdash; I&apos;m Nicole and I&apos;m a senior product designer &amp; f
             <h4>Featured In</h4>
             <ul>
                 {% for feature in site.data.about.features %}
-                    <li>{{ feature.publication }}: "<a href="{{ feature.url }}" target="_blank">{{ feature.title }}</a>"
+                    <li>
+                        {{ feature.publication }}: "<a href="{{ feature.url }}" target="_blank">{{ feature.title }}</a>"
                     </li>
                 {% endfor %}
             </ul>
@@ -25,7 +26,9 @@ bio: Hola &mdash; I&apos;m Nicole and I&apos;m a senior product designer &amp; f
             <h4>Speaking</h4>
             <ul>
                 {% for feature in site.data.about.speaking %}
-                    <li>{{ feature.item }}</li>
+                    <li>
+                        {{ feature.event }}: "<a href="{{ feature.url }}" target="_blank">{{ feature.title }}</a>"
+                    </li>      
                 {% endfor %}
             </ul>
 
