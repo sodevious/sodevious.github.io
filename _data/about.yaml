@@ -9,21 +9,20 @@ coolthings:
  - item: Developer aboard <a href="http://starterisland.com/" target="_blank">Starter Island 2015</a>
 
 speaking:
- - event: Rackspace
-   title: Women in Tech
+ - event: "Rackspace"
+   title: "Women in Tech"
    url: http://rackspacestartups.com/10447/
-    
- - publication: Bushwick Film Festival 2015
-   title: "Women in Technology Panelist"
-   url: http://livestream.com/LivestreamPublic/BFF/videos/100982186   
-   
- - publication: AOL & UnCubed Present: The Edge Live Series
-   title: "What's your Stack? Panelist"
-   url: http://aolpresents.uncubed.com/   
-   
- - publication: Parsons
-   title: "Careers in The Arts Fair, 2015"
 
+ - publication: "Bushwick Film Festival &mdash; 2015"
+   title: "Women in Technology &mdash; Panelist"
+   url: http://livestream.com/LivestreamPublic/BFF/videos/100982186   
+
+ - publication: "AOL & UnCubed Present: The Edge Live Series"
+   title: "What's your Stack? &mdash; Panelist"
+   url: http://aolpresents.uncubed.com/   
+
+ - publication: "Parsons"
+   title: "Careers in The Arts Fair, 2015"
 
 features:
  - publication: ShopTalk Show
@@ -61,18 +60,17 @@ features:
  - publication: The New York Times
    title: "Sorry, Boys, This Is Our Domain"
    url: http://www.nytimes.com/2008/02/21/fashion/21webgirls.html
-   
+
  - publication: SkilledUp Blog
    title: "5 Female Web Developers You Should Follow on Twitter"
    url: http://www.skilledup.com/articles/5-female-web-developers-follow-twitter
-   
+
  - publication: People of Color in Tech
    title: "Episode 7 – Nicole Dominguez"
    url: http://peopleofcolorintech.com/engineers/nicole-dominguez/
 
-   
 mentoring:
  - item: Co-taught the Fall 2014 Web Design cohort at the <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
  - item: Drop in teacher at <a href="http://rampup.startupinstitute.com/" target="_blank">Startup Institute</a>
- - item: Mentor at DjangoGirls NYC, March 2015
+ - item: "Mentor at DjangoGirls NYC, March 2015"
  - item: "Judge at Black Girls Code Hackathon, <a href='https://twitter.com/axosoft/status/625436811205189632' target='_blank'>#BCGProjectHumanity</a>"
