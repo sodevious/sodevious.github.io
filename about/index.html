@@ -14,18 +14,18 @@ bio: Hola &mdash; I&apos;m Nicole and I&apos;m a senior product designer &amp; f
                 {{ page.bio }}
             </p>
 
-            <h4>Attending</h4>
-            <ul>
-                {% for conference in site.data.about.conferences %}
-                    <li>{{ conference.item }}</li>
-                {% endfor %}
-            </ul>
-
             <h4>Featured In</h4>
             <ul>
                 {% for feature in site.data.about.features %}
                     <li>{{ feature.publication }}: "<a href="{{ feature.url }}" target="_blank">{{ feature.title }}</a>"
                     </li>
+                {% endfor %}
+            </ul>
+
+            <h4>Speaking</h4>
+            <ul>
+                {% for feature in site.data.about.speaking %}
+                    <li>{{ feature.item }}</li>
                 {% endfor %}
             </ul>
 
@@ -43,7 +43,7 @@ bio: Hola &mdash; I&apos;m Nicole and I&apos;m a senior product designer &amp; f
                 {% endfor %}
             </ul>
 
-            <h4>In the past</h4>
+            <h4>Cool shit</h4>
             <ul>
                 {% for thing in site.data.about.coolthings %}
                     <li>{{ thing.item }}</li>
