@@ -459,6 +459,12 @@ blockquote {
     .portfolio-individual .page-meta {
       display: none; } }
 
+.portfolio-disclaimer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2f2b3f; }
+
 header {
   background-color: #2f2b3f;
   background-size: cover;
@@ -713,10 +719,12 @@ header {
   line-height: 25px;
   font-weight: 300;
   color: #635063;
+  padding-top: 20px;
+  margin-left: 8.5298%;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 57.35098%; }
+  width: 82.94039%; }
   .intro .biography:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {

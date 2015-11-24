@@ -1,11 +1,15 @@
 <section class="portfolio">
     <h2>Selected Works</h2>
 
+    <p class="portfolio-disclaimer">
+        This area is outdated as of early 2014, please contact me for more recent examples of work.
+    </p>
+
     <div class="container">
-        {% for post in site.categories['portfolio'] limit:4 %}
+        {% for post in site.categories['portfolio'] limit:2 %}
             <div class="portfolio-item">
                 <h3 class="portfolio-item-header">
-                    <a href="{{post.url}}">{{ post.title }}</a>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
 
                     <span class="post-role">
                         {% if post.role %}
@@ -15,7 +19,7 @@
                         {% endif %}
                     </span>
                 </h3>
-                <a href="{{post.url}}"><img src="/assets/images/portfolio/{{post.featured_img}}"/></a>
+                <a href="{{ post.url }}"><img src="/assets/images/portfolio/{{ post.featured_img }}"/></a>
             </div>
         {% endfor %}
     </div>

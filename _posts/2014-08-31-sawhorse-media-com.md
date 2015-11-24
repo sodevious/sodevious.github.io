@@ -4,7 +4,7 @@ title: "SawhorseMedia.com Redesign"
 date: 2014-08-31
 categories: portfolio
 
-role: Web Designer
+role: Web Design & Development
 features: Responsive, Retina Friendly
 site_url: http://sawhorsemedia.com
 pretty_url: sawhorsemedia.com
@@ -20,4 +20,5 @@ images:
 The Sawhorse Media website had been left alone for years as
 our team focused on building great products. So, I decided it
 was finally time for us to present ourselves in a manner that
-was true to ourselves and what we were building.
+was true to ourselves and what we were building. The goal was
+to simply showcase the products Sawhorse Media was responsible for.
