@@ -11,11 +11,13 @@ include: ['.htaccess', '.htpasswd']
 rdiscount:
     extensions: [smart]
 
+
 sass:
-    sass_dir: _site/assets/sass
-    css_dir: _site/assets/stylesheets
+    sass_dir: assets/stylesheets
+    css_dir: assets/stylesheets
     output_style: compact
     line_comments: false
+    
 
 # Plugin: jekyll-assets
 assets:

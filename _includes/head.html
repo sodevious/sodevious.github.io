@@ -13,15 +13,23 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/assets/stylesheets/normalize.css">
-    <link rel="stylesheet" href="/assets/stylesheets/app.css">
-    <link rel="stylesheet" href="/assets/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/vendor/font-awesome-social.css">
+    <link rel="stylesheet" href="/assets/stylesheets/style.css">
 
     <!-- Vendor -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@sodevious">
     <meta name="google-site-verification" content="af0x8lMFq5Izj7MNfhrGXiObtaPCSo4QrON2DW8BjIM" />
-    <script type="text/javascript" src="//use.typekit.net/kna6wrw.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- Typekit -->
+    <script>
+        (function(d) {
+            var config = {
+              kitId: 'amr1fda',
+              scriptTimeout: 3000,
+              async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+  </script>
 </head>
 <body>

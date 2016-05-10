@@ -1,0 +1,68 @@
+
+//
+// Homepage Header
+// --------------------------
+$nd-header-height-fallback: 420px
+$nd-header-height:          42vw
+// --------------------------
+
+.nd-header 
+    background-color: $purple-dark
+    height: $nd-header-height-fallback
+    height: $nd-header-height
+
+.nd-header-content
+    color: white
+    padding-top: 4vw
+
+.nd-header-content,
+.nd-header-image
+    height: $nd-header-height-fallback
+    height: $nd-header-height
+    width: 50%
+    float: left
+
+.nd-header-image
+    background-color: $purple-dark
+    background-image: url('/assets/images/nd-header-bg.jpg')
+    background-position: center
+    background-size: cover
+
+.nd-header-logo
+    margin: 1vw auto 1.5vw
+    opacity: 0.75 
+    display: block
+    width: 25vw
+
+.nd-header-title
+    font-weight: $nd-adelle-light
+    margin: auto 
+    width: 30vw
+    font-size: 1.6vw
+    opacity: 0.75
+    line-height: 4.25vw
+
+.nd-header-intro
+    font-family: $nd-freight
+    margin: 0px auto 
+    color: $purple-light
+    width: 30vw
+    font-size: 1.5vw
+    line-height: 2vw
+
+.nd-header-cta
+    border-radius: 3px 
+    padding: 1.35vw 0px
+    text-transform: uppercase
+    text-align: center
+    width: 22vw
+    margin: 3vw auto 0
+    display: block
+    font-size: 1.15vw
+    line-height: 1vw
+    font-weight: $nd-adelle-bold
+    color: $vanilla
+
+    &:hover 
+        background-color: $purple
+
