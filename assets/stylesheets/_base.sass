@@ -2,7 +2,6 @@
 //
 // Reset Styles
 // --------------------------
-
 body 
     -webkit-text-size-adjust: 100%
     background-color: $vanilla
@@ -17,7 +16,6 @@ a
 section 
     padding: ($site-gutter * 3) 0
     border-bottom: 1px solid $raspberry
-
 
     h4 
         margin-bottom: 0px
@@ -41,5 +39,23 @@ blockquote
     font-style: italic
     background: rgba(255, 255, 255, 0.7)
 
+
 .container 
     overflow: visible
+
+//
+// Utilities
+// --------------------------
+@media screen and (max-width: $tablet)
+    .hide-on-mobile
+        display: none !important
+
+
+@media screen and (max-width: $desktop)
+    .hide-on-tablet
+        display: none!important
+
+.clearfix:after
+    content: " "
+    display: block
+    clear: both

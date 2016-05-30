@@ -1,68 +1,289 @@
-
 //
 // Homepage Header
 // --------------------------
 $nd-header-height-fallback: 420px
-$nd-header-height:          42vw
+$nd-header-height: 40vw
+$header-content-width: 400px
 // --------------------------
 
+
+//
+// Base Homepage
+// --------------------------
+.nd-tile
+    height: 100%
+
+    @media screen and (min-width: $tablet)
+        display: table-cell
+        width: 50%
+
+
+.nd-tile-wrapper
+    width: 100%
+
+    @media screen and (min-width: $tablet)
+        display: table
+        height: 45vw
+
+
+//
+// Header
+// --------------------------
 .nd-header 
     background-color: $purple-dark
-    height: $nd-header-height-fallback
-    height: $nd-header-height
+
+    .nd-tile
+        @media screen and (min-width: $tablet)
+            vertical-align: middle
 
 .nd-header-content
+    text-align: center
     color: white
-    padding-top: 4vw
+    padding: 40px 0
 
-.nd-header-content,
-.nd-header-image
-    height: $nd-header-height-fallback
-    height: $nd-header-height
-    width: 50%
-    float: left
+    @media screen and (min-width: $tablet)
+        padding: 0px
 
 .nd-header-image
     background-color: $purple-dark
     background-image: url('/assets/images/nd-header-bg.jpg')
     background-position: center
     background-size: cover
+    position: relative
+    height: 300px
 
 .nd-header-logo
-    margin: 1vw auto 1.5vw
-    opacity: 0.75 
+    max-width: $header-content-width
+    margin: 0 auto 20px
     display: block
-    width: 25vw
+    opacity: 0.75
+    width: 80%
+
+    @media screen and (min-width: $tablet)
+        margin: 0 auto 2vw
+        width: 26vw
 
 .nd-header-title
-    font-weight: $nd-adelle-light
-    margin: auto 
-    width: 30vw
-    font-size: 1.6vw
+    margin: auto
     opacity: 0.75
-    line-height: 4.25vw
+    line-height: 1.2em
+    padding-bottom: 15px
+    font-size: $lg-font-size - 2
+    font-weight: $nd-adelle-light
+
+    @media screen and (min-width: $tablet)
+        max-width: $header-content-width - 90
+
+    @media screen and (min-width: $desktop)
+        max-width: $header-content-width
+        font-size: $lg-font-size + 3
 
 .nd-header-intro
+    margin: 0px auto
+    line-height: 1.2em
     font-family: $nd-freight
-    margin: 0px auto 
-    color: $purple-light
-    width: 30vw
-    font-size: 1.5vw
-    line-height: 2vw
+    font-size: $lg-font-size
+    color: lighten($purple-light, 2.5%)
+    width: 85%
+
+    @media screen and (min-width: $tablet)
+        max-width: $header-content-width - 90
+
+    @media screen and (min-width: $desktop)
+        max-width: $header-content-width
+        font-size: $lg-font-size + 5
 
 .nd-header-cta
-    border-radius: 3px 
-    padding: 1.35vw 0px
+    font-weight: $nd-adelle-bold
     text-transform: uppercase
     text-align: center
-    width: 22vw
-    margin: 3vw auto 0
-    display: block
-    font-size: 1.15vw
-    line-height: 1vw
-    font-weight: $nd-adelle-bold
+    border-radius: 3px
     color: $vanilla
+    display: block
 
-    &:hover 
+    &:hover
         background-color: $purple
 
+    @media screen and (min-width: $tablet)
+        padding: 1.35vw 0px
+        margin: 3vw auto 0
+        font-size: 1.15vw
+        line-height: 1vw
+        width: 20vw
+
+.nd-header-credit
+    background-color: rgba(255,255,255,0.5)
+    font-size: $sm-font-size
+    display: inline-block
+    position: absolute
+    padding: 6px 10px
+    color: $purple
+    bottom: 0
+    right: 0
+
+    &:hover
+        background-color: $slate
+        color: white
+
+
+//
+// Homepage Content
+// --------------------------
+$nd-content-height: 500px
+// --------------------------
+.nd-content
+    display: block
+    padding: 0px
+    clear: both
+
+    .nd-tile
+        vertical-align: middle
+        padding: 40px
+
+
+    @media screen and (min-width: $tablet)
+        &.nd-tile-wrapper,
+        &.nd-tile-wrapper .nd-tile
+            height: 50vw
+
+        .nd-tile
+            vertical-align: middle
+            padding: 0 5vw
+
+    @media screen and (min-width: $desktop)
+        &.nd-tile-wrapper,
+        &.nd-tile-wrapper .nd-tile
+            height: 44vw
+
+    @media screen and (min-width: $wide-desktop)
+        &.nd-tile-wrapper,
+        &.nd-tile-wrapper .nd-tile
+            height: 38vw
+
+.nd-content-header
+    text-transform: uppercase
+    font-family: $nd-adelle
+    margin-top: 0px
+    margin-bottom: 10px
+    color: $purple
+
+    &:nth-of-type(2)
+        margin-top: 20px
+
+.nd-content-hire
+    font-size: $lg-font-size - 2
+
+    p
+        font-family: $nd-freight
+        margin-top: 0px
+        margin-bottom: 15px
+        line-height: 1.3em
+
+        @media screen and (min-width: $wide-desktop)
+            font-size: $lg-font-size + 3
+
+        span
+            display: none
+
+            @media screen and (min-width: $desktop)
+                display: inline
+
+    ul
+        padding: 0px
+        margin: 0px
+
+    li
+        list-style-type: none
+        font-family: $nd-freight
+        line-height: 1em
+        margin: 12px 0px
+
+        &:before
+            @media screen and (min-width: $tablet)
+                content: '\2014'
+                color: $slate-light
+                padding-right: 15px
+
+        span
+            font-family: $nd-adelle
+            font-size: $md-font-size - 2
+            margin-left: 0px
+            display: block
+            margin-top: 5px
+            color: $purple
+
+            @media screen and (min-width: $tablet)
+                margin-left: 32px
+
+            @media screen and (min-width: $desktop)
+                display: inline-block
+                margin-left: 6px
+
+.nd-content-skills
+    background-color: white
+    font-size: $lg-font-size - 2
+
+    ul
+        padding: 0px
+        margin: 0px
+
+    li
+        list-style-type: none
+        line-height: 1.2em
+        font-family: $nd-freight
+        margin: 12px 0px
+
+        span
+            font-size: $md-font-size
+            font-style: italic
+            color: $slate
+
+
+//
+// Footer
+// --------------------------
+.nd-footer
+    background-color: $offBlack
+    font-size: $md-font-size
+    color: $slate-light
+    text-align: center
+    display: block
+    padding: 30px
+    clear: both
+
+.footer-col
+    @media screen and (min-width: $tablet)
+        text-align: left
+        float: left
+        width: 50%
+
+.nd-footer-list
+    margin: 0px
+    padding-top: 20px
+    padding-left: 0px
+
+    @media screen and (min-width: $tablet)
+        text-align: right
+        padding-top: 0px
+
+    a
+        color: $slate-light
+
+        &:hover
+            border-bottom: 1px solid $slate-light
+
+        &.footer-icon
+            color: white
+            font-size: $lg-font-size + 4
+            margin-left: 12px
+
+            &:hover
+                color: $purple-light
+                border: 0px
+
+    li
+        list-style-type: none
+        display: inline-block
+
+        @media screen and (min-width: $tablet)
+            padding-left: 20px
