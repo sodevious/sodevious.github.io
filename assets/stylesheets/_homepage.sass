@@ -178,6 +178,10 @@ $nd-content-height: 500px
         margin-top: 0px
         margin-bottom: 15px
         line-height: 1.3em
+        font-size: $lg-font-size
+
+        @media screen and (min-width: $tablet)
+            font-size: $lg-font-size + 2
 
         @media screen and (min-width: $wide-desktop)
             font-size: $lg-font-size + 3
@@ -188,15 +192,16 @@ $nd-content-height: 500px
             @media screen and (min-width: $desktop)
                 display: inline
 
-    ul
-        padding: 0px
-        margin: 0px
+.nd-content-hire-skills
+    padding: 0px
+    margin: 0px
 
     li
         list-style-type: none
         font-family: $nd-freight
         line-height: 1em
         margin: 12px 0px
+        font-size: $lg-font-size
 
         &:before
             @media screen and (min-width: $tablet)
@@ -219,18 +224,19 @@ $nd-content-height: 500px
                 display: inline-block
                 margin-left: 6px
 
-.nd-content-skills
+.nd-content-press
     background-color: white
     font-size: $lg-font-size - 2
 
-    ul
-        padding: 0px
-        margin: 0px
+.nd-content-press-list
+    padding: 0px
+    margin: 0px
 
     li
-        list-style-type: none
-        line-height: 1.2em
         font-family: $nd-freight
+        list-style-type: none
+        font-size: $lg-font-size
+        line-height: 1.2em
         margin: 12px 0px
 
         span
@@ -238,6 +244,17 @@ $nd-content-height: 500px
             font-style: italic
             color: $slate
 
+    a
+        color: $slate
+
+        &:hover
+            color: $purple
+            border-bottom: 1px solid $purple
+
+    .fa
+        margin-left: 5px
+        font-size: $sm-font-size
+        color: lighten($slate-light, 15%)
 
 //
 // Footer
