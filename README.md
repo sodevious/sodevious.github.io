@@ -17,3 +17,5 @@ to do
 * Compile sass with `guard -i`
 * 301 tumblr redirects with [jekyll alias generator](https://github.com/tsmango/jekyll_alias_generator)
 * archives with [this plugin](https://gist.github.com/azsromej/1994881)
+
+testing
