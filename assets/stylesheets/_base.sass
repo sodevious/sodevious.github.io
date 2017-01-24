@@ -2,6 +2,9 @@
 //
 // Reset Styles
 // --------------------------
+*
+    box-sizing: border-box
+
 body 
     -webkit-text-size-adjust: 100%
     background-color: $offBlack
@@ -13,35 +16,55 @@ body
 a
     text-decoration: none
 
-section 
-    padding: ($site-gutter * 3) 0
-    border-bottom: 1px solid $raspberry
 
-    h4 
-        margin-bottom: 0px
-        margin-top: $site-gutter
+//
+// Footer
+// --------------------------
+.nd-footer
+    background-color: $offBlack
+    font-size: $md-font-size
+    color: $slate-light
+    text-align: center
+    display: block
+    padding: 30px
+    clear: both
 
-    ul 
-        margin: 0px
-        padding: 0px
-        font-weight: 300
-        
-        li
-            margin-bottom: 6px
-            list-style-type: none
-        
-blockquote
-    width: 95%
-    margin: $gutter 0
-    margin-left: 2.5%
-    padding: $gutter/2
-    font-size: 1em
-    font-style: italic
-    background: rgba(255, 255, 255, 0.7)
+.footer-col
+    @media screen and (min-width: $tablet)
+        text-align: left
+        float: left
+        width: 50%
 
+.nd-footer-list
+    margin: 0px
+    padding-top: 20px
+    padding-left: 0px
 
-.container 
-    overflow: visible
+    @media screen and (min-width: $tablet)
+        text-align: right
+        padding-top: 0px
+
+    a
+        color: $slate-light
+
+        &:hover
+            border-bottom: 1px solid $slate-light
+
+        &.footer-icon
+            color: white
+            font-size: $lg-font-size + 4
+            margin-left: 12px
+
+            &:hover
+                color: $purple-light
+                border: 0px
+
+    li
+        list-style-type: none
+        display: inline-block
+
+        @media screen and (min-width: $tablet)
+            padding-left: 20px
 
 //
 // Utilities
@@ -49,7 +72,6 @@ blockquote
 @media screen and (max-width: $tablet)
     .hide-on-mobile
         display: none !important
-
 
 @media screen and (max-width: $desktop)
     .hide-on-tablet

@@ -3,94 +3,83 @@ layout: homepage
 title: Nicole Dominguez is a Freelance Front End Developer & Designer
 ---
 
-<div class="nd-header nd-tile-wrapper">
-    <div class="nd-header-content nd-tile">
-        <img src="/assets/images/nd-logo.svg" class="nd-header-logo"/>
+<div class="nd-header nd-row">
+  <div class="nd-header-info nd-col-6">
+    <div class="nd-header-info__wrapper">
+      <img src="/assets/images/nd-logo.svg" class="nd-header-logo"/>
 
-        <h3 class="nd-header-title">
-            Product Designer, Front-end Developer
-        </h3>
+      <h3 class="nd-header-title">
+        Product Designer &amp; Front-end Developer
+      </h3>
 
-        <p class="nd-header-intro">
-            An empathetic curious human. Passionate about delightful, usable experiences made possible by great reusable and scalable code.
-        </p>
+      <p class="nd-header-intro">
+        An empathetic curious human. Passionate about delightful, usable experiences made possible by great reusable and scalable code.
+      </p>
 
-        <a href="http://twitter.com/sodevious" target="_blank" class="nd-header-cta">
-            <i class="fa fa-twitter"></i>
-            Tweet me
-        </a>
+      <a href="/assets/public/ndominguez-resume-2016.pdf" target="_blank" class="nd-header-cta">
+        <i class="fa fa-file"></i>
+        Resumé
+      </a>
 
-        <a href="mailto:work@nicoledominguez.com" class="nd-header-cta">
-            <i class="fa fa-paper-plane"></i>
-            Get in touch
-        </a>
+      <a href="mailto:work@nicoledominguez.com" class="nd-header-cta">
+        <i class="fa fa-paper-plane"></i>
+        Get in touch
+      </a>
     </div>
+  </div>
 
-    <div class="nd-tile nd-header-image">
-        <a href="http://www.warmpears.com/" class="nd-header-credit">Photo by @warmpears</a>
-    </div>
+  <div class="nd-header-image nd-col-6">
+    <a href="http://www.warmpears.com/" class="nd-header-credit">Photo by @warmpears</a>
+  </div>
 </div>
 
+<div class="nd-row nd-portfolio">
+  {% assign portfolio = site.data.about.features | sort:"year" | reverse %}
 
-<div class="nd-content nd-tile-wrapper">
-    <div class="nd-content-hire nd-tile">
-        <div class="nd-tile-content">
-            <h3 class="nd-content-header">Work with me</h3>
+  {% for item in portfolio %}
+  {% if item.dont_show %}
+  {% else %}
+    <div class="nd-portfolio-item nd-col-4">
+      <div class="nd-portfolio-item__wrapper">
+        {% if item.url %}
+          <a href="{{ item.url }}" class="nd-portfolio-item__title">{{ item.title }} <i class="fa fa-external-link"></i></a>
 
-            <p>
-                Open to select freelance and contract work. My skillset includes and is not limited to:
-            </p>
+          <a href="{{ item.url }}" class="nd-portfolio-item__source">
+            <span>{{ item.type }}</span>
+            {{ item.publication }}
+          </a>
+        {% else %}
+          <p class="nd-portfolio-item__title">{{ item.title }}</p>
 
-            <ul class="nd-content-hire-skills">
-                <li>User interface & product design <span>Web, mobile</span></li>
-                <li>Front-End development <span>HTML, Haml, CSS, Sass, jQuery</span></li>
-                <li>Back-End development <span>Python, Django</span></li>
-                <li>Creating & developing style guides <span class="hide-on-tablet">Web, UI</span></li>
-                <li class="hide-on-tablet">Optimizing for performance</li>
-                <li>Responsive design & development</li>
-                <li>Modular, large-scale markup and stylesheets</li>
-                <li>CMS and Theming <span>Jekyll, Ghost, Wordpress, Shopify, SquareSpace</span></li>
-            </ul>
-        </div>
+          <p href="{{ item.url }}" class="nd-portfolio-item__source">
+            <span>{{ item.type }}</span>
+            {{ item.publication }}
+          </p>
+        {% endif %}
+
+        <span class="nd-portfolio-item__year">{{ item.year }}</span>
+
+        <div class="clearfix"></div>
+      </div>
     </div>
-
-
-    <div class="nd-content-press nd-tile">
-        <h3 class="nd-content-header">Select Press</h3>
-
-        <ul class="nd-content-press-list">
-            <li>The New York Times</li>
-            <li><a href="http://livestream.com/LivestreamPublic/BFF/videos/100982186" target="_blank">Bushwick Film Festival <i class="fa fa-external-link"></i></a></li>
-            <li><a href="http://shoptalkshow.com/episodes/160-with-nicole-dominguez/" target="_blank">ShopTalk Show <i class="fa fa-external-link"></i></a></li>
-            <li><a href="http://www.howtoholdapencil.com/episodes/032/" target="_blank">How to Hold a Pencil <i class="fa fa-external-link"></i></a></li>
-            <li><a href="http://revisionpath.com/nicole-dominguez/" target="_blank">Revision Path <i class="fa fa-external-link"></i></a></li>
-            <li><a href="http://peopleofcolorintech.com/engineers/nicole-dominguez/" target="_blank">People of Color in Tech <i class="fa fa-external-link"></i></a></li>
-            <li><a href="/about"><span>and more...</span></a></li>
-        </ul>
-
-        <h3 class="nd-content-header">Extra Credit</h3>
-
-        <ul class="nd-content-press-list">
-            <li>Co-organizer Django-NYC Meetup</li>
-            <li>Organizer Django Girls NYC</li>
-        </ul>
-    </div>
+  {% endif %}
+  {% endfor %}
 </div>
 
 <footer class="nd-footer">
-    <div class="footer-col">
-        &copy; Nicole Dominguez, 1994-2016
-    </div>
+  <div class="footer-col">
+    &copy; Nicole Dominguez, 1994-2016
+  </div>
 
-    <div class="footer-col">
-        <ul class="nd-footer-list">
-            <li><a href="http://nicoledominguez.me" target="_blank">Miscellaneous Work</a></li>
-            <li><a href="https://github.com/sodevious/sodevious.github.io" target="_blank" class="hide-on-mobile">Source</a></li>
-            <li><a href="http://twitter.com/sodevious" class="footer-icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://dribbble.com/nicoledominguez" class="footer-icon" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-            <li><a href="https://github.com/sodevious" class="footer-icon" target="_blank"><i class="fa fa-github"></i></a></li>
-        </ul>
-    </div>
+  <div class="footer-col">
+    <ul class="nd-footer-list">
+      <li><a href="http://nicoledominguez.me" target="_blank">Miscellaneous Work</a></li>
+      <li><a href="https://github.com/sodevious/sodevious.github.io" target="_blank" class="hide-on-mobile">Source</a></li>
+      <li><a href="http://twitter.com/sodevious" class="footer-icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://dribbble.com/nicoledominguez" class="footer-icon" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+      <li><a href="https://github.com/sodevious" class="footer-icon" target="_blank"><i class="fa fa-github"></i></a></li>
+    </ul>
+  </div>
 
-    <div class="clearfix"></div>
+  <div class="clearfix"></div>
 </footer>

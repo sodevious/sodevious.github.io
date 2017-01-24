@@ -10,8 +10,6 @@ $vanilla:       #f7f6e4;
 $offWhite:      #e6e6e6;
 $offBlack:      #333333;
 
-
-
 $teal:          #79b7b0;
 $plum:          #635063;
 $haze:          #C1D2CF;
@@ -26,10 +24,10 @@ $plum-light:    lighten($plum, 20%);
 $purple-light:  lighten($purple, 20%);
 $slate-light:   lighten($slate, 20%);
 
-$header-height-default: 480px;
-$header-height-desktop: 400px;
-$header-height-tablet: 240px;
-$header-height-mobile: 180px;
+$header-height-default: 	480px;
+$header-height-desktop: 	400px;
+$header-height-tablet: 		240px;
+$header-height-mobile: 		180px;
 
 
 // Neat & Bourbon overrides
@@ -69,11 +67,11 @@ $wide-desktop:    1200px;
 
 
 //$gutter: 2em;
-$site-gutter: 20px;
-$gutter: 20px;
+$site-gutter: 	  20px;
+$gutter: 		  20px;
 
-$sm-font-size:  12px;
-$md-font-size:  14px;
-$lg-font-size:  18px;
-$xl-font-size:  22px;
-$xxl-font-size: 28px;
+$sm-font-size:    12px;
+$md-font-size:    14px;
+$lg-font-size:    18px;
+$xl-font-size:    22px;
+$xxl-font-size:   28px;
