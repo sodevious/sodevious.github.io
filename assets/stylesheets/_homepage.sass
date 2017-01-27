@@ -1,7 +1,7 @@
 //
 // Homepage Header
 // --------------------------
-$nd-header-height-fallback: 420px
+$nd-header-height-fallback: 400px
 $nd-header-height: 40vw
 $nd-header-content-width: 500px
 // --------------------------
@@ -18,12 +18,26 @@ $nd-header-content-width: 500px
 
 .nd-col-4   
     @media screen and (min-width: $tablet)
-        flex: 0 0 32%
+        margin-right: 2%
+        float: left
         width: 32%
+        
+        &:nth-child(3n)
+            margin-right: 0
+
+        @supports (display: flex)
+            margin-right: 0
+            flex: 0 0 32%
+            float: none
 
 .nd-col-6
     @media screen and (min-width: $tablet)
-        flex: 0 0 50%
+        width: 50%
+        float: left
+
+        @supports (display: flex)
+            flex: 0 0 50%
+            float: none
 
 //
 // Header
@@ -32,23 +46,36 @@ $nd-header-content-width: 500px
     background-color: $purple-dark
     width: 100%
 
+
     @media screen and (min-width: $tablet)
-        height: 45vw
+        min-height: $nd-header-height-fallback
+
+        @supports (height: 45vw)
+            height: 45vw
 
 .nd-header-info
     text-align: center
-    color: white
     padding: 40px 0
     height: 100%
+    color: white
 
     @media screen and (min-width: $tablet)
+        min-height: $nd-header-height-fallback
         padding: 0px
-        display: flex
-        align-items: center
-        justify-content: center
+        display: table
+
+        @supports (display: flex)
+            min-height: auto
+            justify-content: center
+            align-items: center
+            display: flex
+
+.nd-header-info__wrapper
+    vertical-align: middle
+    display: table-cell
 
 .nd-header-logo
-    max-width: $nd-header-content-width
+    max-width: 350px
     margin: 0 auto 20px
     display: block
     opacity: 0.75
@@ -81,6 +108,7 @@ $nd-header-content-width: 500px
     font-size: $lg-font-size + 2
     color: lighten($purple-light, 2.5%)
     width: 85%
+    margin-bottom: 35px
 
     @media screen and (min-width: $tablet)
         max-width: $nd-header-content-width - 90
@@ -98,7 +126,6 @@ $nd-header-content-width: 500px
     text-align: center
     border-radius: 3px
     padding: 10px 14px
-    margin-top: 35px
     color: $vanilla
 
     &:hover
@@ -116,8 +143,10 @@ $nd-header-content-width: 500px
     background-position: center
     background-size: cover
     position: relative
-    height: 300px
     height: 100%
+
+    @media screen and (min-width: $tablet)
+        min-height: $nd-header-height-fallback
 
 .nd-header-credit
     background-color: rgba(255,255,255,0.5)
@@ -152,7 +181,10 @@ $nd-header-content-width: 500px
     margin-bottom: $gutter
 
     @media screen and (min-width: $tablet)
-        margin-bottom: 2.25%
+        height: 180px 
+
+    @supports (display: flex)
+        height: auto
 
 .nd-portfolio-item__wrapper
     position: relative
