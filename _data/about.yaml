@@ -129,8 +129,13 @@ features:
    type: Teaching
    year: 2015
    
-   
  - publication: "Bloc"
    title: "UX/UI Design Program"
    type: Mentorship
    year: 2017
+
+ - publication: ""
+   title: "On Design and Execution"
+   url: http://nicoledominguez.com/thoughts/on-design-and-execution
+   type: Writing
+   year: 2013
