@@ -32,7 +32,7 @@ features:
    year: 2016 
 
  - publication: "AWS: The Digital Divide"
-   title: "Minorities in Tech Panel"
+   title: "Minorities in Tech Panelist"
    type: Speaking
    url: "https://aws.amazon.com/events/minorities-in-tech-nyc-event/"
    year: 2016
@@ -102,7 +102,7 @@ features:
    year: 2015
 
  - publication: Django Girls
-   title: "New York City Workshop"
+   title: "New York City Workshop Organizing"
    url: http://peopleofcolorintech.com/engineers/nicole-dominguez/
    type: Organizer
    year: 2016
@@ -125,12 +125,12 @@ features:
    year: 2017
 
  - publication: "Startup Institute"
-   title: "Web Design Cohort"
+   title: "Web Design Cohort Teacher"
    type: Teaching
    year: 2015
    
  - publication: "Bloc"
-   title: "UX/UI Design Program"
+   title: "UX/UI Design Program Mentor"
    type: Mentorship
    year: 2017
 
