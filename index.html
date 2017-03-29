@@ -51,16 +51,16 @@ title: Nicole Dominguez is a Freelance Front End Developer & Designer
       <a href="{{ item.url }}" class="nd-portfolio-item__title">{{ item.title }} <i class="fa fa-external-link"></i></a>
 
       <a href="{{ item.url }}" class="nd-portfolio-item__source">
-        <span>{{ item.type }}</span>
+        <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
         {{ item.publication }}
       </a>
       {% else %}
       <p class="nd-portfolio-item__title">{{ item.title }}</p>
 
-      <p href="{{ item.url }}" class="nd-portfolio-item__source">
-        <span>{{ item.type }}</span>
+      <a href="{{ item.url }}" class="nd-portfolio-item__source">
+        <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
         {{ item.publication }}
-      </p>
+      </a>
       {% endif %}
 
       <span class="nd-portfolio-item__year">{{ item.year }}</span>
@@ -70,22 +70,23 @@ title: Nicole Dominguez is a Freelance Front End Developer & Designer
   </div>
   {% endif %}
   {% endfor %}
-
-  <div class="clearfix"></div>
 </div>
+<div class="clearfix"></div>
 
 <footer class="nd-footer">
   <div class="footer-col">
-    &copy; Nicole Dominguez, 1994-2017
+    <span class="nd-footer__copyright">
+        &copy; Nicole Dominguez, 1994-2017
+    </span>
   </div>
 
   <div class="footer-col">
     <ul class="nd-footer-list">
-      <li><a href="https://github.com/sodevious/sodevious.github.io" target="_blank" class="hide-on-mobile">Source</a></li>
-      <li><a href="https://www.behance.net/nicoledominguez" class="footer-icon" target="_blank"><i class="fa fa-behance"></i></a></li>
-      <li><a href="http://twitter.com/sodevious" class="footer-icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="https://dribbble.com/nicoledominguez" class="footer-icon" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-      <li><a href="https://github.com/sodevious" class="footer-icon" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://github.com/sodevious/sodevious.github.io" target="_blank" class="nd-footer-list__link hide-on-mobile">Source</a></li>
+      <li><a href="https://www.behance.net/nicoledominguez" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-behance"></i></a></li>
+      <li><a href="http://twitter.com/sodevious" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://dribbble.com/nicoledominguez" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+      <li><a href="https://github.com/sodevious" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-github"></i></a></li>
     </ul>
   </div>
 

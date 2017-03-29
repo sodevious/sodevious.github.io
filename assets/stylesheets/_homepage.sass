@@ -16,12 +16,12 @@ $nd-header-content-width: 500px
         flex-flow: row wrap
         display: flex
 
-.nd-col-4   
+.nd-col-4
     @media screen and (min-width: $tablet)
         margin-right: 2%
         float: left
         width: 32%
-        
+
         &:nth-child(3n)
             margin-right: 0
 
@@ -42,7 +42,7 @@ $nd-header-content-width: 500px
 //
 // Header
 // --------------------------
-.nd-header 
+.nd-header
     background-color: $purple-dark
     width: 100%
 
@@ -60,8 +60,8 @@ $nd-header-content-width: 500px
 
     @media screen and (min-width: $tablet)
         min-height: $nd-header-height-fallback
-        padding: 0px
         display: table
+        padding: 0px
 
         @supports (display: flex)
             min-height: auto
@@ -156,7 +156,7 @@ $nd-header-content-width: 500px
     color: $purple
     bottom: 0
     right: 0
-    
+
     @media screen and (max-width: $tablet)
         display: none
 
@@ -171,16 +171,16 @@ $nd-header-content-width: 500px
     padding: $gutter
 
     @media screen and (min-width: $tablet)
-        padding: 2% 2% 0 2%
+        padding: 2% 2% 0.5% 2%
 
 .nd-portfolio-item
     background-color: white
-    border-radius: 4px
+    margin-bottom: $gutter*1.25
+    border-radius: 3px
     padding: $gutter
-    margin-bottom: $gutter
 
     @media screen and (min-width: $tablet)
-        height: 180px 
+        height: 180px
 
     @supports (display: flex)
         height: auto
@@ -190,15 +190,18 @@ $nd-header-content-width: 500px
     height: 100%
 
 .nd-portfolio-item__title
-    font-size: $xl-font-size
+    font-size: $lg-font-size
     font-family: $nd-freight
     color: $purple-dark
-    line-height: 1.15em
-    padding-bottom: 25px 
+    line-height: 1.25em
+    padding-bottom: 30px
     display: block
     margin: 0
 
-    .fa 
+    &:hover
+        color: $purple
+
+    .fa
         font-size: $sm-font-size
         margin-left: 6px
         opacity: 0.4
@@ -206,25 +209,30 @@ $nd-header-content-width: 500px
 .nd-portfolio-item__source
     line-height: $md-font-size
     font-size: $sm-font-size
-    display: block
-    color: $purple
     position: absolute
+    color: $purple
+    display: block
     bottom: 0
     margin: 0
     left: 0
 
-    span 
+    span
         text-transform: uppercase
-        font-family: $nd-freight
+        color: lighten($purple-light, 10%)
+        font-weight: $nd-adelle-bold
+        font-size: $xs-font-size
+        margin-right: 5px
+
+    .fa
         color: $purple-light
-        font-size: $sm-font-size
+        text-align: center
         margin-right: 4px
 
 .nd-portfolio-item__year
     line-height: $md-font-size
     font-size: $sm-font-size
+    position: absolute
     display: block
     opacity: 0.35
-    position: absolute
     bottom: 0
     right: 0
