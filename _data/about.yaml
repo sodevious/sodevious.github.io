@@ -3,27 +3,32 @@ features:
    title: "Women in Tech"
    type: Speaking
    year: 2014
+   icon: bullhorn
 
  - publication: "Bushwick Film Festival"
    title: "Women in Technology &mdash; Panelist"
    type: Speaking
    year: 2015
+   icon: bullhorn
 
  - publication: "UnCubed"
    title: "What's your Stack? &mdash; Panelist"
    url: http://aolpresents.uncubed.com/
    type: Speaking
    year: 2015
+   icon: bullhorn
 
  - publication: "Parsons"
    title: "Careers in The Arts Fair"
    type: Speaking
    year: 2015
+   icon: bullhorn
 
  - publication: "Good for POC"
    title: "Launch Event"
    type: Speaking
    year: 2016
+   icon: bullhorn
 
  - publication: "superyesmore"
    title: "How Did You Start Coding?"
@@ -37,6 +42,7 @@ features:
    type: Speaking
    url: "https://aws.amazon.com/events/minorities-in-tech-nyc-event/"
    year: 2016
+   icon: bullhorn
 
  - publication: ShopTalk Show
    title: "#160"
@@ -104,25 +110,27 @@ features:
    title: "Busprenuer"
    type: Project
    year: 2014
+   icon: anchor
 
  - publication: Starter Island
    title: "Boatprenuer"
    url: https://www.youtube.com/watch?v=18WoCBsQRH8
    type: Project
    year: 2015
+   icon: anchor
 
  - publication: Django Girls
    title: "New York City Workshop Organizing"
    url: http://peopleofcolorintech.com/engineers/nicole-dominguez/
    type: Organizer
    year: 2016
-   icon: institution
+   icon: heart
 
-   
  - publication: Adobe
    title: "Visual Communication with Adobe Photoshop CS4"
    type: Certificate
    year: 2012
+   icon: certificate
 
  - publication: ""
    title: "The Internet Is For Everyone"
@@ -142,12 +150,13 @@ features:
    title: "Web Design Cohort Teacher"
    type: Teaching
    year: 2015
+   icon: institution
 
  - publication: "Bloc"
    title: "UX/UI Design Program Mentor"
    type: Mentorship
    year: 2017
-   icon: comments
+   icon: institution
 
  - publication: ""
    title: "On Design and Execution"
