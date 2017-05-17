@@ -178,3 +178,16 @@ features:
    type: Writing
    year: 2013
    icon: pencil
+   
+ - publication: "Sawhorse Media"
+   title: "Job: Product Designer, Front-end Developer"
+   type: Work
+   year: 2013-2016
+   icon: briefcase
+   
+ - publication: "Nasdaq OMX"
+   title: "Job: Product Designer"
+   type: Work
+   year: 2013
+   icon: briefcase
+   
