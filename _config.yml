@@ -1,7 +1,6 @@
 name: Nicole Dominguez
 description: Nicole Dominguez | Product Designer | NYC + Beyond
 url: http://nicoledominguez.com
-highlighter: pygments
 permalink: /:categories/:title
 timezone: America/New_York
 exclude: ['config.rb', 'README.md','gems','Gemfile','Guardfile', '.DS_Store']
