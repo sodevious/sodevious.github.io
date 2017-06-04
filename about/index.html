@@ -1,59 +1,44 @@
 ---
-layout: full
-title: About Me
-
-bio: I&apos;m a freelance Product Designer &amp; Front End Developer. I&apos;m completely self-taught, and have been madly in love with the intersection between design markup for the past eight years. Based out of Brooklyn NY, some of my favorite things are discovering new countries and practicing yoga.
+layout: homepage
+title: Nicole Dominguez is a Freelance Front End Developer & Designer
 ---
 
-<section class="blog">
-    <div class="container">
-        <h2>About Me</h2>
+{% include header.html %}
 
-        <article>
-            <p class="featured-paragraph">
-                {{ page.bio }}
-            </p>
+<div class="nd-portfolio">
+  <div class="nd-row nd-portfolio__container">
+    {% assign portfolio = site.data.about.features | sort:"year" | reverse %}
 
-            <h4>Featured In</h4>
-            <ul>
-                {% for feature in site.data.about.features %}
-                    <li>
-                        {{ feature.publication }}: "<a href="{{ feature.url }}" target="_blank">{{ feature.title }}</a>"
-                    </li>
-                {% endfor %}
-            </ul>
+    {% for item in portfolio %}
+    {% if item.dont_show %}{% else %}
+    <div class="nd-portfolio-item nd-col-4">
+      <div class="nd-portfolio-item__wrapper">
+        {% if item.url %}
+        <a href="{{ item.url }}" class="nd-portfolio-item__title">{{ item.title }} <i class="fa fa-external-link"></i></a>
 
-            <h4>Speaking</h4>
-            <ul>
-                {% for feature in site.data.about.speaking %}
-                    <li>
-                        {{ feature.event }}: "<a href="{{ feature.url }}" target="_blank">{{ feature.title }}</a>"
-                    </li>      
-                {% endfor %}
-            </ul>
+        <a href="{{ item.url }}" class="nd-portfolio-item__source">
+          <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
+          {{ item.publication }}
+        </a>
+        {% else %}
+        <p class="nd-portfolio-item__title">{{ item.title }}</p>
 
-            <h4>Mentoring</h4>
-            <ul>
-                {% for feature in site.data.about.mentoring %}
-                    <li>{{ feature.item }}</li>
-                {% endfor %}
-            </ul>
+        <div class="nd-portfolio-item__source">
+          <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
+          {{ item.publication }}
+        </div>
+        {% endif %}
 
-            <h4>On the side</h4>
-            <ul>
-                {% for project in site.data.about.sideprojects %}
-                    <li>{{ project.item }}</li>
-                {% endfor %}
-            </ul>
+        <span class="nd-portfolio-item__year">{{ item.year }}</span>
 
-            <h4>Cool shit</h4>
-            <ul>
-                {% for thing in site.data.about.coolthings %}
-                    <li>{{ thing.item }}</li>
-                {% endfor %}
-            </ul>
-        </article>
+        <div class="clearfix"></div>
+      </div>
     </div>
-    
-    <a href="/" class="section-link"><i class="fa fa-long-arrow-left"></i> Back to all the things!</a>
-</section>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="clearfix"></div>
+</div>
+
+{% include footer.html %}

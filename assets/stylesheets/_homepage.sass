@@ -164,6 +164,54 @@ $nd-header-content-width: 500px
         background-color: $slate
         color: white
 
+
+//
+// Hire me
+.nd-hire-me
+    background-color: mix($purple-dark, $purple)
+    padding: $gutter*2
+    color: mix($offWhite, $purple-light)
+    a 
+        text-decoration: none
+        border-bottom: 2px solid $purple-dark
+        color: $offWhite
+    p
+        margin-bottom: $gutter
+        line-height: 1.5em
+
+    .lead 
+        font-size: 18px
+        color: $offWhite
+
+.nd-hire-me-image
+    background-color: $purple-dark
+    background-image: url('/assets/images/nd-travel.jpg')
+    background-position: center
+    background-size: cover
+    position: relative
+    //height: 100%
+
+    @media screen and (min-width: $tablet)
+        //min-height: $nd-header-height-fallback
+
+.nd-travel-img 
+    width: 100%
+    display: block
+
+.nd-skills
+    padding: $gutter*2
+    background-color: $vanilla
+    color: $slate-light
+    ul 
+        padding: 0
+    li 
+        //margin: 0
+        width: 50%
+        list-style-type: none
+        display: inline-block
+        float: left
+        margin-bottom: $gutter
+
 //
 // Portfolio Items
 .nd-portfolio

@@ -5,40 +5,48 @@ title: Nicole Dominguez is a Freelance Front End Developer & Designer
 
 {% include header.html %}
 
-<div class="nd-portfolio">
-    <div class="nd-row nd-portfolio__container">
-        {% assign portfolio = site.data.about.features | sort:"year" | reverse %}
+<div class="nd-row">
+  <div class="nd-hire-me nd-col-6">
+    <p class="lead">After traveling as digital nomad while freelancing for the past year, I'm ready to find my next challenge.</p>
 
-        {% for item in portfolio %}
-            {% if item.dont_show %}{% else %}
-                <div class="nd-portfolio-item nd-col-4">
-                    <div class="nd-portfolio-item__wrapper">
-                        {% if item.url %}
-                            <a href="{{ item.url }}" class="nd-portfolio-item__title">{{ item.title }} <i class="fa fa-external-link"></i></a>
+    <p>The work I enjoy the most happens when I'm creating at the intersection between design & code.</p>
 
-                            <a href="{{ item.url }}" class="nd-portfolio-item__source">
-                                <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
-                                {{ item.publication }}
-                            </a>
-                        {% else %}
-                            <p class="nd-portfolio-item__title">{{ item.title }}</p>
+    <p>I belive the first step to the design process starts on paper: collecting data, research, determining goals and finding frustrations; before we touch pixels or code.</p>
 
-                            <div class="nd-portfolio-item__source">
-                                <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
-                                {{ item.publication }}
-                            </div>
-                        {% endif %}
+    <p>Open to relocation anywhere, or remote work.</p>
 
-                        <span class="nd-portfolio-item__year">{{ item.year }}</span>
+    <p>If you think we'd be a good fit, reach out: <a href="mailto:work@nicoledominguez.com">work@nicoledominguez.com</a></p>
+  </div>
 
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            {% endif %}
-        {% endfor %}
-    </div>
+  <div class="nd-skills nd-col-6">
+    <ul>
+      <li>HTML, Haml</li>
+      <li>CSS, Sass, Less</li>
+      <li>Python</li>
+      <li>Django, Flask</li>
+      
+      <li>Javascript</li>
+      <li>jQuery, Vue.js</li>
+      <li>Git, Version Control</li>
+
+      <li>Jekyll, Craft CMS</li>
+      <li>Wordpress</li>
+      <li>Teaching & mentoring</li>
+
+      <li>Visual design</li>
+      <li>Web design</li>
+
+      <li>Responsive design</li>
+      <li>User interface design</li>
+      <li>Progressive enhancement</li>
+
+      <li>Tacos</li>
+    </ul>
 
     <div class="clearfix"></div>
+  </div>
 </div>
+
+<img src="/assets/images/nd-travel-b.jpg" class="nd-travel-img" />
 
 {% include footer.html %}
