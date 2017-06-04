@@ -3,41 +3,7 @@ layout: homepage
 title: Nicole Dominguez is a Freelance Front End Developer & Designer
 ---
 
-<div class="nd-header nd-row">
-  <div class="nd-header-info nd-col-6">
-    <div class="nd-header-info__wrapper">
-      <img src="/assets/images/nd-logo.svg" class="nd-header-logo"/>
-
-      <h3 class="nd-header-title">
-        Freelance Product Designer &amp; Front-end Developer
-      </h3>
-
-      <p class="nd-header-intro">
-        An empathetic curious human. Passionate about delightful, usable experiences made possible by great reusable and scalable code.
-      </p>
-
-      <a href="/assets/public/ndominguez-resume-2017.pdf" target="_blank" class="nd-header-cta">
-        <i class="fa fa-file"></i>
-        Resumé
-      </a>
-
-      <a href="https://www.behance.net/nicoledominguez" target="_blank" class="nd-header-cta">
-        <i class="fa fa-image"></i>
-        Portfolio
-      </a>
-
-      <a href="mailto:work@nicoledominguez.com" class="nd-header-cta">
-        <i class="fa fa-paper-plane"></i>
-        Hire Me
-      </a>
-    </div>
-  </div>
-
-  <div class="nd-header-image nd-col-6">
-    <a href="http://www.warmpears.com/" class="nd-header-credit">Photo by @warmpears</a>
-  </div>
-</div>
-<div class="clearfix"></div>
+{% include header.html %}
 
 <div class="nd-portfolio">
     <div class="nd-row nd-portfolio__container">
@@ -75,22 +41,4 @@ title: Nicole Dominguez is a Freelance Front End Developer & Designer
     <div class="clearfix"></div>
 </div>
 
-<footer class="nd-footer">
-  <div class="footer-col">
-    <span class="nd-footer__copyright">
-        &copy; Nicole Dominguez, 1994-2017
-    </span>
-  </div>
-
-  <div class="footer-col">
-    <ul class="nd-footer-list">
-      <li><a href="https://github.com/sodevious/sodevious.github.io" target="_blank" class="nd-footer-list__link hide-on-mobile">Source</a></li>
-      <li><a href="https://www.behance.net/nicoledominguez" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-behance"></i></a></li>
-      <li><a href="http://twitter.com/sodevious" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="https://dribbble.com/nicoledominguez" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-      <li><a href="https://github.com/sodevious" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-github"></i></a></li>
-    </ul>
-  </div>
-
-  <div class="clearfix"></div>
-</footer>
+{% include footer.html %}

@@ -164,3 +164,17 @@ features:
    type: Writing
    year: 2013
    icon: pencil
+
+
+footer_links:
+ - network: github
+   link: https://github.com/sodevious
+
+ - network: behance
+   link: https://www.behance.net/nicoledominguez
+
+ - network: twitter
+   link: http://twitter.com/sodevious
+
+ - network: dribbble
+   link: https://dribbble.com/nicoledominguez

@@ -1,20 +1,19 @@
-<footer>
-    <div class="container">
-        <p class="footer-meta">&copy; 2008-2015 Nicole Dominguez</p>
-        <ul class="footer-links">
-            <li>
-                <a href="https://github.com/sodevious/sodevious.github.io" target="_blank">Source</a>
-            </li>      
-            <li>
-                <a href="http://nicoledominguez.me" target="_blank">More Work</a>
-            </li>
-            <li>
-                <a href="/feed.xml" target="_blank">RSS Feed</a>
-            </li>
-        </ul>
-    </div>
-</footer>
+<footer class="nd-footer">
+  <div class="footer-col">
+    <span class="nd-footer__copyright">
+        &copy; Nicole Dominguez, 1994-{{ site.time | date: '%Y' }}
+    </span>
+  </div>
 
-{% include analytics.html %}
-</body>
-</html>
+  <div class="footer-col">
+    <ul class="nd-footer-list">
+      <li><a href="https://github.com/sodevious/sodevious.github.io" target="_blank" class="nd-footer-list__link hide-on-mobile">Source</a></li>
+
+      {% for site in site.data.about.footer_links %}
+        <li><a href="{{ site.link }}" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-{{ site.network }}"></i></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="clearfix"></div>
+</footer>
