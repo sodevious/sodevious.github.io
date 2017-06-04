@@ -106,6 +106,20 @@ features:
    year: 2015
    icon: microphone
 
+ - publication: SheNomads
+   title: "Ep 27: How To Become A Digital Nomad with Nicole Dominguez"
+   url: https://soundcloud.com/shenomads/nicole
+   type: Interview
+   year: 2017
+   icon: microphone
+
+ - publication: Adobe
+   title: "Expert’s Weigh In: What’s Your Favorite CSS Trick?"
+   url: https://blogs.adobe.com/creativecloud/experts-weigh-in-whats-your-favorite-css-trick/
+   type: Feature
+   year: 2015
+   icon: microphone
+
  - publication: Startup Bus
    title: "Busprenuer"
    type: Project
