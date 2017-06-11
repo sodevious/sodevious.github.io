@@ -9,12 +9,13 @@
     display: block
     padding: 30px
     clear: both
-
-    @supports (display: flex)
-        min-height: auto
-        justify-content: center
-        align-items: center
-        display: flex
+    
+    @media screen and (min-width: $tablet)
+        @supports (display: flex)
+            min-height: auto
+            justify-content: center
+            align-items: center
+            display: flex
 
 .footer-col
     @media screen and (min-width: $tablet)
