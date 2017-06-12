@@ -39,6 +39,18 @@ $nd-header-content-width: 500px
             flex: 0 0 50%
             float: none
 
+.nd-col-6__inner
+    @media screen and (min-width: $tablet)
+        margin-right: 4%
+        float: left
+        width: 48%
+
+        @supports (display: flex)
+            margin-right: 0
+            flex: 0 0 48%
+            float: none
+
+
 //
 // Header
 // --------------------------
@@ -127,12 +139,18 @@ $nd-header-content-width: 500px
     padding: 10px 14px
     color: $vanilla
 
-    &:hover
-        background-color: $purple
-
     .fa
         margin-right: 8px
         color: $purple-light
+
+
+    &:hover
+        background-color: $pink
+        color: $offWhite
+
+        .fa
+            color: $offWhite
+
 
 //
 // Header image
@@ -161,28 +179,34 @@ $nd-header-content-width: 500px
         display: none
 
     &:hover
-        background-color: $slate
-        color: white
+        background-color: white
+        color: $pink
 
 
 //
 // Hire me
 .nd-hire-me
     background-color: mix($purple-dark, $purple)
-    padding: $gutter*2
     color: mix($offWhite, $purple-light, 70%)
+    padding: $gutter * 2
 
     a 
-        text-decoration: none
         border-bottom: 2px solid $purple-dark
+        text-decoration: none
         color: $offWhite
+
+        &:hover 
+            border-color: $pink
+            color: white
+
     p
         margin-bottom: $gutter
         line-height: 1.5em
 
     .lead 
-        font-size: 18px
+        font-size: 22px
         color: $offWhite
+        font-family: $nd-freight
 
 .nd-hire-me-image
     background-color: $purple-dark
@@ -220,77 +244,83 @@ $nd-header-content-width: 500px
 
 
 //
-// Portfolio Items
+// Portfolio
 .nd-portfolio
+    padding: $gutter*2.5 $gutter*2
     background-color: $vanilla
-    padding: $gutter
+    text-align: center
 
-    @media screen and (min-width: $tablet)
-        padding: 3% 3% 1% 3%
+.nd-portfolio__heading
+    font-weight: $nd-adelle-light
+    padding-bottom: $gutter * 2.5
+    font-size: $xl-font-size
+    padding-top: $gutter
+    margin: 0
 
-.nd-portfolio__container
-    width: 100%
+.nd-portfolio__sub-heading
+    font-weight: $nd-adelle-light
+    font-family: $nd-freight
+    margin-top: $gutter * 2.5
+    color: $slate-light
 
-.nd-portfolio-item
-    background-color: white
-    margin-bottom: $gutter*1.5
+    a 
+        border-bottom: 2px solid mix($vanilla, $purple-light)
+
+        &:hover 
+            border-bottom-color: $pink
+            color: $slate
+
+.nd-portfolio__item
+    background-color: $purple
+    background-position: center
+    background-size: cover
+    position: relative
     border-radius: 3px
-    padding: $gutter
-
-    @media screen and (min-width: $tablet)
-        height: 160px
+    height: 300px
 
     @supports (display: flex)
-        height: auto
+        justify-content: center
+        align-items: center
+        display: flex
 
-.nd-portfolio-item__wrapper
-    position: relative
-    height: 100%
-
-.nd-portfolio-item__title
-    font-size: $lg-font-size
-    font-family: $nd-freight
-    color: $purple-dark
-    line-height: 1.25em
-    padding-bottom: 30px
-    display: block
-    margin: 0
+    &:before 
+        background-color: rgba(60,60,86, 0.8)
+        transition: background-color ease-in 0.1s
+        position: absolute
+        bottom: 0
+        border-radius: 3px
+        right: 0
+        height: 300px
+        z-index: 300
+        display: block
+        content: ""
+        left: 0
+        top: 0
+        cursor: pointer
 
     &:hover
+        &:before 
+            background-color: rgba(254,67,101, 0.75)
+
+.nd-portfolio__title
+    color: white
+    z-index: 500
+    position: relative
+    font-size: $xxl-font-size
+    font-weight: $nd-adelle-light
+    line-height: 1.25em
+    padding-top: 120px
+    margin: 0
+
+    @supports (display: flex)
+        padding-top: 0
+
+    small
+        display: block
+        background-color: white
+        font-family: $nd-freight
+        font-size: $lg-font-size
+        margin-top: $gutter
+        padding: 1px 10px
         color: $purple
 
-    .fa
-        font-size: $sm-font-size
-        margin-left: 6px
-        opacity: 0.4
-
-.nd-portfolio-item__source
-    line-height: $md-font-size
-    font-size: $sm-font-size
-    position: absolute
-    color: $purple
-    display: block
-    bottom: 0
-    margin: 0
-    left: 0
-
-    span
-        text-transform: uppercase
-        color: lighten($purple-light, 10%)
-        font-weight: $nd-adelle-bold
-        font-size: $xs-font-size
-        margin-right: 5px
-
-    .fa
-        color: $purple-light
-        text-align: center
-        margin-right: 4px
-
-.nd-portfolio-item__year
-    line-height: $md-font-size
-    font-size: $sm-font-size
-    position: absolute
-    display: block
-    opacity: 0.35
-    bottom: 0
-    right: 0

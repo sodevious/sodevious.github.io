@@ -5,36 +5,39 @@ title: Nicole Dominguez is a Freelance Front End Developer & Designer
 
 {% include header.html %}
 
-<div class="nd-portfolio">
-  <div class="nd-row nd-portfolio__container">
+<img src="/assets/images/nd-travel-b.jpg" id="skip" class="nd-travel-img" alt="Nicole Dominguez Digital Nomad" />
+<img src="/assets/images/nd-travel-c.jpg" class="nd-travel-img" alt="Nicole Dominguez Digital Nomad" />
+
+<div class="nd-about">
+  <div class="nd-row nd-about__container">
     {% assign portfolio = site.data.about.features | sort:"year" | reverse %}
 
     {% for item in portfolio %}
-    {% if item.dont_show %}{% else %}
-    <div class="nd-portfolio-item nd-col-4">
-      <div class="nd-portfolio-item__wrapper">
-        {% if item.url %}
-        <a href="{{ item.url }}" class="nd-portfolio-item__title">{{ item.title }} <i class="fa fa-external-link"></i></a>
+      {% if item.dont_show %}{% else %}
+        <div class="nd-about-item nd-col-4">
+          <div class="nd-about-item__wrapper">
+            {% if item.url %}
+              <a href="{{ item.url }}" target="_blank" class="nd-about-item__title">{{ item.title }} <i class="fa fa-external-link"></i></a>
 
-        <a href="{{ item.url }}" class="nd-portfolio-item__source">
-          <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
-          {{ item.publication }}
-        </a>
-        {% else %}
-        <p class="nd-portfolio-item__title">{{ item.title }}</p>
+              <a href="{{ item.url }}" target="_blank" class="nd-about-item__source">
+                <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
+                {{ item.publication }}
+              </a>
+            {% else %}
+              <p class="nd-about-item__title">{{ item.title }}</p>
 
-        <div class="nd-portfolio-item__source">
-          <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
-          {{ item.publication }}
+              <div class="nd-about-item__source">
+                <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
+                {{ item.publication }}
+              </div>
+            {% endif %}
+
+            <span class="nd-about-item__year">{{ item.year }}</span>
+
+            <div class="clearfix"></div>
+          </div>
         </div>
-        {% endif %}
-
-        <span class="nd-portfolio-item__year">{{ item.year }}</span>
-
-        <div class="clearfix"></div>
-      </div>
-    </div>
-    {% endif %}
+      {% endif %}
     {% endfor %}
   </div>
 

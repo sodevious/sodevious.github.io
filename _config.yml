@@ -15,6 +15,16 @@ sass:
     output_style: compact
     line_comments: false
 
+compress_html:
+  clippings: [div, p, ul, td, h1, h2]
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
 
 # Plugin: jekyll-assets
 assets:

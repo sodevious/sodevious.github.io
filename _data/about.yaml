@@ -65,6 +65,13 @@ features:
    year: 2015
    icon: microphone
 
+ - publication: Friends Talk Frontend
+   title: "#12"
+   url: https://simplecast.com/s/7b8e9469
+   type: Interview
+   year: 2017
+   icon: microphone
+
  - publication: SkilledUp
    title: "5 Takeaways: Nicole Dominguez on Product Design and Coding"
    url: http://www.skilledup.com/articles/5-takeaways-nicole-dominguez-product-design-coding/
@@ -178,6 +185,18 @@ features:
    type: Writing
    year: 2013
    icon: pencil
+
+
+portfolio:
+ - client: "Last Mile"
+   image: location-finder.png
+   role: "User Interface Design & Front-end Development"
+   link: https://www.behance.net/gallery/51234259/LastMile-UI-Redesign-Front-end-Development
+
+ - client: "Chainalysis"
+   image: chainalysis-styleguide.png
+   role: "Visual Design, Web Design & Front-end Development"
+   link: https://www.behance.net/gallery/47894035/Chainalysis-Website-Illustrations
 
 
 footer_links:
