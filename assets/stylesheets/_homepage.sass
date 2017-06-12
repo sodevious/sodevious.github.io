@@ -276,7 +276,12 @@ $nd-header-content-width: 500px
     background-size: cover
     position: relative
     border-radius: 3px
-    height: 300px
+    margin-bottom: $gutter
+    height: 160px
+
+    @media screen and (min-width: $tablet)
+        margin-bottom: 0
+        height: 300px
 
     @supports (display: flex)
         justify-content: center
@@ -287,16 +292,20 @@ $nd-header-content-width: 500px
         background-color: rgba(60,60,86, 0.8)
         transition: background-color ease-in 0.1s
         position: absolute
-        bottom: 0
         border-radius: 3px
-        right: 0
-        height: 300px
+        cursor: pointer
+        height: 160px
         z-index: 300
         display: block
         content: ""
+        bottom: 0
+        right: 0
         left: 0
         top: 0
-        cursor: pointer
+
+        @media screen and (min-width: $tablet)
+            margin-bottom: 0
+            height: 300px
 
     &:hover
         &:before 
@@ -316,11 +325,16 @@ $nd-header-content-width: 500px
         padding-top: 0
 
     small
-        display: block
+        display: none
         background-color: white
         font-family: $nd-freight
         font-size: $lg-font-size
+        margin: $gutter $gutter 0 $gutter
+        line-height: 1.35em
         margin-top: $gutter
-        padding: 1px 10px
+        padding: 5px 10px
         color: $purple
+
+        @media screen and (min-width: $wide-mobile)
+            display: block
 
