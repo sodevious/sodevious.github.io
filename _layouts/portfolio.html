@@ -1,10 +1,10 @@
 {% include head.html %}
 {% include site-header.html %}
 
-<section class="portfolio">
+<section class="nd-portfolio">
     <div class="container">
         <div class="portfolio-individual">
-            <h2>{{ page.title }}</h2>
+            <h2 class="nd-portfolio__heading">{{ page.title }}</h2>
 
             <div class="portfolio-item">
                 <div class="portfolio-content">
@@ -12,9 +12,6 @@
                 </div>
 
                 <ul class="page-meta">
-                    <li>
-                        <label>Date</label>{{ page.date | date: "%B %Y" }}
-                    </li>
                     {% if page.role %}
                         <li>
                             <label>Role</label>{{ page.role }}
