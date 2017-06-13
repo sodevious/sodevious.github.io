@@ -1,0 +1,23 @@
+{% include head.html %}
+{% include site-header.html %}
+
+<section class="nd-portfolio">
+    <div class="nd-portfolio__header">
+
+        <h2 class="nd-portfolio__heading">{{ page.title }}</h2>
+
+        {% if page.role %}
+        <h3 class="nd-portfolio__sub-heading">
+            {{ page.role }}
+        </h3>
+        {% endif %}
+    </div>
+
+    <div class="nd-portfolio__content">
+        {{ content }}
+    </div>
+
+    <!-- <a href="/portfolio/" class="nd-portfolio__back">Go back to my portfolio</a> -->
+</section>
+
+{% include footer.html %}

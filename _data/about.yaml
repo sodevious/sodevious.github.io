@@ -191,7 +191,7 @@ portfolio:
  - client: "Last Mile"
    image: location-finder.png
    role: "User Interface Design & Front-end Development"
-   link: https://www.behance.net/gallery/51234259/LastMile-UI-Redesign-Front-end-Development
+   link: /portfolio/lastmile
 
  - client: "Chainalysis"
    image: chainalysis-styleguide.png

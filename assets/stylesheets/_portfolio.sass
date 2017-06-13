@@ -1,0 +1,187 @@
+//
+// Portfolio
+.nd-portfolio
+    text-align: center
+    background-color: white
+
+    &.nd-homepage // Homepage modifier
+        padding: $gutter*2.5 $gutter*2
+        background-color: $vanilla
+
+        .nd-portfolio__heading    
+            padding-bottom: $gutter * 2.5
+
+        .nd-portfolio__sub-heading
+            margin-top: $gutter * 2.5
+
+
+//
+// Portfolio header        
+.nd-portfolio__header
+    background-color: $vanilla
+    padding: $gutter*2
+    margin-bottom: $gutter*3
+
+.nd-portfolio__heading
+    font-weight: $nd-adelle-light
+    font-size: $xl-font-size
+    padding-top: $gutter
+    margin: 0
+
+.nd-portfolio__sub-heading
+    font-weight: $nd-adelle-light
+    font-family: $nd-freight
+    color: $slate-light
+
+    a 
+        border-bottom: 2px solid mix($vanilla, $purple-light)
+
+        &:hover 
+            border-bottom-color: $pink
+            color: $slate
+
+//
+// Portfolio items
+.nd-portfolio__item
+    background-color: $purple
+    background-position: center
+    background-size: cover
+    position: relative
+    border-radius: 3px
+    margin-bottom: $gutter
+    height: 160px
+
+    @media screen and (min-width: $tablet)
+        margin-bottom: 0
+        height: 300px
+
+    @supports (display: flex)
+        justify-content: center
+        align-items: center
+        display: flex
+
+    &:before 
+        background-color: rgba(60,60,86, 0.8)
+        transition: background-color ease-in 0.1s
+        position: absolute
+        border-radius: 3px
+        cursor: pointer
+        height: 160px
+        z-index: 300
+        display: block
+        content: ""
+        bottom: 0
+        right: 0
+        left: 0
+        top: 0
+
+        @media screen and (min-width: $tablet)
+            margin-bottom: 0
+            height: 300px
+
+    &:hover
+        &:before 
+            background-color: rgba(254,67,101, 0.75)
+
+
+.nd-portfolio__title
+    color: white
+    z-index: 500
+    position: relative
+    font-size: $xxl-font-size
+    font-weight: $nd-adelle-light
+    line-height: 1.25em
+    padding-top: 120px
+    margin: 0
+
+    @supports (display: flex)
+        padding-top: 0
+
+    small
+        display: none
+        background-color: white
+        font-family: $nd-freight
+        font-size: $lg-font-size
+        margin: $gutter $gutter 0 $gutter
+        line-height: 1.35em
+        margin-top: $gutter
+        padding: 5px 10px
+        color: $purple
+
+        @media screen and (min-width: $wide-mobile)
+            display: block
+
+
+// 
+// Portfolio content
+.nd-portfolio__content
+    padding-bottom: $gutter
+    padding-right: $gutter
+    padding-left: $gutter
+    max-width: 1000px
+    margin: 0px auto
+
+    @media screen and (min-width: $wide-mobile)
+        padding-bottom: $gutter*4
+
+    p 
+        font-family: $nd-freight
+        font-size: $lg-font-size
+        line-height: 1.3em
+        text-align: left
+
+        @media screen and (min-width: $wide-mobile)
+            font-size: $xl-font-size
+
+    hr 
+        border: 1px solid lighten($purple-light, 30%)
+        margin: $gutter*3 0
+        opacity: 0
+
+        @media screen and (min-width: $wide-mobile)
+            margin: $gutter*5 0
+            opacity: 1
+
+    h3 
+        font-weight: $nd-adelle-light
+        font-size: $xl-font-size
+        margin: $gutter*1.5 0
+        line-height: 1.3em
+        color: $offBlack
+
+.nd-portfolio__back
+    background-color: $vanilla
+    padding: $gutter*2 0
+    display: block
+    color: $slate
+
+.nd-portfolio__images 
+    margin: $gutter*2 0
+
+    @media screen and (min-width: $wide-tablet)
+        background-color: $vanilla
+        padding: $gutter
+
+        @supports (display: flex)
+            justify-content: space-between
+            align-items: center
+            display: flex
+
+    img 
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.1)
+        margin-bottom: $gutter
+        border-radius: 3px
+        max-height: 500px
+        max-width: 100%
+
+        &:last-child
+            margin: 0
+
+        @media screen and (min-width: $wide-tablet)
+            border: 1px solid darken($vanilla, 10%)
+            width: auto
+            margin: 0
+
+        @media screen and (max-width: $wide-tablet)
+            height: auto !important
+            max-width: 800px
