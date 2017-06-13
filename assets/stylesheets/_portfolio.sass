@@ -172,7 +172,7 @@
         margin-bottom: $gutter
         border-radius: 3px
         max-height: 500px
-        max-width: 100%
+        width: 100%
 
         &:last-child
             margin: 0
@@ -183,5 +183,9 @@
             margin: 0
 
         @media screen and (max-width: $wide-tablet)
-            height: auto !important
             max-width: 800px
+            height: auto !important
+
+
+        @media screen and (max-width: $wide-mobile)
+            max-width: 100%
