@@ -1,12 +1,31 @@
 ---
-layout: page
-title: Portfolio
+layout: homepage
+title: Nicole Dominguez is a Freelance Front End Developer & Designer
 ---
 
-<section class="portfolio">
-    <h2>Portfolio</h2>
+{% include site-header.html %}
 
-    <div class="container">
+<div class="nd-portfolio nd-homepage">
+  <h3 class="nd-portfolio__heading">Portfolio</h3>
+
+  <div class="nd-row">
+    {% for item in site.data.about.portfolio %}
+      <a href="{{ item.link }}" target="_blank" class="nd-portfolio__item nd-col-6__inner" style="background-image: url('/assets/images/folio/{{ item.image }}');">
+        <h5 class="nd-portfolio__title">
+          {{ item.client }}
+
+          <small>{{ item.role }}</small>
+        </h5>
+      </a>
+    {% endfor %}
+  </div>
+  
+  <h4 class="nd-portfolio__sub-heading">
+    More on it's way. Peek at <a href="https://dribbble.com/nicoledominguez" target="_blank">Dribbble</a> &amp; <a href="https://www.behance.net/nicoledominguez" target="_blank">Behance</a> in the meantime!
+  </h4>
+</div>
+
+{% comment %}
         {% for post in site.categories['portfolio'] %}
             <div class="portfolio-item">
                 <h3 class="portfolio-item-header">
@@ -23,5 +42,4 @@ title: Portfolio
                 <a href="{{post.url}}"><img src="/assets/images/portfolio/{{post.featured_img}}" /></a>
             </div>
         {% endfor %} 
-    </div>
-</section>
+{% endcomment %}
