@@ -196,7 +196,7 @@ portfolio:
  - client: "Chainalysis"
    image: chainalysis-styleguide.png
    role: "Visual Design, Web Design & Front-end Development"
-   link: https://www.behance.net/gallery/47894035/Chainalysis-Website-Illustrations
+   link: /portfolio/chainalysis
 
 
 footer_links:
