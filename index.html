@@ -54,15 +54,15 @@ title: Nicole Dominguez is a Freelance Front End Developer & Designer
   <h3 class="nd-portfolio__heading">Portfolio</h3>
 
   <div class="nd-row">
-    {% for item in site.data.about.portfolio %}
-      <a href="{{ item.link }}" class="nd-portfolio__item nd-col-6__inner" style="background-image: url('/assets/images/folio/{{ item.image }}');">
+    {% for post in site.categories['portfolio'] %}
+      <a href="{{ post.url }}" class="nd-portfolio__item nd-col-6__inner" style="background-image: url('/assets/images/folio/{{ post.image }}');">
         <h5 class="nd-portfolio__title">
-          {{ item.client }}
+          {{ post.title }}
 
-          <small>{{ item.role }}</small>
+          <small>{{ post.role }}</small>
         </h5>
       </a>
-    {% endfor %}
+    {% endfor %} 
   </div>
   
   <h4 class="nd-portfolio__sub-heading">
