@@ -154,20 +154,35 @@
     display: block
     color: $slate
 
+
+
+
 .nd-portfolio__images 
     margin: $gutter*2 0
+    text-align: center
 
     @media screen and (min-width: $wide-tablet)
-        background-color: $vanilla
-        padding: $gutter
+        &.border 
+            background-color: $vanilla
+            padding: $gutter
+
+        &.center 
+            @supports (display: flex)
+                justify-content: center
 
         @supports (display: flex)
             justify-content: space-between
             align-items: center
             display: flex
 
+    &.border 
+        img
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.05)
+
+            @media screen and (min-width: $wide-tablet)
+                border: 1px solid darken($vanilla, 10%)
+
     img 
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.05)
         margin-bottom: $gutter
         border-radius: 3px
         width: 100%
@@ -176,14 +191,13 @@
             margin: 0
 
         @media screen and (min-width: $wide-tablet)
-            border: 1px solid darken($vanilla, 10%)
             max-height: 500px
             width: auto
             margin: 0
 
         @media screen and (max-width: $wide-tablet)
-            max-width: 800px
             height: auto !important
+            max-width: 800px
 
         @media screen and (max-width: $wide-mobile)
             max-width: 100%

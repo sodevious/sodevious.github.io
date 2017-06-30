@@ -50,7 +50,6 @@ $nd-header-content-width: 500px
             flex: 0 0 48%
             float: none
 
-
 //
 // Header
 // --------------------------
@@ -136,13 +135,15 @@ $nd-header-content-width: 500px
     display: inline-block
     text-align: center
     border-radius: 3px
-    padding: 10px 14px
+    padding: 8px 10px
     color: $vanilla
+
+    @media screen and (min-width: $tablet)
+        padding: 10px 14px
 
     .fa
         margin-right: 8px
         color: $purple-light
-
 
     &:hover
         background-color: $pink
@@ -150,7 +151,6 @@ $nd-header-content-width: 500px
 
         .fa
             color: $offWhite
-
 
 //
 // Header image
