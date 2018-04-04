@@ -186,6 +186,27 @@ features:
    year: 2013
    icon: pencil
 
+ - publication: "ToolsDay"
+   title: "Digital Nomading"
+   url: https://spec.fm/podcasts/toolsday/105746
+   type: Podcast
+   year: 2017
+   icon: microphone
+
+ - publication: "Responsive Web Design Podcast"
+   title: "Spotlight: Nicole Dominguez"
+   url: https://responsivewebdesign.com/podcast/nicole-dominguez/
+   type: Podcast
+   year: 2017
+   icon: microphone
+
+ - publication: "Georgie.nu"
+   title: "Hey Girlfriend!"
+   url: http://hey.georgie.nu/hg-nicole/
+   type: Interview
+   year: 2017
+   icon: microphone
+
 
 portfolio:
  - client: "Last Mile"
