@@ -27,7 +27,11 @@ module.exports = {
   },
 
   css: [
-   'normalize.css',
-   '@/assets/app.scss'
- ]
+    'normalize.css',
+    '@/assets/app.scss'
+  ],
+
+   plugins: [
+    { src: '~plugins/webFontLoader.js', ssr: false }
+  ]
 }

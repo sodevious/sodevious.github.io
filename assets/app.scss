@@ -5,6 +5,16 @@ $color-purple: #654F78;
 $color-purple-dark: #4A2C64;
 $color-gray-dark: #333333;
 
+$font-adelle: 	"adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+$font-freight: 	"freight-text-pro", "Freight Text", Georgia, serif;
+
+
 body {
   background: $color-beige;
+  font-family: $font-adelle;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 68rem;
 }

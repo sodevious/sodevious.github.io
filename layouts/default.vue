@@ -23,5 +23,6 @@
   .nd-header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 </style>

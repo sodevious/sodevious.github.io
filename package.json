@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
