@@ -1,0 +1,590 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  -webkit-text-size-adjust: 100%;
+  background-color: #333333;
+  font-family: "adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.25em;
+  color: #5a5a56; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    border-color: #FE4365; }
+
+@media screen and (max-width: 800px) {
+  .hide-on-mobile {
+    display: none !important; } }
+@media screen and (max-width: 1000px) {
+  .hide-on-tablet {
+    display: none !important; } }
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.nd-nav {
+  background: #3C3C56; }
+  @supports (display: flex) {
+    .nd-nav {
+      justify-content: space-between;
+      align-items: center;
+      display: flex; } }
+
+.header-links {
+  list-style: none;
+  margin-right: 20px;
+  text-align: right;
+  float: right; }
+  .header-links li {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block; }
+  .header-links .nd-header-cta {
+    color: #e6e6e6; }
+
+.header-title {
+  padding: 0;
+  margin: 20px;
+  height: 100px;
+  width: 150px;
+  float: left;
+  background-image: url("../images/nicole-dominguez-logo.png");
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  font-size: 0px; }
+
+.nd-footer {
+  background-color: #333333;
+  font-size: 14px;
+  color: #8e8e88;
+  text-align: center;
+  display: block;
+  padding: 30px;
+  clear: both; }
+  @media screen and (min-width: 800px) {
+    @supports (display: flex) {
+      .nd-footer {
+        min-height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex; } } }
+
+@media screen and (min-width: 800px) {
+  .footer-col {
+    text-align: left;
+    float: left;
+    width: 50%; } }
+
+.nd-footer-list {
+  margin: 0px;
+  padding-top: 20px;
+  padding-left: 0px; }
+  @media screen and (min-width: 800px) {
+    .nd-footer-list {
+      text-align: right;
+      padding-top: 0px; } }
+  .nd-footer-list li {
+    list-style-type: none;
+    display: inline-block; }
+    @media screen and (min-width: 800px) {
+      .nd-footer-list li {
+        padding-left: 20px; } }
+
+.nd-footer-list__link {
+  color: #8e8e88; }
+  .nd-footer-list__link:hover {
+    border-bottom: 2px solid #74746f;
+    border-color: #FE4365;
+    color: white; }
+  .nd-footer-list__link.footer-icon {
+    color: white;
+    font-size: 22px;
+    margin-left: 12px; }
+    .nd-footer-list__link.footer-icon:hover {
+      color: #FE4365;
+      border: 0px; }
+
+.nd-footer__copyright {
+  line-height: 1em;
+  padding-top: 5px;
+  display: block; }
+
+.nd-row {
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .nd-row {
+      justify-content: space-between;
+      flex-flow: row wrap;
+      display: flex; } }
+
+@media screen and (min-width: 800px) {
+  .nd-col-4 {
+    margin-right: 3%;
+    float: left;
+    width: 31%; }
+    .nd-col-4:nth-child(3n) {
+      margin-right: 0; }
+    @supports (display: flex) {
+      .nd-col-4 {
+        margin-right: 0;
+        flex: 0 0 31%;
+        float: none; } } }
+
+@media screen and (min-width: 800px) {
+  .nd-col-6 {
+    width: 50%;
+    float: left; }
+    @supports (display: flex) {
+      .nd-col-6 {
+        flex: 0 0 50%;
+        float: none; } } }
+
+@media screen and (min-width: 800px) {
+  .nd-col-6__inner {
+    margin-right: 4%;
+    float: left;
+    width: 48%; }
+    @supports (display: flex) {
+      .nd-col-6__inner {
+        margin-right: 0;
+        flex: 0 0 48%;
+        float: none; } } }
+
+.nd-header {
+  background-color: #3C3C56;
+  width: 100%; }
+  @media screen and (min-width: 800px) {
+    .nd-header {
+      min-height: 500px; }
+      @supports (height: 45vw) {
+        .nd-header {
+          height: 45vw; } } }
+
+.nd-header-info {
+  text-align: center;
+  padding: 40px 0;
+  height: 100%;
+  color: white; }
+  @media screen and (min-width: 800px) {
+    .nd-header-info {
+      min-height: 500px;
+      display: table;
+      padding: 0px; }
+      @supports (display: flex) {
+        .nd-header-info {
+          min-height: auto;
+          justify-content: center;
+          align-items: center;
+          display: flex; } } }
+
+.nd-header-info__wrapper {
+  vertical-align: middle;
+  display: table-cell; }
+
+.nd-header-logo {
+  max-width: 350px;
+  margin: 0 auto 20px;
+  display: block;
+  opacity: 0.75;
+  width: 80%; }
+  @media screen and (min-width: 800px) {
+    .nd-header-logo {
+      margin: 0 auto 2vw;
+      width: 26vw; } }
+
+.nd-header-title {
+  margin: auto;
+  opacity: 0.75;
+  line-height: 1.2em;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 300; }
+  @media screen and (min-width: 800px) {
+    .nd-header-title {
+      max-width: 410px;
+      font-size: 16px; } }
+  @media screen and (min-width: 1000px) {
+    .nd-header-title {
+      max-width: 500px;
+      font-size: 21px; } }
+
+.nd-header-intro {
+  margin: 0px auto;
+  line-height: 1.2em;
+  font-family: "freight-text-pro", "Freight Text", Georgia, serif;
+  font-size: 20px;
+  color: #aa9cb6;
+  width: 85%;
+  margin-bottom: 35px; }
+  @media screen and (min-width: 800px) {
+    .nd-header-intro {
+      max-width: 410px;
+      font-size: 18px; } }
+  @media screen and (min-width: 1000px) {
+    .nd-header-intro {
+      max-width: 500px;
+      font-size: 23px; } }
+
+.nd-header-cta {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  padding: 8px 10px;
+  color: #f7f6e4; }
+  @media screen and (min-width: 800px) {
+    .nd-header-cta {
+      padding: 10px 14px; } }
+  .nd-header-cta .fa {
+    margin-right: 8px;
+    color: #a495b0; }
+  .nd-header-cta:hover {
+    background-color: #FE4365;
+    color: #e6e6e6; }
+    .nd-header-cta:hover .fa {
+      color: #e6e6e6; }
+
+.nd-header-image {
+  background-color: #3C3C56;
+  background-image: url("/assets/images/nd-header-2018.JPG");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 100%; }
+  @media screen and (min-width: 800px) {
+    .nd-header-image {
+      min-height: 500px; } }
+
+.nd-header-credit {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  padding: 6px 10px;
+  color: #715F80;
+  bottom: 0;
+  right: 0; }
+  @media screen and (max-width: 800px) {
+    .nd-header-credit {
+      display: none; } }
+  .nd-header-credit:hover {
+    background-color: white;
+    color: #FE4365; }
+
+.nd-hire-me {
+  background-color: #574e6b;
+  color: #d2ced6;
+  padding: 40px; }
+  .nd-hire-me a {
+    border-bottom: 2px solid #3C3C56;
+    text-decoration: none;
+    color: #e6e6e6; }
+    .nd-hire-me a:hover {
+      border-color: #FE4365;
+      color: white; }
+  .nd-hire-me p {
+    margin-bottom: 20px;
+    line-height: 1.5em; }
+  .nd-hire-me strong {
+    color: white; }
+  .nd-hire-me .lead {
+    font-size: 22px;
+    color: #e6e6e6;
+    font-family: "freight-text-pro", "Freight Text", Georgia, serif; }
+
+.nd-hire-me-image {
+  background-color: #3C3C56;
+  background-image: url("/assets/images/nd-travel.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+
+.nd-travel-img {
+  width: 100%;
+  display: block; }
+
+.nd-skills {
+  padding: 40px;
+  background-color: #f7f6e4;
+  color: #b4abb2;
+  background-color: #574e6b;
+  border-top: 1px solid #715F80; }
+  @media screen and (min-width: 800px) {
+    .nd-skills {
+      border-left: 1px solid #715F80;
+      border-top: 0; } }
+  .nd-skills ul {
+    padding: 0; }
+  .nd-skills li {
+    list-style-type: none;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 480px) {
+      .nd-skills li {
+        display: inline-block;
+        width: 50%;
+        float: left; } }
+
+.nd-portfolio {
+  text-align: center;
+  background-color: white; }
+  .nd-portfolio.nd-homepage {
+    padding: 50px 40px;
+    background-color: #f7f6e4; }
+    .nd-portfolio.nd-homepage .nd-portfolio__heading {
+      padding-bottom: 50px; }
+    .nd-portfolio.nd-homepage .nd-portfolio__sub-heading {
+      margin-top: 50px; }
+
+.nd-portfolio__header {
+  background-color: #f7f6e4;
+  padding: 40px;
+  margin-bottom: 60px; }
+
+.nd-portfolio__heading {
+  font-weight: 300;
+  font-size: 22px;
+  padding-top: 20px;
+  margin: 0; }
+
+.nd-portfolio__sub-heading {
+  font-weight: 300;
+  font-family: "freight-text-pro", "Freight Text", Georgia, serif;
+  color: #8e8e88; }
+  .nd-portfolio__sub-heading a {
+    border-bottom: 2px solid #cec6ca; }
+    .nd-portfolio__sub-heading a:hover {
+      border-bottom-color: #FE4365;
+      color: #5a5a56; }
+
+.nd-portfolio__item {
+  background-color: #715F80;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 40px;
+  height: 160px; }
+  @media screen and (min-width: 800px) {
+    .nd-portfolio__item {
+      height: 300px; } }
+  @supports (display: flex) {
+    .nd-portfolio__item {
+      justify-content: center;
+      align-items: center;
+      display: flex; } }
+  .nd-portfolio__item:before {
+    background-color: rgba(60, 60, 86, 0.8);
+    transition: background-color ease-in 0.1s;
+    position: absolute;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 160px;
+    z-index: 300;
+    display: block;
+    content: "";
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0; }
+    @media screen and (min-width: 800px) {
+      .nd-portfolio__item:before {
+        margin-bottom: 0;
+        height: 300px; } }
+  .nd-portfolio__item:hover:before {
+    background-color: rgba(254, 67, 101, 0.75); }
+
+.nd-portfolio__title {
+  color: white;
+  z-index: 500;
+  position: relative;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.25em;
+  padding-top: 120px;
+  margin: 0; }
+  @supports (display: flex) {
+    .nd-portfolio__title {
+      padding-top: 0; } }
+  .nd-portfolio__title small {
+    display: none;
+    background-color: white;
+    font-family: "freight-text-pro", "Freight Text", Georgia, serif;
+    font-size: 18px;
+    margin: 20px 20px 0 20px;
+    line-height: 1.35em;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: #715F80; }
+    @media screen and (min-width: 480px) {
+      .nd-portfolio__title small {
+        display: block; } }
+
+.nd-portfolio__content {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1000px;
+  margin: 0px auto; }
+  @media screen and (min-width: 480px) {
+    .nd-portfolio__content {
+      padding-bottom: 80px; } }
+  .nd-portfolio__content p {
+    font-family: "freight-text-pro", "Freight Text", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.3em;
+    text-align: left; }
+    @media screen and (min-width: 480px) {
+      .nd-portfolio__content p {
+        font-size: 22px; } }
+  .nd-portfolio__content hr {
+    border: 1px solid #efedf1;
+    margin: 60px 0;
+    opacity: 0; }
+    @media screen and (min-width: 480px) {
+      .nd-portfolio__content hr {
+        margin: 100px 0;
+        opacity: 1; } }
+  .nd-portfolio__content h3 {
+    font-weight: 300;
+    font-size: 22px;
+    margin: 30px 0;
+    line-height: 1.3em;
+    color: #333333; }
+
+.nd-portfolio__back {
+  background-color: #f7f6e4;
+  padding: 40px 0;
+  display: block;
+  color: #5a5a56; }
+
+.nd-portfolio__images {
+  margin: 40px 0;
+  text-align: center; }
+  @media screen and (min-width: 950px) {
+    .nd-portfolio__images.border {
+      background-color: #f7f6e4;
+      padding: 20px; }
+    @supports (display: flex) {
+      .nd-portfolio__images.center {
+        justify-content: center; } }
+    @supports (display: flex) {
+      .nd-portfolio__images {
+        justify-content: space-between;
+        align-items: center;
+        display: flex; } } }
+  .nd-portfolio__images.border img {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05); }
+    @media screen and (min-width: 950px) {
+      .nd-portfolio__images.border img {
+        border: 1px solid #ebe9bd; } }
+  .nd-portfolio__images img {
+    margin-bottom: 20px;
+    border-radius: 3px;
+    width: 100%; }
+    .nd-portfolio__images img:last-child {
+      margin: 0; }
+    @media screen and (min-width: 950px) {
+      .nd-portfolio__images img {
+        max-height: 500px;
+        width: auto;
+        margin: 0; } }
+    @media screen and (max-width: 950px) {
+      .nd-portfolio__images img {
+        height: auto !important;
+        max-width: 800px; } }
+    @media screen and (max-width: 480px) {
+      .nd-portfolio__images img {
+        max-width: 100%; } }
+
+.nd-portfolio__btn {
+  display: block;
+  font-family: "adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  color: #715F80;
+  font-size: 18px;
+  padding: 6px 12px;
+  font-weight: 700;
+  border-radius: 3px; }
+  .nd-portfolio__btn .fa {
+    font-size: 14px;
+    margin-left: 5px;
+    opacity: 0.75; }
+  .nd-portfolio__btn:hover {
+    color: #FE4365; }
+
+.nd-about {
+  background-color: #f7f6e4;
+  padding: 20px; }
+  @media screen and (min-width: 800px) {
+    .nd-about {
+      padding: 3% 3% 1% 3%; } }
+
+.nd-about__container {
+  width: 100%; }
+
+.nd-about-item {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  padding: 20px; }
+  @media screen and (min-width: 800px) {
+    .nd-about-item {
+      height: 160px; } }
+  @supports (display: flex) {
+    .nd-about-item {
+      height: auto; } }
+
+.nd-about-item__wrapper {
+  position: relative;
+  height: 100%; }
+
+.nd-about-item__title {
+  font-size: 18px;
+  font-family: "freight-text-pro", "Freight Text", Georgia, serif;
+  color: #3C3C56;
+  line-height: 1.25em;
+  padding-bottom: 30px;
+  display: block;
+  margin: 0; }
+  .nd-about-item__title:hover {
+    color: #FE4365; }
+  .nd-about-item__title .fa {
+    font-size: 12px;
+    margin-left: 6px;
+    opacity: 0.4; }
+
+.nd-about-item__source {
+  line-height: 14px;
+  font-size: 12px;
+  position: absolute;
+  color: #715F80;
+  display: block;
+  bottom: 0;
+  margin: 0;
+  left: 0; }
+  .nd-about-item__source span {
+    text-transform: uppercase;
+    color: #bdb2c6;
+    font-weight: 700;
+    font-size: 10px;
+    margin-right: 5px; }
+  .nd-about-item__source .fa {
+    color: #a495b0;
+    text-align: center;
+    margin-right: 4px; }
+
+.nd-about-item__year {
+  line-height: 14px;
+  font-size: 12px;
+  position: absolute;
+  display: block;
+  opacity: 0.35;
+  bottom: 0;
+  right: 0; }

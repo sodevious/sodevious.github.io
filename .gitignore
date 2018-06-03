@@ -1,23 +1,11 @@
-.sass-cache
-.DS_Store
-.idea
-.idea/
-_site
-*.gem
-*.rbc
-.bundle
-.config
-coverage
-InstalledFiles
-lib/bundler/man
-pkg
-rdoc
-spec/reports
-test/tmp
-test/version_tmp
-tmp
+# dependencies
+node_modules
 
-# YARD artifacts
-.yardoc
-_yardoc
-doc/
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist

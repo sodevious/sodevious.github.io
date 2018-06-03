@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nicole Dominguez &mdash; @sodevious &mdash; Freelance Product Designer & Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for nicoledominguez.com" href="/feed.xml" />
+  <meta name="description" content="Nicole Dominguez is a freelance front-end developer and product designer. Works with HTML, CSS, Sass/Less, Haml, jQuery, Django, Python.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/assets/stylesheets/style.css">
+  <link rel="stylesheet" href="/assets/stylesheets/font-awesome.min.css">
+
+  <!-- Vendor -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@sodevious">
+  <meta name="google-site-verification" content="af0x8lMFq5Izj7MNfhrGXiObtaPCSo4QrON2DW8BjIM" />
+
+  <!-- Typekit -->
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'amr1fda',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+  </script>
+</head>
+<body class="post">
+
+<header class="nd-nav">
+    <a href="/">
+        <h1 class="header-title">
+            Nicole Dominguez
+        </h1>
+    </a>
+
+    <nav class="header-links" role="navigation">
+        <ul>
+            <li><a href="/" class="nd-header-cta">Home</a></li>
+            <li><a href="/portfolio" class="nd-header-cta">Portfolio</a></li>
+            <li><a href="/about" class="nd-header-cta">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="clearfix"></div>
+
+
+<section class="blog">
+    <div class="container">
+        <article class="single">
+            <h3 class="post-title"><a href="/thoughts/jekyll-gh-pages/">How This Blog Works: Jekyll + GitHub Pages + Custom Domain</a></h3>
+            <p>I recently moved from a Tumblr blog + custom domain to using GitHub Pages to host and serve my Jekyll powered blog with a custom domain. It’s pretty cool actually, cause all the code is open source and works great with a regular GitHub workflow. Did I mention it’s free and deserves some nerd cred?</p>
+
+<p>At first, Jekyll seems kind of daunting, but once you start your local server and play with the inner workings, you’ll realize that it’s pretty powerful. All it takes is a little knowledge of ruby views and sass - then you’re good to go! <strong>The <a href="http://jekyllrb.com/">documentation</a> is super useful.</strong></p>
+
+<ul>
+  <li>
+    <p>So to handle the 301 redirection, I’m using a plugin called <em><a href="https://github.com/tsmango/jekyll_alias_generator">jekyll_alias_generator</a></em> to generate local post files where the old url goes. Those files contain 301 redirects for the new slug. It’s worth noting that I had to generate these files locally and then put them in the <em>site</em> folder, because GitHub pages won’t run any Jekyll plugins.</p>
+  </li>
+  <li>
+    <p>All of the posts are written in markdown, using yaml frontmatter for metadata. I found <em><a href="http://mouapp.com/">Mou</a></em>, a great free Mac app that helps with formatting markdown.</p>
+  </li>
+  <li>
+    <p>To get the custom domains working, you have to point your domain to the GitHub Pages IP, which is all laid out in their wonderful <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">documentation</a>. And then in your repo, create a file called “<em>CNAME</em>” with the url of your domain, no www. Here’s <a href="https://github.com/sodevious/sodevious-blog/blob/master/CNAME">mine</a>.</p>
+  </li>
+  <li>
+    <p>To get it all going, create a branch called gh-pages and push everything there. It will live at <em>yourusername</em>.github.io/<em>your-repo</em>.</p>
+  </li>
+</ul>
+
+<p>Huzzah! Profit! Prosper! Be Merry!</p>
+
+            <div class="meta">
+                Nicole wrote this on July 19, 2013 and it's probably about development.
+            </div>
+        </article>
+    </div>
+    <a class="section-link" href="/archives/"><span>&#8592;</span>&nbsp;Back to all the things!</a>
+</section>
+
+<footer class="nd-footer">
+  <div class="footer-col">
+    <span class="nd-footer__copyright">
+        &copy; Nicole Dominguez & NerdyFab LLC, 1994-2018
+    </span>
+  </div>
+
+  <div class="footer-col">
+    <ul class="nd-footer-list">
+      <li><a href="https://github.com/sodevious/sodevious.github.io" target="_blank" class="nd-footer-list__link hide-on-mobile">Source</a></li>
+
+      
+        <li><a href="https://github.com/sodevious" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-github"></i></a></li>
+      
+        <li><a href="https://linkedin.com/in/domingueznicole/" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      
+        <li><a href="https://www.behance.net/nicoledominguez" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-behance"></i></a></li>
+      
+        <li><a href="http://twitter.com/sodevious" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      
+        <li><a href="https://dribbble.com/nicoledominguez" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+      
+    </ul>
+  </div>
+
+  <div class="clearfix"></div>
+</footer>

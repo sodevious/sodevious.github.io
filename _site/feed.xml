@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+        <channel>
+                <title>Nicole Dominguez</title>
+                <description>Nicole Dominguez | Product Designer | NYC + Beyond</description>
+                <link>http://localhost:4000</link>
+                <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+                
+                        <item>
+                                <title>Last Mile</title>
+                                <description>&lt;h3 id=&quot;overall-user-interface-overhaul&quot;&gt;Overall User Interface Overhaul&lt;/h3&gt;
+
+&lt;p&gt;I was tasked with redesigning the original LastMile web application. At the time, the team hadn’t worked with a UI or product designer, so the interface was hacky and put together without visual finesse. We also designed new UI concepts to show potential clients what the system could do.&lt;/p&gt;
+
+&lt;p&gt;In addition to improving the overall look and feel of the web application, I also got to do a lot of front-end work on their Django stack. I overhauled the stylesheets, introduced Sass and best practices for styling large applications — reusable modular elements, brand variables for consistency, BEM principles, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://buynearby.co&quot; class=&quot;nd-portfolio__btn&quot; target=&quot;_blank&quot;&gt;See live site &lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/nd-lastmile-ui-1.jpg&quot; height=&quot;245px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/nd-lastmile-ui-2.jpg&quot; height=&quot;245px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/C9I6c4hXsAA4fC8.jpg&quot; height=&quot;292px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/nd-lastmile-widget.jpg&quot; height=&quot;292px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/lm-widget__2b.png&quot; height=&quot;292px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/lm-find-nearby.png&quot; height=&quot;337px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/last-mile.png&quot; height=&quot;337px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/lm-mobile-0.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/lm-mobile-1.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/lm-mobile-2.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/lm-mobile-3.jpg&quot; height=&quot;300px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;custom-sass-system-for-whitelabeling&quot;&gt;Custom Sass system for whitelabeling&lt;/h3&gt;
+
+&lt;p&gt;I got to create a system using Sass that allowed any developer to quickly whitelabel and rebrand the user interface with about 5 lines of Sass variables for their clients. That works in conjunction with some smart mixins that can output different values based on if client colors were dark or light. This system greatly reduced visual inconsistencies between the regular product and the white labeled product. It also means backend developers on the team didn’t have to fuddle with CSS, but rather could just alter a few variables inside of a Sass file and change the look entirely.&lt;/p&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/nd-lastmile-sears.jpg&quot; height=&quot;245px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/nd-lastmile-true-value.jpg&quot; height=&quot;245px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/business-detail_1.png&quot; height=&quot;370px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/category-list.png&quot; height=&quot;370px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/service-detail.png&quot; height=&quot;370px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;developing-components-in-vuejs&quot;&gt;Developing components in Vue.js&lt;/h3&gt;
+
+&lt;p&gt;In designing and developing the front-end for a component, I realized that the component would benefit from the UI state handling offered by Vue opposed to the current jQuery mess I had been editing. I hadn’t touched Vue.js much before that project, but I got the go-ahead to play with Vue and make the determination of whether or not we should use it for the project. Soon after, the CTO and I saw eye to eye, and I got the go-ahead to implement the component with Vue.js myself. It ended up being successful and simplified a lot of what we had previously. It also paved the groundwork for similar smart components later on down the line!&lt;/p&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/nd-lastmile-vue-2.gif&quot; alt=&quot;I DID NOT DESIGN THAT LOGO&quot; title=&quot;I DID NOT DESIGN THAT LOGO&quot; height=&quot;233px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/location-finder.png&quot; height=&quot;233px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/lastmile/nd-lastmile-vue-1.jpg&quot; height=&quot;233px&quot; /&gt;
+&lt;/div&gt;
+</description>
+                                <pubDate>Thu, 15 Jun 2017 00:00:00 -0400</pubDate>
+                                <link>http://localhost:4000/portfolio/lastmile/</link>
+                                <guid isPermaLink="true">http://localhost:4000/portfolio/lastmile/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Chainalysis</title>
+                                <description>&lt;h3 id=&quot;redesigning-homepage&quot;&gt;Redesigning Homepage&lt;/h3&gt;
+
+&lt;p&gt;I was approached by Chainalysis to redesign and build a last minute single-page website, for a demo the following week. In collaborating with the team and gathering requirements, I was able to successfully define a visual style for the marketing website, as well as design and develop that single-page website. I also designed illustrations that went along with the marketing site.&lt;/p&gt;
+
+&lt;p&gt;I built the site in Jekyll, using Github pages as a sandbox. It uses Foundation and Sass. I also implemented the Contentful API using Javascript and Handlebars to render dynamic press quotes that could be edited by anyone on the team, without having to deploy or write code.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://chainalysis.com&quot; class=&quot;nd-portfolio__btn&quot; target=&quot;_blank&quot;&gt;See live site &lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/chainalysis-styleguide.png&quot; height=&quot;290px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/chainalysis-unused.png&quot; height=&quot;290px&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/homepage-draft.jpg&quot; height=&quot;415px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/chainalysis-home-products.jpg&quot; height=&quot;415px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;chainalysis-blog&quot;&gt;Chainalysis Blog&lt;/h3&gt;
+
+&lt;p&gt;Needing a bit more than a static landing page, my client asked for a blog to accompany their current site. We put together a &lt;a href=&quot;https://ghost.org/developers/&quot; target=&quot;_blank&quot;&gt;Ghost&lt;/a&gt; blog, and I designed and built a theme for them.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/public/chainalysis-blog-design.pdf&quot; class=&quot;nd-portfolio__btn&quot; target=&quot;_blank&quot;&gt;See full designs &lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.chainalysis.com/&quot; class=&quot;nd-portfolio__btn&quot; target=&quot;_blank&quot;&gt;See live site&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/chainalysis-blog__2-col-preview.png&quot; height=&quot;350px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/chainalysis-blog__1-col.png&quot; height=&quot;350px&quot; /&gt;
+&lt;/div&gt;
+</description>
+                                <pubDate>Tue, 13 Jun 2017 00:00:00 -0400</pubDate>
+                                <link>http://localhost:4000/portfolio/chainalysis/</link>
+                                <guid isPermaLink="true">http://localhost:4000/portfolio/chainalysis/</guid>
+                        </item>
+                
+                        <item>
+                                <title>NerdyFab</title>
+                                <description>&lt;p&gt;NerdyFab a business that I started, in response to not being able to find cases for my iPhone that I liked. In investigating how I could create a custom case, one thing led to another and I opened up shop! I created designs that spoke to pop culture, current events, or just things I wanted to exist in the universe. Below is a sampling of work.&lt;/p&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/Coffee-mug-flatlay-51r.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/13628259_1720368618214720_471045153_n.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/CxrUgHpXEAAl3sz.jpg&quot; height=&quot;300px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/0293c_MzXgtFLV5x8eBjkBSL7ntvKp.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/back-on-my.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/Desktop-73-2.jpg&quot; height=&quot;300px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/neon.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/lemonade-print.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/IMG_4662.JPG&quot; height=&quot;300px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/tough-case.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/vneck-nextlevel-v.jpg&quot; height=&quot;300px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/mugs.jpg&quot; height=&quot;300px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images center&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/sale.jpg&quot; height=&quot;240px&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;nd-portfolio__images center&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/holidays.jpg&quot; height=&quot;240px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images center&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/nerdyfab/nf-layout.png&quot; height=&quot;1200px&quot; /&gt;
+&lt;/div&gt;
+</description>
+                                <pubDate>Thu, 20 Apr 2017 00:00:00 -0400</pubDate>
+                                <link>http://localhost:4000/portfolio/nerdyfab/</link>
+                                <guid isPermaLink="true">http://localhost:4000/portfolio/nerdyfab/</guid>
+                        </item>
+                
+                        <item>
+                                <title>ZoePepper</title>
+                                <description>&lt;h3 id=&quot;bringing-ui-to-life&quot;&gt;Bringing UI to life&lt;/h3&gt;
+
+&lt;p&gt;ZoePepper was in need of a front-end developer with “an impeccable taste in design” to bring a MVP to life, as they had originally asked in the job description. We worked together to turn Balsamiq wireframes into well designed and developed interfaces. I did most prototyping directly in HTML and CSS, which got shared with the team and backend developers. Once something was ready to go, the backend developers just copied my production-ready Sass and markup into the app. Working rapidly like this, in an enviroment that could be handed off at any moment greatly sped up the app development process, and developers didn’t have to guess what designs meant since they were handed off ready to go. The site uses Bootstrap 4 for grids and base components.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://zoepepper.github.io/zoepepper-html/views/freelancer/&quot; class=&quot;nd-portfolio__btn&quot; target=&quot;_blank&quot;&gt;See the prototpyes &lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/zp-dash-5.jpg&quot; height=&quot;228px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/zp-dash-6.jpg&quot; height=&quot;228px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/zp-dash-1.jpg&quot; height=&quot;228px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/zp-dash-3.jpg&quot; height=&quot;228px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/zp-dash-2.jpg&quot; height=&quot;228px&quot; /&gt;
+	&lt;img src=&quot;/assets/images/folio/zp-dash-4.jpg&quot; height=&quot;228px&quot; /&gt;
+&lt;/div&gt;
+</description>
+                                <pubDate>Mon, 13 Feb 2017 00:00:00 -0500</pubDate>
+                                <link>http://localhost:4000/portfolio/zoepepper/</link>
+                                <guid isPermaLink="true">http://localhost:4000/portfolio/zoepepper/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Matter</title>
+                                <description>&lt;h3 id=&quot;improvements-and-new-features&quot;&gt;Improvements and New Features&lt;/h3&gt;
+
+&lt;p&gt;I was lucky enough to work with the Matter team, to help envision new feature ideas and adjustments to the interface. Initial design work by Matter &amp;amp; &lt;a href=&quot;http://www.lauramcguigan.com/&quot; target=&quot;_blank&quot;&gt;Laura McGuigan&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;nd-portfolio__images center&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/m-groupings__flow-1.png&quot; height=&quot;400px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images center&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/m-groupings__flow-1b.png&quot; height=&quot;390px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images center&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/m-groupings__view.png&quot; height=&quot;500px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images center&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/m-groupings-2@2x.png&quot; height=&quot;500px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nd-portfolio__images center&quot;&gt;
+	&lt;img src=&quot;/assets/images/folio/m-groupings-9@2x.png&quot; height=&quot;500px&quot; /&gt;
+&lt;/div&gt;
+</description>
+                                <pubDate>Mon, 20 Jun 2016 00:00:00 -0400</pubDate>
+                                <link>http://localhost:4000/portfolio/matter/</link>
+                                <guid isPermaLink="true">http://localhost:4000/portfolio/matter/</guid>
+                        </item>
+                
+                        <item>
+                                <title>GCC + Python + Pip install errors got me like, "i can&apos;t even"</title>
+                                <description>&lt;p&gt;In my free time, I have been trying to pick up working on my side project, techconferenc.es again. However, I 
+couldn’t even seem to simply &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install -r requirements.txt&lt;/code&gt; without getting errors.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;error: command 'gcc-4.9' failed with exit status 1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This error has been tripping me up for so long! Googling for hours on the weekend, racking my head about
+what could possibly fix this, and trying every solution I found. Nothing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://media.giphy.com/media/12I0zvnRp4Lq92/giphy.gif&quot; alt=&quot;i can't even&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Until&lt;/strong&gt;, I found &lt;a href=&quot;https://kaspermunck.github.io/2014/03/fixing-clang-error/&quot;&gt;this blog post&lt;/a&gt; after the 321934th Google search pertaining to this issue. Apparently
+it’s a temporary fix, but OMG IT WORKED.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;See the post here: &lt;a href=&quot;https://kaspermunck.github.io/2014/03/fixing-clang-error/&quot;&gt;Fix ‘clang: unknown argument’ error after updating to Xcode 5.1&lt;/a&gt;&lt;/p&gt;
+</description>
+                                <pubDate>Fri, 22 May 2015 07:42:02 -0400</pubDate>
+                                <link>http://localhost:4000/thoughts/omg-gcc-python-pip-install-errors/</link>
+                                <guid isPermaLink="true">http://localhost:4000/thoughts/omg-gcc-python-pip-install-errors/</guid>
+                        </item>
+                
+                        <item>
+                                <title>So I just made a Ghost droplet on Digital Ocean, now what?</title>
+                                <description>&lt;p&gt;So I have been wanting to start a new blog for a while now. Being out of the blogging world for a bit, I knew there were some new options out there for a blogging platform. Jekyll has been my go-to choice for simple, static sites or blogs. I knew I needed something more powerful however.&lt;/p&gt;
+
+&lt;p&gt;I was just about to install Wordpress on my shared hosting server at Eleven2, a host I have been with for years. But then, I decided on a whim to try out Ditigal Ocean instead. Upon seeing their Ghost offering, I said “what the hell” and tried it out.&lt;/p&gt;
+
+&lt;p&gt;Here are some things I learned:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ghost doesn’t have great documentation. At least, I feel like I couldn’t get a sense for it’s features from it’s site. It just pushes you to buy hosting from them with ghost pre-installed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ghost runs on node.js; if you’ve never used it then good luck &lt;em&gt;(I’ve never used it before now)&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Say good bye to FTP and navigating your files traditionally! Command line and SFTP is your new best friend. And did you know that ssh and sftp via the command line is not the same thing? You have to use the command line to interface with your server. &lt;em&gt;(I’ve only done this a handful of times)&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ghost themes run on handlebars, .hbs files. &lt;em&gt;(I’ve never used it before now)&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And now, I guess the next thing to do is install Ghost locally and figure out how to theme with it.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;digital ocean + ghost = newfound career in being a server admin&lt;/p&gt;&amp;mdash; Nicole Dominguez (@sodevious) &lt;a href=&quot;https://twitter.com/sodevious/statuses/498310071945003008&quot;&gt;August 10, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+</description>
+                                <pubDate>Sun, 10 Aug 2014 15:11:02 -0400</pubDate>
+                                <link>http://localhost:4000/thoughts/ghost-blogging-on-digitialocean/</link>
+                                <guid isPermaLink="true">http://localhost:4000/thoughts/ghost-blogging-on-digitialocean/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Jekyll, WHY U NO LIVERELOAD (or, How to get Jekyll to play nice with LiveReload)</title>
+                                <description>&lt;p&gt;I have been a believer in LiveReload and its counterparts for a while now. It’s completely changed my development process and experience. Other than built-in rails preprocessing, I exclusively use LiveReload.&lt;/p&gt;
+
+&lt;p&gt;Anyways, I only update this site once every few months so the annoyance of not having styles reinjected was fine to deal with. (Jekyll regenerates the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder in a way that makes LiveReload impossible to reload the styles without a hard page refresh)&lt;/p&gt;
+
+&lt;p&gt;I’m refactoring the code to use neat instead of susy and figured I might as well figure out a solution to the problem I’ve been having.&lt;/p&gt;
+
+&lt;p&gt;Possible solutions include:&lt;/p&gt;
+
+&lt;h3 id=&quot;dont-use-the-built-in-jekyll-server&quot;&gt;Don’t use the built-in Jekyll server&lt;/h3&gt;
+&lt;p&gt;Idea came from &lt;a href=&quot;http://thanpol.as/jekyll/jekyll-and-livereload-flow/&quot;&gt;this&lt;/a&gt; post. Seems like an interesting solution, possibly the easiest. Except I couldn’t get that to work. &lt;em&gt;Note: this command is the best thing ever invented, try it! &lt;code class=&quot;highlighter-rouge&quot;&gt;python -m SimpleHTTPServer 4000&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;use-the-jekyll-assets-gem&quot;&gt;Use the Jekyll-assets gem&lt;/h3&gt;
+&lt;p&gt;I took a peek at the source of &lt;a href=&quot;http://ttimsmith.com&quot;&gt;Tim Smith’s&lt;/a&gt; site and saw he was using &lt;a href=&quot;http://ixti.net/jekyll-assets/&quot;&gt;this&lt;/a&gt; gem.&lt;/p&gt;
+
+&lt;p&gt;After much googling and fighting with installing the gem, &lt;strong&gt;finally&lt;/strong&gt; I got it working. So I ended up ditching guard and guard-livereload, in favor of the &lt;a href=&quot;http://livereload.com/&quot;&gt;LiveReload&lt;/a&gt; Mac app. I know, I know. It does a hard reload of the page 0.5 seconds after it detects changes.&lt;/p&gt;
+
+&lt;p&gt;I let &lt;a href=&quot;https://github.com/ixti/jekyll-assets&quot;&gt;jekyll-assets&lt;/a&gt; compile my sass, which works pretty well because you can include third-party resources, like bootstrap, compass, bourbon, etc. I was able to delete my Guardfile and config.rb.&lt;/p&gt;
+
+&lt;p&gt;My Gemfile looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem 'jekyll', '~&amp;gt; 2.1.0'
+gem 'jekyll-assets', ~&amp;gt; '0.8.1'
+gem 'bourbon', '~&amp;gt; 4.0.2'
+gem 'neat', '~&amp;gt; 1.6.0'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ext.rb&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require &quot;jekyll-assets&quot;
+require &quot;jekyll-assets/bourbon&quot;
+require &quot;jekyll-assets/neat&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;piece of my config.yml&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Plugin: jekyll-assets
+assets:
+  sources:
+    - assets/sass
+    - assets/stylesheets
+    - assets/images
+
+  css_compressor: sass
+  cachebust: hard
+  cache: false
+  gzip: [ text/css, application/javascript ]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+                                <pubDate>Sun, 06 Jul 2014 15:11:02 -0400</pubDate>
+                                <link>http://localhost:4000/thoughts/jekyll-sass-livereload/</link>
+                                <guid isPermaLink="true">http://localhost:4000/thoughts/jekyll-sass-livereload/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Intro to CSS Frameworks intensive at the Startup Institute</title>
+                                <description>&lt;p&gt;I taught at the &lt;a href=&quot;http://startupinstitute.com&quot;&gt;Startup Institute&lt;/a&gt; (a career accelerator that helps adults enter the startup world with new skills) this week about CSS frameworks. &lt;a href=&quot;http://nicoledominguez.com/intro-to-css-frameworks/&quot;&gt;Here are my slides&lt;/a&gt;.&lt;/p&gt;
+</description>
+                                <pubDate>Fri, 11 Apr 2014 15:11:02 -0400</pubDate>
+                                <link>http://localhost:4000/thoughts/teaching-css-frameworks/</link>
+                                <guid isPermaLink="true">http://localhost:4000/thoughts/teaching-css-frameworks/</guid>
+                        </item>
+                
+                        <item>
+                                <title>How to enter the interactive Python console</title>
+                                <description>&lt;p&gt;I learned about the interactive Python console yesterday. It’s pretty cool.&lt;/p&gt;
+
+&lt;p&gt;To get inside, open Terminal.app and do this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;python&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To leave the console,&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can do math, and print things too!&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;World&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+                                <pubDate>Sat, 15 Mar 2014 15:11:02 -0400</pubDate>
+                                <link>http://localhost:4000/thoughts/interactive-python-console/</link>
+                                <guid isPermaLink="true">http://localhost:4000/thoughts/interactive-python-console/</guid>
+                        </item>
+                
+        </channel>
+</rss>
