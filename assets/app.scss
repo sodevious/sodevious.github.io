@@ -1,20 +1,102 @@
-$color-beige: #FBF8EF;
-$color-white: #FFFFFF;
-$color-purple-light: #715F80;
-$color-purple: #654F78;
-$color-purple-dark: #4A2C64;
-$color-gray-dark: #333333;
+:root {
+  --color-white: #FFFFFF;
+  --color-beige: #FBF8EF;
+  --color-purple-light: #715F80;
+  --color-purple: #654F78;
+  --color-purple-dark: #4A2C64;
+  --color-gray-dark: #333333;
 
-$font-adelle: 	"adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-$font-freight: 	"freight-text-pro", "Freight Text", Georgia, serif;
+  --font-adelle: 	"adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+  --font-freight: "freight-text-pro", "FreightText Pro", Helvetica, serif;
+}
 
-
+//
+// default.vue
+//
 body {
-  background: $color-beige;
-  font-family: $font-adelle;
+  background: var(--color-beige);
+  font-family: var(--font-adelle);
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  color: var(--color-purple);
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .container {
   margin: 0 auto;
   max-width: 68rem;
+}
+
+.nd-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.lead {
+  font-family: var(--font-freight);
+  font-size: 1.35rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--color-gray-dark);
+  margin-bottom: 0;
+}
+
+//
+// index.vue
+//
+.nd-row {
+  display: flex;
+  flex-flow: row;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  justify-content: space-between;
+}
+
+.nd-content-item {
+  margin: 1.5rem;
+  flex: 1;
+  padding: 1.75rem;
+  box-shadow: 5px 5px 0px var(--color-purple-light);
+  background-color: var(--color-white);
+}
+
+.nd-photo {
+  background-image: url('~/nd-logo__purple.svg');
+}
+
+
+//
+// HeaderNav.vue
+//
+.nd-nav-item {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--color-purple-dark);
+}
+
+
+//
+// Logo.vue
+//
+.nd-logo-container {
+  width: 25%;
+}
+
+.nd-logo {
+  width: 100%;
+}
+
+
+//
+// Utilities
+//
+.util-transparent {
+  opacity: 0;
 }

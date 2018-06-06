@@ -4,6 +4,8 @@
       <logo/>
       <header-nav/>
     </div>
+
+    <nuxt/>
   </section>
 </template>
 
@@ -18,11 +20,3 @@
     }
   }
 </script>
-
-<style>
-  .nd-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-</style>

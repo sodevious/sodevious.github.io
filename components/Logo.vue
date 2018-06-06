@@ -5,13 +5,3 @@
     </a>
   </h1>
 </template>
-
-<style>
-  .nd-logo-container {
-    width: 25%;
-  }
-
-  .nd-logo {
-    width: 100%;
-  }
-</style>
