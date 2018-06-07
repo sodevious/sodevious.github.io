@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
-    "nuxt": "^1.0.0",
+    "nuxt": "^1.4.1",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {

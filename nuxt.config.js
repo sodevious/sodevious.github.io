@@ -11,7 +11,7 @@ module.exports = {
     ]
   },
 
-  loading: { color: '#3B8070' },
+  loading: { color: '#654F78' },
 
   build: {
     extend (config, { isDev, isClient }) {
