@@ -21,3 +21,13 @@
     </a>
   </div>
 </template>
+
+<style lang="scss">
+  @import '~assets/variables';
+
+  .nd-nav-item {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: $color-purple-dark;
+  }
+</style>

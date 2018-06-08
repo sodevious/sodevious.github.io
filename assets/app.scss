@@ -1,265 +1,34 @@
-:root {
-  --color-white: #FFFFFF;
-  --color-beige: #FBF8EF;
-  --color-purple-light: #715F80;
-  --color-purple: #654F78;
-  --color-purple-dark: #4A2C64;
-  --color-gray-dark: #333333;
+@import 'variables';
+@import 'base';
 
-  --font-adelle: 	"adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-  --font-freight: "freight-text-pro", "FreightText Pro", Helvetica, serif;
-}
-
-//
-// Branding
-// --------------------------
-$purple-dark:   #3C3C56;
-$purple: 		#715F80;
-$purple-light:  #B2A3BD;
-
-$vanilla:       #f7f6e4;
-
-$offWhite:      #e6e6e6;
-$offBlack:      #333333;
-
-$teal:          #79b7b0;
-$plum:          #635063;
-$haze:          #C1D2CF;
-
-$pink:          #FE4365;
-
-$violet:        mix($plum, $purple);
-$slate:         mix($vanilla, $offBlack, 20%);
-$raspberry:     mix($plum, $vanilla, 20%);
-
-$plum-light:    lighten($plum, 20%);
-$purple-light:  lighten($purple, 20%);
-$slate-light:   lighten($slate, 20%);
-
-$header-height-default: 	480px;
-$header-height-desktop: 	400px;
-$header-height-tablet: 		240px;
-$header-height-mobile: 		180px;
-
-
-// Neat & Bourbon overrides
-// ------------------------
-//$visual-grid: true;
-$visual-grid-index: front;
-
-
-//
-// Typography
-// --------------------------
-$nd-adelle: 	"adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-$nd-freight: 	"freight-text-pro", "Freight Text", Georgia, serif;
-
-$nd-adelle-light: 		  300;
-$nd-adelle-regular: 	  400;
-$nd-adelle-bold: 		  700;
-$nd-adelle-extra-bold: 	  700;
-
-$nd-freight-book: 		  400;
-$nd-freight-bold: 		  700;
-
-$serif-font: 	          $nd-freight;
-$sans-font: 	          $nd-adelle;
-
-
-// Alternative breakpoints
-// ------------------------
-
-$mobile:          320px;
-$wide-mobile:     480px;
-$narrow-tablet:   640px;
-$tablet:          800px;
-$wide-tablet:     950px;
-$desktop:         1000px;
-$wide-desktop:    1200px;
-
-$site-gutter: 	  20px;
-$gutter: 		  20px;
-
-$xs-font-size:    10px;
-$sm-font-size:    12px;
-$md-font-size:    14px;
-$lg-font-size:    18px;
-$xl-font-size:    22px;
-$xxl-font-size:   28px;
-
-
-
-//
-// default.vue
-//
-body {
-  background: var(--color-beige);
-  font-family: var(--font-adelle);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h2 {
-  color: var(--color-purple);
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
-p {
-  font-family: var(--font-freight);
-  color: var(--color-gray-dark);
-  font-weight: 400;
-  font-size: 1.25rem;
-  margin-bottom: 0;
-  line-height: 1.4;
-
-  span {
-    text-transform: uppercase;
-    font-family: var(--font-adelle);
-margin-right: 0.25rem;
-font-size: 0.75rem;
-font-weight: 600;
-color: var(--color-purple);
-  }
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 68rem;
-}
-
-.nd-header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-
-.lead {
-  font-size: 1.35rem;
-  line-height: 1.4;
-}
-
-.page-enter-active,
-.page-leave-active {
-  transition: all .25s ease-out;
-}
-
-.page-enter,
-.page-leave-active {
-  opacity: 0;
-  transform-origin: 50% 50%;
-}
 
 //
 // index.vue
 //
 .nd-row {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
   margin-right: -1.5rem;
   margin-left: -1.5rem;
-  justify-content: space-between;
-
-  justify-content: space-between;
-flex-flow: row wrap;
-display: flex;
-
 }
 
 .nd-content-item {
-  margin: 1.5rem;
   flex: 1;
+  margin: 1.5rem;
   padding: 1.75rem;
-  box-shadow: 5px 5px 0px var(--color-purple-light);
-  background-color: var(--color-white);
+  box-shadow: 5px 5px 0 $color-purple-light;
+  background-color: $color-white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   &.about-item {
-    margin-right: 0;
-    flex: 0 0 25%;
     position: relative;
     float: none;
+    flex: 0 0 25%;
+    margin-right: 0;
   }
-}
-
-.nd-about-item__title {
-  font-size: $lg-font-size;
-  font-family: $nd-freight;
-  color: $purple-dark;
-  line-height: 1.25em;
-  padding-bottom: 30px;
-  display: block;
-  margin: 0;
-position: relative;
-
-  &:hover {
-    color: $pink;
-  }
-
-  .fa {
-    font-size: $sm-font-size;
-    margin-left: 6px;
-    opacity: 0.4;
-  }
-}
-
-.nd-about-item__source {
-  line-height: $md-font-size;
-  font-size: $sm-font-size;
-  color: $purple;
-  display: block;
-
-  span {
-    text-transform: uppercase;
-    color: lighten($purple-light, 10%);
-    font-weight: $nd-adelle-bold;
-    font-size: $xs-font-size;
-    margin-right: 5px;
-  }
-
-  .fa {
-    color: $purple-light;
-    text-align: center;
-    margin-right: 4px;
-  }
-}
-
-.nd-about-item__year {
-  line-height: $md-font-size;
-  font-size: $sm-font-size;
-  position: absolute;
-  display: block;
-  opacity: 0.35;
-  bottom: 0;
-  right: 0;
-}
-
-
-
-
-//
-// HeaderNav.vue
-//
-.nd-nav-item {
-  margin-left: 1.5rem;
-  text-decoration: none;
-  color: var(--color-purple-dark);
-}
-
-
-//
-// Logo.vue
-//
-.nd-logo-container {
-  width: 25%;
-}
-
-.nd-logo {
-  width: 100%;
 }
 
 

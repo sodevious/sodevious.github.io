@@ -1,0 +1,56 @@
+//
+// default.vue
+//
+body {
+  background: $color-beige;
+  font-family: $font-adelle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//
+// Typography
+//
+h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $color-purple;
+}
+
+p {
+  margin-bottom: 0;
+  font-family: $font-freight;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $color-gray-dark;
+
+  span {
+    margin-right: 0.25rem;
+    font-family: $font-adelle;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-purple;
+  }
+}
+
+.lead {
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+//
+// Loading bar transitions
+//
+.page-enter-active,
+.page-leave-active {
+  transition: all .25s ease-out;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}

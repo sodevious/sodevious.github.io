@@ -1,10 +1,13 @@
 module.exports = {
   head: {
-    title: 'nicoledominguez',
+    title: 'Nicole Dominguez &mdash; @sodevious &mdash; Freelance Product Designer & Web Developer',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Nuxt.js project' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: '@sodevious' },
+      { name: 'google-site-verification', content: 'af0x8lMFq5Izj7MNfhrGXiObtaPCSo4QrON2DW8BjIM' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

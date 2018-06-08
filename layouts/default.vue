@@ -20,3 +20,19 @@
     }
   }
 </script>
+
+<style lang="scss">
+  @import '~assets/variables';
+
+  .container {
+    margin: 0 auto;
+    max-width: 68rem;
+  }
+
+  .nd-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+</style>
