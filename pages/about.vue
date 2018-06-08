@@ -13,7 +13,7 @@
       </p>
 
       <p>
-        The links below are a collection of interviews, pieces I've written, and other resources
+        The links below are a collection of milestones, interviews, pieces I've written, and other resources
         that may help you learn more about me.
       </p>
     </div>
@@ -22,7 +22,7 @@
       <template v-if="item.url">
         <a :href="item.url" target="_blank" class="nd-about-item__title">
           <span v-html="item.title">{{ item.title }}</span>
-          <icon name="external-link"></icon>
+          <icon name="external-link" scale="0.75"></icon>
         </a>
 
         <a :href="item.url" target="_blank" class="nd-about-item__source">
@@ -59,6 +59,14 @@
     display: flex;
     flex-flow: column wrap;
 
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $color-pink;
+      }
+    }
+
     @media (min-width: $narrow-tablet) {
       margin-right: 0;
       flex: 0 0 30%;
@@ -74,13 +82,10 @@
     display: block;
     margin: 0;
     position: relative;
-  }
 
-  a.nd-about-item__title {
-    text-decoration: none;
-
-    &:hover {
-      color: $color-pink;
+    .fa-icon {
+      fill: $color-gray;
+      margin-left: 0.5rem;
     }
   }
 
