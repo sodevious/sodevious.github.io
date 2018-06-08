@@ -6,11 +6,14 @@
 // index.vue
 //
 .nd-row {
-  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-right: -1.5rem;
-  margin-left: -1.5rem;
+
+  @media (min-width: $narrow-tablet) {
+    display: flex;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+  }
 }
 
 .nd-content-item {
@@ -22,13 +25,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  &.about-item {
-    position: relative;
-    float: none;
-    flex: 0 0 25%;
-    margin-right: 0;
-  }
 }
 
 

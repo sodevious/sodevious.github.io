@@ -1,6 +1,13 @@
 //
 // default.vue
 //
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: $color-beige;
   font-family: $font-adelle;
@@ -19,7 +26,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 0;
+  margin: 1rem 0 0 0;
   font-family: $font-freight;
   font-size: 1.25rem;
   font-weight: 400;

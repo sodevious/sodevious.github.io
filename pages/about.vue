@@ -1,10 +1,29 @@
 <template>
   <div class="nd-row">
+    <div class="nd-content-item lead-item">
+      <p class="lead">
+        <span>Currently</span> Digital nomading around Europe, working with LincolnLoop and other clients. Finding my bliss.
+      </p>
+
+      <p class="lead">
+        I first discovered that I could make things on the internet when I stumbled upon the Neopets tutorial for
+        making pet pages. And 11 years later, the rest is history. Since then, I dove head first
+        into design, development and the community. I have participated in countless hackathons,
+        spent a few years hosting local Django meetups and particupating in Django Girls events.
+      </p>
+
+      <p>
+        The links below are a collection of interviews, pieces I've written, and other resources
+        that may help you learn more about me.
+      </p>
+    </div>
+
     <div class="nd-content-item about-item" v-for="item in about" :key="item.title">
-
-
       <template v-if="item.url">
-        <a :href="item.url" target="_blank" class="nd-about-item__title" v-html="item.title">{{ item.title }}</a>
+        <a :href="item.url" target="_blank" class="nd-about-item__title">
+          <span v-html="item.title">{{ item.title }}</span>
+          <icon name="external-link"></icon>
+        </a>
 
         <a :href="item.url" target="_blank" class="nd-about-item__source">
           <span>{{ item.type }}</span>
@@ -12,7 +31,6 @@
         </a>
       </template>
       <template v-else>
-
         <p class="nd-about-item__title" v-html="item.title">{{ item.title }}</p>
 
         <div class="nd-about-item__source">
@@ -27,6 +45,26 @@
 <style lang="scss">
   @import '~assets/variables';
 
+  .nd-content-item.lead-item {
+    flex-basis: 100%;
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nd-content-item.about-item {
+    position: relative;
+    float: none;
+    display: flex;
+    flex-flow: column wrap;
+
+    @media (min-width: $narrow-tablet) {
+      margin-right: 0;
+      flex: 0 0 30%;
+    }
+  }
+
   .nd-about-item__title {
     font-size: $lg-font-size;
     font-family: $font-freight;
@@ -36,15 +74,13 @@
     display: block;
     margin: 0;
     position: relative;
+  }
+
+  a.nd-about-item__title {
+    text-decoration: none;
 
     &:hover {
       color: $color-pink;
-    }
-
-    .fa {
-      font-size: $sm-font-size;
-      margin-left: 6px;
-      opacity: 0.4;
     }
   }
 
@@ -53,6 +89,7 @@
     font-size: $sm-font-size;
     color: $color-purple;
     display: block;
+    margin-top: auto;
 
     span {
       text-transform: uppercase;
@@ -60,12 +97,6 @@
       font-weight: $nd-adelle-bold;
       font-size: $xs-font-size;
       margin-right: 5px;
-    }
-
-    .fa {
-      color: $color-purple-light;
-      text-align: center;
-      margin-right: 4px;
     }
   }
 
