@@ -1,4 +1,5 @@
 const nodeExternals = require('webpack-node-externals')
+const webpack = require('webpack')
 
 module.exports = {
   head: {
@@ -39,7 +40,12 @@ module.exports = {
         ]
       }
     },
-    vendor: ['vue-awesome']
+    vendor: ['vue-awesome'],
+    plugins: [
+      new webpack.ProvidePlugin({
+        '_': 'lodash'
+      })
+    ]
   },
 
   css: [

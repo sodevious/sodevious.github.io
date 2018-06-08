@@ -18,25 +18,29 @@
       </p>
     </div>
 
-    <div class="nd-content-item about-item" v-for="item in about" :key="item.title">
+    <div class="nd-content-item about-item" v-for="item in orderedItems" :key="item.title" :style="{ backgroundImage: 'url(' + item.image + ')' }">
       <template v-if="item.url">
         <a :href="item.url" target="_blank" class="nd-about-item__title">
+          <icon name="link" scale="0.75"></icon>
           <span v-html="item.title">{{ item.title }}</span>
-          <icon name="external-link" scale="0.75"></icon>
         </a>
 
         <a :href="item.url" target="_blank" class="nd-about-item__source">
           <span>{{ item.type }}</span>
+          <span>{{ item.year }}</span>
           {{ item.publication }}
         </a>
       </template>
       <template v-else>
         <p class="nd-about-item__title" v-html="item.title">{{ item.title }}</p>
 
+        <template v-if="item.image"><br /><br /><br /></template>
+
         <div class="nd-about-item__source">
           <span>{{ item.type }}</span>
+          <span>{{ item.year }}</span>
           {{ item.publication }}
-          </div>
+        </div>
       </template>
     </div>
   </div>
@@ -85,7 +89,8 @@
 
     .fa-icon {
       fill: $color-gray;
-      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      margin-top: 0.15rem;
     }
   }
 
@@ -98,10 +103,10 @@
 
     span {
       text-transform: uppercase;
-      color: lighten($color-purple-light, 10%);
+      color: $color-purple;
       font-weight: $nd-adelle-bold;
       font-size: $xs-font-size;
-      margin-right: 5px;
+      margin-right: 0.5rem;
     }
   }
 
@@ -123,6 +128,12 @@
     data () {
       return {
         about
+      }
+    },
+    computed: {
+      orderedItems: function () {
+        //return _.orderBy(this.about, ['year', 'title'], 'desc')
+        return _.shuffle(this.about)
       }
     }
   }

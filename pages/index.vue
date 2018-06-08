@@ -1,6 +1,6 @@
 <template>
   <div class="nd-row">
-    <div class="nd-content-item" :style="{ backgroundImage: 'url(' + require('~/assets/nd-header-2018.jpg') + ')' }">
+    <div class="nd-content-item" :style="{ backgroundImage: 'url(' + '/images/nd-header-2018.jpg' + ')' }">
       <span class="util-transparent">Nicole Dominguez</span>
     </div>
 
@@ -21,9 +21,8 @@
     </div>
 
 
-
-    This website is very much a work in progress. I am rebuilding it in the open, with a focus on accessibility. I am
-    building it with Vue, Nuxt.js, and hosting on netflify.
+  <p>  This website is very much a work in progress. I am rebuilding it in the open, with a focus on accessibility. I am
+    building it with Vue, Nuxt.js, and hosting on netflify.</p>
 
   </div>
 </template>
