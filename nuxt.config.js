@@ -1,3 +1,5 @@
+const nodeExternals = require('webpack-node-externals')
+
 module.exports = {
   head: {
     title: 'Nicole Dominguez &mdash; @sodevious &mdash; Freelance Product Designer & Web Developer',
@@ -17,7 +19,7 @@ module.exports = {
   loading: { color: '#654F78' },
 
   build: {
-    extend (config, { isDev, isClient }) {
+    extend (config, { isDev, isClient, isServer }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -26,7 +28,18 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+
+      if (isServer) {
+        config.externals = [
+          nodeExternals({
+            // default value for `whitelist` is
+            // [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i]
+            whitelist: [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i, /^vue-awesome/]
+          })
+        ]
+      }
+    },
+    vendor: ['vue-awesome']
   },
 
   css: [
@@ -35,6 +48,7 @@ module.exports = {
   ],
 
    plugins: [
-    { src: '~plugins/webFontLoader.js', ssr: false }
+    { src: '~plugins/webFontLoader.js', ssr: false },
+    { src: '~plugins/vue-awesome.js', ssr: false }
   ]
 }
