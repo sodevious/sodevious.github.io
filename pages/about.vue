@@ -55,6 +55,10 @@
     box-shadow: none;
     margin: 0;
     width: 100%;
+
+    @media (max-width: $narrow-tablet - 1) {
+      padding: 0;
+    }
   }
 
   .nd-content-item.about-item {
@@ -62,6 +66,7 @@
     float: none;
     display: flex;
     flex-flow: column wrap;
+    min-height: 6rem;
 
     a {
       text-decoration: none;
@@ -72,8 +77,8 @@
     }
 
     @media (min-width: $narrow-tablet) {
-      margin-right: 0;
-      flex: 0 0 30%;
+      flex: 0 0 29%;
+      min-height: 9rem;
     }
   }
 
@@ -132,8 +137,8 @@
     },
     computed: {
       orderedItems: function () {
-        //return _.orderBy(this.about, ['year', 'title'], 'desc')
-        return _.shuffle(this.about)
+        return _.orderBy(this.about, ['year', 'title'], 'desc')
+        //return _.shuffle(this.about)
       }
     }
   }

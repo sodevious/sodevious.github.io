@@ -27,12 +27,18 @@
   .container {
     margin: 0 auto;
     max-width: 68rem;
+    padding: 0 1rem;
   }
 
   .nd-header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+
+    @media (min-width: $narrow-tablet) {
+      display: flex;
+    }
   }
 </style>

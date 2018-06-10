@@ -11,20 +11,27 @@
 
   @media (min-width: $narrow-tablet) {
     display: flex;
-    margin-right: -1.5rem;
-    margin-left: -1.5rem;
+    margin-right: -2%;
+    margin-left: -2%;
   }
 }
 
 .nd-content-item {
   flex: 1;
-  margin: 1.5rem;
-  padding: 1.75rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  min-height: 10rem;
   box-shadow: 5px 5px 0 $color-purple-light;
   background-color: $color-white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $narrow-tablet) {
+    flex: 0 0 46%;
+    margin: 2%;
+    padding: 2.5%;
+  }
 }
 
 

@@ -7,15 +7,6 @@ export default [
     icon: 'bullhorn'
   },
   {
-    publication: '',
-    title: '',
-    url: '',
-    type: '',
-    year: 2017,
-    icon: '',
-    image: '/images/21032860_10214273897826693_2845927138123649511_n.jpg'
-  },
-  {
     publication: 'Bushwick Film Festival',
     title: 'Women in Technology &mdash; Panelist',
     type: 'Speaking',
@@ -197,15 +188,6 @@ export default [
   },
   {
     publication: '',
-    title: '',
-    url: '',
-    type: '',
-    year: 2000,
-    icon: '',
-    image: '/images/nd-header-bg.jpg'
-  },
-  {
-    publication: '',
     title: 'Why I Quit My Job, Sold All My Stuff, Moved Out of My NYC Apartment, and Became a Digital Nomad',
     url: 'https://travel.hostfully.com/why-i-quit-my-job-sold-all-my-stuff-moved-out-of-my-nyc-apartment-and-became-a-digital-nomad-1c5f50754563#.m6s7sk12o',
     type: 'Writing',
@@ -257,32 +239,5 @@ export default [
     type: 'Interview',
     year: 2017,
     icon: 'microphone'
-  },
-  {
-    publication: '',
-    title: '',
-    url: '',
-    type: '',
-    year: 2015,
-    icon: '',
-    image: '/images/12037957_10207841829148996_3344170015150337271_n.jpg'
-  },
-  {
-    publication: '',
-    title: '',
-    url: '',
-    type: '',
-    year: 2000,
-    icon: '',
-    image: '/images/FullSizeRender.jpg'
-  },
-  {
-    publication: '',
-    title: '',
-    url: '',
-    type: '',
-    year: 2016,
-    icon: '',
-    image: '/images/nd-about-dj.jpg'
   },
 ]
