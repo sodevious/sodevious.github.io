@@ -1,6 +1,6 @@
 <template>
   <div class="nd-row">
-    <div class="nd-content-item" :style="{ backgroundImage: 'url(' + '/images/nd-header-2018.jpg' + ')' }">
+    <div class="nd-content-item" :style="{ backgroundImage: 'url(' + '/images/_Z4A9962.JPG' + ')' }">
       <span class="util-transparent">Nicole Dominguez</span>
     </div>
 

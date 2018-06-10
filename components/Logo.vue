@@ -13,9 +13,13 @@
     width: 50%;
     margin: 1.5rem auto;
 
+    @media (min-width: $wide-mobile) {
+      width: 40%;
+    }
+
     @media (min-width: $narrow-tablet) {
       margin: 1rem 0;
-      width: 25%;
+      width: 26%;
     }
   }
 
