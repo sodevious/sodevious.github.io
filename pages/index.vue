@@ -17,12 +17,7 @@
         Designing and building web applications professionally for the past six years, and coding for the web for the past ten.
       </p>
 
-      <p><span>Currently</span> Digital nomading around Europe, working with LincolnLoop and other clients.</p>
+      <p><span>Currently</span> Digital nomading around Europe, working with <a href="http://lincolnloop.com">LincolnLoop</a> and other clients.</p>
     </div>
-
-    <p>
-      This website is very much a work in progress. I am rebuilding it in the open, with a focus on accessibility. I am
-      building it with Vue, Nuxt.js, and hosting on netflify.
-    </p>
   </div>
 </template>

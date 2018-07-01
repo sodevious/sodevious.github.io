@@ -39,19 +39,19 @@ $visual-grid-index: front;
 //
 // Typography
 // --------------------------
-$nd-adelle: 	"adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-$nd-freight: 	"freight-text-pro", "Freight Text", Georgia, serif;
+$font-adelle: 	"adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
+$font-freight: 	"freight-text-pro", "Freight Text", Georgia, serif;
 
-$nd-adelle-light: 		  300;
-$nd-adelle-regular: 	  400;
-$nd-adelle-bold: 		  700;
-$nd-adelle-extra-bold: 	  700;
+$font-adelle-light: 		  300;
+$font-adelle-regular: 	  400;
+$font-adelle-bold: 		  700;
+$font-adelle-extra-bold: 	  700;
 
-$nd-freight-book: 		  400;
-$nd-freight-bold: 		  700;
+$font-freight-book: 		  400;
+$font-freight-bold: 		  700;
 
-$serif-font: 	          $nd-freight;
-$sans-font: 	          $nd-adelle;
+$font-serif: 	          $font-freight;
+$font-sans: 	          $font-adelle;
 
 
 // Alternative breakpoints

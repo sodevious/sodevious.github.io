@@ -6,17 +6,21 @@
     </div>
 
     <nuxt/>
+
+    <site-footer />
   </section>
 </template>
 
 <script>
   import Logo from '~/components/Logo.vue'
   import HeaderNav from '~/components/HeaderNav.vue'
+  import SiteFooter from '~/components/Footer.vue'
 
   export default {
     components: {
       Logo,
-      HeaderNav
+      HeaderNav,
+      SiteFooter
     }
   }
 </script>
@@ -34,11 +38,12 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 1rem;
+    margin: 3rem 0;
     text-align: center;
 
     @media (min-width: $narrow-tablet) {
       display: flex;
+      margin: 1rem 0 0 0;
     }
   }
 </style>

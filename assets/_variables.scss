@@ -20,16 +20,16 @@ $color-pink:          #FE4365;
 $font-adelle:         "adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
 $font-freight:        "freight-text-pro", "FreightText Pro", Helvetica, serif;
 
-$nd-adelle-light: 		  300;
-$nd-adelle-regular: 	  400;
-$nd-adelle-bold:        700;
-$nd-adelle-extra-bold:  700;
+$font-adelle-light:       300;
+$font-adelle-regular:     400;
+$font-adelle-bold:        700;
+$font-adelle-extra-bold:  700;
 
-$nd-freight-book: 		  400;
-$nd-freight-bold: 		  700;
+$font-freight-book:       400;
+$font-freight-bold:       700;
 
-$serif-font: 	          $font-freight;
-$sans-font: 	          $font-adelle;
+$font-serif:              $font-freight;
+$font-sans:               $font-adelle;
 
 
 //
@@ -52,3 +52,8 @@ $md-font-size:    14px;
 $lg-font-size:    18px;
 $xl-font-size:    22px;
 $xxl-font-size:   28px;
+
+$font-size-small: 0.75rem;
+$font-size-base: 1rem;
+$font-size-medium: 1.15rem;
+$font-size-large: 1.25rem;

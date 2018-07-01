@@ -2,19 +2,15 @@
   <div class="nd-row">
     <div class="nd-content-item lead-item">
       <p class="lead">
-        <span>Currently</span> Digital nomading around Europe, working with LincolnLoop and other clients. Finding my bliss.
+        <span>Currently</span> Digital nomading around Europe, working with <a href="http://lincolnloop.com">LincolnLoop</a> and other clients. Finding my bliss.
       </p>
 
       <p class="lead">
         I first discovered that I could make things on the internet when I stumbled upon the Neopets tutorial for
         making pet pages. And 11 years later, the rest is history. Since then, I dove head first
         into design, development and the community. I have participated in countless hackathons,
-        spent a few years hosting local Django meetups and particupating in Django Girls events.
-      </p>
-
-      <p>
-        The links below are a collection of milestones, interviews, pieces I've written, and other resources
-        that may help you learn more about me.
+        spent a few years hosting local Django meetups and particupating in Django Girls events. I enjoy
+        giving back to the community in the form of mentorship, writing, and teaching.
       </p>
     </div>
 
@@ -109,7 +105,7 @@
     span {
       text-transform: uppercase;
       color: $color-purple;
-      font-weight: $nd-adelle-bold;
+      font-weight: $font-adelle-bold;
       font-size: $xs-font-size;
       margin-right: 0.5rem;
     }

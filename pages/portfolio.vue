@@ -24,14 +24,13 @@
   }
 </script>
 
-
 <style lang="scss">
   @import '~assets/variables';
 
   .nd-content-item.portfolio-item {
     background-color: $color-purple;
     position: relative;
-    min-height: 12rem;
+    min-height: 16rem;
 
     @supports (display: flex) {
       justify-content: center;
@@ -63,23 +62,27 @@
     color: white;
     z-index: 500;
     position: relative;
-    font-size: 1.15rem;
+    font-size: $font-size-large;
     text-align: center;
-    font-weight: 300;
     line-height: 1.15;
     margin: 0;
 
     small {
-      /* display: none; */
       display: block;
       background-color: white;
       font-family: $font-freight;
-      font-size: 1.05rem;
+      font-size: $font-size-base;
       margin: $gutter $gutter 0 $gutter;
+      font-weight: $font-adelle-light;
       line-height: 1.15;
       margin-top: $gutter;
-      padding: 5px 10px;
+      padding: 0.5rem 0.75rem;
       color: $color-purple;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
 </style>
