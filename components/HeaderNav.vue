@@ -4,7 +4,7 @@
       About
     </a>
 
-    <a href="/public/resume-2017.pdf" target="_blank" class="nd-nav-item">
+    <a href="#" target="_blank" class="nd-nav-item">
       Resumé
     </a>
 
