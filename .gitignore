@@ -21,3 +21,6 @@ tmp
 .yardoc
 _yardoc
 doc/
+dist/
+.nuxt/
+node_modules
