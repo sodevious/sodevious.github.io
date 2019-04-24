@@ -1,59 +1,69 @@
 ---
 layout: homepage
-title: Nicole Dominguez is a User Interface Designer & Front End Developer
+title: "Nicole Dominguez • UX Developer • UI Designer • Front-end Developer"
+headshots:
+  - "/assets/images/nicole-dominguez-2018.jpg"
+  - "/assets/images/nd-header-bg.jpg"
 ---
 
-{% include header.html %}
+<div class="nd-header nd-row">
+  <div class="nd-header-info nd-col-6">
+    <a href="/">
+      <img src="/assets/images/nd-logo__purple.svg" class="nd-header-logo" alt="Nicole Dominguez"/>
+    </a>
 
-<div class="nd-row">
-  <div class="nd-hire-me nd-col-6">
-    <p class="lead">Freelance front-end development and user interface design.</p>
+    <h3 class="nd-header-title">
+      UI/UX Developer
+    </h3>
 
-    <p>I have been designing and building web applications professionally for the past seven years, and coding for the web for the past eleven years.</p>
-          
-    <p>Some of work I do for clients nowadays includes; create and implement style guides, contribute and update existing style guides, Sass/CSS refactoring, 
-      implement user-facing features, building reusable components, designing flexible user interfaces and interactive features based on product specifications.
+    <div>
+      <a href="/assets/public/ndominguez-resume-2019.pdf" target="_blank" class="nd-header-cta">
+        <i class="fa fa-file"></i>
+        Resumé
+      </a>
+
+      <a href="mailto:work@nicoledominguez.com" class="nd-header-cta">
+        <i class="fa fa-envelope"></i>
+        Contact
+      </a>
+
+      <a href="/about" class="nd-header-cta">
+        <i class="fa fa-user"></i>
+        About
+      </a>
+    </div>
+
+    <p class="nd-header-intro">
+      Empathetic, curious, creative human.
     </p>
-    
-    <p>In my work, I take a modular approach to building interfaces and web applications. I belive code should be DRY,
-          modular and component based. Any styles should be reusable and well documented, so that any developer 
-          in the present or future can understand, use, and extend on the work. Designs should be well documented 
-          as part of a design system that an entire team or organization can benefit from. Through clean and well
-          written code, both developers and users should enjoy a seamless and accessible experience. I 
-      act as a liaison between developers and designers by bringing design sense to a codebase and by bringing front-end expertise 
-    to designers and design systems.<p>
-      
-    <p>If you'd like to explore working together, feel free to reach out: <a href="mailto:work@nicoledominguez.com">work@nicoledominguez.com</a>. 
-      To find out more, browse around or take a look at my <a href="https://www.linkedin.com/in/domingueznicole/" target="_blank">Linkedin Profile</a>. </p>
+
+    <p class="nd-header-intro">
+      I am a design-focused front-end developer with an eye for detail.
+      I believe in accessible, mobile-first modern websites and web applications semantically built.
+      The focus of my work is in user interface implementation, style guides, component libraries and design systems.
+    </p>
   </div>
 
-  <div class="nd-skills nd-col-6">
+  <div class="nd-header-image nd-col-6" style="background-image: url('{{ page.headshots | sample }}');">
+    <img src="{{ page.headshots | sample }}" alt="Nicole Dominguez" />
+
+    <a href="http://www.mindofwho.us/" target="_blank" class="nd-header-credit">Photos by Mind of Who & Bartek Pawlik</a>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="nd-row">
+  <div class="nd-skills">
+    <h3>
+      Skills & Experience
+    </h3>
+
     <ul>
-      <li>HTML, Haml/ERB</li>
-      <li>CSS, Sass, Less</li>
-      <li>Python</li>
-      <li>Django, Flask</li>
-      <li>Javascript</li>
-      <li>jQuery, Vue.js</li>
-      <li>Git, Github, Bitbucket</li>
-      <li>Gulp, Yarn</li>
-      <li>Command line</li>
-      <li>Wordpress</li>
-      <li>Craft CMS, Django CMS</li>
-      <li>Jekyll, Middleman, Hugo</li>
-      <li>Liquid, Jinja templating</li>
-      <li>Teaching & mentoring</li>
-      <li>Visual design</li>
-      <li>Web design</li>
-      <li>Design systems</li>
-      <li>Style guides</li>
-      <li>Responsive design</li>
-      <li>Website performance</li>
-      <li>User interface design</li>
-      <li>Progressive enhancement</li>
-      <li>Refactoring</li>
-      <li>Adobe Creative Suite <abbr title="I'm a Photoshop Certified Associate too!">*</abbr></li>
-      <li>Sketch, Figma</li>
+      {% for item in site.data.skills %}
+        <li>
+          {{ item }}
+        </li>
+      {% endfor %}
     </ul>
 
     <div class="clearfix"></div>
