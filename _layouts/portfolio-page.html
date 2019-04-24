@@ -7,12 +7,12 @@ layout: compress
 
 <main role="main" class="nd-page">
   <div class="nd-portfolio__header">
-    <h2 class="nd-portfolio__heading">{{ page.title }}</h2>
+    <h1 class="nd-portfolio__heading">{{ page.title }}</h1>
 
     {% if page.role %}
-      <h3 class="nd-portfolio__sub-heading">
+      <h2 class="nd-portfolio__sub-heading">
         {{ page.role }}
-      </h3>
+      </h2>
     {% endif %}
   </div>
 
@@ -20,7 +20,7 @@ layout: compress
     {{ content }}
   </div>
 
-  <a href="/portfolio/" class="nd-portfolio__back">Go back to my portfolio</a>
+  <a href="/portfolio/" class="section-link">Go back to my portfolio</a>
 </main>
 
 {% include footer.html %}

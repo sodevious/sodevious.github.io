@@ -121,13 +121,16 @@
         @media screen and (min-width: $wide-mobile)
             font-size: $xl-font-size
 
+    p a
+        border-bottom: 1px solid $color-pink
+        color: black
+
     hr
-        border: 1px solid lighten($color-purple-light, 30%)
-        margin: $site-gutter*3 0
+        border: 2px solid $color-plum-light
+        margin: $site-gutter * 3 0
         opacity: 0
 
         @media screen and (min-width: $wide-mobile)
-            margin: $site-gutter*5 0
             opacity: 1
 
     h3
@@ -147,8 +150,12 @@
 
 
 .nd-portfolio__images
-    margin: $site-gutter*2 0
     text-align: center
+
+    @media screen and (min-width: $tablet)
+        justify-content: space-between
+        margin: 0 -1rem
+        display: flex
 
     @media screen and (min-width: $desktop)
         &.border
@@ -175,14 +182,13 @@
         margin-bottom: $site-gutter
         border-radius: 3px
         width: 100%
+        flex-grow: 1
 
-        &:last-child
-            margin: 0
+        @media screen and (min-width: $tablet)
+            margin: 1rem
 
         @media screen and (min-width: $desktop)
-            max-height: 500px
             width: auto
-            margin: 0
 
         @media screen and (max-width: $desktop)
             height: auto !important
@@ -192,15 +198,16 @@
             max-width: 100%
 
 
-.nd-portfolio__btn
-    display: block
+a.nd-portfolio__btn
+    display: inline-block
     font-family: $nd-adelle
     text-align: center
     color: $color-purple
     font-size: $lg-font-size
+    margin: 0 auto
     padding: 6px 12px
     font-weight: $nd-adelle-bold
-    border-radius: 3px
+    border-bottom: 0
 
     .fa
         font-size: $md-font-size
@@ -208,4 +215,12 @@
         opacity: 0.75
 
     &:hover
-        color: $color-pink
+        background-color: $color-pink
+
+
+.nd-portfolio__role
+    text-transform: uppercase
+    display: block
+    font-size: $md-font-size
+    font-weight: 300
+    font-family: $nd-adelle

@@ -26,6 +26,12 @@ compress_html:
   profile: false
   startings: []
 
+plugins:
+- jekyll-autoprefixer
+
+autoprefixer:
+  browsers:
+  - last 2 versions
 
 # Plugin: jekyll-assets
 assets:

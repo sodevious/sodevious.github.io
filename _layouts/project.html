@@ -3,10 +3,10 @@
 
 <section role="projects" class="individual">
 	<div class="container">
-		
-    <h2>{{page.title}}</h2>
 
-    <div class="portfolio-item">         
+    <h1>{{page.title}}</h1>
+
+    <div class="portfolio-item">
         <div class="portfolio-content">
             {{content}}
         </div>
@@ -26,7 +26,7 @@
 	<div class="portfolio-images">
         {% if page.desktop_img %}<img src="{{ page.desktop_img }}" class="threeQuarters" />{% endif %}
         {% if page.mobile_img %}<img src="{{ page.mobile_img }}" class="quarter" />{% endif %}
- 
+
         {% for image in page.images %}
             <img src="{{ image.url }}" alt="{{ image.meta }}" title="{{ image.meta }}" class="{{ image.class }}" />
         {% endfor %}

@@ -6,7 +6,6 @@
 }
 
 body {
-  -webkit-text-size-adjust: 100%;
   background-color: $color-vanilla;
   font-family: $sans-font;
   font-weight: 400;
@@ -22,6 +21,11 @@ a {
     border-color: $color-pink;
   }
 }
+
+.wf-loading {
+  font-family: sans-serif;
+}
+
 
 //
 // Shared Styles
