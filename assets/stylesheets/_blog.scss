@@ -1,0 +1,59 @@
+.single {
+background-color: white;
+margin: 0px auto;
+padding: 1.5rem;
+box-shadow: 3px 3px 0 $pink;
+}
+
+.blog article {
+  margin-bottom: 4rem;
+  max-width: 960px;
+
+  p {
+    font-family: $nd-freight;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+
+  p a {
+    border-bottom: 1px solid $pink;
+    color: $purple;
+  }
+
+  pre,
+  code {
+    color: black;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 3px;
+  }
+
+  hr {
+    border: 1px solid $teal;
+  }
+}
+
+.post-title,
+.post-title a {
+  margin-top: 0;
+  color: $violet;
+}
+
+.post-title a:visited {
+  margin-top: 0;
+  color: $purple-dark;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: black;
+}
+
+.section-link {
+  display: block;
+  margin: 2rem 0 3rem;
+  text-align: center;
+  color: $purple;
+}

@@ -13,7 +13,3 @@ Aa hackathon should be first and foremost about the hack, and the passion inspir
 With heavy judging where your pitch is most important, it also seems wrong that the winner is not necessarily one with the best built app or hack. It’s encouraging teams to produce products that appeal to the judges, not necessarily what they feel passionate about and want to work on.
 
 Hackathons should not be about collecting API prizes, or having the best pitch. **They should be about creating the groundwork for great products that solve real needs by passionate creators and entrepreneurs.**
-
-What makes a hackathon a mother-effing hackathon:
-
-> Boundless energy! Give us redbull and coke, and shove us in a room that might be a bit too small, keep group morale high and make corny developer jokes. Don’t keep us waiting to get hacking. We like networking but arriving at a hackathon at 9 just to get going at 1PM is lame!
