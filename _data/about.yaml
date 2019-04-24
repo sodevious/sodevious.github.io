@@ -207,6 +207,27 @@ features:
    year: 2017
    icon: microphone
 
+ - publication: "GoDaddy"
+   title: "5 women digital nomads run their empires from their laptops"
+   url: https://www.godaddy.com/garage/5-women-digital-nomads/
+   type: Interview
+   year: 2019
+   icon: microphone
+
+ - publication: "Girls Who Code"
+   title: "Lesson Plan Feature"
+   url: https://blogs.edweek.org/edweek/DigitalEducation/2018/08/girls_who_code_women_in_tech_lesson_plans.html
+   type: Interview
+   year: 2018
+   icon: microphone
+
+ - publication: "DjangoCon Europe 2019"
+   title: "Conference Design and Branding, Co-organizer"
+   url: http://2019.djangocon.eu
+   type: Community
+   year: 2018
+   icon: users
+
 
 portfolio:
  - client: "Last Mile"

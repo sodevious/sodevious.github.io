@@ -1,0 +1,50 @@
+.nd-nav {
+  padding: 0 2rem;
+  background: $color-vanilla;
+  text-align: center;
+}
+
+.header-links {
+  margin: 0 $site-gutter;
+  list-style: none;
+
+  ul {
+    margin: 0;
+    padding: 0 0 $site-gutter 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nd-header-cta {
+    font-weight: 300;
+    color: $color-plum;
+    letter-spacing: 1px;
+  }
+}
+
+.header-title {
+  margin: $site-gutter auto;
+  padding: 0;
+  width: 200px;
+}
+
+@media screen and (min-width: $tablet) {
+  .nd-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-links {
+    margin: 0;
+    text-align: right;
+  }
+
+  .header-title {
+    margin: $site-gutter * 2;
+  }
+}

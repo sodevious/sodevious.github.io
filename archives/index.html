@@ -4,19 +4,19 @@ title: Archives
 ---
 
 <section class="blog">
-    <div class="container">
-        <h2>Archives</h2>
+  {% for post in site.categories['thoughts'] %}
+    <article role="article" class="post-single">
+        <h3 class="post-title">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
 
-        {% for post in site.categories['thoughts'] %}
-        <article class="single-link">
-            <h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+        <div class="post-meta">
+          Published on {{ post.date | date: "%B %e, %Y" }} and it's probably about {{ post.tags }}.
+        </div>
+    </article>
+  {% endfor %}
 
-            <div class="meta">
-                Published on {{ post.date | date: "%B %e, %Y" }} and it's probably about {{ post.tags }}.
-            </div>
-        </article>
-        {% endfor %}
-    </div>
-
-    <a class="section-link" href="/"><i class="fa fa-long-arrow-left"></i> Back to all the things!</a>
+  <a class="section-link" href="/"><i class="fa fa-long-arrow-left"></i> Back to all the things!</a>
 </section>

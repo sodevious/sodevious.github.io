@@ -1,0 +1,59 @@
+//
+// Reset Styles
+// --------------------------
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  background-color: $color-vanilla;
+  font-family: $sans-font;
+  font-weight: 400;
+  line-height: 1.25em;
+  color: $color-slate;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.25s ease-out all;
+
+  &:hover {
+    border-color: $color-pink;
+  }
+}
+
+//
+// Shared Styles
+// --------------------------
+
+.nd-page {
+  padding: $site-gutter;
+  background-color: $color-vanilla;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 $site-gutter * 3;
+  }
+}
+
+
+//
+// Utilities
+// --------------------------
+@media screen and (max-width: $tablet) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
