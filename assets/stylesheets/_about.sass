@@ -1,0 +1,69 @@
+//
+// About page
+.nd-about__container
+    width: 100%
+    flex-flow: row wrap
+
+.nd-about-item
+    background-color: white
+    margin-bottom: $gutter * 2
+    padding: $gutter
+    box-shadow: 3px 3px 0 $plum-light
+
+    @media screen and (min-width: $tablet)
+        height: 160px
+
+    @supports (display: flex)
+        height: auto
+
+.nd-about-item__wrapper
+    position: relative
+    height: 100%
+
+.nd-about-item__title
+    font-size: $lg-font-size
+    font-family: $nd-freight
+    color: $purple-dark
+    line-height: 1.25em
+    padding-bottom: 30px
+    display: block
+    margin: 0
+
+    &:hover
+        color: $pink
+
+    .fa
+        font-size: $sm-font-size
+        margin-left: 6px
+        opacity: 0.4
+
+.nd-about-item__source
+    line-height: $md-font-size
+    font-size: $sm-font-size
+    position: absolute
+    color: $purple
+    display: block
+    bottom: 0
+    margin: 0
+    left: 0
+
+    span
+        text-transform: uppercase
+        color: lighten($purple-light, 10%)
+        font-weight: $nd-adelle-bold
+        font-size: $xs-font-size
+        margin-right: 5px
+
+    .fa
+        color: $purple-light
+        text-align: center
+        margin-right: 4px
+
+.nd-about-item__year
+    line-height: $md-font-size
+    font-size: $sm-font-size
+    position: absolute
+    display: block
+    opacity: 0.35
+    bottom: 0
+    right: 0
