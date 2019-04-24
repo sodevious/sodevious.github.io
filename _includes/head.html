@@ -4,11 +4,11 @@
   <!-- Meta -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Nicole Dominguez &mdash; @sodevious &mdash; Freelance Product Designer & Web Developer</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}Nicole Dominguez &mdash; @sodevious &mdash; Freelance Product Designer & Web Developer{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="/assets/images/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for nicoledominguez.com" href="/feed.xml" />
-  <meta name="description" content="Nicole Dominguez is a freelance front-end developer and product designer. Works with HTML, CSS, Sass/Less, Haml, jQuery, Django, Python.">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Nicole Dominguez is a freelance front-end developer and product designer. Works with HTML, CSS, Sass/Less, Haml, jQuery, Django, Python.{% endif %}">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/assets/stylesheets/normalize.css">
@@ -16,8 +16,15 @@
   <link rel="stylesheet" href="/assets/stylesheets/font-awesome.min.css">
 
   <!-- Vendor -->
+  <meta name="og:image" content="{{ site.url }}/assets/images/nicole-dominguez-2018.jpg">
+  <meta name="og:type" content="website">
+  <meta name="og:description" content="Nicole Dominguez is a freelance front-end developer and product designer. Works with HTML, CSS, Sass/Less, Haml, jQuery, Django, Python.">
+  <meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}Nicole Dominguez &mdash; @sodevious &mdash; Freelance Product Designer & Web Developer{% endif %}">
+  <meta name="og:url" content="{{ site.url }}{{ page.url }}">
+
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@sodevious">
+
   <meta name="google-site-verification" content="af0x8lMFq5Izj7MNfhrGXiObtaPCSo4QrON2DW8BjIM" />
 
   <!-- Typekit -->
