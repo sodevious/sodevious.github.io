@@ -2,9 +2,9 @@
 // Footer
 // --------------------------
 .nd-footer
-    background-color: $offBlack
+    background-color: $color-offBlack
     font-size: $md-font-size
-    color: $slate-light
+    color: $color-slate-light
     text-align: center
     display: block
     padding: 30px
@@ -40,20 +40,21 @@
             padding-left: 20px
 
 .nd-footer-list__link
-    color: $slate-light
+    color: $color-slate-light
 
     &:hover
-        border-bottom: 2px solid mix($slate, $slate-light)
-        border-color: $pink
+        border-bottom: 2px solid mix($color-slate, $color-slate-light)
+        border-color: $color-pink
         color: white
-            
+
     &.footer-icon
         color: white
         font-size: $lg-font-size + 4
         margin-left: 12px
 
-        &:hover
-            color: $pink
+        &:hover,
+        &:focus
+            color: $color-pink
             border: 0px
 
 .nd-footer__copyright

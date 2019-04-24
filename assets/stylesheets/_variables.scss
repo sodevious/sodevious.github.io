@@ -1,40 +1,32 @@
 //
 // Branding
 // --------------------------
-$purple-dark:   #3C3C56;
-$purple:        #715F80;
-$purple-light:  #B2A3BD;
+$color-purple-dark:   #3C3C56;
+$color-purple:        #715F80;
+$color-purple-light:  #B2A3BD;
 
-$vanilla:       #f7f6e4;
+$color-vanilla:       #F7F6E4;
 
-$offWhite:      #e6e6e6;
-$offBlack:      #333333;
+$color-offWhite:      #E6E6E6;
+$color-offBlack:      #333333;
 
-$teal:          #79b7b0;
-$plum:          #635063;
-$haze:          #C1D2CF;
+$color-teal:          #79B7B0;
+$color-plum:          #635063;
 
-$pink:          #FE4365;
+$color-pink:          #FE4365;
 
-$violet:        mix($plum, $purple);
-$slate:         mix($vanilla, $offBlack, 20%);
-$raspberry:     mix($plum, $vanilla, 20%);
+$violet:              mix($color-plum, $color-purple);
+$color-slate:         mix($color-vanilla, $color-offBlack, 20%);
+$raspberry:           mix($color-plum, $color-vanilla, 20%);
 
-$plum-light:    lighten($plum, 20%);
-$purple-light:  lighten($purple, 20%);
-$slate-light:   lighten($slate, 20%);
+$color-plum-light:    lighten($color-plum, 20%);
+$color-purple-light:  lighten($color-purple, 20%);
+$color-slate-light:   lighten($color-slate, 20%);
 
 $header-height-default: 	480px;
 $header-height-desktop: 	400px;
 $header-height-tablet: 		240px;
 $header-height-mobile: 		180px;
-
-
-// Neat & Bourbon overrides
-// ------------------------
-//$visual-grid: true;
-$visual-grid-index: front;
-
 
 //
 // Typography
@@ -42,18 +34,18 @@ $visual-grid-index: front;
 $nd-adelle: 	"adelle-sans", "Adelle Sans", "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
 $nd-freight: 	"freight-text-pro", "Freight Text", Georgia, serif;
 
-$nd-adelle-light: 		  300;
-$nd-adelle-regular: 	  400;
-$nd-adelle-bold: 		  700;
-$nd-adelle-extra-bold: 	  700;
+$nd-adelle-light:      300;
+$nd-adelle-regular:    400;
+$nd-adelle-bold:       700;
+$nd-adelle-extra-bold: 700;
 
-$nd-freight-book: 		  400;
-$nd-freight-bold: 		  700;
+$nd-freight-book:      400;
+$nd-freight-bold:      700;
 
-$serif-font: 	          $nd-freight;
-$sans-font: 	          $nd-adelle;
+$serif-font:           $nd-freight;
+$sans-font:            $nd-adelle;
 
-
+//
 // Alternative breakpoints
 // ------------------------
 
@@ -61,12 +53,10 @@ $mobile:          320px;
 $wide-mobile:     480px;
 $narrow-tablet:   640px;
 $tablet:          800px;
-$wide-tablet:     950px;
-$desktop:         1000px;
-$wide-desktop:    1200px;
+$desktop:         960px;
+$wide-desktop:    1280px;
 
-$site-gutter: 	  20px;
-$gutter: 		  20px;
+$site-gutter:     20px;
 
 $xs-font-size:    10px;
 $sm-font-size:    12px;

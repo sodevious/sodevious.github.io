@@ -34,7 +34,7 @@ $nd-header-content-width: 500px;
 // --------------------------
 .nd-header {
   width: 100%;
-  background-color: $vanilla;
+  background-color: $color-vanilla;
 }
 
 .nd-header-info {
@@ -45,7 +45,7 @@ $nd-header-content-width: 500px;
 .nd-header-logo {
   display: block;
   margin: 0 auto 20px;
-  width: 75%;
+  width: 80%;
   max-width: 300px;
 }
 
@@ -61,7 +61,7 @@ $nd-header-content-width: 500px;
   font-family: $nd-freight;
   font-size: $lg-font-size;
   line-height: 1.2em;
-  color: $purple-dark;
+  color: $color-purple-dark;
 }
 
 .nd-header-cta {
@@ -71,20 +71,25 @@ $nd-header-content-width: 500px;
   font-weight: $nd-adelle-bold;
   text-align: center;
   text-transform: uppercase;
-  color: $purple;
+  color: $color-purple;
 
   .fa {
     margin-right: 8px;
-    color: $purple-light;
+    color: $color-purple-light;
   }
 
   &:hover {
-    background-color: $pink;
+    background-color: $color-pink;
     color: white;
 
     .fa {
-      color: $offWhite;
+      color: $color-offWhite;
     }
+  }
+
+  &:focus {
+    background-color: white;
+    color: black;
   }
 }
 
@@ -114,7 +119,7 @@ $nd-header-content-width: 500px;
 .nd-header-image {
   position: relative;
   min-height: 360px;
-  background-color: $purple-dark;
+  background-color: $color-purple-dark;
   background-position: center;
   background-size: cover;
 
@@ -132,11 +137,16 @@ $nd-header-content-width: 500px;
   padding: 6px 10px;
   background-color: rgba(255,255,255,0.5);
   font-size: $sm-font-size;
-  color: $purple;
+  color: $color-offBlack;
+
+  a {
+    font-weight: bold;
+    color: $color-purple;
+  }
 
   &:hover {
     background-color: white;
-    color: $pink;
+    color: $color-pink;
   }
 }
 
@@ -150,16 +160,16 @@ $nd-header-content-width: 500px;
 // Skills
 // --------------------------
 .nd-skills {
-  padding: $gutter * 2;
-  border-top: 1px solid $purple;
-  background-color: mix($purple-dark, $purple);
-  color: mix($vanilla, $purple, 70%);
+  padding: $site-gutter * 2;
+  border-top: 1px solid $color-purple;
+  background-color: mix($color-purple-dark, $color-purple);
+  color: mix($color-vanilla, $color-purple, 70%);
 
   h3 {
     margin-bottom: 2.5rem;
     font-weight: $nd-adelle-light;
     text-transform: uppercase;
-    color: $vanilla;
+    color: $color-vanilla;
     letter-spacing: 0.15rem;
   }
 
@@ -180,7 +190,7 @@ $nd-header-content-width: 500px;
 @media screen and (min-width: $tablet) {
   .nd-skills ul {
     border-top: none;
-    border-left: 1px solid $purple;
+    border-left: 1px solid $color-purple;
   }
 
   .nd-skills li {

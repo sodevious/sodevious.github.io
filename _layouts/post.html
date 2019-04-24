@@ -1,17 +1,18 @@
-{% include head.html %}
-{% include site-header.html %}
+---
+layout: page
+---
 
-<section class="blog">
+<div class="blog">
     <div class="container">
-        <article class="single">
+        <article role="article" class="post-single">
             <h3 class="post-title"><a href="{{page.url}}">{{page.title}}</a></h3>
+
             {{ content }}
-            <div class="meta">
+
+            <div class="post-meta">
                 Nicole wrote this on {{ page.date | date: "%B %e, %Y" }} and it's probably about {{ page.tag }}.
             </div>
         </article>
     </div>
     <a class="section-link" href="/archives/"><span>&#8592;</span>&nbsp;Back to all the things!</a>
-</section>
-
-{% include footer.html %}
+</div>

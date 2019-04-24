@@ -1,10 +1,3 @@
-.single {
-background-color: white;
-margin: 0px auto;
-padding: 1.5rem;
-box-shadow: 3px 3px 0 $pink;
-}
-
 .blog article {
   margin-bottom: 4rem;
   max-width: 960px;
@@ -16,8 +9,19 @@ box-shadow: 3px 3px 0 $pink;
   }
 
   p a {
-    border-bottom: 1px solid $pink;
-    color: $purple;
+    border-bottom: 1px solid $color-pink;
+    color: $color-purple;
+
+    &:hover {
+      border-bottom: 2px solid $color-pink;
+      color: black;
+    }
+
+    &:focus {
+      border: none;
+      background-color: $color-purple;
+      color: white;
+    }
   }
 
   pre,
@@ -31,8 +35,15 @@ box-shadow: 3px 3px 0 $pink;
   }
 
   hr {
-    border: 1px solid $teal;
+    border: 1px solid $color-teal;
   }
+}
+
+.post-single {
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 0 $color-pink;
+  background-color: white;
 }
 
 .post-title,
@@ -41,12 +52,17 @@ box-shadow: 3px 3px 0 $pink;
   color: $violet;
 }
 
-.post-title a:visited {
-  margin-top: 0;
-  color: $purple-dark;
+.post-title a:focus {
+  color: black;
 }
 
-.meta {
+.post-title a:hover,
+.post-title a:visited {
+  margin-top: 0;
+  color: $color-purple-dark;
+}
+
+.post-meta {
   font-size: 0.85rem;
   color: black;
 }
@@ -55,5 +71,5 @@ box-shadow: 3px 3px 0 $pink;
   display: block;
   margin: 2rem 0 3rem;
   text-align: center;
-  color: $purple;
+  color: $color-purple;
 }

@@ -3,10 +3,10 @@ layout: homepage
 title: "Nicole Dominguez • UX Developer • UI Designer • Front-end Developer"
 headshots:
   - "/assets/images/nicole-dominguez-2018.jpg"
-  - "/assets/images/nd-header-bg.jpg"
+  - "/assets/images/nd-djangocon.jpg"
 ---
 
-<div class="nd-header nd-row">
+<header role="banner" class="nd-header nd-row">
   <div class="nd-header-info nd-col-6">
     <a href="/">
       <img src="/assets/images/nd-logo__purple.svg" class="nd-header-logo" alt="Nicole Dominguez"/>
@@ -47,9 +47,11 @@ headshots:
   <div class="nd-header-image nd-col-6" style="background-image: url('{{ page.headshots | sample }}');">
     <img src="{{ page.headshots | sample }}" alt="Nicole Dominguez" />
 
-    <a href="http://www.mindofwho.us/" target="_blank" class="nd-header-credit">Photos by Mind of Who & Bartek Pawlik</a>
+    <div class="nd-header-credit">
+      Photos by <a href="http://www.mindofwho.us/" rel="external" target="_blank">Mind of Who</a> & <a href="https://bartpawlik.format.com/" rel="external" target="_blank">Bartek Pawlik</a>
+    </div>
   </div>
-</div>
+</header>
 <div class="clearfix"></div>
 
 <div class="nd-row">

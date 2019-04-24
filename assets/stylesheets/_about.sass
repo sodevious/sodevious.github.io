@@ -6,9 +6,9 @@
 
 .nd-about-item
     background-color: white
-    margin-bottom: $gutter * 2
-    padding: $gutter
-    box-shadow: 3px 3px 0 $plum-light
+    margin-bottom: $site-gutter * 2
+    padding: $site-gutter
+    box-shadow: 3px 3px 0 $color-plum-light
 
     @media screen and (min-width: $tablet)
         height: 160px
@@ -23,14 +23,17 @@
 .nd-about-item__title
     font-size: $lg-font-size
     font-family: $nd-freight
-    color: $purple-dark
+    color: $color-purple-dark
     line-height: 1.25em
     padding-bottom: 30px
     display: block
     margin: 0
 
     &:hover
-        color: $pink
+        color: $color-pink
+
+    &:focus
+        background-color: $color-purple-light
 
     .fa
         font-size: $sm-font-size
@@ -41,7 +44,7 @@
     line-height: $md-font-size
     font-size: $sm-font-size
     position: absolute
-    color: $purple
+    color: $color-purple
     display: block
     bottom: 0
     margin: 0
@@ -49,13 +52,18 @@
 
     span
         text-transform: uppercase
-        color: lighten($purple-light, 10%)
+        color: lighten($color-purple-light, 10%)
         font-weight: $nd-adelle-bold
         font-size: $xs-font-size
         margin-right: 5px
 
+    &:focus
+        background-color: $color-vanilla
+        color: $color-offBlack
+
+
     .fa
-        color: $purple-light
+        color: $color-purple-light
         text-align: center
         margin-right: 4px
 

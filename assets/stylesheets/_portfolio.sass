@@ -1,45 +1,45 @@
 //
 // Portfolio header
 .nd-portfolio__header
-    padding: $gutter
-    margin-bottom: $gutter
+    padding: $site-gutter
+    margin-bottom: $site-gutter
     text-align: center
 
     @media screen and (min-width: $tablet)
-        padding: $gutter*2
+        padding: $site-gutter*2
 
 .nd-portfolio__heading
     font-weight: $nd-adelle-light
     font-size: $xl-font-size
-    padding-top: $gutter
+    padding-top: $site-gutter
     margin: 0
 
 .nd-portfolio__sub-heading
     font-weight: $nd-adelle-light
     font-family: $nd-freight
-    color: $slate-light
+    color: $color-slate-light
 
     a
-        border-bottom: 2px solid mix($vanilla, $purple-light)
+        border-bottom: 2px solid mix($color-vanilla, $color-purple-light)
 
         &:hover
-            border-bottom-color: $pink
-            color: $slate
+            border-bottom-color: $color-pink
+            color: $color-slate
 
 //
 // Portfolio items
 .nd-portfolio__item
-    background-color: $purple
+    background-color: $color-purple
     background-position: center
     background-size: cover
     position: relative
-    margin-bottom: $gutter*2
+    margin-bottom: $site-gutter*2
     height: 160px
     box-shadow: 4px 4px 0 $raspberry
 
     @media screen and (min-width: $tablet)
         height: 300px
-        margin-bottom: $gutter*3
+        margin-bottom: $site-gutter*3
 
     @supports (display: flex)
         justify-content: center
@@ -86,11 +86,11 @@
         background-color: white
         font-family: $nd-freight
         font-size: $md-font-size
-        margin: $gutter $gutter 0 $gutter
+        margin: $site-gutter $site-gutter 0 $site-gutter
         line-height: 1.35em
-        margin-top: $gutter
+        margin-top: $site-gutter
         padding: 5px 10px
-        color: $purple
+        color: $color-purple
 
 
 @media screen and (min-width: $wide-mobile)
@@ -105,12 +105,12 @@
 //
 // Portfolio content
 .nd-portfolio__content
-    padding-bottom: $gutter
+    padding-bottom: $site-gutter
     max-width: 1000px
     margin: 0px auto
 
     @media screen and (min-width: $wide-mobile)
-        padding-bottom: $gutter*4
+        padding-bottom: $site-gutter*4
 
     p
         font-family: $nd-freight
@@ -122,38 +122,38 @@
             font-size: $xl-font-size
 
     hr
-        border: 1px solid lighten($purple-light, 30%)
-        margin: $gutter*3 0
+        border: 1px solid lighten($color-purple-light, 30%)
+        margin: $site-gutter*3 0
         opacity: 0
 
         @media screen and (min-width: $wide-mobile)
-            margin: $gutter*5 0
+            margin: $site-gutter*5 0
             opacity: 1
 
     h3
         font-weight: $nd-adelle-light
         font-size: $xl-font-size
-        margin: $gutter*1.5 0
+        margin: $site-gutter*1.5 0
         line-height: 1.3em
-        color: $offBlack
+        color: $color-offBlack
 
 .nd-portfolio__back
-    background-color: $vanilla
-    padding: $gutter*2 0
+    background-color: $color-vanilla
+    padding: $site-gutter*2 0
     display: block
-    color: $slate
+    color: $color-slate
 
 
 
 
 .nd-portfolio__images
-    margin: $gutter*2 0
+    margin: $site-gutter*2 0
     text-align: center
 
-    @media screen and (min-width: $wide-tablet)
+    @media screen and (min-width: $desktop)
         &.border
-            background-color: $vanilla
-            padding: $gutter
+            background-color: $color-vanilla
+            padding: $site-gutter
 
         &.center
             @supports (display: flex)
@@ -168,23 +168,23 @@
         img
             box-shadow: 0px 1px 10px rgba(0,0,0,0.05)
 
-            @media screen and (min-width: $wide-tablet)
-                border: 1px solid darken($vanilla, 10%)
+            @media screen and (min-width: $desktop)
+                border: 1px solid darken($color-vanilla, 10%)
 
     img
-        margin-bottom: $gutter
+        margin-bottom: $site-gutter
         border-radius: 3px
         width: 100%
 
         &:last-child
             margin: 0
 
-        @media screen and (min-width: $wide-tablet)
+        @media screen and (min-width: $desktop)
             max-height: 500px
             width: auto
             margin: 0
 
-        @media screen and (max-width: $wide-tablet)
+        @media screen and (max-width: $desktop)
             height: auto !important
             max-width: 800px
 
@@ -196,7 +196,7 @@
     display: block
     font-family: $nd-adelle
     text-align: center
-    color: $purple
+    color: $color-purple
     font-size: $lg-font-size
     padding: 6px 12px
     font-weight: $nd-adelle-bold
@@ -208,4 +208,4 @@
         opacity: 0.75
 
     &:hover
-        color: $pink
+        color: $color-pink
