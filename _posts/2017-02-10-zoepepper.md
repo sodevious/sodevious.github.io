@@ -20,16 +20,28 @@ ZoePepper was in need of a front-end developer with "an impeccable taste in desi
 <a href="http://zoepepper.github.io/zoepepper-html/views/freelancer/" class="nd-portfolio__btn" target="_blank">See the prototpyes <i class="fa fa-external-link"></i></a>
 
 <div class="nd-portfolio__images even">
-	<img src="/assets/images/folio/zp-dash-5.jpg" />
-	<img src="/assets/images/folio/zp-dash-6.jpg" />
+	<span>
+		<img src="/assets/images/folio/zp-dash-5.jpg" />
+	</span>
+	<span>
+		<img src="/assets/images/folio/zp-dash-6.jpg" />
+	</span>
 </div>
 
 <div class="nd-portfolio__images even">
-	<img src="/assets/images/folio/zp-dash-1.jpg" />
-	<img src="/assets/images/folio/zp-dash-3.jpg" />
+	<span>
+		<img src="/assets/images/folio/zp-dash-1.jpg" />
+	</span>
+	<span>
+		<img src="/assets/images/folio/zp-dash-3.jpg" />
+	</span>
 </div>
 
 <div class="nd-portfolio__images even">
-	<img src="/assets/images/folio/zp-dash-2.jpg" />
-	<img src="/assets/images/folio/zp-dash-4.jpg" />
+	<span>
+		<img src="/assets/images/folio/zp-dash-2.jpg" />
+	</span>
+	<span>
+		<img src="/assets/images/folio/zp-dash-4.jpg" />
+	</span>
 </div>
