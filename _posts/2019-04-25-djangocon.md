@@ -5,7 +5,7 @@ date: 2019-04-25
 categories: portfolio
 
 role: "Branding, Graphic Design, Web Design"
-image: Djangocon_eu19_live_web_BPawlik-62.jpg
+image: /djangocon/Djangocon_eu19_live_web_BPawlik-62.jpg
 ---
 
 I had the absolute pleasure to help produce a professional programming conference in Copenhagen. DjangoCon Europe is a Python and Django web development conference held annually, by <a href="https://djangocph.dk/" target="_blank">volunteers</a>. As a co-organizer, I was responsible for the following:
