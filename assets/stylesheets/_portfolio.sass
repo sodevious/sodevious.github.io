@@ -1,3 +1,15 @@
+.nd-portfolio
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    .nd-portfolio__item
+        flex-basis: 100%
+
+    @media screen and (min-width: $tablet)
+        .nd-portfolio__item
+            flex-basis: 48%
+
 //
 // Portfolio header
 .nd-portfolio__header
@@ -36,15 +48,13 @@
     margin-bottom: $site-gutter*2
     height: 160px
     box-shadow: 4px 4px 0 $raspberry
+    justify-content: center
+    align-items: center
+    display: flex
 
     @media screen and (min-width: $tablet)
         height: 300px
         margin-bottom: $site-gutter*3
-
-    @supports (display: flex)
-        justify-content: center
-        align-items: center
-        display: flex
 
     &:before
         background-color: rgba(60,60,86, 0.8)
@@ -65,9 +75,8 @@
             margin-bottom: 0
             height: 300px
 
-    &:hover
-        &:before
-            background-color: rgba(254,67,101, 0.75)
+    &:hover:before
+        background-color: rgba(254,67,101, 0.75)
 
 
 .nd-portfolio__title
@@ -95,7 +104,7 @@
 
 @media screen and (min-width: $wide-mobile)
     .nd-portfolio__title
-        font-size: $xxl-font-size
+        font-size: $xl-font-size + 2
 
     .nd-portfolio__title small
         display: block
@@ -112,19 +121,6 @@
     @media screen and (min-width: $wide-mobile)
         padding-bottom: $site-gutter*4
 
-    p
-        font-family: $nd-freight
-        font-size: $lg-font-size
-        line-height: 1.3em
-        text-align: left
-
-        @media screen and (min-width: $wide-mobile)
-            font-size: $xl-font-size
-
-    p a
-        border-bottom: 1px solid $color-pink
-        color: black
-
     hr
         border: 2px solid $color-plum-light
         margin: $site-gutter * 3 0
@@ -139,6 +135,47 @@
         margin: $site-gutter*1.5 0
         line-height: 1.3em
         color: $color-offBlack
+
+    ul li
+        font-family: $nd-freight
+        font-size: $lg-font-size
+        line-height: 1.3em
+        margin-bottom: 0.75rem
+        text-align: left
+
+    p
+        font-family: $nd-freight
+        font-size: $lg-font-size
+        line-height: 1.3em
+        text-align: left
+
+        @media screen and (min-width: $wide-mobile)
+            font-size: $xl-font-size - 1
+
+    p a
+        border-bottom: 1px solid $color-pink
+        color: black
+
+    .nd-portfolio__btn
+        display: table
+        font-family: $nd-adelle
+        text-align: center
+        color: white
+        font-size: $md-font-size
+        margin: 0 auto
+        padding: 6px 12px
+        font-weight: $nd-adelle-bold
+        border-bottom: 0
+        background-color: $color-purple-dark
+
+        .fa
+            font-size: $md-font-size
+            margin-left: 5px
+            opacity: 0.75
+
+        &:hover,
+        &:focus
+            background-color: $color-pink
 
 .nd-portfolio__back
     background-color: $color-vanilla
@@ -171,12 +208,14 @@
             align-items: center
             display: flex
 
-    &.border
-        img
-            box-shadow: 0px 1px 10px rgba(0,0,0,0.05)
+    &.border img
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.05)
 
-            @media screen and (min-width: $desktop)
-                border: 1px solid darken($color-vanilla, 10%)
+        @media screen and (min-width: $desktop)
+            border: 1px solid darken($color-vanilla, 10%)
+
+    &.even img
+        flex: 1
 
     img
         margin-bottom: $site-gutter
@@ -196,26 +235,6 @@
 
         @media screen and (max-width: $wide-mobile)
             max-width: 100%
-
-
-a.nd-portfolio__btn
-    display: inline-block
-    font-family: $nd-adelle
-    text-align: center
-    color: $color-purple
-    font-size: $lg-font-size
-    margin: 0 auto
-    padding: 6px 12px
-    font-weight: $nd-adelle-bold
-    border-bottom: 0
-
-    .fa
-        font-size: $md-font-size
-        margin-left: 5px
-        opacity: 0.75
-
-    &:hover
-        background-color: $color-pink
 
 
 .nd-portfolio__role

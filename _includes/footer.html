@@ -12,7 +12,7 @@
       <li><a href="https://github.com/sodevious/sodevious.github.io" target="_blank" class="nd-footer-list__link hide-on-mobile">Source</a></li>
 
       {% for site in site.data.about.footer_links %}
-        <li><a href="{{ site.link }}" class="nd-footer-list__link footer-icon" target="_blank"><i class="fa fa-{{ site.network }}">{{ site.network }}</i></a></li>
+        <li><a href="{{ site.link }}" class="nd-footer-list__link footer-icon" target="_blank" aria-label="Visit my profile on {{ site.network }}"><i class="fa fa-{{ site.network }}" aria-hidden="true"></i></a></li>
       {% endfor %}
     </ul>
   </div>

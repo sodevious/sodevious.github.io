@@ -11,17 +11,17 @@ title: Nicole Dominguez is a Freelance Front End Developer & Designer
       <div class="nd-about-item nd-col-4">
         <div class="nd-about-item__wrapper">
           {% if item.url %}
-            <a href="{{ item.url }}" target="_blank" class="nd-about-item__title">{{ item.title }} <i class="fa fa-external-link"></i></a>
+            <a href="{{ item.url }}" target="_blank" class="nd-about-item__title">{{ item.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
 
             <a href="{{ item.url }}" target="_blank" class="nd-about-item__source">
-              <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
+              <span><i class="fa fa-{{ item.icon }}" title="{{ item.type }}" aria-hidden="true"></i> {{ item.type }}</span>
               {{ item.publication }}
             </a>
           {% else %}
             <p class="nd-about-item__title">{{ item.title }}</p>
 
             <div class="nd-about-item__source">
-              <span><i class="fa fa-{{ item.icon }}"></i> {{ item.type }}</span>
+              <span><i class="fa fa-{{ item.icon }}" title="{{ item.type }}" aria-hidden="true"></i> {{ item.type }}</span>
               {{ item.publication }}
             </div>
           {% endif %}

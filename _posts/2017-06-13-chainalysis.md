@@ -20,12 +20,16 @@ I built the site in Jekyll, using Github pages as a sandbox. It uses Foundation 
 <a href="http://chainalysis.com" class="nd-portfolio__btn" target="_blank">See live site <i class="fa fa-external-link"></i></a>
 
 <div class="nd-portfolio__images">
-	<img src="/assets/images/folio/chainalysis-styleguide.png" height="290px" />
-	<img src="/assets/images/folio/chainalysis-unused.png" height="290px" />
+	<img src="/assets/images/folio/chainalysis-styleguide.png" />
 </div>
+
 <div class="nd-portfolio__images">
-	<img src="/assets/images/folio/homepage-draft.jpg" height="415px" />
-	<img src="/assets/images/folio/chainalysis-home-products.jpg" height="415px" />
+	<img src="/assets/images/folio/homepage-draft.jpg" />
+</div>
+
+<div class="nd-portfolio__images even">
+	<img src="/assets/images/folio/chainalysis-unused.png"  />
+	<img src="/assets/images/folio/chainalysis-home-products.jpg" />
 </div>
 
 ---
@@ -36,7 +40,7 @@ Needing a bit more than a static landing page, my client asked for a blog to acc
 
 <a href="/assets/public/chainalysis-blog-design.pdf" class="nd-portfolio__btn" target="_blank">See full designs <i class="fa fa-external-link"></i></a>
 
-<div class="nd-portfolio__images">
-	<img src="/assets/images/folio/chainalysis-blog__2-col-preview.png" height="350px" />
-	<img src="/assets/images/folio/chainalysis-blog__1-col.png" height="350px" />
+<div class="nd-portfolio__images even">
+	<img src="/assets/images/folio/chainalysis-blog__2-col-preview.png" />
+	<img src="/assets/images/folio/chainalysis-blog__1-col.png" />
 </div>

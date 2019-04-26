@@ -7,4 +7,4 @@ tag: teaching
 ---
 
 
-I taught at the [Startup Institute](http://startupinstitute.com) (a career accelerator that helps adults enter the startup world with new skills) this week about CSS frameworks. [Here are my slides](http://nicoledominguez.com/intro-to-css-frameworks/).
+I taught at the [Startup Institute](http://startupinstitute.com) (a career accelerator that helps adults enter the startup world with new skills) this week about CSS frameworks. [Here are my slides](https://nicoledominguez.com/intro-to-css-frameworks/).
