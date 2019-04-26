@@ -102,14 +102,19 @@ $nd-header-content-width: 500px;
   }
 
   .nd-header-cta {
-    margin: 0 1rem;
-    font-size: $md-font-size;
+    margin: 0 0.5rem;
+    font-size: $md-font-size - 2;
   }
 }
 
 @media screen and (min-width: $desktop) {
   .nd-header-intro {
     font-size: $xl-font-size;
+  }
+
+  .nd-header-cta {
+    margin: 0 0.75rem;
+    font-size: $md-font-size;
   }
 }
 
