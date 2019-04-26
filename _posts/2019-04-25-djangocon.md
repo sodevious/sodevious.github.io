@@ -24,22 +24,36 @@ I had the absolute pleasure to help produce a professional programming conferenc
 <a href="/assets/public/djangocon-eu-19-draft.pdf" class="nd-portfolio__btn" target="_blank">See initial design concepts</a>
 
 <div class="nd-portfolio__images">
-	<img src="/assets/images/folio/djangocon/djangocon-website.png" />
+	<span>
+		<img src="/assets/images/folio/djangocon/djangocon-website.png" />
+	</span>	
 </div>
 
 <div class="nd-portfolio__images even">
-	<img src="/assets/images/folio/djangocon/46926765724_edd684c1b8_k.jpg" />
-	<img src="/assets/images/folio/djangocon/Djangocon_eu19_live_web_BPawlik-64.jpg" />
+	<span>
+		<img src="/assets/images/folio/djangocon/46926765724_edd684c1b8_k.jpg" />
+	</span>
+	<span>
+		<img src="/assets/images/folio/djangocon/Djangocon_eu19_live_web_BPawlik-64.jpg" />
+	</span>
 </div>
 
 <div class="nd-portfolio__images even">
-	<img src="/assets/images/folio/djangocon/40684131313_421f7ea2c2_k.jpg" />
-	<img src="/assets/images/folio/djangocon/47650693671_bb800310b8_k.jpg" />
+	<span>
+		<img src="/assets/images/folio/djangocon/40684131313_421f7ea2c2_k.jpg" />
+	</span>
+	<span>
+		<img src="/assets/images/folio/djangocon/47650693671_bb800310b8_k.jpg" />
+	</span>
 </div>
 
 <div class="nd-portfolio__images even">
-	<img src="/assets/images/folio/djangocon/33773175468_4e0fd596d5_z.jpg" />
-	<img src="/assets/images/folio/djangocon/46926786544_492e649c5e_z.jpg" />
+	<span>
+		<img src="/assets/images/folio/djangocon/33773175468_4e0fd596d5_z.jpg" />
+	</span>
+	<span>
+		<img src="/assets/images/folio/djangocon/46926786544_492e649c5e_z.jpg" />
+	</span>
 </div>
 
 Photos by <a href="https://bartpawlik.format.com/" rel="external" target="_blank">Bartek Pawlik</a>

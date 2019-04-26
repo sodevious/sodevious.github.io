@@ -20,27 +20,35 @@ I built the site in Jekyll, using Github pages as a sandbox. It uses Foundation 
 <a href="http://chainalysis.com" class="nd-portfolio__btn" target="_blank">See live site <i class="fa fa-external-link"></i></a>
 
 <div class="nd-portfolio__images">
-	<img src="/assets/images/folio/chainalysis-styleguide.png" />
-</div>
-
-<div class="nd-portfolio__images">
-	<img src="/assets/images/folio/homepage-draft.jpg" />
+	<span>
+		<img src="/assets/images/folio/homepage-draft.jpg" />
+	</span>
 </div>
 
 <div class="nd-portfolio__images even">
-	<img src="/assets/images/folio/chainalysis-unused.png"  />
-	<img src="/assets/images/folio/chainalysis-home-products.jpg" />
+	<span>
+		<img src="/assets/images/folio/chainalysis-unused.png"  />
+	</span>
+
+	<span>
+		<img src="/assets/images/folio/chainalysis-home-products.jpg" />
+	</span>
 </div>
 
 ---
 
 ### Chainalysis Blog
 
-Needing a bit more than a static landing page, my client asked for a blog to accompany their current site. We put together a <a href="https://ghost.org/developers/" target="_blank">Ghost</a> blog, and I designed and built a theme for them.
+Needing a bit more than a static landing page, my client asked for a blog ts accompany their current site. We put together a <a href="https://ghost.org/developers/" target="_blank">Ghost</a> blog, and I designed and built a theme for them.
 
 <a href="/assets/public/chainalysis-blog-design.pdf" class="nd-portfolio__btn" target="_blank">See full designs <i class="fa fa-external-link"></i></a>
 
 <div class="nd-portfolio__images even">
-	<img src="/assets/images/folio/chainalysis-blog__2-col-preview.png" />
-	<img src="/assets/images/folio/chainalysis-blog__1-col.png" />
+	<span>
+		<img src="/assets/images/folio/chainalysis-blog__2-col-preview.png" />
+	</span>
+
+	<span>
+		<img src="/assets/images/folio/chainalysis-blog__1-col.png" />
+	</span>
 </div>
