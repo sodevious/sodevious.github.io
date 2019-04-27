@@ -1,0 +1,86 @@
+//
+// Footer
+// --------------------------
+.nd-footer {
+  display: block;
+  padding: 1.5rem 1rem;
+  background-color: $color-offBlack;
+  font-size: $md-font-size;
+  text-align: center;
+  color: $color-slate-light;
+}
+
+.nd-footer-list {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  li:first-child  {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
+.nd-footer-list__link {
+  color: lighten($color-slate-light, 20%);
+
+  &:hover {
+    border-bottom: 2px solid mix($color-slate, $color-slate-light);
+    border-color: $color-pink;
+    color: white;
+  }
+
+  &.footer-icon {
+    margin: 0 12px;
+    font-size: $lg-font-size + 4;
+    color: white;
+
+    &:hover,
+    &:focus {
+      border: none;
+      color: $color-pink;
+    }
+  }
+}
+
+.nd-footer__copyright  {
+  display: block;
+  padding-top: 5px;
+  line-height: 1em;
+}
+
+@media screen and (min-width: $tablet) {
+  .nd-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .footer-col:last-child {
+    text-align: left;
+  }
+
+  .nd-footer-list {
+    padding-top: 0;
+    text-align: right;
+
+    li {
+      padding-left: 20px
+    }
+
+    li:first-child {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+
+  .nd-footer-list__link.footer-icon {
+    margin: 0 0 0 10px;
+  }
+}

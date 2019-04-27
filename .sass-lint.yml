@@ -15,7 +15,6 @@ rules:
       style: '1tbs'
   class-name-format:
     - 2
-    - convention: hyphenatedlowercase
   empty-args: 2
   empty-line-between-blocks:
     - 2
