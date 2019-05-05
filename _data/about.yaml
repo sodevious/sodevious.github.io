@@ -225,20 +225,16 @@ features:
    title: "Conference Design and Branding, Co-organizer"
    url: http://2019.djangocon.eu
    type: Community
-   year: 2018
+   year: 2019
    icon: users
 
+ - publication: "Thunder Nerds"
+   title: "The Intent of a Digital Nomad with Nicole Dominguez"
+   url: https://www.thundernerds.io/2019/05/intent-of-a-digital-nomad-w-nicole-dominguez/
+   type: Interview
+   year: 2019
+   icon: microphone
 
-portfolio:
- - client: "Last Mile"
-   image: location-finder.png
-   role: "User Interface Design & Front-end Development"
-   link: /portfolio/lastmile
-
- - client: "Chainalysis"
-   image: chainalysis-styleguide.png
-   role: "Visual Design, Web Design & Front-end Development"
-   link: /portfolio/chainalysis
 
 
 footer_links:
