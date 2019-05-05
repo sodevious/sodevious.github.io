@@ -7,7 +7,7 @@
   background-color: $color-offBlack;
   font-size: $md-font-size;
   text-align: center;
-  color: $color-slate-light;
+  color: lighten($color-slate-light, 20%);
 }
 
 .nd-footer-list {
