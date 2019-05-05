@@ -25,8 +25,10 @@ I had the absolute pleasure to help produce a professional programming conferenc
 
 <div class="nd-portfolio__images">
 	<span>
-		<img src="/assets/images/folio/djangocon/djangocon-website.png" />
-	</span>	
+		<img srcset="/assets/images/folio/djangocon/djangocon-website.png 640w,
+                 /assets/images/folio/djangocon/djangocon-website__2x.png 1280w"
+         src="/assets/images/folio/djangocon/djangocon-website.png" />
+	</span>
 </div>
 
 <div class="nd-portfolio__images even">
