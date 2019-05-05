@@ -157,8 +157,12 @@ $nd-header-content-width: 500px;
 
 // TODO Add more images and randomize this
 .nd-travel-img {
-  display: block;
   width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 //
