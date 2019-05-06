@@ -1,7 +1,7 @@
 ---
 layout: portfolio-page
 title: "The Shorty Awards"
-date: 2017-05-01
+date: 2017-09-01
 categories: portfolio
 
 role: "Product Design & Front-end Development"
