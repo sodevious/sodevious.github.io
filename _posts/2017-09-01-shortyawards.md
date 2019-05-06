@@ -83,12 +83,37 @@ Branding by <a href="https://www.taylorwaldman.com/" rel="external" target="_bla
 
 Illustrated custom stickers.
 
-<div class="nd-portfolio__images">
+<div class="nd-portfolio__images even">
 	<span>
 		<img src="/assets/images/folio/shortyawards/shorty-sticker-1.jpg" />
 	</span>
 
   <span>
     <img src="/assets/images/folio/shortyawards/shorty-sticker-2.jpg" />
+  </span>
+</div>
+
+
+---
+
+I designed and developed an internal live styleguide for designers and developers to be able to easily grab components or classes without needing a designer to create something custom each time. Built in HTML, Sass, Django.
+
+<div class="nd-portfolio__images even">
+	<span>
+		<img src="/assets/images/folio/shortyawards/shorty-styleguide-1.jpg" />
+	</span>
+
+  <span>
+    <img src="/assets/images/folio/shortyawards/shorty-styleguide-2.jpg" />
+  </span>
+</div>
+
+<div class="nd-portfolio__images even">
+	<span>
+		<img src="/assets/images/folio/shortyawards/shorty-styleguide-3.jpg" />
+	</span>
+
+  <span>
+    <img src="/assets/images/folio/shortyawards/shorty-styleguide-4.jpg" />
   </span>
 </div>
